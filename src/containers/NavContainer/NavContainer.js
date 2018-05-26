@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import './NavContainer.css';
 
 class NavContainer extends Component {
   constructor(props) {
@@ -10,10 +11,13 @@ class NavContainer extends Component {
 
   render() {
     return (
-      <div>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/signin">Signin</NavLink>
-        <NavLink to="/profile">Me</NavLink>
+      <div className="nav-bar">
+        <h1 className="site-name">FirstRide</h1>
+        <div className="links">
+          <NavLink className="nav-link" to="/">Home</NavLink>
+          <NavLink className="nav-link" to="/signin">Signin</NavLink>
+          <NavLink className="nav-link" to="/profile">Me</NavLink>
+        </div>
       </div>
     );
   }
