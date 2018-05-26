@@ -4,20 +4,22 @@ import { withScriptjs, withGoogleMap, GoogleMap, Marker }
 import './MapComponent.css';
 
 export const MapComponent = withScriptjs(withGoogleMap((
-  { position, ...props }
+  { position, markerCoords, ...props }
 ) => {
-  // const markerPosition = markerCoords.lat ? markerCoords : position;
+  const markers = markerCoords.map(marker => {
+    return (
+      <Marker  
+        position={marker} />
+    )
+  });
   return (props.loading ?
     <div className='map-loading'>
       <h3>Waiting on Location...</h3>
     </div>
     : <GoogleMap
-      // onClick={event => onMapClick(event)}
       defaultZoom={16}
       center={position}>
-      {/* <Marker 
-        // onClick={event => onMarkerClick(event)} 
-        position={markerPosition} /> */}
+      {markers}
     </GoogleMap>
   );
 }));
