@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 
 class DestinationsContainer extends Component {
   constructor(props) {
@@ -9,8 +10,9 @@ class DestinationsContainer extends Component {
 
   render() {
     return (
-      <div>
-        
+      <div className="destinations">
+        <NavLink to="/rides">Red Rocks</NavLink>
+        <NavLink to="/rides">Breckenridge</NavLink>
       </div>
     );
   }

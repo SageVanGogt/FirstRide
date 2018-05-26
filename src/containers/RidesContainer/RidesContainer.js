@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import MapContainer from './../MapContainer/MapContainer';
 
 class RidesContainer extends Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class RidesContainer extends Component {
   render() {
     return (
       <div>
-
+        <MapContainer />
       </div>
     );
   }

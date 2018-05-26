@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
-import MapContainer from './../MapContainer/MapContainer';
 import { Route, Redirect, Switch, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import DestinationsContainer from './../DestinationsContainer/DestinationsContainer';
+import RidesContainer from './../RidesContainer/RidesContainer';
+import SigninContainer from './../SigninContainer/SigninContainer';
+import ProfileContainer from './../ProfileContainer/ProfileContainer';
+import NavContainer from './../NavContainer/NavContainer';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <MapContainer />
+        <div>
+          <NavContainer/>
+        </div>
         <Switch>
           <Route 
             exact path="/" 
