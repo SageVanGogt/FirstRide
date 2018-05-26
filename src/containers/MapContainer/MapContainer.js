@@ -26,7 +26,7 @@ export default class MapContainer extends Component {
 
   containerElement = () => (
     <div
-      className="lostAndFoundMap"
+      className="availableRidesMap"
       style={{
         position: 'absolute',
         top: this.props.top || '10rem',
@@ -35,7 +35,8 @@ export default class MapContainer extends Component {
         width: this.props.width || '50%'
       }}
     />
-  )
+  );
+  
   loadingElement = () => (<div style={{ height: `100%` }} />)
   mapElement = () => (<div style={{ height: `100%` }} />)
 

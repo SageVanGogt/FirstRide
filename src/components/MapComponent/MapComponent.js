@@ -2,6 +2,7 @@ import React from 'react';
 import { withScriptjs, withGoogleMap, GoogleMap, Marker }
   from 'react-google-maps';
 import './MapComponent.css';
+import PropTypes from 'prop-types';
 
 export const MapComponent = withScriptjs(withGoogleMap((
   { position, markerCoords, ...props }
@@ -10,7 +11,7 @@ export const MapComponent = withScriptjs(withGoogleMap((
     return (
       <Marker  
         position={marker} />
-    )
+    );
   });
   return (props.loading ?
     <div className='map-loading'>
@@ -23,5 +24,10 @@ export const MapComponent = withScriptjs(withGoogleMap((
     </GoogleMap>
   );
 }));
+
+MapComponent.propTypes = {
+  position: PropTypes.object,
+  markerCoords: PropTypes.array
+}
 
 export default MapComponent;
