@@ -1,7 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { SigninContainer } from './SigninContainer';
+import { SigninContainer, mapDispatchToProps } from './SigninContainer';
 import { signinUser } from './../../apiCalls/apiCalls';
+import * as MOCK from './../../apiCalls/mockData';
+import * as actions from './../../actions/user';
 
 jest.mock('./../../apiCalls/apiCalls');
 
@@ -9,7 +11,8 @@ describe('SigninContainer', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<SigninContainer />)
+    wrapper = shallow(<SigninContainer 
+    signinUser={actions.signinUser}/>)
   })
   
   it('should match the snapshot', () => {
@@ -34,14 +37,32 @@ describe('SigninContainer', () => {
 
   describe('handleSubmit', () => {
     it('should call signinUser with the correct params', async () => {
-      const expected = {
+      let expected = {
         email: "thurmanvogt@gmail.com",
         password: "sage"
       }
+      let mockEvent = {
+        preventDefault: jest.fn()
+      }
       wrapper.setState(expected);
-      Promise.resolve(wrapper.instance().handleSubmit());
+      Promise.resolve(wrapper.instance().handleSubmit(mockEvent));
       
       expect(signinUser).toHaveBeenCalledWith(expected);
+    })
+  })
+
+  describe('mapDispatchToProps', () => {
+    it('should be called with the correct params', () => {
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let mockArg = MOCK.mockUser;
+      let expected = {
+        type: "SIGNIN_USER",
+        user: MOCK.mockUser
+      }
+      mappedProps.signinUser(mockArg);
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected);
     })
   })
 })
