@@ -11,8 +11,8 @@ class DestinationsContainer extends Component {
   render() {
     return (
       <div className="destinations">
-        <NavLink to="/rides">Red Rocks</NavLink>
-        <NavLink to="/rides">Breckenridge</NavLink>
+        <NavLink to="/rides" onClick={this.setDestination} value="Red Rocks">Red Rocks</NavLink>
+        <NavLink to="/rides" onClick={this.setDestination} value="Red Rocks">Breckenridge</NavLink>
       </div>
     );
   }
