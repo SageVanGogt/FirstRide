@@ -28,9 +28,15 @@ describe('RidesContainer', () => {
   })
 
   describe('loadRides', () => {
-    it('should call fetchRides with the correct params', () => {
-      wrapper.instance().loadRides();
+    it('should call fetchRides with the correct params', async () => {
+      await wrapper.instance().loadRides();
       expect(API.fetchRides).toHaveBeenCalledWith(mockDestination.id)
+    })
+
+    it('should call setRides with correct params', async () => {
+      const expected = MOCK.mockRides.rides
+      Promise.resolve(wrapper.instance().loadRides());
+      expect(mockSetRides).toHaveBeenCalledWith(expected)
     })
   })
 
