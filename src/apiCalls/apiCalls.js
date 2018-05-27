@@ -33,6 +33,7 @@ const fetchRides = async (destination) => {
   }
   const response = await fetch(url, body);
   const rides = await response.json();
+  return rides;
 }
 
 export {

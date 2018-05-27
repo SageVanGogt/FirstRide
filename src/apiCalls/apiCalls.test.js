@@ -54,11 +54,11 @@ describe('fetchDestination', () => {
     };
     url = `http://localhost:3000/api/locations/${mockName}`;
     window.fetch = jest.fn().mockImplementation(() =>
-        Promise.resolve({
-          status: 200,
-          json: () => Promise.resolve(mockResponse)
-        })
-      );
+      Promise.resolve({
+        status: 200,
+        json: () => Promise.resolve(mockResponse)
+      })
+    );
   });
 
   it('should be called with the correct params', async () => {
@@ -96,9 +96,10 @@ describe('fetchDestination', () => {
       window.fetch = jest.fn().mockImplementation(() => 
         Promise.resolve({
           status: 200,
-          json: () => Promise.resolve(MOCK.mockRides)
+          json: () => Promise.resolve(MOCK.mockRides.rides)
         })
       );
+      
     })
 
     it('should be called with the correct params', async () => {
@@ -109,5 +110,12 @@ describe('fetchDestination', () => {
       expect(window.fetch).toHaveBeenCalledWith(url, mockBody)
     })
 
+    it('should return the expected object if status ok', async () => {
+      let expected = MOCK.mockRides.rides;
+
+      let actual = await API.fetchRides(mockDestination);
+
+      expect(actual).toEqual(expected);
+    })
   })
 })

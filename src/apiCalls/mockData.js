@@ -6,8 +6,8 @@ export const mockUser = {
   rating:"Solid 7"
 }
 
-export const mockRides = [
-  {
+export const mockRides = {
+  rides: [{
     id: 1,
     location_id: 1,
     driver_id: 1,
@@ -36,5 +36,5 @@ export const mockRides = [
     car_type: 'tesla roadster',
     date: "6/1/2018",
     time: '4:30pm'
-  }
-]
+  }]}
+
