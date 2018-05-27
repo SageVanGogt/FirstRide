@@ -15,7 +15,7 @@ export class RidesContainer extends Component {
 
   loadRides = async () => {
     const { setRides, destination } = this.props;
-    const response = await API.fetchRides(destination);
+    const response = await API.fetchRides(destination.id);
     setRides(response.rides);
   }
 

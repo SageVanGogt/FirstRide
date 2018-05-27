@@ -28,8 +28,9 @@ describe('RidesContainer', () => {
   })
 
   describe('loadRides', () => {
-    it('should call setRides with the correct params', () => {
-
+    it('should call fetchRides with the correct params', () => {
+      wrapper.instance().loadRides();
+      expect(API.fetchRides).toHaveBeenCalledWith(mockDestination.id)
     })
   })
 
