@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import { SigninContainer, mapDispatchToProps } from './SigninContainer';
 import { signinUser } from './../../apiCalls/apiCalls';
 import * as MOCK from './../../apiCalls/mockData';
+import * as actions from './../../actions/user';
 
 jest.mock('./../../apiCalls/apiCalls');
 
@@ -10,7 +11,8 @@ describe('SigninContainer', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<SigninContainer />)
+    wrapper = shallow(<SigninContainer 
+    signinUser={actions.signinUser}/>)
   })
   
   it('should match the snapshot', () => {
@@ -35,12 +37,15 @@ describe('SigninContainer', () => {
 
   describe('handleSubmit', () => {
     it('should call signinUser with the correct params', async () => {
-      const expected = {
+      let expected = {
         email: "thurmanvogt@gmail.com",
         password: "sage"
       }
+      let mockEvent = {
+        preventDefault: jest.fn()
+      }
       wrapper.setState(expected);
-      Promise.resolve(wrapper.instance().handleSubmit());
+      Promise.resolve(wrapper.instance().handleSubmit(mockEvent));
       
       expect(signinUser).toHaveBeenCalledWith(expected);
     })

@@ -7,7 +7,7 @@ import * as actions from './../../actions/user';
 
 export class SigninContainer extends Component {
   constructor(props) {
-    super();
+    super(props);
     this.state = {
       email: '',
       password: ''
@@ -21,8 +21,10 @@ export class SigninContainer extends Component {
     });
   }
 
-  handleSubmit = async () => {
+  handleSubmit = async (event) => {
+    event.preventDefault();
     const response = await signinUser(this.state);
+    this.props.signinUser(response.user[0]);
   }
 
   render() {
@@ -31,14 +33,12 @@ export class SigninContainer extends Component {
         <form action="submit" onSubmit={this.handleSubmit}>
           <input 
             type="text" 
-            value="" 
             name="email"
             onChange={this.handleChange}
             placeholder="email"
           />
           <input 
             type="password" 
-            value="" 
             name="password"
             onChange={this.handleChange}
             placeholder="password"
