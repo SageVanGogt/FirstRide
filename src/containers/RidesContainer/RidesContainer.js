@@ -9,19 +9,14 @@ export class RidesContainer extends Component {
     super(props);
   }
 
-  componentDidMount() {
-    this.loadRides();
-  }
-
   loadRides = async () => {
     const { setRides, destination } = this.props;
-    console.log(setRides)
-    console.log(destination)
     const response = await API.fetchRides(destination.id);
     await setRides(response.rides);
   }
 
   render() {
+    {this.props.destination.id && this.loadRides()}    
     return (
       <div>
         <MapContainer />
