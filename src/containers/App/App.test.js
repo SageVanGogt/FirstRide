@@ -18,6 +18,9 @@ describe('App', () => {
       let mockState = {
         user: {
           email: "thurmanvogt@gmail.com"
+        },
+        destination: {
+          location_name: 'Red Rocks'
         }
       };
       let mappedProps = mapStateToProps(mockState);

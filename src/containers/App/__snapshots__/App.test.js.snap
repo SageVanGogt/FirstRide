@@ -23,14 +23,14 @@ ShallowWrapper {
 </div>,
         <Switch>
           <Route
-                    component={[Function]}
                     exact={true}
-                    path="/"
+                    path="/signin"
+                    render={[Function]}
           />
           <Route
                     component={[Function]}
                     exact={true}
-                    path="/signin"
+                    path="/"
           />
           <Route
                     component={[Function]}
@@ -74,14 +74,14 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Route
-              component={[Function]}
               exact={true}
-              path="/"
+              path="/signin"
+              render={[Function]}
 />,
             <Route
               component={[Function]}
               exact={true}
-              path="/signin"
+              path="/"
 />,
             <Route
               component={[Function]}
@@ -102,9 +102,9 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "component": [Function],
               "exact": true,
-              "path": "/",
+              "path": "/signin",
+              "render": [Function],
             },
             "ref": null,
             "rendered": null,
@@ -117,7 +117,7 @@ ShallowWrapper {
             "props": Object {
               "component": [Function],
               "exact": true,
-              "path": "/signin",
+              "path": "/",
             },
             "ref": null,
             "rendered": null,
@@ -167,14 +167,14 @@ ShallowWrapper {
 </div>,
           <Switch>
             <Route
-                        component={[Function]}
                         exact={true}
-                        path="/"
+                        path="/signin"
+                        render={[Function]}
             />
             <Route
                         component={[Function]}
                         exact={true}
-                        path="/signin"
+                        path="/"
             />
             <Route
                         component={[Function]}
@@ -218,14 +218,14 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <Route
-                component={[Function]}
                 exact={true}
-                path="/"
+                path="/signin"
+                render={[Function]}
 />,
               <Route
                 component={[Function]}
                 exact={true}
-                path="/signin"
+                path="/"
 />,
               <Route
                 component={[Function]}
@@ -246,9 +246,9 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "component": [Function],
                 "exact": true,
-                "path": "/",
+                "path": "/signin",
+                "render": [Function],
               },
               "ref": null,
               "rendered": null,
@@ -261,7 +261,7 @@ ShallowWrapper {
               "props": Object {
                 "component": [Function],
                 "exact": true,
-                "path": "/signin",
+                "path": "/",
               },
               "ref": null,
               "rendered": null,

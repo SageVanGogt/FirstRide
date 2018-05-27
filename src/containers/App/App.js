@@ -17,13 +17,17 @@ export class App extends Component {
           <NavContainer/>
         </div>
         <Switch>
+          <Route
+            exact path="/signin"
+            render={() => (
+              this.props.user.email ?
+                <Redirect to="/" /> :
+                <SigninContainer />
+            )}
+          />
           <Route 
             exact path="/" 
             component={DestinationsContainer}
-          />
-          <Route 
-            exact path="/signin" 
-            component={SigninContainer}
           />
           <Route 
             exact path="/rides" 
