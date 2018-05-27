@@ -1,0 +1,26 @@
+.nav-bar {
+  display: flex;
+  width: 100vw;
+}
+
+.site-name {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-link {
+  padding: 0;
+  border-bottom: 3px solid transparent;
+  margin-right: 40px;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+.nav-link:hover {
+  border-bottom: 3px solid white;  
+}
+
+/* .links {
+  left: 400px;
+} */
