@@ -23,8 +23,13 @@ const fetchDestination = async (name) => {
   return destination;
 }
 
+const fetchRides = async (destination) => {
+  const url = `http://localhost:3000/api/rides/get/${location}`;
+}
+
 export {
   signinUser,
   signupUser,
-  fetchDestination
+  fetchDestination,
+  fetchRides
 }
