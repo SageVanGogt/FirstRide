@@ -2,6 +2,11 @@ const signinUser = async (user) => {
 
 } 
 
+const signupUser = async (user) => {
+
+} 
+
 export {
-  signinUser
+  signinUser,
+  signupUser
 }
