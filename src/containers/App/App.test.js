@@ -1,7 +1,30 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import { App, mapStateToProps } from './App';
+import { shallow } from 'enzyme';
+ 
+describe('App', () => {
+  let wrapper;
 
-it('renders without crashing', () => {
+  beforeEach(() => {
+    wrapper = shallow(<App />);
+  })
 
-});
+  it('should match the snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
+  })
+
+  describe('mapStateToProps', () => {
+    it('should pull user from the state', () => {
+      let mockState = {
+        user: {
+          email: "thurmanvogt@gmail.com"
+        }
+      };
+      let mappedProps = mapStateToProps(mockState);
+      let actual = mappedProps.user;
+      let expected = mockState.user;
+
+      expect(actual).toEqual(expected);
+    })
+  })
+})
