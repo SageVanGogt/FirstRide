@@ -29,5 +29,23 @@ describe('App', () => {
 
       expect(actual).toEqual(expected);
     })
+
+    it('should pull destination from the state', () => {
+      let mockState = {
+        user: {
+          email: "thurmanvogt@gmail.com"
+        },
+        destination: {
+          location_name: 'Red Rocks',
+          id: 1
+        },
+        rides: []
+      };
+      let mappedProps = mapStateToProps(mockState);
+      let actual = mappedProps.destination;
+      let expected = mockState.destination;
+
+      expect(actual).toEqual(expected);
+    })
   })
 })

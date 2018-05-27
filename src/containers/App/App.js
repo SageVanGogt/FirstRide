@@ -31,7 +31,11 @@ export class App extends Component {
           />
           <Route 
             exact path="/rides" 
-            component={RidesContainer}
+            render={() => (
+              this.props.destination.id ?
+                 <RidesContainer /> :
+                 <Redirect to="/" />
+            )}
           />
           <Route 
             exact path="/profile" 
@@ -44,7 +48,8 @@ export class App extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  user: state.user
+  user: state.user,
+  destination: state.destination
 })
 
 export default withRouter(connect(mapStateToProps)(App))
