@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { fetchDestination } from '../../apiCalls/apiCalls';
+import { setDestination } from './../../actions/destination';
 
 export class DestinationsContainer extends Component {
   constructor(props) {
@@ -14,6 +15,7 @@ export class DestinationsContainer extends Component {
     try {
       const response = await fetchDestination(value);
       const destination = await response.json();
+      this.props.setDestination(destination);
     } catch (err) {
       return err
     }
@@ -44,7 +46,7 @@ export const mapStateToProps = (state) => ({
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-  
+  setDestination: (data) => dispatch(setDestination(data))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(DestinationsContainer);
