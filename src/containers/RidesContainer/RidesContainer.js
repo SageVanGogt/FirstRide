@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import MapContainer from './../MapContainer/MapContainer';
 import * as API from './../../apiCalls/apiCalls';
+import * as actions from './../../actions/rides';
 export class RidesContainer extends Component {
   constructor(props) {
     super(props);
@@ -30,7 +31,7 @@ export const mapStateToProps = (state) => ({
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-
+  setRides: (rides) => dispatch(addRides(rides))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(RidesContainer);

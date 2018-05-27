@@ -4,7 +4,14 @@ exports[`RidesContainer should match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <RidesContainer />,
+  Symbol(enzyme.__unrendered__): <RidesContainer
+    destination={
+        Object {
+            "id": 1,
+            "location_name": "Red Rocks",
+          }
+    }
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
