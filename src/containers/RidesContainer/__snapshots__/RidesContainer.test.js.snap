@@ -11,6 +11,7 @@ ShallowWrapper {
             "location_name": "Red Rocks",
           }
     }
+    setRides={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

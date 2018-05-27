@@ -2,18 +2,24 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { RidesContainer, mapStateToProps, mapDispatchToProps } from './RidesContainer';
 import * as MOCK from './../../apiCalls/mockData';
+import * as API from './../../apiCalls/apiCalls';
+
+jest.mock('./../../apiCalls/apiCalls');
 
 describe('RidesContainer', () => {
   let wrapper;
   let mockDestination;
+  let mockSetRides;
 
   beforeEach(() => {
     mockDestination = {
       location_name: 'Red Rocks',
       id: 1
     }
+    mockSetRides = jest.fn();
     wrapper = shallow(<RidesContainer 
-      destination={mockDestination}/>, 
+      destination={mockDestination}
+      setRides={mockSetRides}/>, 
       { disableLifeCycleMethods: true });
   })
 

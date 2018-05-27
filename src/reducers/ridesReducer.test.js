@@ -13,7 +13,7 @@ describe('ridesReducer', () => {
     let mockAction = {
       type: "ADD_RIDES",
       rides: MOCK.mockRides.rides
-    }
+    };
     let actual = ridesReducer(initialState, mockAction);
 
     expect(actual).toEqual(expected);

@@ -13,8 +13,10 @@ export class RidesContainer extends Component {
     this.loadRides();
   }
 
-  loadRides = () => {
-
+  loadRides = async () => {
+    const { setRides, destination } = this.props;
+    const response = await API.fetchRides(destination);
+    setRides(response.rides);
   }
 
   render() {
@@ -31,7 +33,7 @@ export const mapStateToProps = (state) => ({
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-  setRides: (rides) => dispatch(addRides(rides))
+  setRides: (rides) => dispatch(actions.addRides(rides))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(RidesContainer);
