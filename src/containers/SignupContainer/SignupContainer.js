@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { signupUser } from './../../apiCalls/apiCalls';
 
-class RidesContainer extends Component {
+export class SignupContainer extends Component {
   constructor(props) {
     super();
     this.state = {
@@ -13,6 +14,17 @@ class RidesContainer extends Component {
       bio: '',
       rating: ''
     };
+  }
+
+  handleChange = (event) => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  }
+
+  handleSubmit = async () => {
+    const response = await signupUser(this.state);
   }
 
   render() {
@@ -64,4 +76,4 @@ export const mapDispatchToProps = (dispatch) => ({
 
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(RidesContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(SignupContainer);

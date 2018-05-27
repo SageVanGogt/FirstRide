@@ -40,7 +40,7 @@ ShallowWrapper {
                     type="submit"
           />
 </form>,
-        <Connect(RidesContainer) />,
+        <Connect(SignupContainer) />,
       ],
     },
     "ref": null,
@@ -159,7 +159,7 @@ ShallowWrapper {
                         type="submit"
             />
 </form>,
-          <Connect(RidesContainer) />,
+          <Connect(SignupContainer) />,
         ],
       },
       "ref": null,
