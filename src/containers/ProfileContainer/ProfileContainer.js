@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-class ProfileContainer extends Component {
+export class ProfileContainer extends Component {
   constructor(props) {
     super();
   }

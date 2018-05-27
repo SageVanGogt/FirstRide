@@ -1,14 +1,27 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import SignupContainer from './../SignupContainer/SignupContainer';
+import { signinUser } from './../../apiCalls/apiCalls';
 
-class SigninContainer extends Component {
+export class SigninContainer extends Component {
   constructor(props) {
     super();
     this.state = {
       email: '',
       password: ''
     }
+  }
+
+  handleChange = (event) => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  }
+
+  handleSubmit = async () => {
+    const response = await signinUser(this.state);
   }
 
   render() {
@@ -33,6 +46,7 @@ class SigninContainer extends Component {
             type="submit"
           />
         </form>
+        <SignupContainer/>
       </div>
     );
   }
