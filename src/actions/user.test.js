@@ -1,8 +1,8 @@
 import * as actions from './user';
 import { mockUser } from './../apiCalls/mockData';
 
-describe('signinUser', () => {
-  it('should return an object with the type SIGNIN_USER', () => {
+describe('user related actions', () => {
+  it('signinUser should return an object with the type SIGNIN_USER', () => {
     const userData = mockUser;
     const expected = {
       type: "SIGNIN_USER",
@@ -10,6 +10,15 @@ describe('signinUser', () => {
     } 
     const actual = actions.signinUser(userData);
 
+    expect(actual).toEqual(expected);
+  })
+
+  it('signoutUser should return an object with the type SIGNOUT_USER', () => {
+    const expected = {
+      type: "SIGNOUT_USER"
+    }
+    const actual = actions.signoutUser();
+    
     expect(actual).toEqual(expected);
   })
 })

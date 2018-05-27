@@ -4,3 +4,9 @@ export const signinUser = (user) => {
     user
   });
 }
+
+export const signoutUser = () => {
+  return ({
+    type: 'SIGNOUT_USER'
+  })
+}
