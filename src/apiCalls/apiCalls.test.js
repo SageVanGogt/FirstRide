@@ -22,13 +22,21 @@ describe('signinUser', () => {
     window.fetch = jest.fn().mockImplementation(() => 
     Promise.resolve({
       status: 200,
-      json: () => Promise.resolve
+      json: () => Promise.resolve(MOCK.mockUser)
     }))
   })
 
   it('should be be called with the correct params', async () => {
     await API.signinUser(mockSignin);
+
     expect(window.fetch).toHaveBeenCalledWith(url, mockBody);
+  })
+
+  it('should return the expected object', async () => {
+    let actual = await API.signinUser(mockSignin);
+    let expected = MOCK.mockUser;
+
+    expect(actual).toEqual(expected);
   })
 })
 

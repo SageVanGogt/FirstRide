@@ -8,6 +8,8 @@ const signinUser = async (user) => {
     }
   }
   const response = await fetch(url, init);
+  const profile = await response.json();
+  return profile;
 } 
 
 const signupUser = async (user) => {
