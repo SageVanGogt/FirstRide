@@ -26,7 +26,16 @@ describe('fetchDestination', () => {
     await API.fetchDestination(mockName);
 
     expect(window.fetch).toHaveBeenCalledWith(expected);
-  })
+  });
 
-  
+  it('should return an expected object if the status is ok', async () => {
+    const expected = {
+      id: 1,
+      location_name: "Red Rocks",
+      location_lat_lng: "12341, 123412"
+    }
+    const actual = await API.fetchDestination(mockName);
+    
+    expect(actual).toEqual(expected);
+  });
 })
