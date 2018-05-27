@@ -19,8 +19,8 @@ describe('RidesContainer', () => {
     mockSetRides = jest.fn();
     wrapper = shallow(<RidesContainer 
       destination={mockDestination}
-      setRides={mockSetRides}/>, 
-      { disableLifeCycleMethods: true });
+      setRides={mockSetRides}/>
+    );
   })
 
   it('should match the snapshot', () => {

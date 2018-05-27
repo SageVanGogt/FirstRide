@@ -24,14 +24,14 @@ export class DestinationsContainer extends Component {
   render() {
     return (
       <div className="destinations">
-        <NavLink 
-          to="/rides" 
+        <NavLink  
+          to='/rides'
           onClick={this.handleSelectDestination} 
           name="Red Rocks">
           Red Rocks
         </NavLink>
-        <NavLink 
-          to="/rides" 
+        <NavLink
+          to='/rides'
           onClick={this.handleSelectDestination} 
           name="Breckenridge">
           Breckenridge

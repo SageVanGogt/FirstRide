@@ -31,11 +31,7 @@ export class App extends Component {
           />
           <Route 
             exact path="/rides" 
-            render={() => (
-              this.props.destination.id ?
-                 <RidesContainer /> :
-                 <Redirect to="/" />
-            )}
+            component={RidesContainer}
           />
           <Route 
             exact path="/profile" 
