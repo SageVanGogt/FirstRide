@@ -1,7 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { SigninContainer } from './SigninContainer';
+import { SigninContainer, mapDispatchToProps } from './SigninContainer';
 import { signinUser } from './../../apiCalls/apiCalls';
+import * as MOCK from './../../apiCalls/mockData';
 
 jest.mock('./../../apiCalls/apiCalls');
 
@@ -42,6 +43,21 @@ describe('SigninContainer', () => {
       Promise.resolve(wrapper.instance().handleSubmit());
       
       expect(signinUser).toHaveBeenCalledWith(expected);
+    })
+  })
+
+  describe('mapDispatchToProps', () => {
+    it('should be called with the correct params', () => {
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let mockArg = MOCK.mockUser;
+      let expected = {
+        type: "SIGNIN_USER",
+        user: MOCK.mockUser
+      }
+      mappedProps.signinUser(mockArg);
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected);
     })
   })
 })

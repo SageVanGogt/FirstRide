@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import SignupContainer from './../SignupContainer/SignupContainer';
 import { signinUser } from './../../apiCalls/apiCalls';
+import * as actions from './../../actions/user';
 
 export class SigninContainer extends Component {
   constructor(props) {
@@ -57,7 +58,7 @@ export const mapStateToProps = (state) => ({
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-
+  signinUser: (userData) => dispatch(actions.signinUser(userData))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(SigninContainer);
