@@ -9,7 +9,7 @@ import SigninContainer from './../SigninContainer/SigninContainer';
 import ProfileContainer from './../ProfileContainer/ProfileContainer';
 import NavContainer from './../NavContainer/NavContainer';
 
-class App extends Component {
+export class App extends Component {
   render() {
     return (
       <div className="App">
@@ -17,13 +17,17 @@ class App extends Component {
           <NavContainer/>
         </div>
         <Switch>
+          <Route
+            exact path="/signin"
+            render={() => (
+              this.props.user.email ?
+                <Redirect to="/" /> :
+                <SigninContainer />
+            )}
+          />
           <Route 
             exact path="/" 
             component={DestinationsContainer}
-          />
-          <Route 
-            exact path="/signin" 
-            component={SigninContainer}
           />
           <Route 
             exact path="/rides" 
@@ -39,4 +43,8 @@ class App extends Component {
   }
 }
 
-export default withRouter(App)
+export const mapStateToProps = (state) => ({
+  user: state.user
+})
+
+export default withRouter(connect(mapStateToProps)(App))
