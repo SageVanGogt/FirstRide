@@ -78,4 +78,36 @@ describe('fetchDestination', () => {
     
     expect(actual).toEqual(expected);
   });
+
+  describe('fetchRides', () => {
+    let url;
+    let mockDestination;
+    let mockBody;
+
+    beforeEach(() => {
+      mockDestination = 1;
+      mockBody = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        }
+      };
+      url = `http://localhost:3000/api/rides/get/${mockDestination}`;
+      window.fetch = jest.fn().mockImplementation(() => 
+        Promise.resolve({
+          status: 200,
+          json: () => Promise.resolve(MOCK.mockRides)
+        })
+      );
+    })
+
+    it('should be called with the correct params', async () => {
+      let expected = (url, mockBody);
+
+      API.fetchRides(mockDestination);
+
+      expect(window.fetch).toHaveBeenCalledWith(url, mockBody)
+    })
+
+  })
 })

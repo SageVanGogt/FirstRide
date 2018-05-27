@@ -24,7 +24,15 @@ const fetchDestination = async (name) => {
 }
 
 const fetchRides = async (destination) => {
-  const url = `http://localhost:3000/api/rides/get/${location}`;
+  const url = `http://localhost:3000/api/rides/get/${destination}`;
+  const body = {
+    method: 'POST', 
+    headers: {
+      "Content-Type": "application/json"
+    }
+  }
+  const response = await fetch(url, body);
+  const rides = await response.json();
 }
 
 export {
