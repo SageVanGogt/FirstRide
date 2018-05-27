@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import './NavContainer.css';
 
-class NavContainer extends Component {
+export class NavContainer extends Component {
   constructor(props) {
     super();
   }

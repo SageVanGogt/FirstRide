@@ -1,3 +1,5 @@
+import * as MOCK from './../mockData';
+
 const signinUser = jest.fn().mockImplementation(() => 
   Promise.resolve({
     user: [{
@@ -20,8 +22,12 @@ const fetchDestination = jest.fn().mockImplementation(() => Promise.resolve({
   "location_lat_lng": "12341, 123412"
 }));
 
+const fetchRides = jest.fn().mockImplementation(() => 
+Promise.resolve(MOCK.mockRides));
+
 export {
   signinUser,
   signupUser,
-  fetchDestination
+  fetchDestination,
+  fetchRides
 }

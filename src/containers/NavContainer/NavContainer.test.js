@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import NavContainer from './NavContainer';
+import { NavContainer } from './NavContainer';
 
 describe('NavContainer', () => {
   let wrapper;

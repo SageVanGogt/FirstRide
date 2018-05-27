@@ -2,10 +2,23 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import MapContainer from './../MapContainer/MapContainer';
-
-class RidesContainer extends Component {
+import * as API from './../../apiCalls/apiCalls';
+import * as actions from './../../actions/rides';
+export class RidesContainer extends Component {
   constructor(props) {
-    super();
+    super(props);
+  }
+
+  componentDidMount() {
+    this.loadRides();
+  }
+
+  loadRides = async () => {
+    const { setRides, destination } = this.props;
+    console.log(setRides)
+    console.log(destination)
+    const response = await API.fetchRides(destination.id);
+    await setRides(response.rides);
   }
 
   render() {
@@ -18,11 +31,11 @@ class RidesContainer extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-
+  destination: state.destination
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-
+  setRides: (rides) => dispatch(actions.addRides(rides))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(RidesContainer);
