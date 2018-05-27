@@ -11,11 +11,11 @@ export class DestinationsContainer extends Component {
   }
 
   handleSelectDestination = async (event) => {
-    const { value } = event.target;
+    const { name } = event.target;
     try {
-      const response = await fetchDestination(value);
-      const destination = await response.json();
-      this.props.setDestination(destination);
+      const response = await fetchDestination(name);
+      const finalDestination = response.locations[0];
+      this.props.setDestination(finalDestination);
     } catch (err) {
       return err
     }
@@ -27,13 +27,13 @@ export class DestinationsContainer extends Component {
         <NavLink 
           to="/rides" 
           onClick={this.handleSelectDestination} 
-          value="Red Rocks">
+          name="Red Rocks">
           Red Rocks
         </NavLink>
         <NavLink 
           to="/rides" 
           onClick={this.handleSelectDestination} 
-          value="Breckenridge">
+          name="Breckenridge">
           Breckenridge
         </NavLink>
       </div>

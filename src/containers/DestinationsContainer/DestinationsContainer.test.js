@@ -21,7 +21,7 @@ describe('DestinationsContainer', () => {
     it('should call fetchDestination with the correct params', async () => {
       const mockEvent = {
         target: {
-          value: 'Red Rocks'
+          name: 'Red Rocks'
         }
       };
       const expected = 'Red Rocks';

@@ -21,18 +21,18 @@ ShallowWrapper {
         <NavLink
           activeClassName="active"
           ariaCurrent="true"
+          name="Red Rocks"
           onClick={[Function]}
           to="/rides"
-          value="Red Rocks"
 >
           Red Rocks
 </NavLink>,
         <NavLink
           activeClassName="active"
           ariaCurrent="true"
+          name="Breckenridge"
           onClick={[Function]}
           to="/rides"
-          value="Breckenridge"
 >
           Breckenridge
 </NavLink>,
@@ -49,9 +49,9 @@ ShallowWrapper {
           "activeClassName": "active",
           "ariaCurrent": "true",
           "children": "Red Rocks",
+          "name": "Red Rocks",
           "onClick": [Function],
           "to": "/rides",
-          "value": "Red Rocks",
         },
         "ref": null,
         "rendered": "Red Rocks",
@@ -65,9 +65,9 @@ ShallowWrapper {
           "activeClassName": "active",
           "ariaCurrent": "true",
           "children": "Breckenridge",
+          "name": "Breckenridge",
           "onClick": [Function],
           "to": "/rides",
-          "value": "Breckenridge",
         },
         "ref": null,
         "rendered": "Breckenridge",
@@ -86,18 +86,18 @@ ShallowWrapper {
           <NavLink
             activeClassName="active"
             ariaCurrent="true"
+            name="Red Rocks"
             onClick={[Function]}
             to="/rides"
-            value="Red Rocks"
 >
             Red Rocks
 </NavLink>,
           <NavLink
             activeClassName="active"
             ariaCurrent="true"
+            name="Breckenridge"
             onClick={[Function]}
             to="/rides"
-            value="Breckenridge"
 >
             Breckenridge
 </NavLink>,
@@ -114,9 +114,9 @@ ShallowWrapper {
             "activeClassName": "active",
             "ariaCurrent": "true",
             "children": "Red Rocks",
+            "name": "Red Rocks",
             "onClick": [Function],
             "to": "/rides",
-            "value": "Red Rocks",
           },
           "ref": null,
           "rendered": "Red Rocks",
@@ -130,9 +130,9 @@ ShallowWrapper {
             "activeClassName": "active",
             "ariaCurrent": "true",
             "children": "Breckenridge",
+            "name": "Breckenridge",
             "onClick": [Function],
             "to": "/rides",
-            "value": "Breckenridge",
           },
           "ref": null,
           "rendered": "Breckenridge",
