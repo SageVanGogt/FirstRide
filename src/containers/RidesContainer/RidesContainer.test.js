@@ -35,7 +35,7 @@ describe('RidesContainer', () => {
 
     it('should call setRides with correct params', async () => {
       const expected = MOCK.mockRides.rides
-      Promise.resolve(wrapper.instance().loadRides());
+      await wrapper.instance().loadRides()
       expect(mockSetRides).toHaveBeenCalledWith(expected)
     })
   })

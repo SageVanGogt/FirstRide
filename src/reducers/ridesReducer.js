@@ -3,7 +3,7 @@ const ridesReducer = (state = [], action) => {
     case 'ADD_RIDES':
       return action.rides;
     default: 
-      return [];
+      return state;
   }
 }
 

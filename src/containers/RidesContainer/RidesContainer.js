@@ -9,6 +9,12 @@ export class RidesContainer extends Component {
     super(props);
   }
 
+  componentDidUpdate = (prevProps) => {
+    if (prevProps.destination.id !== this.props.destination.id) {
+      this.loadRides();
+    }
+  }
+
   loadRides = async () => {
     const { setRides, destination } = this.props;
     const response = await API.fetchRides(destination.id);
@@ -16,7 +22,6 @@ export class RidesContainer extends Component {
   }
 
   render() {
-    {this.props.destination.id && this.loadRides()}    
     return (
       <div>
         <MapContainer />
