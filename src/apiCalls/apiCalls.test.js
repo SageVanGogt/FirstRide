@@ -176,4 +176,11 @@ describe('fetchGeocode', () => {
 
     expect(window.fetch).toHaveBeenCalledWith(expected);
   })
+
+  it('should return an object full of location data', async () => {
+    let expected = MOCK.mockGeoInfo;
+    let actual = await API.fetchGeocode(mockAddress);
+
+    expect(actual).toEqual(expected);
+  })
 });
