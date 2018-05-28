@@ -118,4 +118,36 @@ describe('fetchDestination', () => {
       expect(actual).toEqual(expected);
     })
   })
+
+  describe('fetchPickups', () => {
+    let url;
+    let mockLocation;
+    let mockBody;
+    
+    beforeEach(() => {
+      mockLocation = 1;
+      mockBody = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }
+      url = `http://localhost:3000/api/pickup/get/${mockLocation}`;
+      
+      window.fetch = jest.fn().mockImplementation(() => 
+        Promise.resolve({
+          status: 200,
+          json: () => Promise.resolve(MOCK.mockPickups.pickup)
+        })
+      );
+    });
+
+    it('should be called with the correct params', async () => {
+      await API.fetchPickups(mockLocation);
+
+      expect(window.fetch).toHaveBeenCalledWith(url, mockBody);
+    })
+
+    it('should')
+  })
 })

@@ -36,9 +36,22 @@ const fetchRides = async (destination) => {
   return rides;
 }
 
+const fetchPickups = async (location) => {
+  const url = `http://localhost:3000/api/pickup/get/${location}`;
+  const body = {
+    method: "POST", 
+    headers: {
+      "Content-Type": "application/json"
+    }
+  };
+  const response = await fetch(url, body);
+  const pickups = await response.json();
+}
+
 export {
   signinUser,
   signupUser,
   fetchDestination,
-  fetchRides
+  fetchRides,
+  fetchPickups
 }
