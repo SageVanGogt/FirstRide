@@ -1,0 +1,22 @@
+.ride-list {
+  width: 200px;
+}
+
+.ride-item {
+  padding: 10px 0;
+}
+
+.ride-item:hover {
+  background-color: pink;
+}
+
+.ride-page {
+  height: calc(100vh - 80px);
+  background-color: grey;
+  width: 200px;
+  display: flex
+}
+
+/* .ride-item {
+  width: 200px
+} */

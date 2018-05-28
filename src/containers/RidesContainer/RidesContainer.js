@@ -6,6 +6,7 @@ import * as API from './../../apiCalls/apiCalls';
 import { addRides } from './../../actions/rides';
 import { addCurrentLocation } from './../../actions/currentLocation';
 import * as cleaner from './../../cleaners/cleaners';
+import './RidesContainer.css';
 export class RidesContainer extends Component {
   constructor(props) {
     super(props);
@@ -53,27 +54,47 @@ export class RidesContainer extends Component {
     );
   }
 
+  rideListElement = () =>{ 
+    return (
+      this.props.rides.map(ride => {
+        return (
+          <article className="ride-item">
+            <div>seats remaining: {ride.seats_remaining}</div>
+            <div>car capacity: {ride.car_capacity}</div>
+            <div>car model: {ride.car_type}</div>
+            <div>date: {ride.date}</div>
+            <div>time: {ride.time}</div>
+          </article>
+        );
+    }))
+  }
+
   render() {
     return (
-      <div>
-        <form action="submit" onSubmit={this.handleSubmit}>
-          <input 
-            type="text" 
-            name="street" 
-            onChange={this.handleChange} 
-            placeholder="street"/>
-          <input 
-            type="text" 
-            name="city" 
-            onChange={this.handleChange} 
-            placeholder="city"/>
-          <input 
-            type="text" 
-            name="state" 
-            onChange={this.handleChange} 
-            placeholder="state"/>
-          <input type="submit"/>
-        </form>
+      <div className="ride-page">
+        <section className="rides-container">
+          <form action="submit" onSubmit={this.handleSubmit}>
+            <input 
+              type="text" 
+              name="street" 
+              onChange={this.handleChange} 
+              placeholder="street"/>
+            <input 
+              type="text" 
+              name="city" 
+              onChange={this.handleChange} 
+              placeholder="city"/>
+            <input 
+              type="text" 
+              name="state" 
+              onChange={this.handleChange} 
+              placeholder="state"/>
+            <input type="submit"/>
+          </form>
+          <section className="ride-list">
+            {this.props.rides.length && this.rideListElement()}
+          </section>
+        </section>
         <MapContainer />
       </div>
     );
@@ -81,7 +102,8 @@ export class RidesContainer extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  destination: state.destination
+  destination: state.destination,
+  rides: state.rides
 })
 
 export const mapDispatchToProps = (dispatch) => ({

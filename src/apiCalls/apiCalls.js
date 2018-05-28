@@ -58,11 +58,41 @@ const fetchGeocode = async (address) => {
   return locationData
 } 
 
+const submitNewRide = async (ride) => {
+  const url = `http://localhost:3000/api/rides/new`;
+  const body = {
+    method: 'POST',
+    body: JSON.stringify(ride),
+    headers: {
+      "Content-Type": "application/json"        
+    }
+  };
+  const response = await fetch(url, body);
+  const rideId = await response.json();
+  return rideId;
+}
+
+const submitNewPickup = async (location) => {
+  const url = `http://localhost:3000/api/pickup/new`;
+  const body = {
+    method: 'POST',
+    body: JSON.stringify(location),
+    headers: {
+      "Content-Type": "application/json"        
+    }
+  };
+  const response = await fetch(url, body);
+  const pickupId = await response.json();
+  return pickupId;
+}
+
 export {
   signinUser,
   signupUser,
   fetchDestination,
   fetchRides,
   fetchPickups,
-  fetchGeocode
+  fetchGeocode,
+  submitNewRide,
+  submitNewPickup
 }

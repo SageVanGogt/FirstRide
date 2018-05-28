@@ -6,15 +6,13 @@ import MapComponent from '../../components/MapComponent/MapComponent';
 import { connect } from 'react-redux';
 import * as actions from './../../actions/pickups';
 import { fetchPickups } from '../../apiCalls/apiCalls';
+import './MapContainer.css';
 
 const mapUrl = `https://maps.googleapis.com/maps/api/js?key=${mapKey}&v=3.exp&libraries=geometry,drawing,places`;
 
 export class MapContainer extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      center: {lat: 39.758606, lng: -104.998784}
-    };
   }
 
   componentDidUpdate = (prevProps) => {
@@ -30,16 +28,7 @@ export class MapContainer extends Component {
   }
 
   containerElement = () => (
-    <div
-      className="availableRidesMap"
-      style={{
-        position: 'absolute',
-        top: this.props.top || '10rem',
-        left: this.props.right,
-        height: this.props.height || '50%',
-        width: this.props.width || '50%'
-      }}
-    />
+    <div className="availableRidesMap"/>
   );
   
   loadingElement = () => (<div style={{ height: `100%` }} />)
@@ -47,22 +36,25 @@ export class MapContainer extends Component {
 
   render() {
     return (
-      <MapComponent
-        {...this.state}
-        // loading={this.props.loading}
-        position={this.state.center || this.props.userLocation}
-        googleMapURL={mapUrl}
-        markerCoords={this.props.pickupLocations}
-        loadingElement={this.loadingElement()}
-        containerElement={this.containerElement()}
-        mapElement={this.mapElement()} />
+      <div className="map-container">
+        <MapComponent
+          {...this.state}
+          // loading={this.props.loading}
+          position={this.props.currentLocation}
+          googleMapURL={mapUrl}
+          markerCoords={this.props.pickupLocations}
+          loadingElement={this.loadingElement()}
+          containerElement={this.containerElement()}
+          mapElement={this.mapElement()} />
+      </div>
     );
   }
 };
 
 export const mapStateToProps = (state) => ({
   destination: state.destination,
-  pickupLocations: state.pickupLocations
+  pickupLocations: state.pickupLocations,
+  currentLocation: state.currentLocation
 });
 
 export const mapDispatchToProps = (dispatch) => ({

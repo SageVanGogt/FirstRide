@@ -12,15 +12,18 @@ describe('RidesContainer', () => {
   let mockDestination;
   let mockSetRides;
   let mockSetLocation;
+  let mockRides;
 
   beforeEach(() => {
     mockDestination = {
       location_name: 'Red Rocks',
       id: 1
     };
+    mockRides = MOCK.mockRides.rides;
     mockSetRides = jest.fn();
     mockSetLocation = jest.fn();
     wrapper = shallow(<RidesContainer 
+      rides={mockRides}
       setLocation={mockSetLocation}
       destination={mockDestination}
       setRides={mockSetRides}/>
@@ -120,7 +123,7 @@ describe('RidesContainer', () => {
 
   describe('mapStateToProps', () => {
     
-    it('should return a state with expected props', () => {
+    it('should return a state with the destination prop', () => {
       let mockState = {
         destination: 'Red Rocks',
         user: {},
@@ -129,6 +132,19 @@ describe('RidesContainer', () => {
       let mappedProps = mapStateToProps(mockState);
       let actual = mappedProps.destination;
       let expected = 'Red Rocks';
+
+      expect(actual).toEqual(expected);
+    })
+
+    it('should return a state with the rides prop', () => {
+      let mockState = {
+        destination: 'Red Rocks',
+        user: {},
+        rides: [{}, {}]
+      };
+      let mappedProps = mapStateToProps(mockState);
+      let actual = mappedProps.rides;
+      let expected = [{}, {}];
 
       expect(actual).toEqual(expected);
     })

@@ -184,3 +184,88 @@ describe('fetchGeocode', () => {
     expect(actual).toEqual(expected);
   })
 });
+
+describe('submitNewRide', () => {
+  let url;
+  let mockBody;
+  let mockRide;
+
+  beforeEach(() => {
+    url = `http://localhost:3000/api/rides/new`;
+    mockRide = {
+      location_id: 1,
+      driver_id: 1,
+      car_capacity: '5',
+      seats_remaining: '4',
+      car_type: 'sedan',
+      date: '12/12/12',
+      time: '4:00pm',
+    };
+    mockBody = {
+      method: 'POST',
+      body: JSON.stringify(mockRide),
+      headers: {
+        "Content-Type": "application/json"        
+      }
+    };
+    window.fetch = jest.fn().mockImplementation(() => 
+    Promise.resolve({
+      status: 200,
+      json: () => Promise.resolve(2)
+    }))
+  })
+
+  it('should be called with the correct params', async () => {
+    await API.submitNewRide(mockRide);
+
+    expect(window.fetch).toHaveBeenCalledWith(url, mockBody);
+  });
+
+  it('should return an id number', async () => {
+    let actual = await API.submitNewRide(mockRide);
+    let expected = 2;
+
+    expect(actual).toEqual(expected);
+  });
+});
+
+describe('submitNewPickup', () => {
+  let url;
+  let mockBody;
+  let mockPickup;
+
+  beforeEach(() => {
+    mockPickup = {
+      ride_id: 2,
+      location_id: 1,
+      lat: 123123,
+      lng: 12312
+    };
+    url = `http://localhost:3000/api/pickup/new`;
+    mockBody = {
+      method: 'POST',
+      body: JSON.stringify(mockPickup),
+      headers: {
+        "Content-Type": "application/json"        
+      }
+    };
+    window.fetch = jest.fn().mockImplementation(() => 
+    Promise.resolve({
+      status: 200,
+      json: () => Promise.resolve(1)
+    }))
+  })
+
+  it('should be called with the correct params', async () => {
+    await API.submitNewPickup(mockPickup);
+
+    expect(window.fetch).toHaveBeenCalledWith(url, mockBody);
+  })
+
+  it('should return the expected id', async () => {
+    let actual = await API.submitNewPickup(mockPickup);
+    let expected = 1;
+
+    expect(actual).toEqual(expected);
+  })
+});

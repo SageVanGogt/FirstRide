@@ -11,6 +11,40 @@ ShallowWrapper {
             "location_name": "Red Rocks",
           }
     }
+    rides={
+        Array [
+            Object {
+              "car_capacity": "5",
+              "car_type": "prius",
+              "date": "6/1/2018",
+              "driver_id": 1,
+              "id": 1,
+              "location_id": 1,
+              "seats_remaining": "2",
+              "time": "4:00pm",
+            },
+            Object {
+              "car_capacity": "5",
+              "car_type": "prius",
+              "date": "6/1/2018",
+              "driver_id": 2,
+              "id": 2,
+              "location_id": 1,
+              "seats_remaining": "2",
+              "time": "4:00pm",
+            },
+            Object {
+              "car_capacity": "2",
+              "car_type": "tesla roadster",
+              "date": "6/1/2018",
+              "driver_id": 3,
+              "id": 3,
+              "location_id": 1,
+              "seats_remaining": "1",
+              "time": "4:30pm",
+            },
+          ]
+    }
     setLocation={[Function]}
     setRides={[Function]}
 />,
@@ -27,34 +61,115 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <form
-          action="submit"
-          onSubmit={[Function]}
+        <section
+          className="rides-container"
 >
-          <input
-                    name="street"
-                    onChange={[Function]}
-                    placeholder="street"
-                    type="text"
-          />
-          <input
-                    name="city"
-                    onChange={[Function]}
-                    placeholder="city"
-                    type="text"
-          />
-          <input
-                    name="state"
-                    onChange={[Function]}
-                    placeholder="state"
-                    type="text"
-          />
-          <input
-                    type="submit"
-          />
-</form>,
+          <form
+                    action="submit"
+                    onSubmit={[Function]}
+          >
+                    <input
+                              name="street"
+                              onChange={[Function]}
+                              placeholder="street"
+                              type="text"
+                    />
+                    <input
+                              name="city"
+                              onChange={[Function]}
+                              placeholder="city"
+                              type="text"
+                    />
+                    <input
+                              name="state"
+                              onChange={[Function]}
+                              placeholder="state"
+                              type="text"
+                    />
+                    <input
+                              type="submit"
+                    />
+          </form>
+          <section
+                    className="ride-list"
+          >
+                    <article
+                              className="ride-item"
+                    >
+                              <div>
+                                        seats remaining: 
+                                        2
+                              </div>
+                              <div>
+                                        car capacity: 
+                                        5
+                              </div>
+                              <div>
+                                        car model: 
+                                        prius
+                              </div>
+                              <div>
+                                        date: 
+                                        6/1/2018
+                              </div>
+                              <div>
+                                        time: 
+                                        4:00pm
+                              </div>
+                    </article>
+                    <article
+                              className="ride-item"
+                    >
+                              <div>
+                                        seats remaining: 
+                                        2
+                              </div>
+                              <div>
+                                        car capacity: 
+                                        5
+                              </div>
+                              <div>
+                                        car model: 
+                                        prius
+                              </div>
+                              <div>
+                                        date: 
+                                        6/1/2018
+                              </div>
+                              <div>
+                                        time: 
+                                        4:00pm
+                              </div>
+                    </article>
+                    <article
+                              className="ride-item"
+                    >
+                              <div>
+                                        seats remaining: 
+                                        1
+                              </div>
+                              <div>
+                                        car capacity: 
+                                        2
+                              </div>
+                              <div>
+                                        car model: 
+                                        tesla roadster
+                              </div>
+                              <div>
+                                        date: 
+                                        6/1/2018
+                              </div>
+                              <div>
+                                        time: 
+                                        4:30pm
+                              </div>
+                    </article>
+          </section>
+</section>,
         <Connect(MapContainer) />,
       ],
+      "className": "ride-page",
     },
     "ref": null,
     "rendered": Array [
@@ -63,31 +178,111 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "action": "submit",
           "children": Array [
-            <input
-              name="street"
-              onChange={[Function]}
-              placeholder="street"
-              type="text"
-/>,
-            <input
-              name="city"
-              onChange={[Function]}
-              placeholder="city"
-              type="text"
-/>,
-            <input
-              name="state"
-              onChange={[Function]}
-              placeholder="state"
-              type="text"
-/>,
-            <input
-              type="submit"
-/>,
+            <form
+              action="submit"
+              onSubmit={[Function]}
+>
+              <input
+                            name="street"
+                            onChange={[Function]}
+                            placeholder="street"
+                            type="text"
+              />
+              <input
+                            name="city"
+                            onChange={[Function]}
+                            placeholder="city"
+                            type="text"
+              />
+              <input
+                            name="state"
+                            onChange={[Function]}
+                            placeholder="state"
+                            type="text"
+              />
+              <input
+                            type="submit"
+              />
+</form>,
+            <section
+              className="ride-list"
+>
+              <article
+                            className="ride-item"
+              >
+                            <div>
+                                          seats remaining: 
+                                          2
+                            </div>
+                            <div>
+                                          car capacity: 
+                                          5
+                            </div>
+                            <div>
+                                          car model: 
+                                          prius
+                            </div>
+                            <div>
+                                          date: 
+                                          6/1/2018
+                            </div>
+                            <div>
+                                          time: 
+                                          4:00pm
+                            </div>
+              </article>
+              <article
+                            className="ride-item"
+              >
+                            <div>
+                                          seats remaining: 
+                                          2
+                            </div>
+                            <div>
+                                          car capacity: 
+                                          5
+                            </div>
+                            <div>
+                                          car model: 
+                                          prius
+                            </div>
+                            <div>
+                                          date: 
+                                          6/1/2018
+                            </div>
+                            <div>
+                                          time: 
+                                          4:00pm
+                            </div>
+              </article>
+              <article
+                            className="ride-item"
+              >
+                            <div>
+                                          seats remaining: 
+                                          1
+                            </div>
+                            <div>
+                                          car capacity: 
+                                          2
+                            </div>
+                            <div>
+                                          car model: 
+                                          tesla roadster
+                            </div>
+                            <div>
+                                          date: 
+                                          6/1/2018
+                            </div>
+                            <div>
+                                          time: 
+                                          4:30pm
+                            </div>
+              </article>
+</section>,
           ],
-          "onSubmit": [Function],
+          "className": "rides-container",
         },
         "ref": null,
         "rendered": Array [
@@ -96,56 +291,535 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "name": "street",
-              "onChange": [Function],
-              "placeholder": "street",
-              "type": "text",
+              "action": "submit",
+              "children": Array [
+                <input
+                  name="street"
+                  onChange={[Function]}
+                  placeholder="street"
+                  type="text"
+/>,
+                <input
+                  name="city"
+                  onChange={[Function]}
+                  placeholder="city"
+                  type="text"
+/>,
+                <input
+                  name="state"
+                  onChange={[Function]}
+                  placeholder="state"
+                  type="text"
+/>,
+                <input
+                  type="submit"
+/>,
+              ],
+              "onSubmit": [Function],
             },
             "ref": null,
-            "rendered": null,
-            "type": "input",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "street",
+                  "onChange": [Function],
+                  "placeholder": "street",
+                  "type": "text",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "city",
+                  "onChange": [Function],
+                  "placeholder": "city",
+                  "type": "text",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "state",
+                  "onChange": [Function],
+                  "placeholder": "state",
+                  "type": "text",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "type": "submit",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "form",
           },
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "name": "city",
-              "onChange": [Function],
-              "placeholder": "city",
-              "type": "text",
+              "children": Array [
+                <article
+                  className="ride-item"
+>
+                  <div>
+                                    seats remaining: 
+                                    2
+                  </div>
+                  <div>
+                                    car capacity: 
+                                    5
+                  </div>
+                  <div>
+                                    car model: 
+                                    prius
+                  </div>
+                  <div>
+                                    date: 
+                                    6/1/2018
+                  </div>
+                  <div>
+                                    time: 
+                                    4:00pm
+                  </div>
+</article>,
+                <article
+                  className="ride-item"
+>
+                  <div>
+                                    seats remaining: 
+                                    2
+                  </div>
+                  <div>
+                                    car capacity: 
+                                    5
+                  </div>
+                  <div>
+                                    car model: 
+                                    prius
+                  </div>
+                  <div>
+                                    date: 
+                                    6/1/2018
+                  </div>
+                  <div>
+                                    time: 
+                                    4:00pm
+                  </div>
+</article>,
+                <article
+                  className="ride-item"
+>
+                  <div>
+                                    seats remaining: 
+                                    1
+                  </div>
+                  <div>
+                                    car capacity: 
+                                    2
+                  </div>
+                  <div>
+                                    car model: 
+                                    tesla roadster
+                  </div>
+                  <div>
+                                    date: 
+                                    6/1/2018
+                  </div>
+                  <div>
+                                    time: 
+                                    4:30pm
+                  </div>
+</article>,
+              ],
+              "className": "ride-list",
             },
             "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "name": "state",
-              "onChange": [Function],
-              "placeholder": "state",
-              "type": "text",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "type": "submit",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div>
+                      seats remaining: 
+                      2
+</div>,
+                    <div>
+                      car capacity: 
+                      5
+</div>,
+                    <div>
+                      car model: 
+                      prius
+</div>,
+                    <div>
+                      date: 
+                      6/1/2018
+</div>,
+                    <div>
+                      time: 
+                      4:00pm
+</div>,
+                  ],
+                  "className": "ride-item",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "seats remaining: ",
+                        "2",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "seats remaining: ",
+                      "2",
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "car capacity: ",
+                        "5",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "car capacity: ",
+                      "5",
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "car model: ",
+                        "prius",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "car model: ",
+                      "prius",
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "date: ",
+                        "6/1/2018",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "date: ",
+                      "6/1/2018",
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "time: ",
+                        "4:00pm",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "time: ",
+                      "4:00pm",
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": "article",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div>
+                      seats remaining: 
+                      2
+</div>,
+                    <div>
+                      car capacity: 
+                      5
+</div>,
+                    <div>
+                      car model: 
+                      prius
+</div>,
+                    <div>
+                      date: 
+                      6/1/2018
+</div>,
+                    <div>
+                      time: 
+                      4:00pm
+</div>,
+                  ],
+                  "className": "ride-item",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "seats remaining: ",
+                        "2",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "seats remaining: ",
+                      "2",
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "car capacity: ",
+                        "5",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "car capacity: ",
+                      "5",
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "car model: ",
+                        "prius",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "car model: ",
+                      "prius",
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "date: ",
+                        "6/1/2018",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "date: ",
+                      "6/1/2018",
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "time: ",
+                        "4:00pm",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "time: ",
+                      "4:00pm",
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": "article",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div>
+                      seats remaining: 
+                      1
+</div>,
+                    <div>
+                      car capacity: 
+                      2
+</div>,
+                    <div>
+                      car model: 
+                      tesla roadster
+</div>,
+                    <div>
+                      date: 
+                      6/1/2018
+</div>,
+                    <div>
+                      time: 
+                      4:30pm
+</div>,
+                  ],
+                  "className": "ride-item",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "seats remaining: ",
+                        "1",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "seats remaining: ",
+                      "1",
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "car capacity: ",
+                        "2",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "car capacity: ",
+                      "2",
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "car model: ",
+                        "tesla roadster",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "car model: ",
+                      "tesla roadster",
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "date: ",
+                        "6/1/2018",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "date: ",
+                      "6/1/2018",
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "time: ",
+                        "4:30pm",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "time: ",
+                      "4:30pm",
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": "article",
+              },
+            ],
+            "type": "section",
           },
         ],
-        "type": "form",
+        "type": "section",
       },
       Object {
         "instance": null,
@@ -166,34 +840,115 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <form
-            action="submit"
-            onSubmit={[Function]}
+          <section
+            className="rides-container"
 >
-            <input
-                        name="street"
-                        onChange={[Function]}
-                        placeholder="street"
-                        type="text"
-            />
-            <input
-                        name="city"
-                        onChange={[Function]}
-                        placeholder="city"
-                        type="text"
-            />
-            <input
-                        name="state"
-                        onChange={[Function]}
-                        placeholder="state"
-                        type="text"
-            />
-            <input
-                        type="submit"
-            />
-</form>,
+            <form
+                        action="submit"
+                        onSubmit={[Function]}
+            >
+                        <input
+                                    name="street"
+                                    onChange={[Function]}
+                                    placeholder="street"
+                                    type="text"
+                        />
+                        <input
+                                    name="city"
+                                    onChange={[Function]}
+                                    placeholder="city"
+                                    type="text"
+                        />
+                        <input
+                                    name="state"
+                                    onChange={[Function]}
+                                    placeholder="state"
+                                    type="text"
+                        />
+                        <input
+                                    type="submit"
+                        />
+            </form>
+            <section
+                        className="ride-list"
+            >
+                        <article
+                                    className="ride-item"
+                        >
+                                    <div>
+                                                seats remaining: 
+                                                2
+                                    </div>
+                                    <div>
+                                                car capacity: 
+                                                5
+                                    </div>
+                                    <div>
+                                                car model: 
+                                                prius
+                                    </div>
+                                    <div>
+                                                date: 
+                                                6/1/2018
+                                    </div>
+                                    <div>
+                                                time: 
+                                                4:00pm
+                                    </div>
+                        </article>
+                        <article
+                                    className="ride-item"
+                        >
+                                    <div>
+                                                seats remaining: 
+                                                2
+                                    </div>
+                                    <div>
+                                                car capacity: 
+                                                5
+                                    </div>
+                                    <div>
+                                                car model: 
+                                                prius
+                                    </div>
+                                    <div>
+                                                date: 
+                                                6/1/2018
+                                    </div>
+                                    <div>
+                                                time: 
+                                                4:00pm
+                                    </div>
+                        </article>
+                        <article
+                                    className="ride-item"
+                        >
+                                    <div>
+                                                seats remaining: 
+                                                1
+                                    </div>
+                                    <div>
+                                                car capacity: 
+                                                2
+                                    </div>
+                                    <div>
+                                                car model: 
+                                                tesla roadster
+                                    </div>
+                                    <div>
+                                                date: 
+                                                6/1/2018
+                                    </div>
+                                    <div>
+                                                time: 
+                                                4:30pm
+                                    </div>
+                        </article>
+            </section>
+</section>,
           <Connect(MapContainer) />,
         ],
+        "className": "ride-page",
       },
       "ref": null,
       "rendered": Array [
@@ -202,31 +957,111 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "action": "submit",
             "children": Array [
-              <input
-                name="street"
-                onChange={[Function]}
-                placeholder="street"
-                type="text"
-/>,
-              <input
-                name="city"
-                onChange={[Function]}
-                placeholder="city"
-                type="text"
-/>,
-              <input
-                name="state"
-                onChange={[Function]}
-                placeholder="state"
-                type="text"
-/>,
-              <input
-                type="submit"
-/>,
+              <form
+                action="submit"
+                onSubmit={[Function]}
+>
+                <input
+                                name="street"
+                                onChange={[Function]}
+                                placeholder="street"
+                                type="text"
+                />
+                <input
+                                name="city"
+                                onChange={[Function]}
+                                placeholder="city"
+                                type="text"
+                />
+                <input
+                                name="state"
+                                onChange={[Function]}
+                                placeholder="state"
+                                type="text"
+                />
+                <input
+                                type="submit"
+                />
+</form>,
+              <section
+                className="ride-list"
+>
+                <article
+                                className="ride-item"
+                >
+                                <div>
+                                                seats remaining: 
+                                                2
+                                </div>
+                                <div>
+                                                car capacity: 
+                                                5
+                                </div>
+                                <div>
+                                                car model: 
+                                                prius
+                                </div>
+                                <div>
+                                                date: 
+                                                6/1/2018
+                                </div>
+                                <div>
+                                                time: 
+                                                4:00pm
+                                </div>
+                </article>
+                <article
+                                className="ride-item"
+                >
+                                <div>
+                                                seats remaining: 
+                                                2
+                                </div>
+                                <div>
+                                                car capacity: 
+                                                5
+                                </div>
+                                <div>
+                                                car model: 
+                                                prius
+                                </div>
+                                <div>
+                                                date: 
+                                                6/1/2018
+                                </div>
+                                <div>
+                                                time: 
+                                                4:00pm
+                                </div>
+                </article>
+                <article
+                                className="ride-item"
+                >
+                                <div>
+                                                seats remaining: 
+                                                1
+                                </div>
+                                <div>
+                                                car capacity: 
+                                                2
+                                </div>
+                                <div>
+                                                car model: 
+                                                tesla roadster
+                                </div>
+                                <div>
+                                                date: 
+                                                6/1/2018
+                                </div>
+                                <div>
+                                                time: 
+                                                4:30pm
+                                </div>
+                </article>
+</section>,
             ],
-            "onSubmit": [Function],
+            "className": "rides-container",
           },
           "ref": null,
           "rendered": Array [
@@ -235,56 +1070,535 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "name": "street",
-                "onChange": [Function],
-                "placeholder": "street",
-                "type": "text",
+                "action": "submit",
+                "children": Array [
+                  <input
+                    name="street"
+                    onChange={[Function]}
+                    placeholder="street"
+                    type="text"
+/>,
+                  <input
+                    name="city"
+                    onChange={[Function]}
+                    placeholder="city"
+                    type="text"
+/>,
+                  <input
+                    name="state"
+                    onChange={[Function]}
+                    placeholder="state"
+                    type="text"
+/>,
+                  <input
+                    type="submit"
+/>,
+                ],
+                "onSubmit": [Function],
               },
               "ref": null,
-              "rendered": null,
-              "type": "input",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "street",
+                    "onChange": [Function],
+                    "placeholder": "street",
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "city",
+                    "onChange": [Function],
+                    "placeholder": "city",
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "state",
+                    "onChange": [Function],
+                    "placeholder": "state",
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "type": "submit",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "form",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "name": "city",
-                "onChange": [Function],
-                "placeholder": "city",
-                "type": "text",
+                "children": Array [
+                  <article
+                    className="ride-item"
+>
+                    <div>
+                                        seats remaining: 
+                                        2
+                    </div>
+                    <div>
+                                        car capacity: 
+                                        5
+                    </div>
+                    <div>
+                                        car model: 
+                                        prius
+                    </div>
+                    <div>
+                                        date: 
+                                        6/1/2018
+                    </div>
+                    <div>
+                                        time: 
+                                        4:00pm
+                    </div>
+</article>,
+                  <article
+                    className="ride-item"
+>
+                    <div>
+                                        seats remaining: 
+                                        2
+                    </div>
+                    <div>
+                                        car capacity: 
+                                        5
+                    </div>
+                    <div>
+                                        car model: 
+                                        prius
+                    </div>
+                    <div>
+                                        date: 
+                                        6/1/2018
+                    </div>
+                    <div>
+                                        time: 
+                                        4:00pm
+                    </div>
+</article>,
+                  <article
+                    className="ride-item"
+>
+                    <div>
+                                        seats remaining: 
+                                        1
+                    </div>
+                    <div>
+                                        car capacity: 
+                                        2
+                    </div>
+                    <div>
+                                        car model: 
+                                        tesla roadster
+                    </div>
+                    <div>
+                                        date: 
+                                        6/1/2018
+                    </div>
+                    <div>
+                                        time: 
+                                        4:30pm
+                    </div>
+</article>,
+                ],
+                "className": "ride-list",
               },
               "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "name": "state",
-                "onChange": [Function],
-                "placeholder": "state",
-                "type": "text",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "type": "submit",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <div>
+                        seats remaining: 
+                        2
+</div>,
+                      <div>
+                        car capacity: 
+                        5
+</div>,
+                      <div>
+                        car model: 
+                        prius
+</div>,
+                      <div>
+                        date: 
+                        6/1/2018
+</div>,
+                      <div>
+                        time: 
+                        4:00pm
+</div>,
+                    ],
+                    "className": "ride-item",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "seats remaining: ",
+                          "2",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "seats remaining: ",
+                        "2",
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "car capacity: ",
+                          "5",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "car capacity: ",
+                        "5",
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "car model: ",
+                          "prius",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "car model: ",
+                        "prius",
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "date: ",
+                          "6/1/2018",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "date: ",
+                        "6/1/2018",
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "time: ",
+                          "4:00pm",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "time: ",
+                        "4:00pm",
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": "article",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <div>
+                        seats remaining: 
+                        2
+</div>,
+                      <div>
+                        car capacity: 
+                        5
+</div>,
+                      <div>
+                        car model: 
+                        prius
+</div>,
+                      <div>
+                        date: 
+                        6/1/2018
+</div>,
+                      <div>
+                        time: 
+                        4:00pm
+</div>,
+                    ],
+                    "className": "ride-item",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "seats remaining: ",
+                          "2",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "seats remaining: ",
+                        "2",
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "car capacity: ",
+                          "5",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "car capacity: ",
+                        "5",
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "car model: ",
+                          "prius",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "car model: ",
+                        "prius",
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "date: ",
+                          "6/1/2018",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "date: ",
+                        "6/1/2018",
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "time: ",
+                          "4:00pm",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "time: ",
+                        "4:00pm",
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": "article",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <div>
+                        seats remaining: 
+                        1
+</div>,
+                      <div>
+                        car capacity: 
+                        2
+</div>,
+                      <div>
+                        car model: 
+                        tesla roadster
+</div>,
+                      <div>
+                        date: 
+                        6/1/2018
+</div>,
+                      <div>
+                        time: 
+                        4:30pm
+</div>,
+                    ],
+                    "className": "ride-item",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "seats remaining: ",
+                          "1",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "seats remaining: ",
+                        "1",
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "car capacity: ",
+                          "2",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "car capacity: ",
+                        "2",
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "car model: ",
+                          "tesla roadster",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "car model: ",
+                        "tesla roadster",
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "date: ",
+                          "6/1/2018",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "date: ",
+                        "6/1/2018",
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "time: ",
+                          "4:30pm",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "time: ",
+                        "4:30pm",
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": "article",
+                },
+              ],
+              "type": "section",
             },
           ],
-          "type": "form",
+          "type": "section",
         },
         Object {
           "instance": null,

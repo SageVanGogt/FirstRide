@@ -56,6 +56,19 @@ describe('MapContainer', () => {
       expect(actual).toEqual(expected);
     })
 
+    it('should return the destination prop from state', () => {
+      let mockState = {
+        destination: {},
+        rides: [{}, {}],
+        currentLocation: {}
+      };
+      let mappedProps = mapStateToProps(mockState);
+      let expected = mockState.currentLocation;
+      let actual = mappedProps.currentLocation;
+
+      expect(actual).toEqual(expected);
+    })
+
     it('should return the pickupLocations from state', () => {
       let mockState = {
         destination: {
