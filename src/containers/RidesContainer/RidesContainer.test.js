@@ -46,9 +46,7 @@ describe('RidesContainer', () => {
 
   describe('handleSubmit', () => {
 
-    it('should call format address with the correct params', () => {
-
-    })
+     
   });
 
   describe('formatAddress', () => {

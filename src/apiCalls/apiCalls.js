@@ -1,3 +1,5 @@
+import { geoKey } from './../apiKey';
+
 const signinUser = async (user) => {
   const url = 'http://localhost:3000/api/users/';
   const init = {
@@ -49,10 +51,17 @@ const fetchPickups = async (location) => {
   return pickups;
 }
 
+const fetchGeocode = async (address) => {
+  const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${geoKey}`;  
+  const response = await fetch(url);
+  const locationData = await response.json();
+} 
+
 export {
   signinUser,
   signupUser,
   fetchDestination,
   fetchRides,
-  fetchPickups
+  fetchPickups,
+  fetchGeocode
 }
