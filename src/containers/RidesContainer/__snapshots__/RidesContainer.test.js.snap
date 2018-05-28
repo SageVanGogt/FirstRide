@@ -25,7 +25,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <MapContainer />,
+      "children": <Connect(MapContainer) />,
     },
     "ref": null,
     "rendered": Object {
@@ -45,7 +45,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <MapContainer />,
+        "children": <Connect(MapContainer) />,
       },
       "ref": null,
       "rendered": Object {
