@@ -5,6 +5,7 @@ import { mapKey } from './../../apiKey';
 import MapComponent from '../../components/MapComponent/MapComponent';
 import { connect } from 'react-redux';
 import * as actions from './../../actions/pickups';
+import { fetchPickups } from '../../apiCalls/apiCalls';
 
 const mapUrl = `https://maps.googleapis.com/maps/api/js?key=${mapKey}&v=3.exp&libraries=geometry,drawing,places`;
 
@@ -25,8 +26,10 @@ export class MapContainer extends Component {
   //     });
   //   }
   // }
-  loadPickups = () => {
-
+  loadPickups = async () => {
+    const { setPickups, destination } = this.props;
+    const response = await fetchPickups(destination.id);
+    setPickups(response.pickup);
   }
 
   containerElement = () => (

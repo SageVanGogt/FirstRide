@@ -2,12 +2,33 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { MapContainer, mapStateToProps, mapDispatchToProps } from './MapContainer';
 import * as MOCK from './../../apiCalls/mockData';
+import * as API from './../../apiCalls/apiCalls';
+
+jest.mock('./../../apiCalls/apiCalls');
 
 describe('MapContainer', () => {
   let wrapper;
+  let mockSetPickups
+  let mockDestination;
 
   beforeEach(() => {
-    wrapper = shallow(<MapContainer />);
+    mockSetPickups = jest.fn();
+    mockDestination = {
+      id: 1
+    }
+    wrapper = shallow(<MapContainer 
+      setPickups={mockSetPickups}
+      destination={mockDestination}
+    />);
+  })
+
+  describe('loadPickups', () => {
+
+    it('should call fetchPickups with the correct params', () => {
+      let expected = 1;
+      wrapper.instance().loadPickups();
+      expect(API.fetchPickups).toHaveBeenCalledWith(expected);
+    })
   })
 
   describe('mapStateToProps', () => {
@@ -36,9 +57,10 @@ describe('MapContainer', () => {
       let expected = {
         type: "ADD_PICKUPS", 
         pickups: MOCK.mockPickups.pickup
-      }
+      };
       mappedProps.setPickups(MOCK.mockPickups.pickup);
+
       expect(mockDispatch).toHaveBeenCalledWith(expected);
-    })
+    });
   })
 })

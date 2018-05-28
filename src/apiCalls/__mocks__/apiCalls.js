@@ -25,9 +25,13 @@ const fetchDestination = jest.fn().mockImplementation(() => Promise.resolve({
 const fetchRides = jest.fn().mockImplementation(() => 
 Promise.resolve(MOCK.mockRides));
 
+const fetchPickups = jest.fn().mockImplementation(() => 
+Promise.resolve(MOCK.mockPickups));
+
 export {
   signinUser,
   signupUser,
   fetchDestination,
-  fetchRides
+  fetchRides,
+  fetchPickups
 }
