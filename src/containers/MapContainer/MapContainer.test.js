@@ -24,10 +24,18 @@ describe('MapContainer', () => {
 
   describe('loadPickups', () => {
 
-    it('should call fetchPickups with the correct params', () => {
+    it('should call fetchPickups with the correct params', async () => {
       let expected = 1;
-      wrapper.instance().loadPickups();
+      await wrapper.instance().loadPickups();
+
       expect(API.fetchPickups).toHaveBeenCalledWith(expected);
+    })
+
+    it('should call setPickups with the correct params', async () => {
+      let expected = MOCK.mockPickups.pickup;
+      await wrapper.instance().loadPickups();
+
+      expect(mockSetPickups).toHaveBeenCalledWith(expected);
     })
   })
 
