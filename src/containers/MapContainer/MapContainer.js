@@ -3,10 +3,11 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { mapKey } from './../../apiKey';
 import MapComponent from '../../components/MapComponent/MapComponent';
+import { connect } from 'react-redux';
 
 const mapUrl = `https://maps.googleapis.com/maps/api/js?key=${mapKey}&v=3.exp&libraries=geometry,drawing,places`;
 
-export default class MapContainer extends Component {
+export class MapContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -54,3 +55,13 @@ export default class MapContainer extends Component {
     );
   }
 }
+
+export const mapStateToProps = (state) => ({
+  destination: state.destination
+})
+
+export const mapDispatchToProps = (dispatch) => ({
+
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(MapContainer);
