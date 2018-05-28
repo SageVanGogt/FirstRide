@@ -7,10 +7,13 @@ import PropTypes from 'prop-types';
 export const MapComponent = withScriptjs(withGoogleMap((
   { position, markerCoords, ...props }
 ) => {
-  const markers = markerCoords.map(marker => {
+  const markers = markerCoords.map(location => {
+    let { lat, lng } = location;
+    lat = parseFloat(lat);
+    lng = parseFloat(lng);
     return (
       <Marker  
-        position={marker} />
+        position={{lat: lat, lng: lng}} />
     );
   });
   return (props.loading ?
