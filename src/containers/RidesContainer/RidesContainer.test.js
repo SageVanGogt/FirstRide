@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import { RidesContainer, mapStateToProps, mapDispatchToProps } from './RidesContainer';
 import * as MOCK from './../../apiCalls/mockData';
 import * as API from './../../apiCalls/apiCalls';
+import * as cleaner from './../../cleaners/cleaners';
 
 jest.mock('./../../apiCalls/apiCalls');
 
@@ -54,15 +55,26 @@ describe('RidesContainer', () => {
       })
     });
 
-    it('should call fetchGeocode with the correct params', () => {
+    it('should call fetchGeocode with the correct params', async () => {
       let expected = '2600+fairview,+seattle,+WA';
       let mockEvent = {
         preventDefault: jest.fn()
       };
-      wrapper.instance().handleSubmit(mockEvent);
+      await wrapper.instance().handleSubmit(mockEvent);
 
       expect(API.fetchGeocode).toHaveBeenCalledWith(expected);
-    })     
+    });
+
+    it('should call geocodeCleaner with the correct params', async () => {
+      let expected = MOCK.mockGeoInfo;
+      let mockEvent = {
+        preventDefault: jest.fn()
+      };
+      cleaner.geocodeCleaner = jest.fn();
+      await wrapper.instance().handleSubmit(mockEvent);
+
+      expect(cleaner.geocodeCleaner).toHaveBeenCalledWith(expected);
+    });
   });
 
   describe('formatAddress', () => {

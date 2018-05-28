@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import MapContainer from './../MapContainer/MapContainer';
 import * as API from './../../apiCalls/apiCalls';
 import * as actions from './../../actions/rides';
+import * as cleaner from './../../cleaners/cleaners';
 export class RidesContainer extends Component {
   constructor(props) {
     super(props);
@@ -38,6 +39,7 @@ export class RidesContainer extends Component {
     event.preventDefault();
     const address = this.formatAddress();
     const locationInfo = await API.fetchGeocode(address);
+    const cleanLocation = cleaner.geocodeCleaner(locationInfo);
   };
 
   formatAddress = () => {
