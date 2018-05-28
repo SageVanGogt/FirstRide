@@ -18,14 +18,12 @@ export class MapContainer extends Component {
     };
   }
 
-  // componentDidUpdate = (prevProps) => {
-  //   if (prevProps.markerCoords !== this.props.markerCoords) {
-  //     this.setState({
-  //       center: this.props.markerCoords,
-  //       markerCoords: this.props.markerCoords
-  //     });
-  //   }
-  // }
+  componentDidUpdate = (prevProps) => {
+    if (prevProps.destination.id !== this.props.destination.id) {
+      this.loadPickups();
+    }
+  }    
+
   loadPickups = async () => {
     const { setPickups, destination } = this.props;
     const response = await fetchPickups(destination.id);
