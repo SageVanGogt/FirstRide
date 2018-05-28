@@ -262,4 +262,10 @@ describe('submitNewPickup', () => {
     expect(window.fetch).toHaveBeenCalledWith(url, mockBody);
   })
 
+  it('should return the expected id', async () => {
+    let actual = await API.submitNewPickup(mockPickup);
+    let expected = 1;
+
+    expect(actual).toEqual(expected);
+  })
 });

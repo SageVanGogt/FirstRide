@@ -81,7 +81,9 @@ const submitNewPickup = async (location) => {
       "Content-Type": "application/json"        
     }
   };
-  const response = await fetch(url, body)
+  const response = await fetch(url, body);
+  const pickupId = await response.json();
+  return pickupId;
 }
 
 export {
