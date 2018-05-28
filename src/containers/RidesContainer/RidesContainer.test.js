@@ -45,7 +45,7 @@ describe('RidesContainer', () => {
   })
 
   describe('handleSubmit', () => {
-    
+
     beforeEach(() => {
       wrapper.setState({
         street: '2600 fairview',
@@ -56,8 +56,11 @@ describe('RidesContainer', () => {
 
     it('should call fetchGeocode with the correct params', () => {
       let expected = '2600+fairview,+seattle,+WA';
-      wrapper.instance().handleSubmit();
-      
+      let mockEvent = {
+        preventDefault: jest.fn()
+      };
+      wrapper.instance().handleSubmit(mockEvent);
+
       expect(API.fetchGeocode).toHaveBeenCalledWith(expected);
     })     
   });

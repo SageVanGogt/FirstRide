@@ -34,10 +34,11 @@ export class RidesContainer extends Component {
     });
   }
 
-  handleSubmit = () => {
+  handleSubmit = async (event) => {
+    event.preventDefault();
     const address = this.formatAddress();
-    const locationInfo = API.fetchGeocode(address);
-  }
+    const locationInfo = await API.fetchGeocode(address);
+  };
 
   formatAddress = () => {
     const street = this.state.street.replace(' ', '+');
@@ -66,8 +67,8 @@ export class RidesContainer extends Component {
             type="text" 
             name="state" 
             onChange={this.handleChange} 
-            placeholder=""/>
-          <input type="state"/>
+            placeholder="state"/>
+          <input type="submit"/>
         </form>
         <MapContainer />
       </div>
