@@ -46,6 +46,7 @@ const fetchPickups = async (location) => {
   };
   const response = await fetch(url, body);
   const pickups = await response.json();
+  return pickups;
 }
 
 export {

@@ -137,7 +137,7 @@ describe('fetchDestination', () => {
       window.fetch = jest.fn().mockImplementation(() => 
         Promise.resolve({
           status: 200,
-          json: () => Promise.resolve(MOCK.mockPickups.pickup)
+          json: () => Promise.resolve(MOCK.mockPickups)
         })
       );
     });
@@ -148,6 +148,11 @@ describe('fetchDestination', () => {
       expect(window.fetch).toHaveBeenCalledWith(url, mockBody);
     })
 
-    it('should')
+    it('should return the expected object', async () => {
+      let actual = await API.fetchPickups(mockLocation);
+      let expected = MOCK.mockPickups;
+
+      expect(actual).toEqual(expected)
+    })
   })
 })
