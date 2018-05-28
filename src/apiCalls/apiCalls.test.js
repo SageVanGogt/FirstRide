@@ -184,3 +184,52 @@ describe('fetchGeocode', () => {
     expect(actual).toEqual(expected);
   })
 });
+
+describe('submitNewRide', () => {
+  let url;
+  let mockBody;
+  let mockRide;
+
+  beforeEach(() => {
+    url = `http://localhost:3000/api/rides/new`;
+    mockRide = {
+      location_id: 1,
+      driver_id: 1,
+      car_capacity: '5',
+      seats_remaining: '4',
+      car_type: 'sedan',
+      date: '12/12/12',
+      time: '4:00pm',
+    };
+    mockBody = {
+      method: 'POST',
+      body: JSON.stringify(mockRide),
+      headers: {
+        "Content-Type": "application/json"        
+      }
+    };
+    window.fetch = jest.fn().mockImplementation(() => 
+    Promise.resolve({
+      status: 200,
+      json: () => Promise.resolve(2)
+    }))
+  })
+
+  it('should be called with the correct params', async () => {
+    await API.submitNewRide(mockRide);
+
+    expect(window.fetch).toHaveBeenCalledWith(url, mockBody);
+  });
+  
+});
+
+describe('submitNewPickup', () => {
+  let url;
+  let mockBody;
+  let mockPickup;
+
+  beforeEach(() => {
+    url = `http://localhost:3000/api/pickup/new`
+  })
+
+});

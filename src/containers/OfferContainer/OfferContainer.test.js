@@ -36,6 +36,10 @@ describe('OfferContainer', () => {
     })
   })
 
+  describe('handleRideSubmit', () => {
+    
+  })
+
   describe('mapStateToProps', () => {
 
     it('should map the destination to props', () => {
