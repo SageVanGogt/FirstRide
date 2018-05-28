@@ -6,6 +6,7 @@ import * as API from './../../apiCalls/apiCalls';
 import { addRides } from './../../actions/rides';
 import { addCurrentLocation } from './../../actions/currentLocation';
 import * as cleaner from './../../cleaners/cleaners';
+import './RidesContainer.css';
 export class RidesContainer extends Component {
   constructor(props) {
     super(props);
@@ -70,27 +71,29 @@ export class RidesContainer extends Component {
 
   render() {
     return (
-      <div>
-        <form action="submit" onSubmit={this.handleSubmit}>
-          <input 
-            type="text" 
-            name="street" 
-            onChange={this.handleChange} 
-            placeholder="street"/>
-          <input 
-            type="text" 
-            name="city" 
-            onChange={this.handleChange} 
-            placeholder="city"/>
-          <input 
-            type="text" 
-            name="state" 
-            onChange={this.handleChange} 
-            placeholder="state"/>
-          <input type="submit"/>
-        </form>
-        <section className="ride-list">
-          {this.props.rides.length && this.rideListElement()}
+      <div className="ride-page">
+        <section className="rides-container">
+          <form action="submit" onSubmit={this.handleSubmit}>
+            <input 
+              type="text" 
+              name="street" 
+              onChange={this.handleChange} 
+              placeholder="street"/>
+            <input 
+              type="text" 
+              name="city" 
+              onChange={this.handleChange} 
+              placeholder="city"/>
+            <input 
+              type="text" 
+              name="state" 
+              onChange={this.handleChange} 
+              placeholder="state"/>
+            <input type="submit"/>
+          </form>
+          <section className="ride-list">
+            {this.props.rides.length && this.rideListElement()}
+          </section>
         </section>
         <MapContainer />
       </div>
