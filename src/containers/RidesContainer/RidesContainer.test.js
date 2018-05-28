@@ -27,6 +27,23 @@ describe('RidesContainer', () => {
     expect(wrapper).toMatchSnapshot();
   })
 
+  describe('handleChange', () => {
+    
+    it('should update the correct state with the value of the input', () => {
+      let mockEvent = {
+        target: {
+          value: 'seattle', 
+          name: 'city'
+        }
+      };
+      let expected = 'seattle';
+      wrapper.instance().handleChange(mockEvent);
+      let actual = wrapper.state('city');
+      
+      expect(actual).toEqual(expected);
+    })
+  })
+
   describe('loadRides', () => {
     it('should call fetchRides with the correct params', async () => {
       await wrapper.instance().loadRides();
