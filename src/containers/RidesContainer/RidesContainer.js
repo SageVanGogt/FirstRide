@@ -34,6 +34,15 @@ export class RidesContainer extends Component {
     });
   }
 
+  formatAddress = () => {
+    const street = this.state.street.replace(' ', '+');
+    const city = this.state.city.replace(' ', '+');
+    const state = this.state.state.replace(' ', '+');
+    return (
+      `${street},+${city},+${state}`
+    );
+  }
+
   render() {
     return (
       <div>

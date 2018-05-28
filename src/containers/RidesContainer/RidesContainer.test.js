@@ -44,6 +44,28 @@ describe('RidesContainer', () => {
     })
   })
 
+  describe('handleSubmit', () => {
+
+    it('should call format address with the correct params', () => {
+
+    })
+  });
+
+  describe('formatAddress', () => {
+
+    it('should return an address with no spaces', () => {
+      let expected = '2600+fairview,+seattle,+WA'
+      wrapper.setState({
+        street: '2600 fairview',
+        city: 'seattle', 
+        state: 'WA'
+      })
+      let actual = wrapper.instance().formatAddress();
+      
+      expect(actual).toEqual(expected);
+    })
+  });
+
   describe('loadRides', () => {
     it('should call fetchRides with the correct params', async () => {
       await wrapper.instance().loadRides();
