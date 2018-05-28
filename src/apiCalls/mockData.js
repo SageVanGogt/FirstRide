@@ -36,5 +36,27 @@ export const mockRides = {
     car_type: 'tesla roadster',
     date: "6/1/2018",
     time: '4:30pm'
-  }]}
+  }
+]}
+
+export const mockPickups = {
+  pickup: [{
+    id: 1,
+    ride_id: 1,
+    location_id: 1,
+    pickup_lat_lng: "40.7359, 73.991"
+  },
+  {
+      id: 2,
+      ride_id: 2,
+      location_id: 1,
+      pickup_lat_lng: "39.758814, -104.987467"
+  },
+  {
+      id: 3,
+      ride_id: 3,
+      location_id: 1,
+      pickup_lat_lng: "39.754572, -104.994299"
+  }]
+}
 
