@@ -72,6 +72,18 @@ const submitNewRide = async (ride) => {
   return rideId;
 }
 
+const submitNewPickup = async (location) => {
+  const url = `http://localhost:3000/api/pickup/new`;
+  const body = {
+    method: 'POST',
+    body: JSON.stringify(location),
+    headers: {
+      "Content-Type": "application/json"        
+    }
+  };
+  const response = await fetch(url, body)
+}
+
 export {
   signinUser,
   signupUser,
@@ -79,5 +91,6 @@ export {
   fetchRides,
   fetchPickups,
   fetchGeocode,
-  submitNewRide
+  submitNewRide,
+  submitNewPickup
 }

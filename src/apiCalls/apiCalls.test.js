@@ -227,7 +227,6 @@ describe('submitNewRide', () => {
 
     expect(actual).toEqual(expected);
   });
-
 });
 
 describe('submitNewPickup', () => {
@@ -236,7 +235,31 @@ describe('submitNewPickup', () => {
   let mockPickup;
 
   beforeEach(() => {
-    url = `http://localhost:3000/api/pickup/new`
+    mockPickup = {
+      ride_id: 2,
+      location_id: 1,
+      lat: 123123,
+      lng: 12312
+    };
+    url = `http://localhost:3000/api/pickup/new`;
+    mockBody = {
+      method: 'POST',
+      body: JSON.stringify(mockPickup),
+      headers: {
+        "Content-Type": "application/json"        
+      }
+    };
+    window.fetch = jest.fn().mockImplementation(() => 
+    Promise.resolve({
+      status: 200,
+      json: () => Promise.resolve(1)
+    }))
+  })
+
+  it('should be called with the correct params', async () => {
+    await API.submitNewPickup(mockPickup);
+
+    expect(window.fetch).toHaveBeenCalledWith(url, mockBody);
   })
 
 });
