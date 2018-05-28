@@ -12,15 +12,18 @@ describe('RidesContainer', () => {
   let mockDestination;
   let mockSetRides;
   let mockSetLocation;
+  let mockRides;
 
   beforeEach(() => {
     mockDestination = {
       location_name: 'Red Rocks',
       id: 1
     };
+    mockRides = MOCK.mockRides.rides;
     mockSetRides = jest.fn();
     mockSetLocation = jest.fn();
     wrapper = shallow(<RidesContainer 
+      rides={mockRides}
       setLocation={mockSetLocation}
       destination={mockDestination}
       setRides={mockSetRides}/>

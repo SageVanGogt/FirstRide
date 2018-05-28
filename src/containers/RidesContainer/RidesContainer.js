@@ -53,6 +53,21 @@ export class RidesContainer extends Component {
     );
   }
 
+  rideListElement = () =>{ 
+    return (
+      this.props.rides.map(ride => {
+        return (
+          <article className="ride-item">
+            <div>seats remaining: {ride.seats_remaining}</div>
+            <div>car capacity: {ride.car_capacity}</div>
+            <div>car model: {ride.car_type}</div>
+            <div>date: {ride.date}</div>
+            <div>time: {ride.time}</div>
+          </article>
+        );
+    }))
+  }
+
   render() {
     return (
       <div>
@@ -74,6 +89,9 @@ export class RidesContainer extends Component {
             placeholder="state"/>
           <input type="submit"/>
         </form>
+        <section className="ride-list">
+          {this.props.rides.length && this.rideListElement()}
+        </section>
         <MapContainer />
       </div>
     );
