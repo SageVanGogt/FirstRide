@@ -81,7 +81,8 @@ export class RidesContainer extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  destination: state.destination
+  destination: state.destination,
+  rides: state.rides
 })
 
 export const mapDispatchToProps = (dispatch) => ({
