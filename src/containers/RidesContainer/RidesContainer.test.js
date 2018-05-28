@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import { RidesContainer, mapStateToProps, mapDispatchToProps } from './RidesContainer';
 import * as MOCK from './../../apiCalls/mockData';
 import * as API from './../../apiCalls/apiCalls';
+import * as cleaner from './../../cleaners/cleaners';
 
 jest.mock('./../../apiCalls/apiCalls');
 
@@ -26,6 +27,70 @@ describe('RidesContainer', () => {
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   })
+
+  describe('handleChange', () => {
+    
+    it('should update the correct state with the value of the input', () => {
+      let mockEvent = {
+        target: {
+          value: 'seattle', 
+          name: 'city'
+        }
+      };
+      let expected = 'seattle';
+      wrapper.instance().handleChange(mockEvent);
+      let actual = wrapper.state('city');
+      
+      expect(actual).toEqual(expected);
+    })
+  })
+
+  describe('handleSubmit', () => {
+
+    beforeEach(() => {
+      wrapper.setState({
+        street: '2600 fairview',
+        city: 'seattle', 
+        state: 'WA'
+      })
+    });
+
+    it('should call fetchGeocode with the correct params', async () => {
+      let expected = '2600+fairview,+seattle,+WA';
+      let mockEvent = {
+        preventDefault: jest.fn()
+      };
+      await wrapper.instance().handleSubmit(mockEvent);
+
+      expect(API.fetchGeocode).toHaveBeenCalledWith(expected);
+    });
+
+    it('should call geocodeCleaner with the correct params', async () => {
+      let expected = MOCK.mockGeoInfo;
+      let mockEvent = {
+        preventDefault: jest.fn()
+      };
+      cleaner.geocodeCleaner = jest.fn();
+      await wrapper.instance().handleSubmit(mockEvent);
+
+      expect(cleaner.geocodeCleaner).toHaveBeenCalledWith(expected);
+    });
+  });
+
+  describe('formatAddress', () => {
+
+    it('should return an address with no spaces', () => {
+      let expected = '2600+fairview,+seattle,+WA'
+      wrapper.setState({
+        street: '2600 fairview',
+        city: 'seattle', 
+        state: 'WA'
+      })
+      let actual = wrapper.instance().formatAddress();
+      
+      expect(actual).toEqual(expected);
+    })
+  });
 
   describe('loadRides', () => {
     it('should call fetchRides with the correct params', async () => {

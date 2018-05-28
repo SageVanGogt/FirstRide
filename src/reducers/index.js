@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import userReducer from './userReducer';
-// import currentLocationReducer from './currentLocationReducer';
+import currentLocationReducer from './currentLocationReducer';
 import { destinationReducer } from './destinationReducer';
 import pickupReducer from './pickupReducer';
 import ridesReducer from './ridesReducer';
@@ -8,7 +8,7 @@ import ridesReducer from './ridesReducer';
 const rootReducer = combineReducers({
  user: userReducer,
  rides: ridesReducer,
-//  currentLocation: currentLocationReducer,
+ currentLocation: currentLocationReducer,
  destination: destinationReducer,
  pickupLocations: pickupReducer
 });

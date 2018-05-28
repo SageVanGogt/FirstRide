@@ -28,10 +28,14 @@ Promise.resolve(MOCK.mockRides));
 const fetchPickups = jest.fn().mockImplementation(() => 
 Promise.resolve(MOCK.mockPickups));
 
+const fetchGeocode = jest.fn().mockImplementation(() => 
+Promise.resolve(MOCK.mockGeoInfo));
+
 export {
   signinUser,
   signupUser,
   fetchDestination,
   fetchRides,
-  fetchPickups
+  fetchPickups,
+  fetchGeocode
 }

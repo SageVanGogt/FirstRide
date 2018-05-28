@@ -4,9 +4,16 @@ import { connect } from 'react-redux';
 import MapContainer from './../MapContainer/MapContainer';
 import * as API from './../../apiCalls/apiCalls';
 import * as actions from './../../actions/rides';
+import * as cleaner from './../../cleaners/cleaners';
 export class RidesContainer extends Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      street: '',
+      city: '',
+      state: ''
+    };
   }
 
   componentDidUpdate = (prevProps) => {
@@ -21,9 +28,50 @@ export class RidesContainer extends Component {
     await setRides(response.rides);
   }
 
+  handleChange = (event) => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  }
+
+  handleSubmit = async (event) => {
+    event.preventDefault();
+    const address = this.formatAddress();
+    const locationInfo = await API.fetchGeocode(address);
+    const cleanLocation = cleaner.geocodeCleaner(locationInfo);
+  };
+
+  formatAddress = () => {
+    const street = this.state.street.replace(' ', '+');
+    const city = this.state.city.replace(' ', '+');
+    const state = this.state.state.replace(' ', '+');
+    return (
+      `${street},+${city},+${state}`
+    );
+  }
+
   render() {
     return (
       <div>
+        <form action="submit" onSubmit={this.handleSubmit}>
+          <input 
+            type="text" 
+            name="street" 
+            onChange={this.handleChange} 
+            placeholder="street"/>
+          <input 
+            type="text" 
+            name="city" 
+            onChange={this.handleChange} 
+            placeholder="city"/>
+          <input 
+            type="text" 
+            name="state" 
+            onChange={this.handleChange} 
+            placeholder="state"/>
+          <input type="submit"/>
+        </form>
         <MapContainer />
       </div>
     );

@@ -1,5 +1,6 @@
 import * as API from './apiCalls';
 import * as MOCK from './mockData';
+import { geoKey } from './../apiKey';
 
 describe('signinUser', () => {
   let url;
@@ -78,6 +79,7 @@ describe('fetchDestination', () => {
     
     expect(actual).toEqual(expected);
   });
+})
 
   describe('fetchRides', () => {
     let url;
@@ -119,40 +121,66 @@ describe('fetchDestination', () => {
     })
   })
 
-  describe('fetchPickups', () => {
-    let url;
-    let mockLocation;
-    let mockBody;
-    
-    beforeEach(() => {
-      mockLocation = 1;
-      mockBody = {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        }
+describe('fetchPickups', () => {
+  let url;
+  let mockLocation;
+  let mockBody;
+  
+  beforeEach(() => {
+    mockLocation = 1;
+    mockBody = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
       }
-      url = `http://localhost:3000/api/pickup/get/${mockLocation}`;
-      
-      window.fetch = jest.fn().mockImplementation(() => 
-        Promise.resolve({
-          status: 200,
-          json: () => Promise.resolve(MOCK.mockPickups)
-        })
-      );
-    });
+    }
+    url = `http://localhost:3000/api/pickup/get/${mockLocation}`;
+    
+    window.fetch = jest.fn().mockImplementation(() => 
+      Promise.resolve({
+        status: 200,
+        json: () => Promise.resolve(MOCK.mockPickups)
+      })
+    );
+  });
 
-    it('should be called with the correct params', async () => {
-      await API.fetchPickups(mockLocation);
+  it('should be called with the correct params', async () => {
+    await API.fetchPickups(mockLocation);
 
-      expect(window.fetch).toHaveBeenCalledWith(url, mockBody);
-    })
+    expect(window.fetch).toHaveBeenCalledWith(url, mockBody);
+  })
 
-    it('should return the expected object', async () => {
-      let actual = await API.fetchPickups(mockLocation);
-      let expected = MOCK.mockPickups;
+  it('should return the expected object', async () => {
+    let actual = await API.fetchPickups(mockLocation);
+    let expected = MOCK.mockPickups;
 
-      expect(actual).toEqual(expected)
-    })
+    expect(actual).toEqual(expected)
   })
 })
+
+describe('fetchGeocode', () => {
+  let mockAddress;
+
+  beforeEach(() => {
+    mockAddress = '2600+fairview,+denver,+WA';
+    window.fetch = jest.fn().mockImplementation(() => 
+    Promise.resolve({
+      status: 200,
+      json: () => Promise.resolve(MOCK.mockGeoInfo)
+    }))
+  })
+
+  it('should call fetch with the correct params', async () => {
+    let expected = `https://maps.googleapis.com/maps/api/geocode/json?address=${mockAddress}&key=${geoKey}`;
+    await API.fetchGeocode(mockAddress);
+
+    expect(window.fetch).toHaveBeenCalledWith(expected);
+  })
+
+  it('should return an object full of location data', async () => {
+    let expected = MOCK.mockGeoInfo;
+    let actual = await API.fetchGeocode(mockAddress);
+
+    expect(actual).toEqual(expected);
+  })
+});
