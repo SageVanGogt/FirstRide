@@ -13,7 +13,6 @@ export class MapContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      markerCoords: [{lat: 39.742043, lng: -104.991531}, {lat: 39.762090, lng: -105.006394}],
       center: {lat: 39.758606, lng: -104.998784}
     };
   }
@@ -53,7 +52,7 @@ export class MapContainer extends Component {
         // loading={this.props.loading}
         position={this.state.center || this.props.userLocation}
         googleMapURL={mapUrl}
-        markerCoords={this.state.markerCoords}
+        markerCoords={this.props.pickupLocations}
         loadingElement={this.loadingElement()}
         containerElement={this.containerElement()}
         mapElement={this.mapElement()} />
