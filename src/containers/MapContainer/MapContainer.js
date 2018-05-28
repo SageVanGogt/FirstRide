@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { mapKey } from './../../apiKey';
 import MapComponent from '../../components/MapComponent/MapComponent';
 import { connect } from 'react-redux';
+import * as actions from './../../actions/pickups';
 
 const mapUrl = `https://maps.googleapis.com/maps/api/js?key=${mapKey}&v=3.exp&libraries=geometry,drawing,places`;
 
@@ -16,13 +17,16 @@ export class MapContainer extends Component {
     };
   }
 
-  componentDidUpdate = (prevProps) => {
-    if (prevProps.markerCoords !== this.props.markerCoords) {
-      this.setState({
-        center: this.props.markerCoords,
-        markerCoords: this.props.markerCoords
-      });
-    }
+  // componentDidUpdate = (prevProps) => {
+  //   if (prevProps.markerCoords !== this.props.markerCoords) {
+  //     this.setState({
+  //       center: this.props.markerCoords,
+  //       markerCoords: this.props.markerCoords
+  //     });
+  //   }
+  // }
+  loadPickups = () => {
+
   }
 
   containerElement = () => (
@@ -54,14 +58,14 @@ export class MapContainer extends Component {
         mapElement={this.mapElement()} />
     );
   }
-}
+};
 
 export const mapStateToProps = (state) => ({
   destination: state.destination
-})
+});
 
 export const mapDispatchToProps = (dispatch) => ({
-
-})
+  setPickups: (pickups) => dispatch(actions.addPickups(pickups))
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(MapContainer);
