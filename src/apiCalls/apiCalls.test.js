@@ -220,7 +220,14 @@ describe('submitNewRide', () => {
 
     expect(window.fetch).toHaveBeenCalledWith(url, mockBody);
   });
-  
+
+  it('should return an id number', async () => {
+    let actual = await API.submitNewRide(mockRide);
+    let expected = 2;
+
+    expect(actual).toEqual(expected);
+  });
+
 });
 
 describe('submitNewPickup', () => {
