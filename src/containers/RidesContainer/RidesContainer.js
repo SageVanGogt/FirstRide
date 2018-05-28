@@ -41,6 +41,7 @@ export class RidesContainer extends Component {
     const address = this.formatAddress();
     const locationInfo = await API.fetchGeocode(address);
     const cleanLocation = cleaner.geocodeCleaner(locationInfo);
+    this.props.setLocation(cleanLocation);
   };
 
   formatAddress = () => {
