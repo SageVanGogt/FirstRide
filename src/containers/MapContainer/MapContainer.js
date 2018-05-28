@@ -62,7 +62,8 @@ export class MapContainer extends Component {
 };
 
 export const mapStateToProps = (state) => ({
-  destination: state.destination
+  destination: state.destination,
+  pickupLocations: state.pickupLocations
 });
 
 export const mapDispatchToProps = (dispatch) => ({
