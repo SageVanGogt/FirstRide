@@ -34,6 +34,11 @@ export class RidesContainer extends Component {
     });
   }
 
+  handleSubmit = () => {
+    const address = this.formatAddress();
+    const locationInfo = API.fetchGeocode(address);
+  }
+
   formatAddress = () => {
     const street = this.state.street.replace(' ', '+');
     const city = this.state.city.replace(' ', '+');

@@ -45,8 +45,21 @@ describe('RidesContainer', () => {
   })
 
   describe('handleSubmit', () => {
+    
+    beforeEach(() => {
+      wrapper.setState({
+        street: '2600 fairview',
+        city: 'seattle', 
+        state: 'WA'
+      })
+    });
 
-     
+    it('should call fetchGeocode with the correct params', () => {
+      let expected = '2600+fairview,+seattle,+WA';
+      wrapper.instance().handleSubmit();
+      
+      expect(API.fetchGeocode).toHaveBeenCalledWith(expected);
+    })     
   });
 
   describe('formatAddress', () => {

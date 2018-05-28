@@ -28,7 +28,7 @@ ShallowWrapper {
       "children": Array [
         <form
           action="submit"
-          onSubmit={undefined}
+          onSubmit={[Function]}
 >
           <input
                     name="street"
@@ -86,7 +86,7 @@ ShallowWrapper {
               type="state"
 />,
           ],
-          "onSubmit": undefined,
+          "onSubmit": [Function],
         },
         "ref": null,
         "rendered": Array [
@@ -167,7 +167,7 @@ ShallowWrapper {
         "children": Array [
           <form
             action="submit"
-            onSubmit={undefined}
+            onSubmit={[Function]}
 >
             <input
                         name="street"
@@ -225,7 +225,7 @@ ShallowWrapper {
                 type="state"
 />,
             ],
-            "onSubmit": undefined,
+            "onSubmit": [Function],
           },
           "ref": null,
           "rendered": Array [
