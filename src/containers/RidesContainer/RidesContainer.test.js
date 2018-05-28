@@ -123,7 +123,7 @@ describe('RidesContainer', () => {
 
   describe('mapDispatchToProps', () => {
 
-    it('should be called with the correct params', () => {
+    it('should dispatch setRides with the correct params', () => {
       let mockDispatch = jest.fn();
       let mappedProps = mapDispatchToProps(mockDispatch);
       let expected = {
@@ -131,6 +131,21 @@ describe('RidesContainer', () => {
         rides: MOCK.mockRides.rides
       }
       mappedProps.setRides(MOCK.mockRides.rides);
+
+      expect(mockDispatch).toBeCalledWith(expected)
+    })
+
+    it('should dispatch setLocation with the correct params', () => {
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let expected = {
+        type: "ADD_CURR_LOCATION",
+        location: {
+          lat: 39.7594866,
+          lng: -104.9994026
+        }
+      };
+      mappedProps.setLocation(expected.location);
 
       expect(mockDispatch).toBeCalledWith(expected)
     })
