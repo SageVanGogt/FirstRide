@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import MapContainer from './../MapContainer/MapContainer';
 import * as API from './../../apiCalls/apiCalls';
-import * as actions from './../../actions/rides';
+import { addRides } from './../../actions/rides';
+import { addCurrentLocation } from './../../actions/currentLocation';
 import * as cleaner from './../../cleaners/cleaners';
 export class RidesContainer extends Component {
   constructor(props) {
@@ -40,6 +41,7 @@ export class RidesContainer extends Component {
     const address = this.formatAddress();
     const locationInfo = await API.fetchGeocode(address);
     const cleanLocation = cleaner.geocodeCleaner(locationInfo);
+    this.props.setLocation(cleanLocation);
   };
 
   formatAddress = () => {
@@ -83,7 +85,8 @@ export const mapStateToProps = (state) => ({
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-  setRides: (rides) => dispatch(actions.addRides(rides))
+  setRides: (rides) => dispatch(addRides(rides)),
+  setLocation: (location) => dispatch(addCurrentLocation(location))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(RidesContainer);

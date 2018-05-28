@@ -11,14 +11,17 @@ describe('RidesContainer', () => {
   let wrapper;
   let mockDestination;
   let mockSetRides;
+  let mockSetLocation;
 
   beforeEach(() => {
     mockDestination = {
       location_name: 'Red Rocks',
       id: 1
-    }
+    };
     mockSetRides = jest.fn();
+    mockSetLocation = jest.fn();
     wrapper = shallow(<RidesContainer 
+      setLocation={mockSetLocation}
       destination={mockDestination}
       setRides={mockSetRides}/>
     );
@@ -46,8 +49,12 @@ describe('RidesContainer', () => {
   })
 
   describe('handleSubmit', () => {
+    let mockEvent;
 
     beforeEach(() => {
+      mockEvent = {
+        preventDefault: jest.fn()
+      };
       wrapper.setState({
         street: '2600 fairview',
         city: 'seattle', 
@@ -57,19 +64,25 @@ describe('RidesContainer', () => {
 
     it('should call fetchGeocode with the correct params', async () => {
       let expected = '2600+fairview,+seattle,+WA';
-      let mockEvent = {
-        preventDefault: jest.fn()
-      };
+      
       await wrapper.instance().handleSubmit(mockEvent);
 
       expect(API.fetchGeocode).toHaveBeenCalledWith(expected);
     });
 
+    it('should call setLocation with the correct params', async () => {
+      let expected = {
+        lat: 39.7594866,
+        lng: -104.9994026
+      };
+      await wrapper.instance().handleSubmit(mockEvent);
+
+      expect(mockSetLocation).toHaveBeenCalledWith(expected);
+    });
+    
     it('should call geocodeCleaner with the correct params', async () => {
       let expected = MOCK.mockGeoInfo;
-      let mockEvent = {
-        preventDefault: jest.fn()
-      };
+      
       cleaner.geocodeCleaner = jest.fn();
       await wrapper.instance().handleSubmit(mockEvent);
 
@@ -123,7 +136,7 @@ describe('RidesContainer', () => {
 
   describe('mapDispatchToProps', () => {
 
-    it('should be called with the correct params', () => {
+    it('should dispatch setRides with the correct params', () => {
       let mockDispatch = jest.fn();
       let mappedProps = mapDispatchToProps(mockDispatch);
       let expected = {
@@ -131,6 +144,21 @@ describe('RidesContainer', () => {
         rides: MOCK.mockRides.rides
       }
       mappedProps.setRides(MOCK.mockRides.rides);
+
+      expect(mockDispatch).toBeCalledWith(expected)
+    })
+
+    it('should dispatch setLocation with the correct params', () => {
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let expected = {
+        type: "ADD_CURR_LOCATION",
+        location: {
+          lat: 39.7594866,
+          lng: -104.9994026
+        }
+      };
+      mappedProps.setLocation(expected.location);
 
       expect(mockDispatch).toBeCalledWith(expected)
     })
