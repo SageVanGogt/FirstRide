@@ -52,16 +52,25 @@ export class OfferContainer extends Component {
   }
 
   handleSubmitPickup = async (rideId) => {
+    const geoLocation = this.getGeoInfo();
+    const pickupInfo = {
+      ride_id: rideId,
+      location_id: this.state.location_id,
+      lat: geoLocation.lat,
+      lng: geoLocation.lng
+    }
+  }
+
+  getGeoInfo = async () => {
     const { street, city, state } = this.state;
     const address = {
       street, 
       city, 
       state
     };
-    const geoLocation = await API.fetchGeocode(address)
-    const pickupInfo = {
-
-    }
+    const response = await API.fetchGeocode(address);
+    const geoLocation = await cleaner.geocodeCleaner(response);
+    return geoLocation;
   }
 
   render() {

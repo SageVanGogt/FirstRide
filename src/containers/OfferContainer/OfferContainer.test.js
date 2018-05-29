@@ -63,7 +63,9 @@ describe('OfferContainer', () => {
     beforeEach(() => {
       mockRideId = 1;
     })
+  })
 
+  describe('getGeoInfo', () => {
     it('should call fetchGeoCode with the correct params', async () => {
       let expected = {
         street: '',
@@ -71,7 +73,7 @@ describe('OfferContainer', () => {
         state: ''
       }
 
-      await wrapper.instance().handleSubmitPickup(mockRideId);
+      await wrapper.instance().getGeoInfo();
 
       expect(API.fetchGeocode).toHaveBeenCalledWith(expected)
     })
