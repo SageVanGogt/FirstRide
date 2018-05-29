@@ -58,7 +58,9 @@ export class OfferContainer extends Component {
       location_id: this.state.location_id,
       lat: geoLocation.lat,
       lng: geoLocation.lng
-    }
+    };
+    
+    await API.submitNewPickup(pickupInfo);
   }
 
   getGeoInfo = async () => {

@@ -63,6 +63,19 @@ describe('OfferContainer', () => {
     beforeEach(() => {
       mockRideId = 1;
     })
+
+    it('should call submitNewPickup with the correct params', async () => {
+      let expected = {
+        ride_id: 1,
+        location_id: 1,
+        lat: undefined,
+        lng: undefined
+      }
+
+      await wrapper.instance().handleSubmitPickup(mockRideId);
+
+      expect(API.submitNewPickup).toHaveBeenCalledWith(expected);
+    })
   })
 
   describe('getGeoInfo', () => {
