@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Route, Redirect, NavLink } from 'react-router-dom';
 import MapContainer from './../MapContainer/MapContainer';
 import * as API from './../../apiCalls/apiCalls';
 import { addRides } from './../../actions/rides';
@@ -72,6 +73,7 @@ export class RidesContainer extends Component {
   render() {
     return (
       <div className="ride-page">
+        <NavLink to="/offer">Offer a Ride</NavLink>
         <section className="rides-container">
           <form action="submit" onSubmit={this.handleSubmit}>
             <input 

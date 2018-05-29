@@ -42,6 +42,11 @@ ShallowWrapper {
                     exact={true}
                     path="/profile"
           />
+          <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/offer"
+          />
 </Switch>,
       ],
       "className": "App",
@@ -92,6 +97,11 @@ ShallowWrapper {
               component={[Function]}
               exact={true}
               path="/profile"
+/>,
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/offer"
 />,
           ],
         },
@@ -149,6 +159,19 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/offer",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
         ],
         "type": [Function],
       },
@@ -185,6 +208,11 @@ ShallowWrapper {
                         component={[Function]}
                         exact={true}
                         path="/profile"
+            />
+            <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/offer"
             />
 </Switch>,
         ],
@@ -237,6 +265,11 @@ ShallowWrapper {
                 exact={true}
                 path="/profile"
 />,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/offer"
+/>,
             ],
           },
           "ref": null,
@@ -288,6 +321,19 @@ ShallowWrapper {
                 "component": [Function],
                 "exact": true,
                 "path": "/profile",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/offer",
               },
               "ref": null,
               "rendered": null,

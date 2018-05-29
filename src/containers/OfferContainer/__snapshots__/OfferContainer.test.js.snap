@@ -30,7 +30,7 @@ ShallowWrapper {
     "props": Object {
       "children": <form
         action=""
-        onSubmit={undefined}
+        onSubmit={[Function]}
 >
         <input
                 name="car_capacity"
@@ -77,7 +77,15 @@ ShallowWrapper {
         <input
                 type="submit"
         />
+        <NavLink
+                activeClassName="active"
+                ariaCurrent="true"
+                to="/rides"
+        >
+                Back
+        </NavLink>
 </form>,
+      "className": "offer-container",
     },
     "ref": null,
     "rendered": Object {
@@ -132,8 +140,15 @@ ShallowWrapper {
           <input
             type="submit"
 />,
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            to="/rides"
+>
+            Back
+</NavLink>,
         ],
-        "onSubmit": undefined,
+        "onSubmit": [Function],
       },
       "ref": null,
       "rendered": Array [
@@ -246,6 +261,20 @@ ShallowWrapper {
           "rendered": null,
           "type": "input",
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Back",
+            "to": "/rides",
+          },
+          "ref": null,
+          "rendered": "Back",
+          "type": [Function],
+        },
       ],
       "type": "form",
     },
@@ -259,7 +288,7 @@ ShallowWrapper {
       "props": Object {
         "children": <form
           action=""
-          onSubmit={undefined}
+          onSubmit={[Function]}
 >
           <input
                     name="car_capacity"
@@ -306,7 +335,15 @@ ShallowWrapper {
           <input
                     type="submit"
           />
+          <NavLink
+                    activeClassName="active"
+                    ariaCurrent="true"
+                    to="/rides"
+          >
+                    Back
+          </NavLink>
 </form>,
+        "className": "offer-container",
       },
       "ref": null,
       "rendered": Object {
@@ -361,8 +398,15 @@ ShallowWrapper {
             <input
               type="submit"
 />,
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              to="/rides"
+>
+              Back
+</NavLink>,
           ],
-          "onSubmit": undefined,
+          "onSubmit": [Function],
         },
         "ref": null,
         "rendered": Array [
@@ -474,6 +518,20 @@ ShallowWrapper {
             "ref": null,
             "rendered": null,
             "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "ariaCurrent": "true",
+              "children": "Back",
+              "to": "/rides",
+            },
+            "ref": null,
+            "rendered": "Back",
+            "type": [Function],
           },
         ],
         "type": "form",
