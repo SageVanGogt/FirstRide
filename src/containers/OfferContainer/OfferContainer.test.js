@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { OfferContainer, mapStateToProps, mapDispatchToProps } from './OfferContainer';
 import * as API from './../../apiCalls/apiCalls';
+import * as MOCK from './../../apiCalls/mockData';
 
 jest.mock('./../../apiCalls/apiCalls');
 
@@ -53,6 +54,26 @@ describe('OfferContainer', () => {
       await wrapper.instance().handleSubmitRide();
 
       expect(API.submitNewRide).toHaveBeenCalledWith(expected)
+    })
+  })
+
+  describe('handleSubmitPickup', () => {
+    let mockRideId;
+
+    beforeEach(() => {
+      mockRideId = 1;
+    })
+
+    it('should call fetchGeoCode with the correct params', async () => {
+      let expected = {
+        street: '',
+        city: '',
+        state: ''
+      }
+
+      await wrapper.instance().handleSubmitPickup(mockRideId);
+
+      expect(API.fetchGeocode).toHaveBeenCalledWith(expected)
     })
   })
 

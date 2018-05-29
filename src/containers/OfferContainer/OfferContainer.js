@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import * as API from './../../apiCalls/apiCalls';
+import * as cleaner from './../../cleaners/cleaners';
 import './OfferContainer.css';
 
 export class OfferContainer extends Component {
@@ -47,6 +48,20 @@ export class OfferContainer extends Component {
     }
     const response = await API.submitNewRide(rideInfo);
     const rideId = response.id
+    this.handleSubmitPickup(rideId)
+  }
+
+  handleSubmitPickup = async (rideId) => {
+    const { street, city, state } = this.state;
+    const address = {
+      street, 
+      city, 
+      state
+    };
+    const geoLocation = await API.fetchGeocode(address)
+    const pickupInfo = {
+
+    }
   }
 
   render() {
