@@ -1,6 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { OfferContainer, mapStateToProps, mapDispatchToProps } from './OfferContainer';
+import * as API from './../../apiCalls/apiCalls';
+import * as MOCK from './../../apiCalls/mockData';
+
+jest.mock('./../../apiCalls/apiCalls');
 
 describe('OfferContainer', () => {
   let wrapper;
@@ -36,8 +40,56 @@ describe('OfferContainer', () => {
     })
   })
 
-  describe('handleRideSubmit', () => {
-    
+  describe('handleSubmitRide', () => {
+    it('should call submitNewRide with correct params', async () => {
+      let expected = {
+        location_id: 1,
+        driver_id: 1,
+        car_capacity: '',
+        seats_remaining: '',
+        car_type: '',
+        date: '',
+        time: ''
+      }
+      await wrapper.instance().handleSubmitRide();
+
+      expect(API.submitNewRide).toHaveBeenCalledWith(expected)
+    })
+  })
+
+  describe('handleSubmitPickup', () => {
+    let mockRideId;
+
+    beforeEach(() => {
+      mockRideId = 1;
+    })
+
+    it('should call submitNewPickup with the correct params', async () => {
+      let expected = {
+        ride_id: 1,
+        location_id: 1,
+        lat: undefined,
+        lng: undefined
+      }
+
+      await wrapper.instance().handleSubmitPickup(mockRideId);
+
+      expect(API.submitNewPickup).toHaveBeenCalledWith(expected);
+    })
+  })
+
+  describe('getGeoInfo', () => {
+    it('should call fetchGeoCode with the correct params', async () => {
+      let expected = {
+        street: '',
+        city: '',
+        state: ''
+      }
+
+      await wrapper.instance().getGeoInfo();
+
+      expect(API.fetchGeocode).toHaveBeenCalledWith(expected)
+    })
   })
 
   describe('mapStateToProps', () => {

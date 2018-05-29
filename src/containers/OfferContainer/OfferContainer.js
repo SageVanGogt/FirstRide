@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import * as API from './../../apiCalls/apiCalls';
+import * as cleaner from './../../cleaners/cleaners';
 import './OfferContainer.css';
 
 export class OfferContainer extends Component {
@@ -11,7 +12,6 @@ export class OfferContainer extends Component {
       location_id: this.props.destination.id,
       driver_id: this.props.user.id,
       car_capacity: '',
-      seats_remaining: '',
       car_type: '',
       date: '',
       time: '',
@@ -26,6 +26,53 @@ export class OfferContainer extends Component {
     this.setState({
       [name]: value
     });
+  }
+
+  handleSubmitRide = async () => {
+    const { 
+      location_id,
+      driver_id,
+      car_capacity,
+      car_type,
+      date,
+      time
+    } = this.state
+    const rideInfo = {
+      location_id,
+      driver_id,
+      car_capacity, 
+      seats_remaining: car_capacity, 
+      car_type, 
+      date, 
+      time, 
+    }
+    const response = await API.submitNewRide(rideInfo);
+    const rideId = response.id
+    this.handleSubmitPickup(rideId)
+  }
+
+  handleSubmitPickup = async (rideId) => {
+    const geoLocation = this.getGeoInfo();
+    const pickupInfo = {
+      ride_id: rideId,
+      location_id: this.state.location_id,
+      lat: geoLocation.lat,
+      lng: geoLocation.lng
+    };
+    
+    await API.submitNewPickup(pickupInfo);
+  }
+
+  getGeoInfo = async () => {
+    const { street, city, state } = this.state;
+    const address = {
+      street, 
+      city, 
+      state
+    };
+    const response = await API.fetchGeocode(address);
+    const geoLocation = await cleaner.geocodeCleaner(response);
+    return geoLocation;
   }
 
   render() {
