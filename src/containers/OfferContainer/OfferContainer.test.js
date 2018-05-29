@@ -1,6 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { OfferContainer, mapStateToProps, mapDispatchToProps } from './OfferContainer';
+import * as API from './../../apiCalls/apiCalls';
+
+jest.mock('./../../apiCalls/apiCalls');
 
 describe('OfferContainer', () => {
   let wrapper;
@@ -36,8 +39,21 @@ describe('OfferContainer', () => {
     })
   })
 
-  describe('handleRideSubmit', () => {
-    
+  describe('handleSubmitRide', () => {
+    it('should call submitNewRide with correct params', async () => {
+      let expected = {
+        location_id: 1,
+        driver_id: 1,
+        car_capacity: '',
+        seats_remaining: '',
+        car_type: '',
+        date: '',
+        time: ''
+      }
+      await wrapper.instance().handleSubmitRide();
+
+      expect(API.submitNewRide).toHaveBeenCalledWith(expected)
+    })
   })
 
   describe('mapStateToProps', () => {

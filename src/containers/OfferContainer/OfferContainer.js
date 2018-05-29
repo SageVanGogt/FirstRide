@@ -11,7 +11,6 @@ export class OfferContainer extends Component {
       location_id: this.props.destination.id,
       driver_id: this.props.user.id,
       car_capacity: '',
-      seats_remaining: '',
       car_type: '',
       date: '',
       time: '',
@@ -26,6 +25,28 @@ export class OfferContainer extends Component {
     this.setState({
       [name]: value
     });
+  }
+
+  handleSubmitRide = async () => {
+    const { 
+      location_id,
+      driver_id,
+      car_capacity,
+      car_type,
+      date,
+      time
+    } = this.state
+    const rideInfo = {
+      location_id,
+      driver_id,
+      car_capacity, 
+      seats_remaining: car_capacity, 
+      car_type, 
+      date, 
+      time, 
+    }
+    const response = await API.submitNewRide(rideInfo);
+    const rideId = response.id
   }
 
   render() {
