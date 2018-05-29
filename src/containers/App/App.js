@@ -8,7 +8,7 @@ import RidesContainer from './../RidesContainer/RidesContainer';
 import SigninContainer from './../SigninContainer/SigninContainer';
 import ProfileContainer from './../ProfileContainer/ProfileContainer';
 import NavContainer from './../NavContainer/NavContainer';
-
+import OfferContainer from './../OfferContainer/OfferContainer';
 export class App extends Component {
   render() {
     return (
@@ -36,6 +36,10 @@ export class App extends Component {
           <Route 
             exact path="/profile" 
             component={ProfileContainer}
+          />
+          <Route
+            exact path='/offer'
+            component={OfferContainer} 
           />
         </Switch>
       </div>

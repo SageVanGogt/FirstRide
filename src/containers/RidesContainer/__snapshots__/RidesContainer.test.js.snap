@@ -61,6 +61,13 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          to="/offer"
+>
+          Offer a Ride
+</NavLink>,
         <section
           className="rides-container"
 >
@@ -173,6 +180,20 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "Offer a Ride",
+          "to": "/offer",
+        },
+        "ref": null,
+        "rendered": "Offer a Ride",
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -840,6 +861,13 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            to="/offer"
+>
+            Offer a Ride
+</NavLink>,
           <section
             className="rides-container"
 >
@@ -952,6 +980,20 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Offer a Ride",
+            "to": "/offer",
+          },
+          "ref": null,
+          "rendered": "Offer a Ride",
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,

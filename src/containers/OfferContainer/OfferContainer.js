@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import * as API from './../../apiCalls/apiCalls';
 import * as cleaner from './../../cleaners/cleaners';
 import './OfferContainer.css';
@@ -28,7 +29,8 @@ export class OfferContainer extends Component {
     });
   }
 
-  handleSubmitRide = async () => {
+  handleSubmitRide = async (event) => {
+    event.preventDefault();
     const { 
       location_id,
       driver_id,
@@ -47,19 +49,18 @@ export class OfferContainer extends Component {
       time, 
     }
     const response = await API.submitNewRide(rideInfo);
-    const rideId = response.id
-    this.handleSubmitPickup(rideId)
+    const rideId = response.id;
+    await this.handleSubmitPickup(rideId);
   }
 
   handleSubmitPickup = async (rideId) => {
-    const geoLocation = this.getGeoInfo();
+    const geoLocation = await this.getGeoInfo();
     const pickupInfo = {
       ride_id: rideId,
       location_id: this.state.location_id,
       lat: geoLocation.lat,
       lng: geoLocation.lng
     };
-    
     await API.submitNewPickup(pickupInfo);
   }
 
@@ -77,8 +78,8 @@ export class OfferContainer extends Component {
 
   render() {
     return (
-      <div>
-        <form action="" onSubmit={this.handleRideSubmit}>
+      <div className="offer-container">
+        <form action="" onSubmit={this.handleSubmitRide}>
           <input 
             type="text" 
             name="car_capacity" 
@@ -115,6 +116,7 @@ export class OfferContainer extends Component {
             onChange={this.handleChange} 
             placeholder="state"/>
           <input type="submit"/>
+          <NavLink to="/rides">Back</NavLink>
         </form>
       </div>
     )

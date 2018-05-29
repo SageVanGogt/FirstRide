@@ -14,9 +14,6 @@
   height: calc(100vh - 80px);
   background-color: grey;
   width: 200px;
-  display: flex
+  display: flex;
+  overflow: scroll;
 }
-
-/* .ride-item {
-  width: 200px
-} */

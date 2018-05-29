@@ -51,7 +51,10 @@ describe('OfferContainer', () => {
         date: '',
         time: ''
       }
-      await wrapper.instance().handleSubmitRide();
+      let mockEvent = {
+        preventDefault: jest.fn()
+      }
+      await wrapper.instance().handleSubmitRide(mockEvent);
 
       expect(API.submitNewRide).toHaveBeenCalledWith(expected)
     })
@@ -68,8 +71,8 @@ describe('OfferContainer', () => {
       let expected = {
         ride_id: 1,
         location_id: 1,
-        lat: undefined,
-        lng: undefined
+        lat: 39.7594866,
+        lng: -104.9994026
       }
 
       await wrapper.instance().handleSubmitPickup(mockRideId);
