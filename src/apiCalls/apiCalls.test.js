@@ -269,3 +269,88 @@ describe('submitNewPickup', () => {
     expect(actual).toEqual(expected);
   })
 });
+
+describe('fetchRidesPassengers', () => {
+  let url;
+  let mockRideId;
+  let mockBody;
+
+  beforeEach(() => {
+    mockRideId = 1;
+    mockBody = {
+      method: 'POST', 
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    };
+    url = `http://localhost:3000/api/rides_passengers/get/passengers/${mockRideId}`;
+    window.fetch = jest.fn().mockImplementation(() => 
+    Promise.resolve({
+      status: 200,
+      json: () => Promise.resolve({
+        "ride": [{
+              "id": 1,
+              "ride_id": 1,
+              "passenger_id": 1
+        }]
+      })
+    }))
+  })
+
+  it('should be called with the correct params', async () => {
+    await API.fetchRidesPassengers(mockRideId);
+    expect(window.fetch).toHaveBeenCalledWith(url, mockBody)
+  })
+
+  it('should return expected object', async () => {
+    let expected = {
+      ride: [{
+        id: 1,
+        ride_id: 1,
+        passenger_id: 1
+      }]
+    }
+    let actual = await API.fetchRidesPassengers(mockRideId);
+
+    expect(actual).toEqual(expected);
+  })
+})
+
+describe('postRidesPassengers', () => {
+  let url;
+  let mockBody;
+  let mockArg;
+
+  beforeEach(() => {
+    url = `http://localhost:3000/api/rides_passengers/new`;   
+    mockArg = {
+      ride_id: 1,
+      passenger_id: 1
+    }
+    mockBody = {
+      method: "POST",
+      body: JSON.stringify(mockArg),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    };
+    window.fetch = jest.fn().mockImplementation(() => 
+    Promise.resolve({
+      status: 200,
+      json: () => Promise.resolve(1)
+    }))
+  });
+
+  it('should be called with the correct params', async () => {
+    await API.postRidesPassengers(mockArg);
+
+    expect(window.fetch).toHaveBeenCalledWith(url, mockBody);
+  })
+
+  it('should return ride passenger id', async () => {
+    let expected = 1;
+    let actual = await API.postRidesPassengers(mockArg);
+    
+    expect(actual).toEqual(expected);
+  })
+})
