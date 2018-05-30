@@ -346,4 +346,11 @@ describe('postRidesPassengers', () => {
 
     expect(window.fetch).toHaveBeenCalledWith(url, mockBody);
   })
+
+  it('should return ride passenger id', async () => {
+    let expected = 1;
+    let actual = await API.postRidesPassengers(mockArg);
+    
+    expect(actual).toEqual(expected);
+  })
 })

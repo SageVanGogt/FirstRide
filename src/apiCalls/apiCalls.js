@@ -109,6 +109,8 @@ const postRidesPassengers = async (newPassenger) => {
     }
   };
   const response = await fetch(url, body);
+  const ridePassenger = await response.json();
+  return ridePassenger
 } 
 
 export {
