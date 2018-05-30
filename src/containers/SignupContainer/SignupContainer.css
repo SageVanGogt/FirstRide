@@ -1,27 +1,17 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-
-class RidesContainer extends Component {
-  constructor(props) {
-    super();
-  }
-
-  render() {
-    return (
-      <div>
-        
-      </div>
-    );
-  }
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 
-export const mapStateToProps = (state) => ({
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
 
-})
-
-export const mapDispatchToProps = (dispatch) => ({
-
-})
-
-export default connect(mapStateToProps, mapDispatchToProps)(RidesContainer);
+.signup-input {
+  height: 40px;
+  margin-top: 20px;
+}

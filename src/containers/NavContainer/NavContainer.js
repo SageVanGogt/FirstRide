@@ -15,7 +15,7 @@ export class NavContainer extends Component {
         <h1 className="site-name">FirstRide</h1>
         <div className="links">
           <NavLink className="nav-link" to="/">Home</NavLink>
-          <NavLink className="nav-link" to="/signin">Signin</NavLink>
+          <NavLink className="nav-link" to="/login">Signin</NavLink>
           <NavLink className="nav-link" to="/profile">Me</NavLink>
         </div>
       </div>

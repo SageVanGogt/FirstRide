@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import SignupContainer from './../SignupContainer/SignupContainer';
 import { signinUser } from './../../apiCalls/apiCalls';
 import * as actions from './../../actions/user';
+import './SigninContainer.css';
 
 export class SigninContainer extends Component {
   constructor(props) {
@@ -29,15 +29,20 @@ export class SigninContainer extends Component {
 
   render() {
     return (
-      <div>
-        <form action="submit" onSubmit={this.handleSubmit}>
+      <div className="signin-container">
+        <form 
+          action="submit" 
+          onSubmit={this.handleSubmit}
+          className="signin-form">
           <input 
+            className="signin-input"
             type="text" 
             name="email"
             onChange={this.handleChange}
             placeholder="email"
           />
           <input 
+            className="signin-input"
             type="password" 
             name="password"
             onChange={this.handleChange}
@@ -47,7 +52,6 @@ export class SigninContainer extends Component {
             type="submit"
           />
         </form>
-        <SignupContainer/>
       </div>
     );
   }

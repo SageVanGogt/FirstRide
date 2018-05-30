@@ -9,6 +9,7 @@ import SigninContainer from './../SigninContainer/SigninContainer';
 import ProfileContainer from './../ProfileContainer/ProfileContainer';
 import NavContainer from './../NavContainer/NavContainer';
 import OfferContainer from './../OfferContainer/OfferContainer';
+import LoginComponent from './../../components/LoginComponent/LoginComponent';
 export class App extends Component {
   render() {
     return (
@@ -18,11 +19,11 @@ export class App extends Component {
         </div>
         <Switch>
           <Route
-            exact path="/signin"
+            exact path="/login"
             render={() => (
               this.props.user.email ?
                 <Redirect to="/" /> :
-                <SigninContainer />
+                <LoginComponent />
             )}
           />
           <Route 
