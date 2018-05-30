@@ -41,6 +41,11 @@ Promise.resolve({
   id: 1
 }));
 
+const postRidesPassengers = jest.fn().mockImplementation(() => 
+Promise.resolve({
+  id: 1
+}));
+
 export {
   signinUser,
   signupUser,
@@ -49,5 +54,6 @@ export {
   fetchPickups,
   fetchGeocode,
   submitNewPickup,
-  submitNewRide
+  submitNewRide,
+  postRidesPassengers
 }

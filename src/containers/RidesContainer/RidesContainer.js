@@ -58,6 +58,15 @@ export class RidesContainer extends Component {
     );
   }
 
+  submitRideSignup = async (rideId) => {
+    const ridePassenger = {
+      ride_id: rideId,
+      passenger_id: this.props.user.id
+    }
+    const response = await API.postRidesPassengers(ridePassenger);
+    
+  }
+
   rideListElement = () =>{ 
     return (
       this.props.rides.map(ride => {
@@ -68,6 +77,10 @@ export class RidesContainer extends Component {
             <div>car model: {ride.car_type}</div>
             <div>date: {ride.date}</div>
             <div>time: {ride.time}</div>
+            <button onClick={() => 
+              this.submitRideSignup(ride.id)}>
+              i want in
+            </button>
           </article>
         );
     }))
@@ -117,7 +130,8 @@ export class RidesContainer extends Component {
 
 export const mapStateToProps = (state) => ({
   destination: state.destination,
-  rides: state.rides
+  rides: state.rides,
+  user: state.user
 })
 
 export const mapDispatchToProps = (dispatch) => ({

@@ -47,6 +47,11 @@ ShallowWrapper {
     }
     setLocation={[Function]}
     setRides={[Function]}
+    user={
+        Object {
+            "id": 1,
+          }
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -122,6 +127,11 @@ ShallowWrapper {
                                         time: 
                                         4:00pm
                               </div>
+                              <button
+                                        onClick={[Function]}
+                              >
+                                        i want in
+                              </button>
                     </article>
                     <article
                               className="ride-item"
@@ -146,6 +156,11 @@ ShallowWrapper {
                                         time: 
                                         4:00pm
                               </div>
+                              <button
+                                        onClick={[Function]}
+                              >
+                                        i want in
+                              </button>
                     </article>
                     <article
                               className="ride-item"
@@ -170,6 +185,11 @@ ShallowWrapper {
                                         time: 
                                         4:30pm
                               </div>
+                              <button
+                                        onClick={[Function]}
+                              >
+                                        i want in
+                              </button>
                     </article>
           </section>
 </section>,
@@ -251,6 +271,11 @@ ShallowWrapper {
                                           time: 
                                           4:00pm
                             </div>
+                            <button
+                                          onClick={[Function]}
+                            >
+                                          i want in
+                            </button>
               </article>
               <article
                             className="ride-item"
@@ -275,6 +300,11 @@ ShallowWrapper {
                                           time: 
                                           4:00pm
                             </div>
+                            <button
+                                          onClick={[Function]}
+                            >
+                                          i want in
+                            </button>
               </article>
               <article
                             className="ride-item"
@@ -299,6 +329,11 @@ ShallowWrapper {
                                           time: 
                                           4:30pm
                             </div>
+                            <button
+                                          onClick={[Function]}
+                            >
+                                          i want in
+                            </button>
               </article>
 </section>,
           ],
@@ -424,6 +459,11 @@ ShallowWrapper {
                                     time: 
                                     4:00pm
                   </div>
+                  <button
+                                    onClick={[Function]}
+                  >
+                                    i want in
+                  </button>
 </article>,
                 <article
                   className="ride-item"
@@ -448,6 +488,11 @@ ShallowWrapper {
                                     time: 
                                     4:00pm
                   </div>
+                  <button
+                                    onClick={[Function]}
+                  >
+                                    i want in
+                  </button>
 </article>,
                 <article
                   className="ride-item"
@@ -472,6 +517,11 @@ ShallowWrapper {
                                     time: 
                                     4:30pm
                   </div>
+                  <button
+                                    onClick={[Function]}
+                  >
+                                    i want in
+                  </button>
 </article>,
               ],
               "className": "ride-list",
@@ -504,6 +554,11 @@ ShallowWrapper {
                       time: 
                       4:00pm
 </div>,
+                    <button
+                      onClick={[Function]}
+>
+                      i want in
+</button>,
                   ],
                   "className": "ride-item",
                 },
@@ -593,6 +648,18 @@ ShallowWrapper {
                       "4:00pm",
                     ],
                     "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "i want in",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": "i want in",
+                    "type": "button",
                   },
                 ],
                 "type": "article",
@@ -623,6 +690,11 @@ ShallowWrapper {
                       time: 
                       4:00pm
 </div>,
+                    <button
+                      onClick={[Function]}
+>
+                      i want in
+</button>,
                   ],
                   "className": "ride-item",
                 },
@@ -713,6 +785,18 @@ ShallowWrapper {
                     ],
                     "type": "div",
                   },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "i want in",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": "i want in",
+                    "type": "button",
+                  },
                 ],
                 "type": "article",
               },
@@ -742,6 +826,11 @@ ShallowWrapper {
                       time: 
                       4:30pm
 </div>,
+                    <button
+                      onClick={[Function]}
+>
+                      i want in
+</button>,
                   ],
                   "className": "ride-item",
                 },
@@ -831,6 +920,18 @@ ShallowWrapper {
                       "4:30pm",
                     ],
                     "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "i want in",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": "i want in",
+                    "type": "button",
                   },
                 ],
                 "type": "article",
@@ -922,6 +1023,11 @@ ShallowWrapper {
                                                 time: 
                                                 4:00pm
                                     </div>
+                                    <button
+                                                onClick={[Function]}
+                                    >
+                                                i want in
+                                    </button>
                         </article>
                         <article
                                     className="ride-item"
@@ -946,6 +1052,11 @@ ShallowWrapper {
                                                 time: 
                                                 4:00pm
                                     </div>
+                                    <button
+                                                onClick={[Function]}
+                                    >
+                                                i want in
+                                    </button>
                         </article>
                         <article
                                     className="ride-item"
@@ -970,6 +1081,11 @@ ShallowWrapper {
                                                 time: 
                                                 4:30pm
                                     </div>
+                                    <button
+                                                onClick={[Function]}
+                                    >
+                                                i want in
+                                    </button>
                         </article>
             </section>
 </section>,
@@ -1051,6 +1167,11 @@ ShallowWrapper {
                                                 time: 
                                                 4:00pm
                                 </div>
+                                <button
+                                                onClick={[Function]}
+                                >
+                                                i want in
+                                </button>
                 </article>
                 <article
                                 className="ride-item"
@@ -1075,6 +1196,11 @@ ShallowWrapper {
                                                 time: 
                                                 4:00pm
                                 </div>
+                                <button
+                                                onClick={[Function]}
+                                >
+                                                i want in
+                                </button>
                 </article>
                 <article
                                 className="ride-item"
@@ -1099,6 +1225,11 @@ ShallowWrapper {
                                                 time: 
                                                 4:30pm
                                 </div>
+                                <button
+                                                onClick={[Function]}
+                                >
+                                                i want in
+                                </button>
                 </article>
 </section>,
             ],
@@ -1224,6 +1355,11 @@ ShallowWrapper {
                                         time: 
                                         4:00pm
                     </div>
+                    <button
+                                        onClick={[Function]}
+                    >
+                                        i want in
+                    </button>
 </article>,
                   <article
                     className="ride-item"
@@ -1248,6 +1384,11 @@ ShallowWrapper {
                                         time: 
                                         4:00pm
                     </div>
+                    <button
+                                        onClick={[Function]}
+                    >
+                                        i want in
+                    </button>
 </article>,
                   <article
                     className="ride-item"
@@ -1272,6 +1413,11 @@ ShallowWrapper {
                                         time: 
                                         4:30pm
                     </div>
+                    <button
+                                        onClick={[Function]}
+                    >
+                                        i want in
+                    </button>
 </article>,
                 ],
                 "className": "ride-list",
@@ -1304,6 +1450,11 @@ ShallowWrapper {
                         time: 
                         4:00pm
 </div>,
+                      <button
+                        onClick={[Function]}
+>
+                        i want in
+</button>,
                     ],
                     "className": "ride-item",
                   },
@@ -1393,6 +1544,18 @@ ShallowWrapper {
                         "4:00pm",
                       ],
                       "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "i want in",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": "i want in",
+                      "type": "button",
                     },
                   ],
                   "type": "article",
@@ -1423,6 +1586,11 @@ ShallowWrapper {
                         time: 
                         4:00pm
 </div>,
+                      <button
+                        onClick={[Function]}
+>
+                        i want in
+</button>,
                     ],
                     "className": "ride-item",
                   },
@@ -1513,6 +1681,18 @@ ShallowWrapper {
                       ],
                       "type": "div",
                     },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "i want in",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": "i want in",
+                      "type": "button",
+                    },
                   ],
                   "type": "article",
                 },
@@ -1542,6 +1722,11 @@ ShallowWrapper {
                         time: 
                         4:30pm
 </div>,
+                      <button
+                        onClick={[Function]}
+>
+                        i want in
+</button>,
                     ],
                     "className": "ride-item",
                   },
@@ -1631,6 +1816,18 @@ ShallowWrapper {
                         "4:30pm",
                       ],
                       "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "i want in",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": "i want in",
+                      "type": "button",
                     },
                   ],
                   "type": "article",
