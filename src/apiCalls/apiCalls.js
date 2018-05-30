@@ -95,7 +95,8 @@ const fetchRidesPassenger = async (rideId) => {
     }
   };
   const response = await fetch(url, body);
-  
+  const passengers = await response.json();
+  return passengers;
 }
 
 export {

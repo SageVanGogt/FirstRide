@@ -285,14 +285,14 @@ describe('fetchRidesPassengers', () => {
     };
     url = `http://localhost:3000/api/rides_passengers/get/passengers/${mockRideId}`;
     window.fetch = jest.fn().mockImplementation(() => 
-    Promise.resolve(() => {
-      status: 200;
+    Promise.resolve({
+      status: 200,
       json: () => Promise.resolve({
         "ride": [{
               "id": 1,
               "ride_id": 1,
               "passenger_id": 1
-          }]
+        }]
       })
     }))
   })
@@ -300,6 +300,19 @@ describe('fetchRidesPassengers', () => {
   it('should be called with the correct params', async () => {
     await API.fetchRidesPassenger(mockRideId);
     expect(window.fetch).toHaveBeenCalledWith(url, mockBody)
+  })
+
+  it('should return expected object', async () => {
+    let expected = {
+      ride: [{
+        id: 1,
+        ride_id: 1,
+        passenger_id: 1
+      }]
+    }
+    let actual = await API.fetchRidesPassenger(mockRideId);
+
+    expect(actual).toEqual(expected);
   })
 })
 
