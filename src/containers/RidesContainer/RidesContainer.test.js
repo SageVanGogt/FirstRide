@@ -13,8 +13,12 @@ describe('RidesContainer', () => {
   let mockSetRides;
   let mockSetLocation;
   let mockRides;
+  let mockUser;
 
   beforeEach(() => {
+    mockUser = {
+      id: 1
+    }
     mockDestination = {
       location_name: 'Red Rocks',
       id: 1
@@ -26,7 +30,8 @@ describe('RidesContainer', () => {
       rides={mockRides}
       setLocation={mockSetLocation}
       destination={mockDestination}
-      setRides={mockSetRides}/>
+      setRides={mockSetRides}
+      user={mockUser}/>
     );
   })
 
@@ -148,6 +153,19 @@ describe('RidesContainer', () => {
 
       expect(actual).toEqual(expected);
     })
+
+    it('should return a state with the user prop', () => {
+      let mockState = {
+        destination: 'Red Rocks',
+        user: {id: 1},
+        rides: [{}, {}]
+      };
+      let mappedProps = mapStateToProps(mockState);
+      let actual = mappedProps.user;
+      let expected = {id: 1};
+
+      expect(actual).toEqual(expected);
+    })
   })
 
   describe('mapDispatchToProps', () => {
@@ -177,6 +195,19 @@ describe('RidesContainer', () => {
       mappedProps.setLocation(expected.location);
 
       expect(mockDispatch).toBeCalledWith(expected)
+    })
+  })
+
+  describe('submitRideSignup', () => {
+    
+    it('should call postRidesPassengers with the corerct params', async () => {
+      let expected = {
+        ride_id: 1,
+        passenger_id: 1
+      }
+      await wrapper.instance().submitRideSignup(1);
+
+      expect(API.postRidesPassengers).toHaveBeenCalledWith(expected);
     })
   })
 })
