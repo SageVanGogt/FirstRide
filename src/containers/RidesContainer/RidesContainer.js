@@ -8,7 +8,7 @@ import { addRides } from './../../actions/rides';
 import { addCurrentLocation } from './../../actions/currentLocation';
 import * as cleaner from './../../cleaners/cleaners';
 import OfferContainer from './../OfferContainer/OfferContainer';
-
+import RidePopoverComponent from './../../components/RidePopoverComponent/RidePopoverComponent';
 import './RidesContainer.css';
 export class RidesContainer extends Component {
   constructor(props) {
@@ -68,6 +68,7 @@ export class RidesContainer extends Component {
             <div>car model: {ride.car_type}</div>
             <div>date: {ride.date}</div>
             <div>time: {ride.time}</div>
+            <RidePopoverComponent />
           </article>
         );
     }))
