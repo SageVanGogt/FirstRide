@@ -20,7 +20,7 @@ export class RidesContainer extends Component {
   }
 
   componentDidUpdate = (prevProps) => {
-    if (prevProps.destination.id !== this.props.destination.id) {
+    if (prevProps.destination.id !== this.props.destination.id ) {
       this.loadRides();
     }
   }

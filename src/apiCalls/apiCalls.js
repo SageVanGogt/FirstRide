@@ -52,6 +52,7 @@ const fetchPickups = async (location) => {
 }
 
 const fetchGeocode = async (address) => {
+  console.log(address)
   const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${geoKey}`;  
   const response = await fetch(url);
   const locationData = await response.json();
