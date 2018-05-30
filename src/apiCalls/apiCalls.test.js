@@ -298,7 +298,7 @@ describe('fetchRidesPassengers', () => {
   })
 
   it('should be called with the correct params', async () => {
-    await API.fetchRidesPassenger(mockRideId);
+    await API.fetchRidesPassengers(mockRideId);
     expect(window.fetch).toHaveBeenCalledWith(url, mockBody)
   })
 
@@ -310,14 +310,40 @@ describe('fetchRidesPassengers', () => {
         passenger_id: 1
       }]
     }
-    let actual = await API.fetchRidesPassenger(mockRideId);
+    let actual = await API.fetchRidesPassengers(mockRideId);
 
     expect(actual).toEqual(expected);
   })
 })
 
 describe('postRidesPassengers', () => {
-  it('should be called with the correct params', () => {
-    let url = `http://localhost:3000/api/rides_passengers/new`;    
+  let url;
+  let mockBody;
+  let mockArg;
+
+  beforeEach(() => {
+    url = `http://localhost:3000/api/rides_passengers/new`;   
+    mockArg = {
+      ride_id: 1,
+      passenger_id: 1
+    }
+    mockBody = {
+      method: "POST",
+      body: JSON.stringify(mockArg),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    };
+    window.fetch = jest.fn().mockImplementation(() => 
+    Promise.resolve({
+      status: 200,
+      json: () => Promise.resolve(1)
+    }))
+  });
+
+  it('should be called with the correct params', async () => {
+    await API.postRidesPassengers(mockArg);
+
+    expect(window.fetch).toHaveBeenCalledWith(url, mockBody);
   })
 })

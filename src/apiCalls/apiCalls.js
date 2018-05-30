@@ -86,7 +86,7 @@ const submitNewPickup = async (location) => {
   return pickupId;
 }
 
-const fetchRidesPassenger = async (rideId) => {
+const fetchRidesPassengers = async (rideId) => {
   const url = `http://localhost:3000/api/rides_passengers/get/passengers/${rideId}`;
   const body = {
     method: 'POST', 
@@ -99,6 +99,18 @@ const fetchRidesPassenger = async (rideId) => {
   return passengers;
 }
 
+const postRidesPassengers = async (newPassenger) => {
+  const url = `http://localhost:3000/api/rides_passengers/new`;   
+  const body = {
+    method: "POST",
+    body: JSON.stringify(newPassenger),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  };
+  const response = await fetch(url, body);
+} 
+
 export {
   signinUser,
   signupUser,
@@ -108,5 +120,6 @@ export {
   fetchGeocode,
   submitNewRide,
   submitNewPickup,
-  fetchRidesPassenger
+  fetchRidesPassengers,
+  postRidesPassengers
 }
