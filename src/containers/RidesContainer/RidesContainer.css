@@ -17,3 +17,20 @@
   display: flex;
   overflow: scroll;
 }
+
+.offer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 200px;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;  
+  background-color: #404040;
+  text-decoration: none;
+  height: 60px;
+  color: white;
+  border: none;
+  cursor:pointer;
+}

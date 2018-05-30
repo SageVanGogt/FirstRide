@@ -10,13 +10,16 @@ describe('OfferContainer', () => {
   let wrapper;
   let mockDestination;
   let mockUser;
+  let mockLoadRides;
 
   beforeEach(() => {
+    mockLoadRides = jest.fn();
     mockDestination = { id: 1 };
     mockUser = { id: 1 };
     wrapper = shallow(<OfferContainer 
       user={mockUser}
       destination={mockDestination}
+      loadRides={mockLoadRides}
     />);
   })
 
@@ -57,6 +60,16 @@ describe('OfferContainer', () => {
       await wrapper.instance().handleSubmitRide(mockEvent);
 
       expect(API.submitNewRide).toHaveBeenCalledWith(expected)
+    })
+
+    it('should call loadRides on handle submit', async () => {
+      let mockEvent = {
+        preventDefault: jest.fn()
+      };
+
+      await wrapper.instance().handleSubmitRide(mockEvent);
+
+      expect(mockLoadRides).toHaveBeenCalled();
     })
   })
 

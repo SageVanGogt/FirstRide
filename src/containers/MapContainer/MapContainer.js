@@ -16,7 +16,7 @@ export class MapContainer extends Component {
   }
 
   componentDidUpdate = (prevProps) => {
-    if (prevProps.destination.id !== this.props.destination.id) {
+    if (prevProps.rides !== this.props.rides) {
       this.loadPickups();
     }
   }    
@@ -54,7 +54,8 @@ export class MapContainer extends Component {
 export const mapStateToProps = (state) => ({
   destination: state.destination,
   pickupLocations: state.pickupLocations,
-  currentLocation: state.currentLocation
+  currentLocation: state.currentLocation,
+  rides: state.rides
 });
 
 export const mapDispatchToProps = (dispatch) => ({
