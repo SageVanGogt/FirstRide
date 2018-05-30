@@ -124,6 +124,12 @@ describe('RidesContainer', () => {
       await wrapper.instance().loadRides()
       expect(mockSetRides).toHaveBeenCalledWith(expected)
     })
+
+    it('should call fetchRidesPassengers with correct params', async () => {
+      const expected = MOCK.mockRides.rides
+      await wrapper.instance().loadRides()
+      expect(API.fetchRidesPassengers).toHaveBeenCalledWith(expected)
+    })
   })
 
   describe('mapStateToProps', () => {

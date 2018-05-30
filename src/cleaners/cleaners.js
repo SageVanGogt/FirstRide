@@ -11,5 +11,6 @@ export const seatsRemainingUpdate = (rides, passengers) => {
     ride.seats_remaining = parseInt(ride.seats_remaining) - totalPassengers;
     return ride;
   })
+  
   return updatedRides;
 }
