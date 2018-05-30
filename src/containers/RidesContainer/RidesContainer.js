@@ -7,6 +7,8 @@ import * as API from './../../apiCalls/apiCalls';
 import { addRides } from './../../actions/rides';
 import { addCurrentLocation } from './../../actions/currentLocation';
 import * as cleaner from './../../cleaners/cleaners';
+import OfferContainer from './../OfferContainer/OfferContainer';
+
 import './RidesContainer.css';
 export class RidesContainer extends Component {
   constructor(props) {
@@ -15,7 +17,8 @@ export class RidesContainer extends Component {
     this.state = {
       street: '',
       city: '',
-      state: ''
+      state: '',
+      showOffer: false
     };
   }
 
@@ -70,10 +73,16 @@ export class RidesContainer extends Component {
     }))
   }
 
+  handleShowOffer = () => {
+    this.setState({
+      showOffer: !this.state.showOffer
+    })
+  }
+  
   render() {
     return (
       <div className="ride-page">
-        <NavLink to="/offer">Offer a Ride</NavLink>
+        <button className="offer-btn" onClick={this.handleShowOffer}>Offer a Ride</button>
         <section className="rides-container">
           <form action="submit" onSubmit={this.handleSubmit}>
             <input 
@@ -97,6 +106,9 @@ export class RidesContainer extends Component {
             {this.props.rides.length && this.rideListElement()}
           </section>
         </section>
+       {this.state.showOffer && <OfferContainer 
+          handleShowOffer={this.handleShowOffer}
+          loadRides={this.loadRides}/>} 
         <MapContainer />
       </div>
     );

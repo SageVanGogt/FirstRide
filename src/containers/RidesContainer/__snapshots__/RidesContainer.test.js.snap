@@ -61,13 +61,12 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <NavLink
-          activeClassName="active"
-          ariaCurrent="true"
-          to="/offer"
+        <button
+          className="offer-btn"
+          onClick={[Function]}
 >
           Offer a Ride
-</NavLink>,
+</button>,
         <section
           className="rides-container"
 >
@@ -174,6 +173,7 @@ ShallowWrapper {
                     </article>
           </section>
 </section>,
+        false,
         <Connect(MapContainer) />,
       ],
       "className": "ride-page",
@@ -183,16 +183,15 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "host",
         "props": Object {
-          "activeClassName": "active",
-          "ariaCurrent": "true",
           "children": "Offer a Ride",
-          "to": "/offer",
+          "className": "offer-btn",
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": "Offer a Ride",
-        "type": [Function],
+        "type": "button",
       },
       Object {
         "instance": null,
@@ -842,6 +841,7 @@ ShallowWrapper {
         ],
         "type": "section",
       },
+      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -861,13 +861,12 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <NavLink
-            activeClassName="active"
-            ariaCurrent="true"
-            to="/offer"
+          <button
+            className="offer-btn"
+            onClick={[Function]}
 >
             Offer a Ride
-</NavLink>,
+</button>,
           <section
             className="rides-container"
 >
@@ -974,6 +973,7 @@ ShallowWrapper {
                         </article>
             </section>
 </section>,
+          false,
           <Connect(MapContainer) />,
         ],
         "className": "ride-page",
@@ -983,16 +983,15 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "host",
           "props": Object {
-            "activeClassName": "active",
-            "ariaCurrent": "true",
             "children": "Offer a Ride",
-            "to": "/offer",
+            "className": "offer-btn",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": "Offer a Ride",
-          "type": [Function],
+          "type": "button",
         },
         Object {
           "instance": null,
@@ -1642,6 +1641,7 @@ ShallowWrapper {
           ],
           "type": "section",
         },
+        false,
         Object {
           "instance": null,
           "key": undefined,
