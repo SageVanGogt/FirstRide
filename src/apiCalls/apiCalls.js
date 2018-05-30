@@ -52,7 +52,6 @@ const fetchPickups = async (location) => {
 }
 
 const fetchGeocode = async (address) => {
-  console.log(address)
   const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${geoKey}`;  
   const response = await fetch(url);
   const locationData = await response.json();
@@ -87,6 +86,18 @@ const submitNewPickup = async (location) => {
   return pickupId;
 }
 
+const fetchRidesPassenger = async (rideId) => {
+  const url = `http://localhost:3000/api/rides_passengers/get/passengers/${rideId}`;
+  const body = {
+    method: 'POST', 
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  };
+  const response = await fetch(url, body);
+  
+}
+
 export {
   signinUser,
   signupUser,
@@ -95,5 +106,6 @@ export {
   fetchPickups,
   fetchGeocode,
   submitNewRide,
-  submitNewPickup
+  submitNewPickup,
+  fetchRidesPassenger
 }

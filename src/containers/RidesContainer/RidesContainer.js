@@ -68,7 +68,6 @@ export class RidesContainer extends Component {
             <div>car model: {ride.car_type}</div>
             <div>date: {ride.date}</div>
             <div>time: {ride.time}</div>
-            <RidePopoverComponent />
           </article>
         );
     }))

@@ -269,3 +269,42 @@ describe('submitNewPickup', () => {
     expect(actual).toEqual(expected);
   })
 });
+
+describe('fetchRidesPassengers', () => {
+  let url;
+  let mockRideId;
+  let mockBody;
+
+  beforeEach(() => {
+    mockRideId = 1;
+    mockBody = {
+      method: 'POST', 
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    };
+    url = `http://localhost:3000/api/rides_passengers/get/passengers/${mockRideId}`;
+    window.fetch = jest.fn().mockImplementation(() => 
+    Promise.resolve(() => {
+      status: 200;
+      json: () => Promise.resolve({
+        "ride": [{
+              "id": 1,
+              "ride_id": 1,
+              "passenger_id": 1
+          }]
+      })
+    }))
+  })
+
+  it('should be called with the correct params', async () => {
+    await API.fetchRidesPassenger(mockRideId);
+    expect(window.fetch).toHaveBeenCalledWith(url, mockBody)
+  })
+})
+
+describe('postRidesPassengers', () => {
+  it('should be called with the correct params', () => {
+    let url = `http://localhost:3000/api/rides_passengers/new`;    
+  })
+})
