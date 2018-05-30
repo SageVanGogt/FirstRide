@@ -65,15 +65,19 @@ export class OfferContainer extends Component {
   }
 
   getGeoInfo = async () => {
-    const { street, city, state } = this.state;
-    const address = {
-      street, 
-      city, 
-      state
-    };
-    const response = await API.fetchGeocode(address);
+    const formattedAddress = this.formatAddress();
+    const response = await API.fetchGeocode(formattedAddress);
     const geoLocation = await cleaner.geocodeCleaner(response);
     return geoLocation;
+  }
+
+  formatAddress = () => {
+    const street = this.state.street.replace(' ', '+');
+    const city = this.state.city.replace(' ', '+');
+    const state = this.state.state.replace(' ', '+');
+    return (
+      `${street},+${city},+${state}`
+    );
   }
 
   render() {

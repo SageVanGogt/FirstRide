@@ -82,18 +82,30 @@ describe('OfferContainer', () => {
   })
 
   describe('getGeoInfo', () => {
+    
     it('should call fetchGeoCode with the correct params', async () => {
-      let expected = {
-        street: '',
-        city: '',
-        state: ''
-      }
+      let expected = ',+,+'
 
       await wrapper.instance().getGeoInfo();
 
       expect(API.fetchGeocode).toHaveBeenCalledWith(expected)
     })
   })
+
+  describe('formatAddress', () => {
+
+    it('should return an address with no spaces', () => {
+      let expected = '2600+fairview,+seattle,+WA'
+      wrapper.setState({
+        street: '2600 fairview',
+        city: 'seattle', 
+        state: 'WA'
+      })
+      let actual = wrapper.instance().formatAddress();
+      
+      expect(actual).toEqual(expected);
+    })
+  });
 
   describe('mapStateToProps', () => {
 
