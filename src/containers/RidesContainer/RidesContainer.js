@@ -63,8 +63,7 @@ export class RidesContainer extends Component {
       ride_id: rideId,
       passenger_id: this.props.user.id
     }
-    const response = await API.postRidesPassengers(ridePassenger);
-    
+    await API.postRidesPassengers(ridePassenger);
   }
 
   rideListElement = () =>{ 
