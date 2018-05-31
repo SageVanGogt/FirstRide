@@ -7,11 +7,12 @@ import './NavContainer.css';
 
 export class NavContainer extends Component {
   constructor(props) {
-    super();
+    super(props);
   };
 
   handleSignout = () => {
     this.props.logoutUser();
+    this.props.toggleLogin();
   };
 
   render() {
@@ -22,8 +23,15 @@ export class NavContainer extends Component {
           <NavLink className="nav-link" to="/">Home</NavLink>
           { 
             this.props.user.id ? 
-              <button onClick={this.handleSignout}>signout</button> :
-              <NavLink className="nav-link" to="/login">Signin</NavLink>
+              <button 
+                onClick={this.handleSignout}>
+                signout
+              </button> :
+              <button 
+                className="" 
+                onClick={this.props.toggleLogin}>
+                Signin
+              </button>
           }
           <NavLink className="nav-link" to="/profile">Me</NavLink>
         </div>
