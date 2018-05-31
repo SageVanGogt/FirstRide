@@ -24,9 +24,9 @@ ShallowWrapper {
 >
         <input
                 className="signup-input"
-                name="name"
+                name="user_name"
                 onChange={[Function]}
-                placeholder="name"
+                placeholder="user_name"
                 type="text"
                 value=""
         />
@@ -62,9 +62,9 @@ ShallowWrapper {
         "children": Array [
           <input
             className="signup-input"
-            name="name"
+            name="user_name"
             onChange={[Function]}
-            placeholder="name"
+            placeholder="user_name"
             type="text"
             value=""
 />,
@@ -99,9 +99,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "className": "signup-input",
-            "name": "name",
+            "name": "user_name",
             "onChange": [Function],
-            "placeholder": "name",
+            "placeholder": "user_name",
             "type": "text",
             "value": "",
           },
@@ -170,9 +170,9 @@ ShallowWrapper {
 >
           <input
                     className="signup-input"
-                    name="name"
+                    name="user_name"
                     onChange={[Function]}
-                    placeholder="name"
+                    placeholder="user_name"
                     type="text"
                     value=""
           />
@@ -208,9 +208,9 @@ ShallowWrapper {
           "children": Array [
             <input
               className="signup-input"
-              name="name"
+              name="user_name"
               onChange={[Function]}
-              placeholder="name"
+              placeholder="user_name"
               type="text"
               value=""
 />,
@@ -245,9 +245,9 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "className": "signup-input",
-              "name": "name",
+              "name": "user_name",
               "onChange": [Function],
-              "placeholder": "name",
+              "placeholder": "user_name",
               "type": "text",
               "value": "",
             },

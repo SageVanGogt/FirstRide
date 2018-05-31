@@ -41,6 +41,39 @@ describe('signinUser', () => {
   })
 })
 
+describe('signupUser', () => {
+  let mockUser;
+  let url;
+  let mockBody;
+  
+  beforeEach(() => {
+    url = 'http://localhost:3000/api/users/new';
+    mockUser = {
+      user_name: 'sage',
+      email: 'thurmanvogt@gmail.com',
+      password: 'sage'
+    }
+    mockBody = {
+      method: "POST",
+      body: JSON.stringify(mockUser),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }
+    window.fetch = jest.fn().mockImplementation(() => 
+      Promise.resolve({
+        status: '200',
+        json: () => Promise.resolve(mockUser)
+      }))
+  })
+
+  it('should be called with the correct params', async () => {
+    await API.signupUser(mockUser);
+
+    expect(window.fetch).toHaveBeenCalledWith(url, mockBody)
+  })
+})
+
 describe('fetchDestination', () => {
   let url;
   let mockName;
