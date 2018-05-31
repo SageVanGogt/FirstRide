@@ -72,6 +72,13 @@ describe('signupUser', () => {
 
     expect(window.fetch).toHaveBeenCalledWith(url, mockBody)
   })
+
+  it('should return user data', async () => {
+    const expected = mockUser;
+    const actual = await API.signupUser(mockUser);
+
+    expect(actual).toEqual(expected);
+  })
 })
 
 describe('fetchDestination', () => {

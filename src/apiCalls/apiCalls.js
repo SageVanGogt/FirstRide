@@ -25,6 +25,7 @@ const signupUser = async (user) => {
   }
   const response = await fetch(url, body);
   const userRecieved = await response.json();
+  return userRecieved;
 } 
 
 const fetchDestination = async (name) => {
