@@ -28,6 +28,7 @@ export class SignupContainer extends Component {
       id: response.id,
       user_name: this.state.user_name
     }
+    await this.props.setUser(user);
   }
 
   render() {

@@ -7,14 +7,17 @@ jest.mock('./../../apiCalls/apiCalls');
 
 describe('SignupContainer', () => {
   let wrapper;
+  let mockSetUser;
 
   beforeEach(() => {
-    wrapper = shallow(<SignupContainer />)
-  })
+    mockSetUser = jest.fn();
+    wrapper = shallow(<SignupContainer
+      setUser={mockSetUser} />)
+  });
   
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
-  })
+  });
 
   describe('handleChange', () => {
     it('should update the state when input value changes', () => {
@@ -52,11 +55,15 @@ describe('SignupContainer', () => {
       expect(signupUser).toHaveBeenCalledWith(expected);
     })
 
-    it('should call mapDispatchToProps with the correct params', () => {
+    it('should call setUser with the correct params', async () => {
       let expected = {
         id: 1,
         user_name: 'heyo'
       }
+      wrapper.setState(mockUserInfo);      
+      await wrapper.instance().handleSubmit();
+
+      expect(mockSetUser).toHaveBeenCalledWith(expected);
     })
   })
 
