@@ -20,7 +20,7 @@
 }
 
 .nav-link {
-  padding: 0;
+  padding: 0 0 12px;
   border-bottom: 3px solid transparent;
   margin-right: 40px;
   text-decoration: none;
