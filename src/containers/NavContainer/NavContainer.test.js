@@ -5,14 +5,18 @@ import { NavContainer, mapStateToProps, mapDispatchToProps } from './NavContaine
 describe('NavContainer', () => {
   let wrapper;
   let mockState;
+  let mockLogoutUser;
 
   beforeEach(() => {
+    mockLogoutUser = jest.fn();
     mockState = {
       user: 'sage',
       rides: [{}, {}]
-    }
+    };
     wrapper = shallow(<NavContainer 
-    {...mockState}/>);
+      {...mockState}
+      logoutUser={mockLogoutUser}
+    />);
   })
 
   it('should match the snapshot', () => {
@@ -20,7 +24,11 @@ describe('NavContainer', () => {
   })
 
   describe('handleSignout', () => {
-    it('should call')
+    it('should call logoutUser', () => {
+      wrapper.instance().handleSignout();
+      
+      expect(mockLogoutUser).toHaveBeenCalled();
+    })
   })
 
   describe('mapStateToProps', () => {
