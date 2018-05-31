@@ -4,9 +4,14 @@ import { shallow } from 'enzyme';
  
 describe('App', () => {
   let wrapper;
+  let mockUser;
 
   beforeEach(() => {
-    wrapper = shallow(<App />);
+    mockUser = {
+      id: 1
+    }
+    wrapper = shallow(<App 
+    user={mockUser}/>);
   })
 
   it('should match the snapshot', () => {
