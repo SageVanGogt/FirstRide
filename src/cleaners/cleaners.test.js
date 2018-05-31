@@ -12,3 +12,19 @@ describe('geocodeCleaner', () => {
     expect(actual).toEqual(expected);
   })
 })
+
+describe('seatsRemainingCleaner', () => {
+  it('should adjust the seats remaining if the ride has passengers', () => {{
+    let expected = MOCK.mockUpdatedRides.rides;
+    let mockRidesPassengers = [
+      {
+        id: 1,
+        ride_id: 2,
+        passenger_id: 1
+      }
+    ];
+    let actual = cleaner.seatsRemainingUpdate(MOCK.mockRides.rides, mockRidesPassengers);
+
+    expect(actual).toEqual(expected);
+  }})
+})

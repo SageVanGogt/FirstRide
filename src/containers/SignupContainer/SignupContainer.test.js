@@ -24,12 +24,9 @@ describe('SignupContainer', () => {
           name: "email"
       }}
       const expected = {
-        bio: '',
+        user_name: '',
         email: 'thurmanvogt@gmail.com',
-        password: '',
-        rating: '',
-        user_id: '',
-        user_img: ''
+        password: ''
       }
       wrapper.instance().handleChange(mockEvent);
       expect(wrapper.state()).toEqual(expected)
@@ -39,12 +36,9 @@ describe('SignupContainer', () => {
   describe('handleSubmit', () => {
     it('should call signupUser with the correct params', async () => {
       const expected = {
-        bio: 'heyo',
+        user_name: 'heyo',
         email: 'thurmanvogt@gmail.com',
-        password: '',
-        rating: '',
-        user_id: '',
-        user_img: ''
+        password: ''
       }
       
       wrapper.setState(expected);

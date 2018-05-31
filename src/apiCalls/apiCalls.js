@@ -86,8 +86,8 @@ const submitNewPickup = async (location) => {
   return pickupId;
 }
 
-const fetchRidesPassengers = async (rideId) => {
-  const url = `http://localhost:3000/api/rides_passengers/get/passengers/${rideId}`;
+const fetchRidesPassengers = async (locationId) => {
+  const url = `http://localhost:3000/api/rides_passengers/get/passengers/${locationId}`;
   const body = {
     method: 'POST', 
     headers: {

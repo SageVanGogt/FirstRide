@@ -38,7 +38,7 @@ ShallowWrapper {
                     activeClassName="active"
                     ariaCurrent="true"
                     className="nav-link"
-                    to="/signin"
+                    to="/login"
           >
                     Signin
           </NavLink>
@@ -86,7 +86,7 @@ ShallowWrapper {
               activeClassName="active"
               ariaCurrent="true"
               className="nav-link"
-              to="/signin"
+              to="/login"
 >
               Signin
 </NavLink>,
@@ -127,7 +127,7 @@ ShallowWrapper {
               "ariaCurrent": "true",
               "children": "Signin",
               "className": "nav-link",
-              "to": "/signin",
+              "to": "/login",
             },
             "ref": null,
             "rendered": "Signin",
@@ -181,7 +181,7 @@ ShallowWrapper {
                         activeClassName="active"
                         ariaCurrent="true"
                         className="nav-link"
-                        to="/signin"
+                        to="/login"
             >
                         Signin
             </NavLink>
@@ -229,7 +229,7 @@ ShallowWrapper {
                 activeClassName="active"
                 ariaCurrent="true"
                 className="nav-link"
-                to="/signin"
+                to="/login"
 >
                 Signin
 </NavLink>,
@@ -270,7 +270,7 @@ ShallowWrapper {
                 "ariaCurrent": "true",
                 "children": "Signin",
                 "className": "nav-link",
-                "to": "/signin",
+                "to": "/login",
               },
               "ref": null,
               "rendered": "Signin",
