@@ -4,7 +4,13 @@ exports[`App should match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__unrendered__): <App
+    user={
+        Object {
+            "id": 1,
+          }
+    }
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -21,14 +27,12 @@ ShallowWrapper {
         <div
           className="nav-container"
 >
-          <Connect(NavContainer) />
-</div>,
-        <Switch>
-          <Route
-                    exact={true}
-                    path="/login"
-                    render={[Function]}
+          <Connect(NavContainer)
+                    toggleLogin={[Function]}
           />
+</div>,
+        0,
+        <Switch>
           <Route
                     component={[Function]}
                     exact={true}
@@ -55,7 +59,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <Connect(NavContainer) />,
+          "children": <Connect(NavContainer)
+            toggleLogin={[Function]}
+/>,
           "className": "nav-container",
         },
         "ref": null,
@@ -63,24 +69,22 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "toggleLogin": [Function],
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
         },
         "type": "div",
       },
+      0,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <Route
-              exact={true}
-              path="/login"
-              render={[Function]}
-/>,
             <Route
               component={[Function]}
               exact={true}
@@ -100,19 +104,6 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "exact": true,
-              "path": "/login",
-              "render": [Function],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
           Object {
             "instance": null,
             "key": undefined,
@@ -168,14 +159,12 @@ ShallowWrapper {
           <div
             className="nav-container"
 >
-            <Connect(NavContainer) />
-</div>,
-          <Switch>
-            <Route
-                        exact={true}
-                        path="/login"
-                        render={[Function]}
+            <Connect(NavContainer)
+                        toggleLogin={[Function]}
             />
+</div>,
+          0,
+          <Switch>
             <Route
                         component={[Function]}
                         exact={true}
@@ -202,7 +191,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <Connect(NavContainer) />,
+            "children": <Connect(NavContainer)
+              toggleLogin={[Function]}
+/>,
             "className": "nav-container",
           },
           "ref": null,
@@ -210,24 +201,22 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
-            "props": Object {},
+            "props": Object {
+              "toggleLogin": [Function],
+            },
             "ref": null,
             "rendered": null,
             "type": [Function],
           },
           "type": "div",
         },
+        0,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <Route
-                exact={true}
-                path="/login"
-                render={[Function]}
-/>,
               <Route
                 component={[Function]}
                 exact={true}
@@ -247,19 +236,6 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "exact": true,
-                "path": "/login",
-                "render": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
             Object {
               "instance": null,
               "key": undefined,

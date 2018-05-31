@@ -19,7 +19,6 @@ export class App extends Component {
   }
 
   toggleLogin = () => {
-    console.log('called')
     this.setState({
       showLogin: !this.state.showLogin
     })
@@ -36,14 +35,6 @@ export class App extends Component {
           <LoginComponent />
         }
         <Switch>
-          {/* <Route
-            exact path="/login"
-            render={() => (
-              this.props.user.id ?
-                <Redirect to="/" /> :
-                <LoginComponent />
-            )}
-          /> */}
           <Route 
             exact path="/" 
             component={DestinationsContainer}
