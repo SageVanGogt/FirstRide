@@ -25,7 +25,8 @@ describe('SignupContainer', () => {
         target: {
           value: 'thurmanvogt@gmail.com',
           name: "email"
-      }}
+        }
+      }
       const expected = {
         user_name: '',
         email: 'thurmanvogt@gmail.com',
@@ -38,8 +39,12 @@ describe('SignupContainer', () => {
 
   describe('handleSubmit', () => {
     let mockUserInfo;
+    let mockEvent;
 
     beforeEach(() => {
+      mockEvent = {
+        preventDefault: jest.fn()
+      }
       mockUserInfo = {
         user_name: 'heyo',
         email: 'thurmanvogt@gmail.com',
@@ -50,7 +55,7 @@ describe('SignupContainer', () => {
     it('should call signupUser with the correct params', async () => {
       let expected = mockUserInfo;
       wrapper.setState(mockUserInfo);
-      Promise.resolve(wrapper.instance().handleSubmit());
+      Promise.resolve(wrapper.instance().handleSubmit(mockEvent));
       
       expect(signupUser).toHaveBeenCalledWith(expected);
     })
@@ -61,7 +66,7 @@ describe('SignupContainer', () => {
         user_name: 'heyo'
       }
       wrapper.setState(mockUserInfo);      
-      await wrapper.instance().handleSubmit();
+      await wrapper.instance().handleSubmit(mockEvent);
 
       expect(mockSetUser).toHaveBeenCalledWith(expected);
     })

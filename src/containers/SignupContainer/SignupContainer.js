@@ -22,7 +22,8 @@ export class SignupContainer extends Component {
     });
   }
 
-  handleSubmit = async () => {
+  handleSubmit = async (event) => {
+    event.preventDefault();
     const response = await signupUser(this.state);
     const user = {
       id: response.id,
@@ -41,15 +42,13 @@ export class SignupContainer extends Component {
           <input 
             className="signup-input"
             type="text" 
-            value="" 
             name="user_name"
             onChange={this.handleChange}
-            placeholder="user_name"
+            placeholder="name"
           />
           <input 
             className="signup-input"
             type="text" 
-            value="" 
             name="email"
             onChange={this.handleChange}
             placeholder="email"
@@ -57,7 +56,6 @@ export class SignupContainer extends Component {
           <input 
             className="signup-input"
             type="password" 
-            value="" 
             name="password"
             onChange={this.handleChange}
             placeholder="password"
