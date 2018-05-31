@@ -15,7 +15,17 @@ const signinUser = async (user) => {
 } 
 
 const signupUser = async (user) => {
-
+  const url = 'http://localhost:3000/api/users/new';
+  const body = {
+    method: "POST",
+    body: JSON.stringify(user),
+    headers: {
+      "Content-Type": "application/json"
+    }
+  }
+  const response = await fetch(url, body);
+  const userRecieved = await response.json();
+  return userRecieved;
 } 
 
 const fetchDestination = async (name) => {

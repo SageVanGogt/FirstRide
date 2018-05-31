@@ -18,24 +18,40 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <NavLink
-          activeClassName="active"
-          ariaCurrent="true"
-          name="Red Rocks"
-          onClick={[Function]}
-          to="/rides"
+        <div
+          className="location-container"
 >
-          Red Rocks
-</NavLink>,
-        <NavLink
-          activeClassName="active"
-          ariaCurrent="true"
-          name="Breckenridge"
-          onClick={[Function]}
-          to="/rides"
+          <NavLink
+                    activeClassName="active"
+                    ariaCurrent="true"
+                    className="location-pin"
+                    name="Red Rocks"
+                    onClick={[Function]}
+                    to="/rides"
+          >
+                    Red Rocks
+                    <div
+                              className="pulse"
+                    />
+          </NavLink>
+</div>,
+        <div
+          className="location-container"
 >
-          Breckenridge
-</NavLink>,
+          <NavLink
+                    activeClassName="active"
+                    ariaCurrent="true"
+                    className="location-pin"
+                    name="Breckenridge"
+                    onClick={[Function]}
+                    to="/rides"
+          >
+                    Breckenridge
+          </NavLink>
+          <div
+                    className="pulse"
+          />
+</div>,
       ],
       "className": "destinations",
     },
@@ -44,34 +60,115 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "host",
         "props": Object {
-          "activeClassName": "active",
-          "ariaCurrent": "true",
-          "children": "Red Rocks",
-          "name": "Red Rocks",
-          "onClick": [Function],
-          "to": "/rides",
+          "children": <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            className="location-pin"
+            name="Red Rocks"
+            onClick={[Function]}
+            to="/rides"
+>
+            Red Rocks
+            <div
+                        className="pulse"
+            />
+</NavLink>,
+          "className": "location-container",
         },
         "ref": null,
-        "rendered": "Red Rocks",
-        "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": Array [
+              "Red Rocks",
+              <div
+                className="pulse"
+/>,
+            ],
+            "className": "location-pin",
+            "name": "Red Rocks",
+            "onClick": [Function],
+            "to": "/rides",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Red Rocks",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "pulse",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+          ],
+          "type": [Function],
+        },
+        "type": "div",
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "host",
         "props": Object {
-          "activeClassName": "active",
-          "ariaCurrent": "true",
-          "children": "Breckenridge",
-          "name": "Breckenridge",
-          "onClick": [Function],
-          "to": "/rides",
+          "children": Array [
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              className="location-pin"
+              name="Breckenridge"
+              onClick={[Function]}
+              to="/rides"
+>
+              Breckenridge
+</NavLink>,
+            <div
+              className="pulse"
+/>,
+          ],
+          "className": "location-container",
         },
         "ref": null,
-        "rendered": "Breckenridge",
-        "type": [Function],
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "ariaCurrent": "true",
+              "children": "Breckenridge",
+              "className": "location-pin",
+              "name": "Breckenridge",
+              "onClick": [Function],
+              "to": "/rides",
+            },
+            "ref": null,
+            "rendered": "Breckenridge",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "pulse",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": "div",
       },
     ],
     "type": "div",
@@ -83,24 +180,40 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <NavLink
-            activeClassName="active"
-            ariaCurrent="true"
-            name="Red Rocks"
-            onClick={[Function]}
-            to="/rides"
+          <div
+            className="location-container"
 >
-            Red Rocks
-</NavLink>,
-          <NavLink
-            activeClassName="active"
-            ariaCurrent="true"
-            name="Breckenridge"
-            onClick={[Function]}
-            to="/rides"
+            <NavLink
+                        activeClassName="active"
+                        ariaCurrent="true"
+                        className="location-pin"
+                        name="Red Rocks"
+                        onClick={[Function]}
+                        to="/rides"
+            >
+                        Red Rocks
+                        <div
+                                    className="pulse"
+                        />
+            </NavLink>
+</div>,
+          <div
+            className="location-container"
 >
-            Breckenridge
-</NavLink>,
+            <NavLink
+                        activeClassName="active"
+                        ariaCurrent="true"
+                        className="location-pin"
+                        name="Breckenridge"
+                        onClick={[Function]}
+                        to="/rides"
+            >
+                        Breckenridge
+            </NavLink>
+            <div
+                        className="pulse"
+            />
+</div>,
         ],
         "className": "destinations",
       },
@@ -109,34 +222,115 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "host",
           "props": Object {
-            "activeClassName": "active",
-            "ariaCurrent": "true",
-            "children": "Red Rocks",
-            "name": "Red Rocks",
-            "onClick": [Function],
-            "to": "/rides",
+            "children": <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              className="location-pin"
+              name="Red Rocks"
+              onClick={[Function]}
+              to="/rides"
+>
+              Red Rocks
+              <div
+                            className="pulse"
+              />
+</NavLink>,
+            "className": "location-container",
           },
           "ref": null,
-          "rendered": "Red Rocks",
-          "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "ariaCurrent": "true",
+              "children": Array [
+                "Red Rocks",
+                <div
+                  className="pulse"
+/>,
+              ],
+              "className": "location-pin",
+              "name": "Red Rocks",
+              "onClick": [Function],
+              "to": "/rides",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Red Rocks",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "pulse",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+            ],
+            "type": [Function],
+          },
+          "type": "div",
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "host",
           "props": Object {
-            "activeClassName": "active",
-            "ariaCurrent": "true",
-            "children": "Breckenridge",
-            "name": "Breckenridge",
-            "onClick": [Function],
-            "to": "/rides",
+            "children": Array [
+              <NavLink
+                activeClassName="active"
+                ariaCurrent="true"
+                className="location-pin"
+                name="Breckenridge"
+                onClick={[Function]}
+                to="/rides"
+>
+                Breckenridge
+</NavLink>,
+              <div
+                className="pulse"
+/>,
+            ],
+            "className": "location-container",
           },
           "ref": null,
-          "rendered": "Breckenridge",
-          "type": [Function],
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "ariaCurrent": "true",
+                "children": "Breckenridge",
+                "className": "location-pin",
+                "name": "Breckenridge",
+                "onClick": [Function],
+                "to": "/rides",
+              },
+              "ref": null,
+              "rendered": "Breckenridge",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "pulse",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",

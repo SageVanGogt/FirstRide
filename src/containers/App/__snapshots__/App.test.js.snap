@@ -18,7 +18,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <div>
+        <div
+          className="nav-container"
+>
           <Connect(NavContainer) />
 </div>,
         <Switch>
@@ -54,6 +56,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <Connect(NavContainer) />,
+          "className": "nav-container",
         },
         "ref": null,
         "rendered": Object {
@@ -162,7 +165,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div>
+          <div
+            className="nav-container"
+>
             <Connect(NavContainer) />
 </div>,
           <Switch>
@@ -198,6 +203,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <Connect(NavContainer) />,
+            "className": "nav-container",
           },
           "ref": null,
           "rendered": Object {
@@ -294,194 +300,6 @@ ShallowWrapper {
               "type": [Function],
             },
           ],
-          "type": [Function],
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
-`;
-
-exports[`DestinationsContainer should match the snapshot 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <DestinationsContainer />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <NavLink
-          activeClassName="active"
-          ariaCurrent="true"
-          className="location-pin"
-          name="Red Rocks"
-          onClick={[Function]}
-          to="/rides"
->
-          Red Rocks
-</NavLink>,
-        <div
-          className="pulse"
-/>,
-        <NavLink
-          activeClassName="active"
-          ariaCurrent="true"
-          className="location-pin"
-          name="Breckenridge"
-          onClick={[Function]}
-          to="/rides"
->
-          Breckenridge
-</NavLink>,
-      ],
-      "className": "destinations",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "active",
-          "ariaCurrent": "true",
-          "children": "Red Rocks",
-          "className": "location-pin",
-          "name": "Red Rocks",
-          "onClick": [Function],
-          "to": "/rides",
-        },
-        "ref": null,
-        "rendered": "Red Rocks",
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "className": "pulse",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "active",
-          "ariaCurrent": "true",
-          "children": "Breckenridge",
-          "className": "location-pin",
-          "name": "Breckenridge",
-          "onClick": [Function],
-          "to": "/rides",
-        },
-        "ref": null,
-        "rendered": "Breckenridge",
-        "type": [Function],
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <NavLink
-            activeClassName="active"
-            ariaCurrent="true"
-            className="location-pin"
-            name="Red Rocks"
-            onClick={[Function]}
-            to="/rides"
->
-            Red Rocks
-</NavLink>,
-          <div
-            className="pulse"
-/>,
-          <NavLink
-            activeClassName="active"
-            ariaCurrent="true"
-            className="location-pin"
-            name="Breckenridge"
-            onClick={[Function]}
-            to="/rides"
->
-            Breckenridge
-</NavLink>,
-        ],
-        "className": "destinations",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "active",
-            "ariaCurrent": "true",
-            "children": "Red Rocks",
-            "className": "location-pin",
-            "name": "Red Rocks",
-            "onClick": [Function],
-            "to": "/rides",
-          },
-          "ref": null,
-          "rendered": "Red Rocks",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "className": "pulse",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "active",
-            "ariaCurrent": "true",
-            "children": "Breckenridge",
-            "className": "location-pin",
-            "name": "Breckenridge",
-            "onClick": [Function],
-            "to": "/rides",
-          },
-          "ref": null,
-          "rendered": "Breckenridge",
           "type": [Function],
         },
       ],

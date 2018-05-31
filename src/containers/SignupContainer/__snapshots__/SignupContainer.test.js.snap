@@ -4,7 +4,9 @@ exports[`SignupContainer should match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SignupContainer />,
+  Symbol(enzyme.__unrendered__): <SignupContainer
+    setUser={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -24,9 +26,9 @@ ShallowWrapper {
 >
         <input
                 className="signup-input"
-                name="name"
+                name="user_name"
                 onChange={[Function]}
-                placeholder="name"
+                placeholder="user_name"
                 type="text"
                 value=""
         />
@@ -62,9 +64,9 @@ ShallowWrapper {
         "children": Array [
           <input
             className="signup-input"
-            name="name"
+            name="user_name"
             onChange={[Function]}
-            placeholder="name"
+            placeholder="user_name"
             type="text"
             value=""
 />,
@@ -99,9 +101,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "className": "signup-input",
-            "name": "name",
+            "name": "user_name",
             "onChange": [Function],
-            "placeholder": "name",
+            "placeholder": "user_name",
             "type": "text",
             "value": "",
           },
@@ -170,9 +172,9 @@ ShallowWrapper {
 >
           <input
                     className="signup-input"
-                    name="name"
+                    name="user_name"
                     onChange={[Function]}
-                    placeholder="name"
+                    placeholder="user_name"
                     type="text"
                     value=""
           />
@@ -208,9 +210,9 @@ ShallowWrapper {
           "children": Array [
             <input
               className="signup-input"
-              name="name"
+              name="user_name"
               onChange={[Function]}
-              placeholder="name"
+              placeholder="user_name"
               type="text"
               value=""
 />,
@@ -245,9 +247,9 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "className": "signup-input",
-              "name": "name",
+              "name": "user_name",
               "onChange": [Function],
-              "placeholder": "name",
+              "placeholder": "user_name",
               "type": "text",
               "value": "",
             },
