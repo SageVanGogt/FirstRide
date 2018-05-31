@@ -24,7 +24,7 @@ export class RidesContainer extends Component {
 
   componentDidUpdate = (prevProps) => {
     const { destination, rides } = this.props
-    if (prevProps.destination !== destination || prevProps.rides !== rides) {
+    if (prevProps.destination !== destination) {
       this.loadRides();
     }
   }
@@ -69,6 +69,7 @@ export class RidesContainer extends Component {
       location_id: this.props.destination.id
     }
     await API.postRidesPassengers(ridePassenger);
+    this.loadRides();
   }
 
   rideListElement = () =>{ 
