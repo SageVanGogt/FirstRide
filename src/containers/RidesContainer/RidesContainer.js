@@ -73,25 +73,10 @@ export class RidesContainer extends Component {
 
   rideListElement = () =>{ 
     return (
-      <RidePopoverComponent rides={this.props.rides}/> 
-      // this.props.rides.map(ride => {
-        // return (
-        //   <article className="ride-item">
-        //     {/* <div>seats remaining: {ride.seats_remaining}</div>
-        //     <div>car capacity: {ride.car_capacity}</div>
-        //     <div>car model: {ride.car_type}</div>
-        //     <div>date: {ride.date}</div>
-        //     <div>time: {ride.time}</div>
-        //     <button onClick={() => 
-        //       this.submitRideSignup(ride.id)}>
-        //       i want in
-        //     </button> */}
-        //     <RidePopoverComponent ride={ride}/>
-        //   </article>
-        // );
+      <RidePopoverComponent 
+        rides={this.props.rides} 
+        submitRideSignup={this.submitRideSignup}/> 
     )}
-  // )
-  // }
 
   handleShowOffer = () => {
     this.setState({
