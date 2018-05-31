@@ -10,21 +10,40 @@ import ProfileContainer from './../ProfileContainer/ProfileContainer';
 import NavContainer from './../NavContainer/NavContainer';
 import LoginComponent from './../../components/LoginComponent/LoginComponent';
 export class App extends Component {
+  constructor() {
+    super(),
+
+    this.state = {
+      showLogin: false
+    }
+  }
+
+  toggleLogin = () => {
+    console.log('called')
+    this.setState({
+      showLogin: !this.state.showLogin
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <div className="nav-container">
-          <NavContainer/>
+          <NavContainer toggleLogin={this.toggleLogin}/>
         </div>
+        {
+          this.state.showLogin & !this.props.user.id && 
+          <LoginComponent />
+        }
         <Switch>
-          <Route
+          {/* <Route
             exact path="/login"
             render={() => (
               this.props.user.id ?
                 <Redirect to="/" /> :
                 <LoginComponent />
             )}
-          />
+          /> */}
           <Route 
             exact path="/" 
             component={DestinationsContainer}
