@@ -19,7 +19,6 @@ export class App extends Component {
   }
 
   toggleLogin = () => {
-    console.log('called')
     this.setState({
       showLogin: !this.state.showLogin
     })

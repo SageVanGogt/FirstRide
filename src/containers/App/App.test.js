@@ -18,6 +18,16 @@ describe('App', () => {
     expect(wrapper).toMatchSnapshot();
   })
 
+  describe('toggleLogin', () => {
+    it('should toggle the state of showLogin when called', () => {
+      let expected = true;
+      wrapper.instance().toggleLogin();
+      let actual = wrapper.state('showLogin');
+
+      expect(actual).toEqual(expected);
+    })
+  })
+
   describe('mapStateToProps', () => {
     it('should pull user from the state', () => {
       let mockState = {
