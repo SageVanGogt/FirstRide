@@ -1,0 +1,12 @@
+#popovers {
+  margin-top: 195px;
+}
+
+#popover-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.ride-popover-list {
+  list-style: none;
+}

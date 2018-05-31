@@ -1,35 +1,39 @@
 import React, { Component } from 'react';
-import { ButtonToolbar, Popover, Overlay, Button } from 'react-bootstrap'
+import { ButtonToolbar, Popover, Overlay, OverlayTrigger, Button } from 'react-bootstrap';
+import './RidePopoverComponent.css';
 
 class RidePopoverComponent extends Component {
   constructor(props, context) {
     super(props, context);
-
-    this.handleClick = e => {
-      this.setState({ target: e.target, show: !this.state.show });
-    };
-
-    this.state = {
-      show: false
-    };
   }
-
+  
   render() {
-    return (
-      <ButtonToolbar>
-        <Button onClick={this.handleClick}>Holy guacamole!</Button>
-
-        <Overlay
-          show={this.state.show}
-          target={this.state.target}
-          placement="bottom"
+    const allPopovers = this.props.rides.map(ride => {
+      return (
+        <OverlayTrigger
           container={this}
-          containerPadding={20}
+          trigger="click"
+          placement="right"
+          overlay={
+          <Popover id="popovers" title="All your ride info">
+            <strong>{ride.seats_remaining} seats left!</strong>
+            <ul className="ride-popover-list">
+              <li>Leaving at{ride.time}</li>
+              <li>You'd be riding in a {ride.car_type}</li>
+              <li>You'll leave at {ride.time} on {ride.date}</li>
+              <button onClick={() => 
+                this.props.submitRideSignup(ride.id)}>
+                I want in
+              </button>
+            </ul>
+          </Popover>}
         >
-          <Popover id="popover-contained" title="Popover bottom">
-            <strong>Holy guacamole!</strong> Check this info.
-          </Popover>
-        </Overlay>
+          <Button>{ride.time}</Button>
+        </OverlayTrigger>
+      )})
+    return (
+      <ButtonToolbar id="popover-container">
+          {allPopovers}
       </ButtonToolbar>
     );
   }
