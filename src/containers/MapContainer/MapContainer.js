@@ -40,7 +40,7 @@ export class MapContainer extends Component {
         <MapComponent
           {...this.state}
           // loading={this.props.loading}
-          position={this.props.currentLocation}
+          position={{lat: 39.752771, lng: -104.999710} || this.props.currentLocatition}
           googleMapURL={mapUrl}
           markerCoords={this.props.pickupLocations}
           loadingElement={this.loadingElement()}

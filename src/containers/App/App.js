@@ -24,12 +24,22 @@ export class App extends Component {
     })
   }
 
+  errorElement = () => {
+    return (
+
+    );
+  }
+
   render() {
     return (
       <div className="App">
         <div className="nav-container">
           <NavContainer toggleLogin={this.toggleLogin}/>
         </div>
+        {
+          this.props.error.length &&
+          this.errorElement()
+        }
         {
           this.state.showLogin & !this.props.user.id && 
           <LoginComponent />
@@ -55,7 +65,8 @@ export class App extends Component {
 
 export const mapStateToProps = (state) => ({
   user: state.user,
-  destination: state.destination
-})
+  destination: state.destination,
+  error: state.error
+});
 
 export default withRouter(connect(mapStateToProps)(App))
