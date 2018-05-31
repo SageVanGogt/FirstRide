@@ -2,8 +2,10 @@ const errorReducer = (state = '', action) => {
   switch(action.type) {
     case "ADD_ERROR":
       return action.error;
-    default:
+    case "REMOVE_ERROR":
       return '';
+    default:
+      return state;
   }
 }
 
