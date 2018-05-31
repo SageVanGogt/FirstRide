@@ -8,7 +8,7 @@ export class SignupContainer extends Component {
   constructor(props) {
     super();
     this.state = {
-      name: '',
+      user_name: '',
       email: '',
       password: ''
     };
@@ -36,9 +36,9 @@ export class SignupContainer extends Component {
             className="signup-input"
             type="text" 
             value="" 
-            name="name"
+            name="user_name"
             onChange={this.handleChange}
-            placeholder="name"
+            placeholder="user_name"
           />
           <input 
             className="signup-input"
