@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { NavContainer, mapStateToProps } from './NavContainer';
+import { NavContainer, mapStateToProps, mapDispatchToProps } from './NavContainer';
 
 describe('NavContainer', () => {
   let wrapper;
@@ -19,6 +19,10 @@ describe('NavContainer', () => {
     expect(wrapper).toMatchSnapshot();
   })
 
+  describe('handleSignout', () => {
+    it('should call')
+  })
+
   describe('mapStateToProps', () => {
     it('should get the user from the store', () => {
       let expected = 'sage';
@@ -26,6 +30,19 @@ describe('NavContainer', () => {
       let actual = mappedProps.user;
       
       expect(actual).toEqual(expected);
+    })
+  })
+
+  describe('mapDispatchToProps', () => {
+    it('should call dispatch with the correct params', () => {
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let expected = {
+        type: 'SIGNOUT_USER'
+      }
+      mappedProps.logoutUser();
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected);
     })
   })
 })

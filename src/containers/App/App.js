@@ -20,7 +20,7 @@ export class App extends Component {
           <Route
             exact path="/login"
             render={() => (
-              this.props.user.email ?
+              this.props.user.id ?
                 <Redirect to="/" /> :
                 <LoginComponent />
             )}
