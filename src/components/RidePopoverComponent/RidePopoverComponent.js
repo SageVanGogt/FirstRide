@@ -1,35 +1,31 @@
 import React, { Component } from 'react';
-import { ButtonToolbar, Popover, Overlay, Button } from 'react-bootstrap'
+import { ButtonToolbar, Popover, Overlay, OverlayTrigger, Button } from 'react-bootstrap';
+import './RidePopoverComponent.css';
+// bootstrapUtils.addStyle(Popover, 'popovers');
 
 class RidePopoverComponent extends Component {
   constructor(props, context) {
     super(props, context);
-
-    this.handleClick = e => {
-      this.setState({ target: e.target, show: !this.state.show });
-    };
-
-    this.state = {
-      show: false
-    };
   }
-
+  
   render() {
-    return (
-      <ButtonToolbar>
-        <Button onClick={this.handleClick}>Holy guacamole!</Button>
-
-        <Overlay
-          show={this.state.show}
-          target={this.state.target}
-          placement="bottom"
+    const allPopovers = this.props.rides.map(ride => {
+      return (
+        <OverlayTrigger
           container={this}
-          containerPadding={20}
-        >
-          <Popover id="popover-contained" title="Popover bottom">
+          trigger="click"
+          placement="right"
+          overlay={
+          <Popover id="popovers" title="Popover right">
             <strong>Holy guacamole!</strong> Check this info.
-          </Popover>
-        </Overlay>
+          </Popover>}
+        >
+          <Button>{ride.time}</Button>
+        </OverlayTrigger>
+      )})
+    return (
+      <ButtonToolbar id="popover-container">
+          {allPopovers}
       </ButtonToolbar>
     );
   }
