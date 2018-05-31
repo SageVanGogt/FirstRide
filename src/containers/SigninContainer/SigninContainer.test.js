@@ -9,10 +9,12 @@ jest.mock('./../../apiCalls/apiCalls');
 
 describe('SigninContainer', () => {
   let wrapper;
+  let mockSigninUser;
 
   beforeEach(() => {
+    mockSigninUser = jest.fn();
     wrapper = shallow(<SigninContainer 
-    signinUser={actions.signinUser}/>)
+      signinUser={mockSigninUser}/>)
   })
   
   it('should match the snapshot', () => {
@@ -36,18 +38,35 @@ describe('SigninContainer', () => {
   })
 
   describe('handleSubmit', () => {
-    it('should call signinUser with the correct params', async () => {
-      let expected = {
+    let mockSignin;
+    let mockEvent;
+
+    beforeEach(() => {
+      mockSignin = {
         email: "thurmanvogt@gmail.com",
         password: "sage"
-      }
-      let mockEvent = {
+      };
+      mockEvent = {
         preventDefault: jest.fn()
-      }
+      };
+    });
+
+    it('should call signinUser with the correct params', async () => {
+      let expected = mockSignin;
       wrapper.setState(expected);
       Promise.resolve(wrapper.instance().handleSubmit(mockEvent));
       
       expect(signinUser).toHaveBeenCalledWith(expected);
+    })
+
+    it('should call signinUser with the correct params', async () => {
+      let expected = {
+        id: 1,
+        user_name: 'sage'
+      }
+      await wrapper.instance().handleSubmit(mockEvent);
+
+      expect(mockSigninUser).toHaveBeenCalledWith(expected)
     })
   })
 

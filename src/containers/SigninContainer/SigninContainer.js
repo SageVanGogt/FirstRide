@@ -24,7 +24,11 @@ export class SigninContainer extends Component {
   handleSubmit = async (event) => {
     event.preventDefault();
     const response = await signinUser(this.state);
-    this.props.signinUser(response.user[0]);
+    const user = {
+      id: response.user[0].id,
+      user_name: response.user[0].user_name
+    }
+    this.props.signinUser(user);
   }
 
   render() {
