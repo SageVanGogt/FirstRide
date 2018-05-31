@@ -12,3 +12,14 @@ describe('addError', () => {
     expect(actual).toEqual(expected);
   })
 })
+
+describe('removeError', () => {
+  it('should return an object with type REMOVE_ERROR', () => {
+    let expected = {
+      type: 'REMOVE_ERROR',
+    }
+    let actual = actions.removeError();
+  
+    expect(actual).toEqual(expected);
+  });
+});

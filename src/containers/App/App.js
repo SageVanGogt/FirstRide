@@ -26,7 +26,10 @@ export class App extends Component {
 
   errorElement = () => {
     return (
-
+      <div className="error-container">
+        <strong>{this.props.error}</strong>
+        <button onClick={}>ok!</button>
+      </div>
     );
   }
 
