@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { fetchDestination } from '../../apiCalls/apiCalls';
 import { setDestination } from './../../actions/destination';
+import './DestinationsContainer.css'
 
 export class DestinationsContainer extends Component {
   constructor(props) {
@@ -24,18 +25,26 @@ export class DestinationsContainer extends Component {
   render() {
     return (
       <div className="destinations">
-        <NavLink  
-          to='/rides'
-          onClick={this.handleSelectDestination} 
-          name="Red Rocks">
-          Red Rocks
-        </NavLink>
-        <NavLink
-          to='/rides'
-          onClick={this.handleSelectDestination} 
-          name="Breckenridge">
-          Breckenridge
-        </NavLink>
+        <div className="location-container">
+          <NavLink  
+            to='/rides'
+            onClick={this.handleSelectDestination} 
+            name="Red Rocks"
+            className="location-pin">
+            Red Rocks
+            <div className="pulse"></div>
+          </NavLink>
+        </div>
+        <div className="location-container">
+          <NavLink
+            to='/rides'
+            onClick={this.handleSelectDestination} 
+            name="Breckenridge"
+            className="location-pin">
+            Breckenridge
+          </NavLink>
+          <div className="pulse"></div>
+        </div>
       </div>
     );
   }

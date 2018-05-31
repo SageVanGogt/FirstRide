@@ -3,7 +3,15 @@
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-image: linear-gradient(to bottom, #49a6da, #6bb5de, #8ac4e2, #a7d3e7, #c4e1ed);
+  background-color: #585858;
+}
+
+.nav-container {
+  position: fixed;
+  height: 90px;
+  top: 0;
+  z-index: 3;
+  background-color: #404040;  
 }
 
 

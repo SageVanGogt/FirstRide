@@ -1,15 +1,26 @@
 .nav-bar {
-  display: flex;
+  display: block;
+  z-index: 1;
   width: 100vw;
+  background-color: #404040;
 }
 
 .site-name {
+  float: left;
   color: white;
+  margin-left: 60px;
+  font-size: 3rem;
   font-family: 'Roboto', sans-serif;
 }
 
+.links {
+  float: right;
+  margin-top: 55px;
+  margin-right: 100px;
+}
+
 .nav-link {
-  padding: 0;
+  padding: 0 0 12px;
   border-bottom: 3px solid transparent;
   margin-right: 40px;
   text-decoration: none;
