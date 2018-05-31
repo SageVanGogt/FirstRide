@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { signupUser } from './../../apiCalls/apiCalls';
+import * as actions from './../../actions/user';
 import './SignupContainer.css';
 
 export class SignupContainer extends Component {
@@ -23,6 +24,10 @@ export class SignupContainer extends Component {
 
   handleSubmit = async () => {
     const response = await signupUser(this.state);
+    const user = {
+      id: response.id,
+      user_name: this.state.user_name
+    }
   }
 
   render() {
@@ -70,7 +75,7 @@ export const mapStateToProps = (state) => ({
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-
+  setUser: (user) => dispatch(actions.signinUser(user))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(SignupContainer);
