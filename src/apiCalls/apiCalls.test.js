@@ -272,18 +272,18 @@ describe('submitNewPickup', () => {
 
 describe('fetchRidesPassengers', () => {
   let url;
-  let mockRideId;
+  let mockLocationId;
   let mockBody;
 
   beforeEach(() => {
-    mockRideId = 1;
+    mockLocationId = 1;
     mockBody = {
       method: 'POST', 
       headers: {
         'Content-Type': 'application/json'
       }
     };
-    url = `http://localhost:3000/api/rides_passengers/get/passengers/${mockRideId}`;
+    url = `http://localhost:3000/api/rides_passengers/get/passengers/${mockLocationId}`;
     window.fetch = jest.fn().mockImplementation(() => 
     Promise.resolve({
       status: 200,
@@ -291,14 +291,15 @@ describe('fetchRidesPassengers', () => {
         "ride": [{
               "id": 1,
               "ride_id": 1,
-              "passenger_id": 1
+              "passenger_id": 1,
+              "location_id": 1
         }]
       })
     }))
   })
 
   it('should be called with the correct params', async () => {
-    await API.fetchRidesPassengers(mockRideId);
+    await API.fetchRidesPassengers(mockLocationId);
     expect(window.fetch).toHaveBeenCalledWith(url, mockBody)
   })
 
@@ -307,10 +308,11 @@ describe('fetchRidesPassengers', () => {
       ride: [{
         id: 1,
         ride_id: 1,
-        passenger_id: 1
+        passenger_id: 1,
+        location_id: 1
       }]
     }
-    let actual = await API.fetchRidesPassengers(mockRideId);
+    let actual = await API.fetchRidesPassengers(mockLocationId);
 
     expect(actual).toEqual(expected);
   })

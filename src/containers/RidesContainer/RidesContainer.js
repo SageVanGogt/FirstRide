@@ -23,7 +23,8 @@ export class RidesContainer extends Component {
   }
 
   componentDidUpdate = (prevProps) => {
-    if (prevProps.destination.id !== this.props.destination.id ) {
+    const { destination, rides } = this.props
+    if (prevProps.destination !== destination || prevProps.rides !== rides) {
       this.loadRides();
     }
   }
@@ -31,10 +32,10 @@ export class RidesContainer extends Component {
   loadRides = async () => {
     const { setRides, destination } = this.props;
     const response = await API.fetchRides(destination.id);
-    const updatedSeatsRemaining = await API.fetchRidesPassengers(response.rides);
-    //add cleaner 
-    //test
-    await setRides(response.rides);
+    const ridesAccountedFor = await API.fetchRidesPassengers(destination.id);
+    const cleanUpdatedRides = cleaner.seatsRemainingUpdate(response.rides, ridesAccountedFor.ride);
+    
+    await setRides(cleanUpdatedRides);
   }
 
   handleChange = (event) => {
@@ -64,7 +65,8 @@ export class RidesContainer extends Component {
   submitRideSignup = async (rideId) => {
     const ridePassenger = {
       ride_id: rideId,
-      passenger_id: this.props.user.id
+      passenger_id: this.props.user.id,
+      location_id: this.props.destination.id
     }
     await API.postRidesPassengers(ridePassenger);
   }

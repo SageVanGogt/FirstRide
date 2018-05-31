@@ -48,11 +48,12 @@ Promise.resolve({
 
 const fetchRidesPassengers = jest.fn().mockImplementation(() => 
 Promise.resolve({
-  data: {
+  ride: [{
     id: 1,
-    ride_id: 1,
+    ride_id: 2,
+    location_id: 1,
     passenger_id: 1
-  }
+  }]
 }));
 
 export {

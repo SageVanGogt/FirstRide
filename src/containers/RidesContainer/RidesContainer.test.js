@@ -114,19 +114,19 @@ describe('RidesContainer', () => {
   });
 
   describe('loadRides', () => {
+    it('should call setRides with correct params', async () => {
+      const expected = MOCK.mockUpdatedRides.rides
+      await wrapper.instance().loadRides()
+      expect(mockSetRides).toHaveBeenCalledWith(expected)
+    })
+
     it('should call fetchRides with the correct params', async () => {
       await wrapper.instance().loadRides();
       expect(API.fetchRides).toHaveBeenCalledWith(mockDestination.id)
     })
 
-    it('should call setRides with correct params', async () => {
-      const expected = MOCK.mockRides.rides
-      await wrapper.instance().loadRides()
-      expect(mockSetRides).toHaveBeenCalledWith(expected)
-    })
-
     it('should call fetchRidesPassengers with correct params', async () => {
-      const expected = MOCK.mockRides.rides
+      const expected = 1
       await wrapper.instance().loadRides()
       expect(API.fetchRidesPassengers).toHaveBeenCalledWith(expected)
     })
@@ -209,7 +209,8 @@ describe('RidesContainer', () => {
     it('should call postRidesPassengers with the corerct params', async () => {
       let expected = {
         ride_id: 1,
-        passenger_id: 1
+        passenger_id: 1,
+        location_id: 1
       }
       await wrapper.instance().submitRideSignup(1);
 
