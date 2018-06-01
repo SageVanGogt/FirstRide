@@ -61,7 +61,7 @@ export class RidesContainer extends Component {
       `${street},+${city},+${state}`
     );
   }
-
+  
   submitRideSignup = async (rideId) => {
     const ridePassenger = {
       ride_id: rideId,

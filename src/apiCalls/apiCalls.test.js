@@ -444,3 +444,33 @@ describe('postNewProfile', () => {
     expect(actual).toEqual(expected);
   })
 })
+
+describe('fetchRidesAccounted', () => {
+  let url;
+  let mockRides;
+
+  beforeEach(() => {
+    mockRides = {
+      data: [{}, {}]
+    }
+    url = `http://localhost:3000/api/rides_passengers`; 
+    window.fetch = jest.fn().mockImplementation(() => 
+      Promise.resolve({
+        status: 200,
+        json: () => Promise.resolve(mockRides)
+      }))
+  });
+
+  it('should be called with the correct params', async () => {
+    await API.fetchRidesAccounted();
+
+    expect(window.fetch).toHaveBeenCalledWith(url)
+  })
+
+  it('should return the expected object', async () => {
+    let expected = mockRides;
+    let actual = await API.fetchRidesAccounted();
+
+    expect(actual).toEqual(expected);
+  })
+})
