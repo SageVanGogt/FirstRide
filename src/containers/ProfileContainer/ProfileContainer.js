@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import CreateProfileContainer from './../CreateProfileContainer/CreateProfileContainer';
 
 export class ProfileContainer extends Component {
   constructor(props) {
@@ -10,7 +11,7 @@ export class ProfileContainer extends Component {
   render() {
     return (
       <div>
-        
+        <CreateProfileContainer />
       </div>
     );
   }

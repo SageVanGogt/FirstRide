@@ -6,8 +6,10 @@ describe('NavContainer', () => {
   let wrapper;
   let mockState;
   let mockLogoutUser;
+  let mockToggleLogin;
 
   beforeEach(() => {
+    mockToggleLogin = jest.fn();
     mockLogoutUser = jest.fn();
     mockState = {
       user: 'sage',
@@ -15,6 +17,7 @@ describe('NavContainer', () => {
     };
     wrapper = shallow(<NavContainer 
       {...mockState}
+      toggleLogin={mockToggleLogin}
       logoutUser={mockLogoutUser}
     />);
   })
