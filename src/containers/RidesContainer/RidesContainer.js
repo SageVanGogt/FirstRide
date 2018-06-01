@@ -90,22 +90,28 @@ export class RidesContainer extends Component {
       <div className="ride-page">
         <button className="offer-btn" onClick={this.handleShowOffer}>Offer a Ride</button>
         <section className="rides-container">
-          <form action="submit" onSubmit={this.handleSubmit}>
+          <form 
+            action="submit" 
+            onSubmit={this.handleSubmit}
+            className="current-location-form">
             <input 
               type="text" 
               name="street" 
               onChange={this.handleChange} 
-              placeholder="street"/>
+              placeholder="street"
+              className="street-input"/>
             <input 
               type="text" 
               name="city" 
               onChange={this.handleChange} 
-              placeholder="city"/>
+              placeholder="city"
+              className="city-input"/>
             <input 
               type="text" 
               name="state" 
               onChange={this.handleChange} 
-              placeholder="state"/>
+              placeholder="state"
+              className="state-input"/>
             <input type="submit"/>
           </form>
           <section className="ride-list">

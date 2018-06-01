@@ -1,5 +1,5 @@
 .ride-list {
-  width: 200px;
+  width: 300px;
 }
 
 .ride-item {
@@ -11,10 +11,10 @@
 }
 
 .ride-page {
-  margin-top: 90px;
+  margin-top: 72px;
   height: calc(100vh - 90px);
   background-color: grey;
-  width: 200px;
+  width: 300px;
   display: flex;
   overflow: scroll;
 }
@@ -25,7 +25,7 @@
   align-items: center;
   position: fixed;
   bottom: 0;
-  width: 200px;
+  width: 300px;
   font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;  
   background-color: #404040;
@@ -34,4 +34,26 @@
   color: white;
   border: none;
   cursor:pointer;
+}
+
+.current-location-form { 
+  width: 300px;
+  display: flex;
+  height: 50px;
+}
+
+.current-location-form input {
+  border: none;
+}
+
+.street-input {
+ width: 125px;
+}
+
+.city-input {
+  width: 85px;
+} 
+
+.state-input {
+  width: 33px;
 }
