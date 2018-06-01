@@ -34,6 +34,7 @@ export class RidesContainer extends Component {
     const { setRides, destination } = this.props;
     const response = await API.fetchRides(destination.id);
     const ridesAccountedFor = await API.fetchRidesPassengers(destination.id);
+    this.props.setRidesAccounted(ridesAccountedFor.ride);
     const cleanUpdatedRides = cleaner.seatsRemainingUpdate(response.rides, ridesAccountedFor.ride);
     
     await setRides(cleanUpdatedRides);
