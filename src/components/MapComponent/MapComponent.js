@@ -5,7 +5,7 @@ import './MapComponent.css';
 import PropTypes from 'prop-types';
 
 export const MapComponent = withScriptjs(withGoogleMap((
-  { position, markerCoords, ...props }
+  { position, markerCoords, ...props}
 ) => {
   const markers = markerCoords.map(location => {
     let { lat, lng } = location;
@@ -16,11 +16,13 @@ export const MapComponent = withScriptjs(withGoogleMap((
         position={{lat: lat, lng: lng}} />
     );
   });
-  return (props.loading ?
-    <div className='map-loading'>
-      <h3>Waiting on Location...</h3>
-    </div>
-    : <GoogleMap
+  return (
+    // props.loading ?
+    // <div className='map-loading'>
+    //   <h3>Waiting on Location...</h3>
+    // </div>
+    // :
+    <GoogleMap
       defaultZoom={16}
       center={position}>
       {markers}

@@ -1,12 +1,12 @@
 .availableRidesMap {
   position: absolute;
   height: 100vh;
-  width: calc(100vw - 200px);
+  width: calc(100vw - 300px);
 }
 
 .map-container {
   position: fixed;
   height: 100vh;
-  left: 200px;
-  width: calc(100vw - 200px);
+  left: 300px;
+  width: calc(100vw - 300px);
 }
