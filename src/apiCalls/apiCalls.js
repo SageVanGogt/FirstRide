@@ -137,12 +137,12 @@ const postNewProfile = async (profile) => {
   return profileInfo;
 } 
 
-const fetchRidesAccounted = async () => {
-  const url = `http://localhost:3000/api/rides_passengers`;
-  const response = await fetch(url);
-  const allRides = await response.json();
-  return allRides;
-}
+// const fetchRidesAccounted = async () => {
+//   const url = `http://localhost:3000/api/rides_passengers`;
+//   const response = await fetch(url);
+//   const allRides = await response.json();
+//   return allRides;
+// }
 
 export {
   signinUser,
@@ -156,5 +156,5 @@ export {
   fetchRidesPassengers,
   postRidesPassengers,
   postNewProfile,
-  fetchRidesAccounted
+  // fetchRidesAccounted
 }
