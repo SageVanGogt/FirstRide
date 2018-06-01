@@ -123,6 +123,20 @@ const postRidesPassengers = async (newPassenger) => {
   return ridePassenger
 } 
 
+const postNewProfile = async (profile) => {
+  const url = `http://localhost:3000/api/profiles/new`;
+  const body = {
+    method: "POST",
+    body: JSON.stringify(profile),
+    headers: {
+      "Content-Type": "application/json"
+    }
+  };
+  const response = await fetch(url, body);
+  const profileInfo = await response.json();
+  return 
+} 
+
 export {
   signinUser,
   signupUser,
@@ -133,5 +147,6 @@ export {
   submitNewRide,
   submitNewPickup,
   fetchRidesPassengers,
-  postRidesPassengers
+  postRidesPassengers,
+  postNewProfile
 }
