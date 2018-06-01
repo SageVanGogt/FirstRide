@@ -14,6 +14,7 @@ describe('RidesContainer', () => {
   let mockSetLocation;
   let mockRides;
   let mockUser;
+  let mockSetRidesAccounted;
 
   beforeEach(() => {
     mockUser = {
@@ -25,13 +26,15 @@ describe('RidesContainer', () => {
     };
     mockRides = MOCK.mockRides.rides;
     mockSetRides = jest.fn();
+    mockSetRidesAccounted = jest.fn();
     mockSetLocation = jest.fn();
     wrapper = shallow(<RidesContainer 
       rides={mockRides}
       setLocation={mockSetLocation}
       destination={mockDestination}
       setRides={mockSetRides}
-      user={mockUser}/>
+      user={mockUser}
+      setRidesAccounted={mockSetRidesAccounted}/>
     );
   })
 
@@ -114,8 +117,20 @@ describe('RidesContainer', () => {
   });
 
   describe('loadRides', () => {
+
     it('should call setRides with correct params', async () => {
       const expected = MOCK.mockUpdatedRides.rides
+      await wrapper.instance().loadRides()
+      expect(mockSetRides).toHaveBeenCalledWith(expected)
+    })
+
+    it.skip('should call setRidesAccounted with correct params', async () => {
+      const expected = [{
+        id: 1,
+        ride_id: 2,
+        location_id: 1,
+        passenger_id: 1
+      }];
       await wrapper.instance().loadRides()
       expect(mockSetRides).toHaveBeenCalledWith(expected)
     })
@@ -202,6 +217,18 @@ describe('RidesContainer', () => {
 
       expect(mockDispatch).toBeCalledWith(expected)
     })
+
+    it('should dispatch setRidesAccounted with the correct params', () => {
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let expected = {
+        type: "ADD_RIDES_ACCOUNTED",
+        ridesAccounted: [{}, {}]
+      }
+      mappedProps.setRidesAccounted([{}, {}]);
+
+      expect(mockDispatch).toBeCalledWith(expected)
+    })
   })
 
   describe('submitRideSignup', () => {
@@ -215,6 +242,13 @@ describe('RidesContainer', () => {
       await wrapper.instance().submitRideSignup(1);
 
       expect(API.postRidesPassengers).toHaveBeenCalledWith(expected);
+    })
+  })
+
+  describe('handleRemovePassengerRide', () => {
+
+    it('should call removePassengerRide', () => {
+
     })
   })
 })

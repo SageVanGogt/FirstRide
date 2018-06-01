@@ -445,32 +445,31 @@ describe('postNewProfile', () => {
   })
 })
 
-describe('fetchRidesAccounted', () => {
+describe('removePassengerRide', () => {
   let url;
-  let mockRides;
+  let mockRideId;
+  let mockPassengerId;
+  let mockDestinationId;
+  let mockBody;
 
   beforeEach(() => {
-    mockRides = {
-      data: [{}, {}]
-    }
-    url = `http://localhost:3000/api/rides_passengers`; 
+    mockRideId = 1;
+    mockPassengerId = 1;
+    mockDestinationId = 1;
+    mockBody = {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    };
+    url = `http://localhost:3000/api/rides/${mockRideId}/passengers/${mockPassengerId}/destination/${mockDestinationId}`;
     window.fetch = jest.fn().mockImplementation(() => 
-      Promise.resolve({
-        status: 200,
-        json: () => Promise.resolve(mockRides)
-      }))
+    Promise.resolve({status: 200}));
   });
 
   it('should be called with the correct params', async () => {
-    await API.fetchRidesAccounted();
+    await API.removePassengerRide(mockRideId, mockPassengerId, mockDestinationId);
 
-    expect(window.fetch).toHaveBeenCalledWith(url)
-  })
-
-  it('should return the expected object', async () => {
-    let expected = mockRides;
-    let actual = await API.fetchRidesAccounted();
-
-    expect(actual).toEqual(expected);
-  })
-})
+    expect(window.fetch).toHaveBeenCalledWith(url, mockBody)
+  });
+});

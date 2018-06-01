@@ -1,10 +1,33 @@
 import React, { Component } from 'react';
 import { ButtonToolbar, Popover, Overlay, OverlayTrigger, Button } from 'react-bootstrap';
 import './RidePopoverComponent.css';
+import { connect } from 'react-redux';
 
-class RidePopoverComponent extends Component {
+export class RidePopoverComponent extends Component {
   constructor(props, context) {
     super(props, context);
+  }
+
+  signupForRideElement = (rideId) => (
+    <button onClick={() => 
+      this.props.submitRideSignup(rideId)}>
+      I want in
+    </button>
+  )
+
+  unsignupForRideElement = (rideId) => (
+    <button onClick={() => 
+      this.props.handleRemovePassengerRide(rideId)}>
+      remove me
+    </button>
+  )
+
+  findExistingRide = (rideId) => {
+    const { user } = this.props;
+    const rideExists = this.props.ridesAccounted.find(ride => {
+      return ride.ride_id === rideId & ride.passenger_id === user.id
+    });
+    return rideExists;
   }
   
   render() {
@@ -21,10 +44,11 @@ class RidePopoverComponent extends Component {
               <li>Leaving at{ride.time}</li>
               <li>You'd be riding in a {ride.car_type}</li>
               <li>You'll leave at {ride.time} on {ride.date}</li>
-              <button onClick={() => 
-                this.props.submitRideSignup(ride.id)}>
-                I want in
-              </button>
+              {
+                this.findExistingRide(ride.id) ?
+                this.unsignupForRideElement(ride.id) :
+                this.signupForRideElement(ride.id)
+              }
             </ul>
           </Popover>}
         >
@@ -39,4 +63,9 @@ class RidePopoverComponent extends Component {
   }
 }
 
-export default RidePopoverComponent;
+export const mapStateToProps = (state) => ({
+  ridesAccounted: state.ridesAccounted,
+  user: state.user
+})
+
+export default connect(mapStateToProps)(RidePopoverComponent);

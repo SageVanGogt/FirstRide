@@ -1,0 +1,1508 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RidePopoverComponent should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RidePopoverComponent
+    rides={
+        Array [
+            Object {},
+            Object {},
+          ]
+    }
+    ridesAccounted={
+        Array [
+            Object {},
+            Object {},
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "bsClass": "btn-toolbar",
+      "children": Array [
+        <OverlayTrigger
+          container={
+                    RidePopoverComponent {
+                              "context": Object {},
+                              "props": Object {
+                                "rides": Array [
+                                  Object {},
+                                  Object {},
+                                ],
+                                "ridesAccounted": Array [
+                                  Object {},
+                                  Object {},
+                                ],
+                              },
+                              "refs": Object {},
+                              "signupForRideElement": [Function],
+                              "state": null,
+                              "unsignupForRideElement": [Function],
+                              "updater": Updater {
+                                "_callbacks": Array [],
+                                "_renderer": ReactShallowRenderer {
+                                  "_context": Object {},
+                                  "_element": <RidePopoverComponent
+                                    rides={
+                                                    Array [
+                                                                    Object {},
+                                                                    Object {},
+                                                                  ]
+                                    }
+                                    ridesAccounted={
+                                                    Array [
+                                                                    Object {},
+                                                                    Object {},
+                                                                  ]
+                                    }
+                    />,
+                                  "_forcedUpdate": false,
+                                  "_instance": [Circular],
+                                  "_newState": null,
+                                  "_rendered": <ButtonToolbar
+                                    bsClass="btn-toolbar"
+                                    id="popover-container"
+                    >
+                                    <OverlayTrigger
+                                                    container={[Circular]}
+                                                    defaultOverlayShown={false}
+                                                    overlay={
+                                                                    <Popover
+                                                                                    bsClass="popover"
+                                                                                    id="popovers"
+                                                                                    placement="right"
+                                                                                    title="All your ride info"
+                                                                    >
+                                                                                    <strong>
+                                                                                                     seats left!
+                                                                                    </strong>
+                                                                                    <ul
+                                                                                                    className="ride-popover-list"
+                                                                                    >
+                                                                                                    <li>
+                                                                                                                    Leaving at
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                                    You'd be riding in a 
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                                    You'll leave at 
+                                                                                                                     on 
+                                                                                                    </li>
+                                                                                                    [Function]
+                                                                                    </ul>
+                                                                    </Popover>
+                                                    }
+                                                    placement="right"
+                                                    trigger="click"
+                                    >
+                                                    <Button
+                                                                    active={false}
+                                                                    block={false}
+                                                                    bsClass="btn"
+                                                                    bsStyle="default"
+                                                                    disabled={false}
+                                                    />
+                                    </OverlayTrigger>
+                                    <OverlayTrigger
+                                                    container={[Circular]}
+                                                    defaultOverlayShown={false}
+                                                    overlay={
+                                                                    <Popover
+                                                                                    bsClass="popover"
+                                                                                    id="popovers"
+                                                                                    placement="right"
+                                                                                    title="All your ride info"
+                                                                    >
+                                                                                    <strong>
+                                                                                                     seats left!
+                                                                                    </strong>
+                                                                                    <ul
+                                                                                                    className="ride-popover-list"
+                                                                                    >
+                                                                                                    <li>
+                                                                                                                    Leaving at
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                                    You'd be riding in a 
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                                    You'll leave at 
+                                                                                                                     on 
+                                                                                                    </li>
+                                                                                                    [Function]
+                                                                                    </ul>
+                                                                    </Popover>
+                                                    }
+                                                    placement="right"
+                                                    trigger="click"
+                                    >
+                                                    <Button
+                                                                    active={false}
+                                                                    block={false}
+                                                                    bsClass="btn"
+                                                                    bsStyle="default"
+                                                                    disabled={false}
+                                                    />
+                                    </OverlayTrigger>
+                    </ButtonToolbar>,
+                                  "_rendering": false,
+                                  "_updater": [Circular],
+                                },
+                              },
+                            }
+          }
+          defaultOverlayShown={false}
+          overlay={
+                    <Popover
+                              bsClass="popover"
+                              id="popovers"
+                              placement="right"
+                              title="All your ride info"
+                    >
+                              <strong>
+                                         seats left!
+                              </strong>
+                              <ul
+                                        className="ride-popover-list"
+                              >
+                                        <li>
+                                                  Leaving at
+                                        </li>
+                                        <li>
+                                                  You'd be riding in a 
+                                        </li>
+                                        <li>
+                                                  You'll leave at 
+                                                   on 
+                                        </li>
+                                        [Function]
+                              </ul>
+                    </Popover>
+          }
+          placement="right"
+          trigger="click"
+>
+          <Button
+                    active={false}
+                    block={false}
+                    bsClass="btn"
+                    bsStyle="default"
+                    disabled={false}
+          />
+</OverlayTrigger>,
+        <OverlayTrigger
+          container={
+                    RidePopoverComponent {
+                              "context": Object {},
+                              "props": Object {
+                                "rides": Array [
+                                  Object {},
+                                  Object {},
+                                ],
+                                "ridesAccounted": Array [
+                                  Object {},
+                                  Object {},
+                                ],
+                              },
+                              "refs": Object {},
+                              "signupForRideElement": [Function],
+                              "state": null,
+                              "unsignupForRideElement": [Function],
+                              "updater": Updater {
+                                "_callbacks": Array [],
+                                "_renderer": ReactShallowRenderer {
+                                  "_context": Object {},
+                                  "_element": <RidePopoverComponent
+                                    rides={
+                                                    Array [
+                                                                    Object {},
+                                                                    Object {},
+                                                                  ]
+                                    }
+                                    ridesAccounted={
+                                                    Array [
+                                                                    Object {},
+                                                                    Object {},
+                                                                  ]
+                                    }
+                    />,
+                                  "_forcedUpdate": false,
+                                  "_instance": [Circular],
+                                  "_newState": null,
+                                  "_rendered": <ButtonToolbar
+                                    bsClass="btn-toolbar"
+                                    id="popover-container"
+                    >
+                                    <OverlayTrigger
+                                                    container={[Circular]}
+                                                    defaultOverlayShown={false}
+                                                    overlay={
+                                                                    <Popover
+                                                                                    bsClass="popover"
+                                                                                    id="popovers"
+                                                                                    placement="right"
+                                                                                    title="All your ride info"
+                                                                    >
+                                                                                    <strong>
+                                                                                                     seats left!
+                                                                                    </strong>
+                                                                                    <ul
+                                                                                                    className="ride-popover-list"
+                                                                                    >
+                                                                                                    <li>
+                                                                                                                    Leaving at
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                                    You'd be riding in a 
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                                    You'll leave at 
+                                                                                                                     on 
+                                                                                                    </li>
+                                                                                                    [Function]
+                                                                                    </ul>
+                                                                    </Popover>
+                                                    }
+                                                    placement="right"
+                                                    trigger="click"
+                                    >
+                                                    <Button
+                                                                    active={false}
+                                                                    block={false}
+                                                                    bsClass="btn"
+                                                                    bsStyle="default"
+                                                                    disabled={false}
+                                                    />
+                                    </OverlayTrigger>
+                                    <OverlayTrigger
+                                                    container={[Circular]}
+                                                    defaultOverlayShown={false}
+                                                    overlay={
+                                                                    <Popover
+                                                                                    bsClass="popover"
+                                                                                    id="popovers"
+                                                                                    placement="right"
+                                                                                    title="All your ride info"
+                                                                    >
+                                                                                    <strong>
+                                                                                                     seats left!
+                                                                                    </strong>
+                                                                                    <ul
+                                                                                                    className="ride-popover-list"
+                                                                                    >
+                                                                                                    <li>
+                                                                                                                    Leaving at
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                                    You'd be riding in a 
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                                    You'll leave at 
+                                                                                                                     on 
+                                                                                                    </li>
+                                                                                                    [Function]
+                                                                                    </ul>
+                                                                    </Popover>
+                                                    }
+                                                    placement="right"
+                                                    trigger="click"
+                                    >
+                                                    <Button
+                                                                    active={false}
+                                                                    block={false}
+                                                                    bsClass="btn"
+                                                                    bsStyle="default"
+                                                                    disabled={false}
+                                                    />
+                                    </OverlayTrigger>
+                    </ButtonToolbar>,
+                                  "_rendering": false,
+                                  "_updater": [Circular],
+                                },
+                              },
+                            }
+          }
+          defaultOverlayShown={false}
+          overlay={
+                    <Popover
+                              bsClass="popover"
+                              id="popovers"
+                              placement="right"
+                              title="All your ride info"
+                    >
+                              <strong>
+                                         seats left!
+                              </strong>
+                              <ul
+                                        className="ride-popover-list"
+                              >
+                                        <li>
+                                                  Leaving at
+                                        </li>
+                                        <li>
+                                                  You'd be riding in a 
+                                        </li>
+                                        <li>
+                                                  You'll leave at 
+                                                   on 
+                                        </li>
+                                        [Function]
+                              </ul>
+                    </Popover>
+          }
+          placement="right"
+          trigger="click"
+>
+          <Button
+                    active={false}
+                    block={false}
+                    bsClass="btn"
+                    bsStyle="default"
+                    disabled={false}
+          />
+</OverlayTrigger>,
+      ],
+      "id": "popover-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Button
+            active={false}
+            block={false}
+            bsClass="btn"
+            bsStyle="default"
+            disabled={false}
+/>,
+          "container": RidePopoverComponent {
+            "context": Object {},
+            "props": Object {
+              "rides": Array [
+                Object {},
+                Object {},
+              ],
+              "ridesAccounted": Array [
+                Object {},
+                Object {},
+              ],
+            },
+            "refs": Object {},
+            "signupForRideElement": [Function],
+            "state": null,
+            "unsignupForRideElement": [Function],
+            "updater": Updater {
+              "_callbacks": Array [],
+              "_renderer": ReactShallowRenderer {
+                "_context": Object {},
+                "_element": <RidePopoverComponent
+                  rides={
+                                    Array [
+                                                      Object {},
+                                                      Object {},
+                                                    ]
+                  }
+                  ridesAccounted={
+                                    Array [
+                                                      Object {},
+                                                      Object {},
+                                                    ]
+                  }
+/>,
+                "_forcedUpdate": false,
+                "_instance": [Circular],
+                "_newState": null,
+                "_rendered": <ButtonToolbar
+                  bsClass="btn-toolbar"
+                  id="popover-container"
+>
+                  <OverlayTrigger
+                                    container={[Circular]}
+                                    defaultOverlayShown={false}
+                                    overlay={
+                                                      <Popover
+                                                                        bsClass="popover"
+                                                                        id="popovers"
+                                                                        placement="right"
+                                                                        title="All your ride info"
+                                                      >
+                                                                        <strong>
+                                                                                           seats left!
+                                                                        </strong>
+                                                                        <ul
+                                                                                          className="ride-popover-list"
+                                                                        >
+                                                                                          <li>
+                                                                                                            Leaving at
+                                                                                          </li>
+                                                                                          <li>
+                                                                                                            You'd be riding in a 
+                                                                                          </li>
+                                                                                          <li>
+                                                                                                            You'll leave at 
+                                                                                                             on 
+                                                                                          </li>
+                                                                                          [Function]
+                                                                        </ul>
+                                                      </Popover>
+                                    }
+                                    placement="right"
+                                    trigger="click"
+                  >
+                                    <Button
+                                                      active={false}
+                                                      block={false}
+                                                      bsClass="btn"
+                                                      bsStyle="default"
+                                                      disabled={false}
+                                    />
+                  </OverlayTrigger>
+                  <OverlayTrigger
+                                    container={[Circular]}
+                                    defaultOverlayShown={false}
+                                    overlay={
+                                                      <Popover
+                                                                        bsClass="popover"
+                                                                        id="popovers"
+                                                                        placement="right"
+                                                                        title="All your ride info"
+                                                      >
+                                                                        <strong>
+                                                                                           seats left!
+                                                                        </strong>
+                                                                        <ul
+                                                                                          className="ride-popover-list"
+                                                                        >
+                                                                                          <li>
+                                                                                                            Leaving at
+                                                                                          </li>
+                                                                                          <li>
+                                                                                                            You'd be riding in a 
+                                                                                          </li>
+                                                                                          <li>
+                                                                                                            You'll leave at 
+                                                                                                             on 
+                                                                                          </li>
+                                                                                          [Function]
+                                                                        </ul>
+                                                      </Popover>
+                                    }
+                                    placement="right"
+                                    trigger="click"
+                  >
+                                    <Button
+                                                      active={false}
+                                                      block={false}
+                                                      bsClass="btn"
+                                                      bsStyle="default"
+                                                      disabled={false}
+                                    />
+                  </OverlayTrigger>
+</ButtonToolbar>,
+                "_rendering": false,
+                "_updater": [Circular],
+              },
+            },
+          },
+          "defaultOverlayShown": false,
+          "overlay": <Popover
+            bsClass="popover"
+            id="popovers"
+            placement="right"
+            title="All your ride info"
+>
+            <strong>
+                         seats left!
+            </strong>
+            <ul
+                        className="ride-popover-list"
+            >
+                        <li>
+                                    Leaving at
+                        </li>
+                        <li>
+                                    You'd be riding in a 
+                        </li>
+                        <li>
+                                    You'll leave at 
+                                     on 
+                        </li>
+                        [Function]
+            </ul>
+</Popover>,
+          "placement": "right",
+          "trigger": "click",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "active": false,
+            "block": false,
+            "bsClass": "btn",
+            "bsStyle": "default",
+            "children": undefined,
+            "disabled": false,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Button
+            active={false}
+            block={false}
+            bsClass="btn"
+            bsStyle="default"
+            disabled={false}
+/>,
+          "container": RidePopoverComponent {
+            "context": Object {},
+            "props": Object {
+              "rides": Array [
+                Object {},
+                Object {},
+              ],
+              "ridesAccounted": Array [
+                Object {},
+                Object {},
+              ],
+            },
+            "refs": Object {},
+            "signupForRideElement": [Function],
+            "state": null,
+            "unsignupForRideElement": [Function],
+            "updater": Updater {
+              "_callbacks": Array [],
+              "_renderer": ReactShallowRenderer {
+                "_context": Object {},
+                "_element": <RidePopoverComponent
+                  rides={
+                                    Array [
+                                                      Object {},
+                                                      Object {},
+                                                    ]
+                  }
+                  ridesAccounted={
+                                    Array [
+                                                      Object {},
+                                                      Object {},
+                                                    ]
+                  }
+/>,
+                "_forcedUpdate": false,
+                "_instance": [Circular],
+                "_newState": null,
+                "_rendered": <ButtonToolbar
+                  bsClass="btn-toolbar"
+                  id="popover-container"
+>
+                  <OverlayTrigger
+                                    container={[Circular]}
+                                    defaultOverlayShown={false}
+                                    overlay={
+                                                      <Popover
+                                                                        bsClass="popover"
+                                                                        id="popovers"
+                                                                        placement="right"
+                                                                        title="All your ride info"
+                                                      >
+                                                                        <strong>
+                                                                                           seats left!
+                                                                        </strong>
+                                                                        <ul
+                                                                                          className="ride-popover-list"
+                                                                        >
+                                                                                          <li>
+                                                                                                            Leaving at
+                                                                                          </li>
+                                                                                          <li>
+                                                                                                            You'd be riding in a 
+                                                                                          </li>
+                                                                                          <li>
+                                                                                                            You'll leave at 
+                                                                                                             on 
+                                                                                          </li>
+                                                                                          [Function]
+                                                                        </ul>
+                                                      </Popover>
+                                    }
+                                    placement="right"
+                                    trigger="click"
+                  >
+                                    <Button
+                                                      active={false}
+                                                      block={false}
+                                                      bsClass="btn"
+                                                      bsStyle="default"
+                                                      disabled={false}
+                                    />
+                  </OverlayTrigger>
+                  <OverlayTrigger
+                                    container={[Circular]}
+                                    defaultOverlayShown={false}
+                                    overlay={
+                                                      <Popover
+                                                                        bsClass="popover"
+                                                                        id="popovers"
+                                                                        placement="right"
+                                                                        title="All your ride info"
+                                                      >
+                                                                        <strong>
+                                                                                           seats left!
+                                                                        </strong>
+                                                                        <ul
+                                                                                          className="ride-popover-list"
+                                                                        >
+                                                                                          <li>
+                                                                                                            Leaving at
+                                                                                          </li>
+                                                                                          <li>
+                                                                                                            You'd be riding in a 
+                                                                                          </li>
+                                                                                          <li>
+                                                                                                            You'll leave at 
+                                                                                                             on 
+                                                                                          </li>
+                                                                                          [Function]
+                                                                        </ul>
+                                                      </Popover>
+                                    }
+                                    placement="right"
+                                    trigger="click"
+                  >
+                                    <Button
+                                                      active={false}
+                                                      block={false}
+                                                      bsClass="btn"
+                                                      bsStyle="default"
+                                                      disabled={false}
+                                    />
+                  </OverlayTrigger>
+</ButtonToolbar>,
+                "_rendering": false,
+                "_updater": [Circular],
+              },
+            },
+          },
+          "defaultOverlayShown": false,
+          "overlay": <Popover
+            bsClass="popover"
+            id="popovers"
+            placement="right"
+            title="All your ride info"
+>
+            <strong>
+                         seats left!
+            </strong>
+            <ul
+                        className="ride-popover-list"
+            >
+                        <li>
+                                    Leaving at
+                        </li>
+                        <li>
+                                    You'd be riding in a 
+                        </li>
+                        <li>
+                                    You'll leave at 
+                                     on 
+                        </li>
+                        [Function]
+            </ul>
+</Popover>,
+          "placement": "right",
+          "trigger": "click",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "active": false,
+            "block": false,
+            "bsClass": "btn",
+            "bsStyle": "default",
+            "children": undefined,
+            "disabled": false,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "bsClass": "btn-toolbar",
+        "children": Array [
+          <OverlayTrigger
+            container={
+                        RidePopoverComponent {
+                                    "context": Object {},
+                                    "props": Object {
+                                      "rides": Array [
+                                        Object {},
+                                        Object {},
+                                      ],
+                                      "ridesAccounted": Array [
+                                        Object {},
+                                        Object {},
+                                      ],
+                                    },
+                                    "refs": Object {},
+                                    "signupForRideElement": [Function],
+                                    "state": null,
+                                    "unsignupForRideElement": [Function],
+                                    "updater": Updater {
+                                      "_callbacks": Array [],
+                                      "_renderer": ReactShallowRenderer {
+                                        "_context": Object {},
+                                        "_element": <RidePopoverComponent
+                                          rides={
+                                                            Array [
+                                                                              Object {},
+                                                                              Object {},
+                                                                            ]
+                                          }
+                                          ridesAccounted={
+                                                            Array [
+                                                                              Object {},
+                                                                              Object {},
+                                                                            ]
+                                          }
+                        />,
+                                        "_forcedUpdate": false,
+                                        "_instance": [Circular],
+                                        "_newState": null,
+                                        "_rendered": <ButtonToolbar
+                                          bsClass="btn-toolbar"
+                                          id="popover-container"
+                        >
+                                          <OverlayTrigger
+                                                            container={[Circular]}
+                                                            defaultOverlayShown={false}
+                                                            overlay={
+                                                                              <Popover
+                                                                                                bsClass="popover"
+                                                                                                id="popovers"
+                                                                                                placement="right"
+                                                                                                title="All your ride info"
+                                                                              >
+                                                                                                <strong>
+                                                                                                                   seats left!
+                                                                                                </strong>
+                                                                                                <ul
+                                                                                                                  className="ride-popover-list"
+                                                                                                >
+                                                                                                                  <li>
+                                                                                                                                    Leaving at
+                                                                                                                  </li>
+                                                                                                                  <li>
+                                                                                                                                    You'd be riding in a 
+                                                                                                                  </li>
+                                                                                                                  <li>
+                                                                                                                                    You'll leave at 
+                                                                                                                                     on 
+                                                                                                                  </li>
+                                                                                                                  [Function]
+                                                                                                </ul>
+                                                                              </Popover>
+                                                            }
+                                                            placement="right"
+                                                            trigger="click"
+                                          >
+                                                            <Button
+                                                                              active={false}
+                                                                              block={false}
+                                                                              bsClass="btn"
+                                                                              bsStyle="default"
+                                                                              disabled={false}
+                                                            />
+                                          </OverlayTrigger>
+                                          <OverlayTrigger
+                                                            container={[Circular]}
+                                                            defaultOverlayShown={false}
+                                                            overlay={
+                                                                              <Popover
+                                                                                                bsClass="popover"
+                                                                                                id="popovers"
+                                                                                                placement="right"
+                                                                                                title="All your ride info"
+                                                                              >
+                                                                                                <strong>
+                                                                                                                   seats left!
+                                                                                                </strong>
+                                                                                                <ul
+                                                                                                                  className="ride-popover-list"
+                                                                                                >
+                                                                                                                  <li>
+                                                                                                                                    Leaving at
+                                                                                                                  </li>
+                                                                                                                  <li>
+                                                                                                                                    You'd be riding in a 
+                                                                                                                  </li>
+                                                                                                                  <li>
+                                                                                                                                    You'll leave at 
+                                                                                                                                     on 
+                                                                                                                  </li>
+                                                                                                                  [Function]
+                                                                                                </ul>
+                                                                              </Popover>
+                                                            }
+                                                            placement="right"
+                                                            trigger="click"
+                                          >
+                                                            <Button
+                                                                              active={false}
+                                                                              block={false}
+                                                                              bsClass="btn"
+                                                                              bsStyle="default"
+                                                                              disabled={false}
+                                                            />
+                                          </OverlayTrigger>
+                        </ButtonToolbar>,
+                                        "_rendering": false,
+                                        "_updater": [Circular],
+                                      },
+                                    },
+                                  }
+            }
+            defaultOverlayShown={false}
+            overlay={
+                        <Popover
+                                    bsClass="popover"
+                                    id="popovers"
+                                    placement="right"
+                                    title="All your ride info"
+                        >
+                                    <strong>
+                                                 seats left!
+                                    </strong>
+                                    <ul
+                                                className="ride-popover-list"
+                                    >
+                                                <li>
+                                                            Leaving at
+                                                </li>
+                                                <li>
+                                                            You'd be riding in a 
+                                                </li>
+                                                <li>
+                                                            You'll leave at 
+                                                             on 
+                                                </li>
+                                                [Function]
+                                    </ul>
+                        </Popover>
+            }
+            placement="right"
+            trigger="click"
+>
+            <Button
+                        active={false}
+                        block={false}
+                        bsClass="btn"
+                        bsStyle="default"
+                        disabled={false}
+            />
+</OverlayTrigger>,
+          <OverlayTrigger
+            container={
+                        RidePopoverComponent {
+                                    "context": Object {},
+                                    "props": Object {
+                                      "rides": Array [
+                                        Object {},
+                                        Object {},
+                                      ],
+                                      "ridesAccounted": Array [
+                                        Object {},
+                                        Object {},
+                                      ],
+                                    },
+                                    "refs": Object {},
+                                    "signupForRideElement": [Function],
+                                    "state": null,
+                                    "unsignupForRideElement": [Function],
+                                    "updater": Updater {
+                                      "_callbacks": Array [],
+                                      "_renderer": ReactShallowRenderer {
+                                        "_context": Object {},
+                                        "_element": <RidePopoverComponent
+                                          rides={
+                                                            Array [
+                                                                              Object {},
+                                                                              Object {},
+                                                                            ]
+                                          }
+                                          ridesAccounted={
+                                                            Array [
+                                                                              Object {},
+                                                                              Object {},
+                                                                            ]
+                                          }
+                        />,
+                                        "_forcedUpdate": false,
+                                        "_instance": [Circular],
+                                        "_newState": null,
+                                        "_rendered": <ButtonToolbar
+                                          bsClass="btn-toolbar"
+                                          id="popover-container"
+                        >
+                                          <OverlayTrigger
+                                                            container={[Circular]}
+                                                            defaultOverlayShown={false}
+                                                            overlay={
+                                                                              <Popover
+                                                                                                bsClass="popover"
+                                                                                                id="popovers"
+                                                                                                placement="right"
+                                                                                                title="All your ride info"
+                                                                              >
+                                                                                                <strong>
+                                                                                                                   seats left!
+                                                                                                </strong>
+                                                                                                <ul
+                                                                                                                  className="ride-popover-list"
+                                                                                                >
+                                                                                                                  <li>
+                                                                                                                                    Leaving at
+                                                                                                                  </li>
+                                                                                                                  <li>
+                                                                                                                                    You'd be riding in a 
+                                                                                                                  </li>
+                                                                                                                  <li>
+                                                                                                                                    You'll leave at 
+                                                                                                                                     on 
+                                                                                                                  </li>
+                                                                                                                  [Function]
+                                                                                                </ul>
+                                                                              </Popover>
+                                                            }
+                                                            placement="right"
+                                                            trigger="click"
+                                          >
+                                                            <Button
+                                                                              active={false}
+                                                                              block={false}
+                                                                              bsClass="btn"
+                                                                              bsStyle="default"
+                                                                              disabled={false}
+                                                            />
+                                          </OverlayTrigger>
+                                          <OverlayTrigger
+                                                            container={[Circular]}
+                                                            defaultOverlayShown={false}
+                                                            overlay={
+                                                                              <Popover
+                                                                                                bsClass="popover"
+                                                                                                id="popovers"
+                                                                                                placement="right"
+                                                                                                title="All your ride info"
+                                                                              >
+                                                                                                <strong>
+                                                                                                                   seats left!
+                                                                                                </strong>
+                                                                                                <ul
+                                                                                                                  className="ride-popover-list"
+                                                                                                >
+                                                                                                                  <li>
+                                                                                                                                    Leaving at
+                                                                                                                  </li>
+                                                                                                                  <li>
+                                                                                                                                    You'd be riding in a 
+                                                                                                                  </li>
+                                                                                                                  <li>
+                                                                                                                                    You'll leave at 
+                                                                                                                                     on 
+                                                                                                                  </li>
+                                                                                                                  [Function]
+                                                                                                </ul>
+                                                                              </Popover>
+                                                            }
+                                                            placement="right"
+                                                            trigger="click"
+                                          >
+                                                            <Button
+                                                                              active={false}
+                                                                              block={false}
+                                                                              bsClass="btn"
+                                                                              bsStyle="default"
+                                                                              disabled={false}
+                                                            />
+                                          </OverlayTrigger>
+                        </ButtonToolbar>,
+                                        "_rendering": false,
+                                        "_updater": [Circular],
+                                      },
+                                    },
+                                  }
+            }
+            defaultOverlayShown={false}
+            overlay={
+                        <Popover
+                                    bsClass="popover"
+                                    id="popovers"
+                                    placement="right"
+                                    title="All your ride info"
+                        >
+                                    <strong>
+                                                 seats left!
+                                    </strong>
+                                    <ul
+                                                className="ride-popover-list"
+                                    >
+                                                <li>
+                                                            Leaving at
+                                                </li>
+                                                <li>
+                                                            You'd be riding in a 
+                                                </li>
+                                                <li>
+                                                            You'll leave at 
+                                                             on 
+                                                </li>
+                                                [Function]
+                                    </ul>
+                        </Popover>
+            }
+            placement="right"
+            trigger="click"
+>
+            <Button
+                        active={false}
+                        block={false}
+                        bsClass="btn"
+                        bsStyle="default"
+                        disabled={false}
+            />
+</OverlayTrigger>,
+        ],
+        "id": "popover-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Button
+              active={false}
+              block={false}
+              bsClass="btn"
+              bsStyle="default"
+              disabled={false}
+/>,
+            "container": RidePopoverComponent {
+              "context": Object {},
+              "props": Object {
+                "rides": Array [
+                  Object {},
+                  Object {},
+                ],
+                "ridesAccounted": Array [
+                  Object {},
+                  Object {},
+                ],
+              },
+              "refs": Object {},
+              "signupForRideElement": [Function],
+              "state": null,
+              "unsignupForRideElement": [Function],
+              "updater": Updater {
+                "_callbacks": Array [],
+                "_renderer": ReactShallowRenderer {
+                  "_context": Object {},
+                  "_element": <RidePopoverComponent
+                    rides={
+                                        Array [
+                                                            Object {},
+                                                            Object {},
+                                                          ]
+                    }
+                    ridesAccounted={
+                                        Array [
+                                                            Object {},
+                                                            Object {},
+                                                          ]
+                    }
+/>,
+                  "_forcedUpdate": false,
+                  "_instance": [Circular],
+                  "_newState": null,
+                  "_rendered": <ButtonToolbar
+                    bsClass="btn-toolbar"
+                    id="popover-container"
+>
+                    <OverlayTrigger
+                                        container={[Circular]}
+                                        defaultOverlayShown={false}
+                                        overlay={
+                                                            <Popover
+                                                                                bsClass="popover"
+                                                                                id="popovers"
+                                                                                placement="right"
+                                                                                title="All your ride info"
+                                                            >
+                                                                                <strong>
+                                                                                                     seats left!
+                                                                                </strong>
+                                                                                <ul
+                                                                                                    className="ride-popover-list"
+                                                                                >
+                                                                                                    <li>
+                                                                                                                        Leaving at
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                                        You'd be riding in a 
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                                        You'll leave at 
+                                                                                                                         on 
+                                                                                                    </li>
+                                                                                                    [Function]
+                                                                                </ul>
+                                                            </Popover>
+                                        }
+                                        placement="right"
+                                        trigger="click"
+                    >
+                                        <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="default"
+                                                            disabled={false}
+                                        />
+                    </OverlayTrigger>
+                    <OverlayTrigger
+                                        container={[Circular]}
+                                        defaultOverlayShown={false}
+                                        overlay={
+                                                            <Popover
+                                                                                bsClass="popover"
+                                                                                id="popovers"
+                                                                                placement="right"
+                                                                                title="All your ride info"
+                                                            >
+                                                                                <strong>
+                                                                                                     seats left!
+                                                                                </strong>
+                                                                                <ul
+                                                                                                    className="ride-popover-list"
+                                                                                >
+                                                                                                    <li>
+                                                                                                                        Leaving at
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                                        You'd be riding in a 
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                                        You'll leave at 
+                                                                                                                         on 
+                                                                                                    </li>
+                                                                                                    [Function]
+                                                                                </ul>
+                                                            </Popover>
+                                        }
+                                        placement="right"
+                                        trigger="click"
+                    >
+                                        <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="default"
+                                                            disabled={false}
+                                        />
+                    </OverlayTrigger>
+</ButtonToolbar>,
+                  "_rendering": false,
+                  "_updater": [Circular],
+                },
+              },
+            },
+            "defaultOverlayShown": false,
+            "overlay": <Popover
+              bsClass="popover"
+              id="popovers"
+              placement="right"
+              title="All your ride info"
+>
+              <strong>
+                             seats left!
+              </strong>
+              <ul
+                            className="ride-popover-list"
+              >
+                            <li>
+                                          Leaving at
+                            </li>
+                            <li>
+                                          You'd be riding in a 
+                            </li>
+                            <li>
+                                          You'll leave at 
+                                           on 
+                            </li>
+                            [Function]
+              </ul>
+</Popover>,
+            "placement": "right",
+            "trigger": "click",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "active": false,
+              "block": false,
+              "bsClass": "btn",
+              "bsStyle": "default",
+              "children": undefined,
+              "disabled": false,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Button
+              active={false}
+              block={false}
+              bsClass="btn"
+              bsStyle="default"
+              disabled={false}
+/>,
+            "container": RidePopoverComponent {
+              "context": Object {},
+              "props": Object {
+                "rides": Array [
+                  Object {},
+                  Object {},
+                ],
+                "ridesAccounted": Array [
+                  Object {},
+                  Object {},
+                ],
+              },
+              "refs": Object {},
+              "signupForRideElement": [Function],
+              "state": null,
+              "unsignupForRideElement": [Function],
+              "updater": Updater {
+                "_callbacks": Array [],
+                "_renderer": ReactShallowRenderer {
+                  "_context": Object {},
+                  "_element": <RidePopoverComponent
+                    rides={
+                                        Array [
+                                                            Object {},
+                                                            Object {},
+                                                          ]
+                    }
+                    ridesAccounted={
+                                        Array [
+                                                            Object {},
+                                                            Object {},
+                                                          ]
+                    }
+/>,
+                  "_forcedUpdate": false,
+                  "_instance": [Circular],
+                  "_newState": null,
+                  "_rendered": <ButtonToolbar
+                    bsClass="btn-toolbar"
+                    id="popover-container"
+>
+                    <OverlayTrigger
+                                        container={[Circular]}
+                                        defaultOverlayShown={false}
+                                        overlay={
+                                                            <Popover
+                                                                                bsClass="popover"
+                                                                                id="popovers"
+                                                                                placement="right"
+                                                                                title="All your ride info"
+                                                            >
+                                                                                <strong>
+                                                                                                     seats left!
+                                                                                </strong>
+                                                                                <ul
+                                                                                                    className="ride-popover-list"
+                                                                                >
+                                                                                                    <li>
+                                                                                                                        Leaving at
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                                        You'd be riding in a 
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                                        You'll leave at 
+                                                                                                                         on 
+                                                                                                    </li>
+                                                                                                    [Function]
+                                                                                </ul>
+                                                            </Popover>
+                                        }
+                                        placement="right"
+                                        trigger="click"
+                    >
+                                        <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="default"
+                                                            disabled={false}
+                                        />
+                    </OverlayTrigger>
+                    <OverlayTrigger
+                                        container={[Circular]}
+                                        defaultOverlayShown={false}
+                                        overlay={
+                                                            <Popover
+                                                                                bsClass="popover"
+                                                                                id="popovers"
+                                                                                placement="right"
+                                                                                title="All your ride info"
+                                                            >
+                                                                                <strong>
+                                                                                                     seats left!
+                                                                                </strong>
+                                                                                <ul
+                                                                                                    className="ride-popover-list"
+                                                                                >
+                                                                                                    <li>
+                                                                                                                        Leaving at
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                                        You'd be riding in a 
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                                        You'll leave at 
+                                                                                                                         on 
+                                                                                                    </li>
+                                                                                                    [Function]
+                                                                                </ul>
+                                                            </Popover>
+                                        }
+                                        placement="right"
+                                        trigger="click"
+                    >
+                                        <Button
+                                                            active={false}
+                                                            block={false}
+                                                            bsClass="btn"
+                                                            bsStyle="default"
+                                                            disabled={false}
+                                        />
+                    </OverlayTrigger>
+</ButtonToolbar>,
+                  "_rendering": false,
+                  "_updater": [Circular],
+                },
+              },
+            },
+            "defaultOverlayShown": false,
+            "overlay": <Popover
+              bsClass="popover"
+              id="popovers"
+              placement="right"
+              title="All your ride info"
+>
+              <strong>
+                             seats left!
+              </strong>
+              <ul
+                            className="ride-popover-list"
+              >
+                            <li>
+                                          Leaving at
+                            </li>
+                            <li>
+                                          You'd be riding in a 
+                            </li>
+                            <li>
+                                          You'll leave at 
+                                           on 
+                            </li>
+                            [Function]
+              </ul>
+</Popover>,
+            "placement": "right",
+            "trigger": "click",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "active": false,
+              "block": false,
+              "bsClass": "btn",
+              "bsStyle": "default",
+              "children": undefined,
+              "disabled": false,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
