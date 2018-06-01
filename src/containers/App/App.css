@@ -14,4 +14,18 @@
   background-color: #404040;  
 }
 
+.error-container {
+  position: fixed;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 400px;
+  z-index: 3;
+  height: 200px;
+  width: 300px;
+  border-radius: 8px;
+}
+
 

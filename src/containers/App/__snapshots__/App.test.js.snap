@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App
+    error="nono"
     user={
         Object {
             "id": 1,
@@ -30,6 +31,18 @@ ShallowWrapper {
           <Connect(NavContainer)
                     toggleLogin={[Function]}
           />
+</div>,
+        <div
+          className="error-container"
+>
+          <strong>
+                    nono
+          </strong>
+          <button
+                    onClick={undefined}
+          >
+                    ok!
+          </button>
 </div>,
         0,
         <Switch>
@@ -76,6 +89,51 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <strong>
+              nono
+</strong>,
+            <button
+              onClick={undefined}
+>
+              ok!
+</button>,
+          ],
+          "className": "error-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "nono",
+            },
+            "ref": null,
+            "rendered": "nono",
+            "type": "strong",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "ok!",
+              "onClick": undefined,
+            },
+            "ref": null,
+            "rendered": "ok!",
+            "type": "button",
+          },
+        ],
         "type": "div",
       },
       0,
@@ -163,6 +221,18 @@ ShallowWrapper {
                         toggleLogin={[Function]}
             />
 </div>,
+          <div
+            className="error-container"
+>
+            <strong>
+                        nono
+            </strong>
+            <button
+                        onClick={undefined}
+            >
+                        ok!
+            </button>
+</div>,
           0,
           <Switch>
             <Route
@@ -208,6 +278,51 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <strong>
+                nono
+</strong>,
+              <button
+                onClick={undefined}
+>
+                ok!
+</button>,
+            ],
+            "className": "error-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "nono",
+              },
+              "ref": null,
+              "rendered": "nono",
+              "type": "strong",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "ok!",
+                "onClick": undefined,
+              },
+              "ref": null,
+              "rendered": "ok!",
+              "type": "button",
+            },
+          ],
           "type": "div",
         },
         0,

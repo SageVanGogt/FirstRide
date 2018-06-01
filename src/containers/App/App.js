@@ -9,6 +9,7 @@ import SigninContainer from './../SigninContainer/SigninContainer';
 import ProfileContainer from './../ProfileContainer/ProfileContainer';
 import NavContainer from './../NavContainer/NavContainer';
 import LoginComponent from './../../components/LoginComponent/LoginComponent';
+import * as actions from './../../actions/error';
 export class App extends Component {
   constructor() {
     super(),
@@ -24,12 +25,25 @@ export class App extends Component {
     })
   }
 
+  errorElement = () => {
+    return (
+      <div className="error-container">
+        <strong>{this.props.error}</strong>
+        <button onClick={this.props.removeError}>ok!</button>
+      </div>
+    );
+  }
+
   render() {
     return (
       <div className="App">
         <div className="nav-container">
           <NavContainer toggleLogin={this.toggleLogin}/>
         </div>
+        {
+          this.props.error.length &&
+          this.errorElement()
+        }
         {
           this.state.showLogin & !this.props.user.id && 
           <LoginComponent />
@@ -55,7 +69,12 @@ export class App extends Component {
 
 export const mapStateToProps = (state) => ({
   user: state.user,
-  destination: state.destination
-})
+  destination: state.destination,
+  error: state.error
+});
 
-export default withRouter(connect(mapStateToProps)(App))
+export const mapDispatchToProps = (dispatch) => ({
+  removeError: () => dispatch(actions.removeError())
+});
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App))

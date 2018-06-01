@@ -5,3 +5,9 @@ export const addError = (error) => {
     error
   });
 };
+
+export const removeError = () => {
+  return ({
+    type: "REMOVE_ERROR"
+  })
+}
