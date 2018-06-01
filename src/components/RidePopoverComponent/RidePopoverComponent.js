@@ -1,11 +1,25 @@
 import React, { Component } from 'react';
 import { ButtonToolbar, Popover, Overlay, OverlayTrigger, Button } from 'react-bootstrap';
 import './RidePopoverComponent.css';
+import { connect } from 'react-redux';
 
-class RidePopoverComponent extends Component {
+export class RidePopoverComponent extends Component {
   constructor(props, context) {
     super(props, context);
   }
+
+  signupForRideElement = (rideId) => (
+    <button onClick={() => 
+      this.props.submitRideSignup(rideId)}>
+      I want in
+    </button>
+  )
+
+  unsignupForRideElement = (rideId) => (
+    <button >
+      remove me
+    </button>
+  )
   
   render() {
     const allPopovers = this.props.rides.map(ride => {
@@ -21,10 +35,11 @@ class RidePopoverComponent extends Component {
               <li>Leaving at{ride.time}</li>
               <li>You'd be riding in a {ride.car_type}</li>
               <li>You'll leave at {ride.time} on {ride.date}</li>
-              <button onClick={() => 
-                this.props.submitRideSignup(ride.id)}>
-                I want in
-              </button>
+              {
+                this.props.ridesAccounted.includes(ride.id) ?
+                this.unsignupForRideElement :
+                this.signupForRideElement
+              }
             </ul>
           </Popover>}
         >
@@ -39,4 +54,8 @@ class RidePopoverComponent extends Component {
   }
 }
 
-export default RidePopoverComponent;
+export const mapStateToProps = (state) => ({
+  ridesAccounted: state.ridesAccounted
+})
+
+export default connect(mapStateToProps)(RidePopoverComponent);

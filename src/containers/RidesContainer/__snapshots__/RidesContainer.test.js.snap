@@ -109,7 +109,7 @@ ShallowWrapper {
           <section
                     className="ride-list"
           >
-                    <RidePopoverComponent
+                    <Connect(RidePopoverComponent)
                               rides={
                                         Array [
                                                   Object {
@@ -207,7 +207,7 @@ ShallowWrapper {
             <section
               className="ride-list"
 >
-              <RidePopoverComponent
+              <Connect(RidePopoverComponent)
                             rides={
                                           Array [
                                                         Object {
@@ -351,7 +351,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <RidePopoverComponent
+              "children": <Connect(RidePopoverComponent)
                 rides={
                                 Array [
                                                 Object {
@@ -501,7 +501,7 @@ ShallowWrapper {
             <section
                         className="ride-list"
             >
-                        <RidePopoverComponent
+                        <Connect(RidePopoverComponent)
                                     rides={
                                                 Array [
                                                             Object {
@@ -599,7 +599,7 @@ ShallowWrapper {
               <section
                 className="ride-list"
 >
-                <RidePopoverComponent
+                <Connect(RidePopoverComponent)
                                 rides={
                                                 Array [
                                                                 Object {
@@ -743,7 +743,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <RidePopoverComponent
+                "children": <Connect(RidePopoverComponent)
                   rides={
                                     Array [
                                                       Object {
