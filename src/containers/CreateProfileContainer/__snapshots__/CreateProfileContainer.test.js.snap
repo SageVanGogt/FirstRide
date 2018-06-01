@@ -1,11 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SignupContainer should match the snapshot 1`] = `
+exports[`ProfileContainer should match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SignupContainer
-    setUser={[Function]}
+  Symbol(enzyme.__unrendered__): <CreateProfileContainer
+    user={
+        Object {
+            "id": 1,
+            "user_name": "sage",
+          }
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -21,35 +26,23 @@ ShallowWrapper {
     "props": Object {
       "children": <form
         action="submit"
-        className="signup-form"
-        onSubmit={[Function]}
+        onClick={[Function]}
 >
+        All you have to do is tell us a little about yourself and leave an image if you would like!
         <input
-                className="signup-input"
-                name="user_name"
+                name="bio"
                 onChange={[Function]}
-                placeholder="name"
                 type="text"
         />
         <input
-                className="signup-input"
-                name="email"
+                name="user_img"
                 onChange={[Function]}
-                placeholder="email"
                 type="text"
-        />
-        <input
-                className="signup-input"
-                name="password"
-                onChange={[Function]}
-                placeholder="password"
-                type="password"
         />
         <input
                 type="submit"
         />
 </form>,
-      "className": "signup-container",
     },
     "ref": null,
     "rendered": Object {
@@ -59,45 +52,33 @@ ShallowWrapper {
       "props": Object {
         "action": "submit",
         "children": Array [
+          "All you have to do is tell us a little about yourself and leave an image if you would like!",
           <input
-            className="signup-input"
-            name="user_name"
+            name="bio"
             onChange={[Function]}
-            placeholder="name"
             type="text"
 />,
           <input
-            className="signup-input"
-            name="email"
+            name="user_img"
             onChange={[Function]}
-            placeholder="email"
             type="text"
-/>,
-          <input
-            className="signup-input"
-            name="password"
-            onChange={[Function]}
-            placeholder="password"
-            type="password"
 />,
           <input
             type="submit"
 />,
         ],
-        "className": "signup-form",
-        "onSubmit": [Function],
+        "onClick": [Function],
       },
       "ref": null,
       "rendered": Array [
+        "All you have to do is tell us a little about yourself and leave an image if you would like!",
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "signup-input",
-            "name": "user_name",
+            "name": "bio",
             "onChange": [Function],
-            "placeholder": "name",
             "type": "text",
           },
           "ref": null,
@@ -109,26 +90,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "signup-input",
-            "name": "email",
+            "name": "user_img",
             "onChange": [Function],
-            "placeholder": "email",
             "type": "text",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "input",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "className": "signup-input",
-            "name": "password",
-            "onChange": [Function],
-            "placeholder": "password",
-            "type": "password",
           },
           "ref": null,
           "rendered": null,
@@ -158,35 +122,23 @@ ShallowWrapper {
       "props": Object {
         "children": <form
           action="submit"
-          className="signup-form"
-          onSubmit={[Function]}
+          onClick={[Function]}
 >
+          All you have to do is tell us a little about yourself and leave an image if you would like!
           <input
-                    className="signup-input"
-                    name="user_name"
+                    name="bio"
                     onChange={[Function]}
-                    placeholder="name"
                     type="text"
           />
           <input
-                    className="signup-input"
-                    name="email"
+                    name="user_img"
                     onChange={[Function]}
-                    placeholder="email"
                     type="text"
-          />
-          <input
-                    className="signup-input"
-                    name="password"
-                    onChange={[Function]}
-                    placeholder="password"
-                    type="password"
           />
           <input
                     type="submit"
           />
 </form>,
-        "className": "signup-container",
       },
       "ref": null,
       "rendered": Object {
@@ -196,45 +148,33 @@ ShallowWrapper {
         "props": Object {
           "action": "submit",
           "children": Array [
+            "All you have to do is tell us a little about yourself and leave an image if you would like!",
             <input
-              className="signup-input"
-              name="user_name"
+              name="bio"
               onChange={[Function]}
-              placeholder="name"
               type="text"
 />,
             <input
-              className="signup-input"
-              name="email"
+              name="user_img"
               onChange={[Function]}
-              placeholder="email"
               type="text"
-/>,
-            <input
-              className="signup-input"
-              name="password"
-              onChange={[Function]}
-              placeholder="password"
-              type="password"
 />,
             <input
               type="submit"
 />,
           ],
-          "className": "signup-form",
-          "onSubmit": [Function],
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": Array [
+          "All you have to do is tell us a little about yourself and leave an image if you would like!",
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "className": "signup-input",
-              "name": "user_name",
+              "name": "bio",
               "onChange": [Function],
-              "placeholder": "name",
               "type": "text",
             },
             "ref": null,
@@ -246,26 +186,9 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "className": "signup-input",
-              "name": "email",
+              "name": "user_img",
               "onChange": [Function],
-              "placeholder": "email",
               "type": "text",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": "signup-input",
-              "name": "password",
-              "onChange": [Function],
-              "placeholder": "password",
-              "type": "password",
             },
             "ref": null,
             "rendered": null,

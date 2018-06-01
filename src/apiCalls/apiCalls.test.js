@@ -396,3 +396,51 @@ describe('postRidesPassengers', () => {
     expect(actual).toEqual(expected);
   })
 })
+
+describe('postNewProfile', () => {
+  let mockProfile;
+  let url;
+  let mockBody;
+
+  beforeEach(() => {
+    mockProfile = {
+      profile_id: 1,
+      bio: 'dogs',
+      rating: '',
+      user_img: '',
+      reviews: ''
+    };
+    url = `http://localhost:3000/api/profiles/new`; 
+    mockBody = {
+      method: "POST",
+      body: JSON.stringify(mockProfile),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }  
+    window.fetch = jest.fn().mockImplementation(() => 
+      Promise.resolve({
+        status: 200,
+        json: () => Promise.resolve({
+          id: 1,
+          ...mockProfile
+        })
+      }))
+  });
+
+  it('should be called with the correct params', async () => {
+    await API.postNewProfile(mockProfile);
+
+    expect(window.fetch).toHaveBeenCalledWith(url, mockBody)
+  })
+
+  it('should return the expected object', async () => {
+    let expected = {
+      id: 1,
+      ...mockProfile
+    };
+    let actual = await API.postNewProfile(mockProfile);
+
+    expect(actual).toEqual(expected);
+  })
+})

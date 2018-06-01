@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { ProfileContainer } from './ProfileContainer';
+import { ProfileContainer, mapStateToProps, mapDispatchToProps } from './ProfileContainer';
 
 describe('ProfileContainer', () => {
   let wrapper;
