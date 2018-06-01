@@ -244,4 +244,11 @@ describe('RidesContainer', () => {
       expect(API.postRidesPassengers).toHaveBeenCalledWith(expected);
     })
   })
+
+  describe('handleRemovePassengerRide', () => {
+
+    it('should call removePassengerRide', () => {
+
+    })
+  })
 })

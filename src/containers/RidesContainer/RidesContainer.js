@@ -86,6 +86,10 @@ export class RidesContainer extends Component {
       showOffer: !this.state.showOffer
     })
   }
+
+  handleRemove = () => {
+    
+  }
   
   render() {
     return (

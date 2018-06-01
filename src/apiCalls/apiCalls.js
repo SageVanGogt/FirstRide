@@ -137,12 +137,16 @@ const postNewProfile = async (profile) => {
   return profileInfo;
 } 
 
-// const fetchRidesAccounted = async () => {
-//   const url = `http://localhost:3000/api/rides_passengers`;
-//   const response = await fetch(url);
-//   const allRides = await response.json();
-//   return allRides;
-// }
+const removePassengerRide = async (rideId, passengerId, destinationId) => {
+  const url = `http://localhost:3000/api/rides/${rideId}/passengers/${passengerId}/destination/${destinationId}`; 
+  const body = {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  };
+  const response = await fetch(url, body);
+}
 
 export {
   signinUser,
@@ -156,5 +160,5 @@ export {
   fetchRidesPassengers,
   postRidesPassengers,
   postNewProfile,
-  // fetchRidesAccounted
+  removePassengerRide
 }
