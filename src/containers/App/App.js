@@ -9,6 +9,7 @@ import SigninContainer from './../SigninContainer/SigninContainer';
 import ProfileContainer from './../ProfileContainer/ProfileContainer';
 import NavContainer from './../NavContainer/NavContainer';
 import LoginComponent from './../../components/LoginComponent/LoginComponent';
+import * as actions from './../../actions/error';
 export class App extends Component {
   constructor() {
     super(),
@@ -28,7 +29,7 @@ export class App extends Component {
     return (
       <div className="error-container">
         <strong>{this.props.error}</strong>
-        <button onClick={}>ok!</button>
+        <button onClick={this.props.removeError}>ok!</button>
       </div>
     );
   }
@@ -72,4 +73,8 @@ export const mapStateToProps = (state) => ({
   error: state.error
 });
 
-export default withRouter(connect(mapStateToProps)(App))
+export const mapDispatchToProps = (dispatch) => ({
+  removeError: () => dispatch(actions.removeError())
+});
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App))

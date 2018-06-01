@@ -1,5 +1,5 @@
 import React from 'react';
-import { App, mapStateToProps } from './App';
+import { App, mapStateToProps, mapDispatchToProps } from './App';
 import { shallow } from 'enzyme';
  
 describe('App', () => {
@@ -69,6 +69,20 @@ describe('App', () => {
       let expected = mockState.error;
 
       expect(actual).toEqual(expected)
+    })
+  })
+
+  describe('mapDispatchToProps', () => {
+    it('should be called with the correct params', () => {
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let expected = {
+        type: "REMOVE_ERROR"
+      }
+      
+      mappedProps.removeError();
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected);
     })
   })
 })
