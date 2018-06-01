@@ -1,12 +1,21 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { CreateProfileContainer, mapStateToProps, mapDispatchToProps } from './CreateProfileContainer';
+import * as API from './../../apiCalls/apiCalls';
+
+jest.mock('./../../apiCalls/apiCalls');
 
 describe('ProfileContainer', () => {
   let wrapper;
+  let mockUser;
 
   beforeEach(() => {
-    wrapper = shallow(<CreateProfileContainer />)
+    mockUser = {
+      id: 1,
+      user_name: 'sage'
+    };
+    wrapper = shallow(<CreateProfileContainer 
+      user={mockUser}/>)
   })
   
   it('should match the snapshot', () => {
@@ -33,8 +42,25 @@ describe('ProfileContainer', () => {
   })
 
   describe('handleSubmit', () => {
-    it('should call postProfile with the correct params', () => {
-      
+    let mockEvent;
+
+    beforeEach(() => {
+      mockEvent = {
+        preventDefault: jest.fn()
+      };
+    })
+
+    it('should call postNewProfile with the correct params', async () => {
+      let expected = {
+        profile_id: 1,
+        bio: '',
+        rating: '',
+        user_img: '',
+        reviews: ''
+      }
+      await wrapper.instance().handleSubmit(mockEvent);
+
+      expect(API.postNewProfile).toHaveBeenCalledWith(expected);
     })
   })
 })

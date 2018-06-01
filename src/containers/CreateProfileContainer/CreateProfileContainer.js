@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import * as API from './../../apiCalls/apiCalls';
 
 export class CreateProfileContainer extends Component {
   constructor(props) {
@@ -19,6 +20,16 @@ export class CreateProfileContainer extends Component {
     this.setState({
       [name]: value
     });
+  }
+
+  handleSubmit = async (event) => {
+    event.preventDefault();
+    const profileData = {
+      profile_id: this.props.user.id,
+      ...this.state
+    }
+    const profile = await API.postNewProfile(profileData);
+    
   }
 
   render() {
