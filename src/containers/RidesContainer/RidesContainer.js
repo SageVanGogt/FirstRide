@@ -6,6 +6,7 @@ import MapContainer from './../MapContainer/MapContainer';
 import * as API from './../../apiCalls/apiCalls';
 import { addRides } from './../../actions/rides';
 import { addCurrentLocation } from './../../actions/currentLocation';
+import { addRidesAccounted } from './../../actions/rideAccounted';
 import * as cleaner from './../../cleaners/cleaners';
 import OfferContainer from './../OfferContainer/OfferContainer';
 import RidePopoverComponent from './../../components/RidePopoverComponent/RidePopoverComponent';
@@ -135,7 +136,8 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => ({
   setRides: (rides) => dispatch(addRides(rides)),
-  setLocation: (location) => dispatch(addCurrentLocation(location))
+  setLocation: (location) => dispatch(addCurrentLocation(location)),
+  setRidesAccounted: (ridesAccounted) => dispatch(addRidesAccounted(ridesAccounted))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(RidesContainer);

@@ -202,6 +202,18 @@ describe('RidesContainer', () => {
 
       expect(mockDispatch).toBeCalledWith(expected)
     })
+
+    it('should dispatch setRidesAccounted with the correct params', () => {
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let expected = {
+        type: "ADD_RIDES_ACCOUNTED",
+        ridesAccounted: [{}, {}]
+      }
+      mappedProps.setRidesAccounted([{}, {}]);
+
+      expect(mockDispatch).toBeCalledWith(expected)
+    })
   })
 
   describe('submitRideSignup', () => {

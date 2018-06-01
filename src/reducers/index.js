@@ -6,6 +6,7 @@ import pickupReducer from './pickupReducer';
 import ridesReducer from './ridesReducer';
 import errorReducer from './errorReducer';
 import profileReducer from './profileReducer';
+import ridesAccountedReducer from './rideAccountedReducer';
 
 const rootReducer = combineReducers({
  user: userReducer,
@@ -14,7 +15,8 @@ const rootReducer = combineReducers({
  destination: destinationReducer,
  pickupLocations: pickupReducer,
  profile: profileReducer,
- error: errorReducer
+ error: errorReducer,
+ ridesAccounted: ridesAccountedReducer
 });
 
 export default rootReducer;
