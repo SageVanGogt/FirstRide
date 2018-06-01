@@ -20,6 +20,11 @@ export class RidePopoverComponent extends Component {
       remove me
     </button>
   )
+
+  findExistingRide = (rideId) => {
+    const rideExists = this.props.ridesAccounted.find(ride => ride.ride_id === rideId);
+    return rideExists;
+  }
   
   render() {
     const allPopovers = this.props.rides.map(ride => {
@@ -36,9 +41,9 @@ export class RidePopoverComponent extends Component {
               <li>You'd be riding in a {ride.car_type}</li>
               <li>You'll leave at {ride.time} on {ride.date}</li>
               {
-                this.props.ridesAccounted.includes(ride.id) ?
-                this.unsignupForRideElement :
-                this.signupForRideElement
+                this.findExistingRide(ride.id) ?
+                this.unsignupForRideElement(ride.id) :
+                this.signupForRideElement(ride.id)
               }
             </ul>
           </Popover>}
