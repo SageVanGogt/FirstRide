@@ -31,4 +31,10 @@ describe('ProfileContainer', () => {
       expect(wrapper.state()).toEqual(expected)
     })
   })
+
+  describe('handleSubmit', () => {
+    it('should call postProfile with the correct params', () => {
+      
+    })
+  })
 })

@@ -24,7 +24,19 @@ export class CreateProfileContainer extends Component {
   render() {
     return (
       <div>
-
+        <form action="submit" onClick={this.handleSubmit}>
+          All you have to do is tell us a little about
+          yourself and leave an image if you would like!
+          <input 
+            type="text" 
+            name="bio" 
+            onChange={this.handleChange}/>
+          <input 
+            type="text" 
+            name="user_img" 
+            onChange={this.handleChange}/>
+          <input type="submit"/>
+        </form>
       </div>
     );
   }
