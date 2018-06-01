@@ -63,4 +63,18 @@ describe('ProfileContainer', () => {
       expect(API.postNewProfile).toHaveBeenCalledWith(expected);
     })
   })
+
+  describe('mapStateToProps', () => {
+    it('should map the user from state to props', () => {
+      let mockState = {
+        user: 'sage',
+        rides: [{}, {}]
+      }
+      let expected = 'sage';
+      let mappedProps = mapStateToProps(mockState);
+      let actual = mappedProps.user;
+      
+      expect(actual).toEqual(expected);
+    })
+  })
 })

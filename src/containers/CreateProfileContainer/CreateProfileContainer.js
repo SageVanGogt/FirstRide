@@ -54,7 +54,7 @@ export class CreateProfileContainer extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-
+  user: state.user
 })
 
 export const mapDispatchToProps = (dispatch) => ({
