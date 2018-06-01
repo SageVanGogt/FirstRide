@@ -5,6 +5,7 @@ import { destinationReducer } from './destinationReducer';
 import pickupReducer from './pickupReducer';
 import ridesReducer from './ridesReducer';
 import errorReducer from './errorReducer';
+import profileReducer from './profileReducer';
 
 const rootReducer = combineReducers({
  user: userReducer,
@@ -12,6 +13,7 @@ const rootReducer = combineReducers({
  currentLocation: currentLocationReducer,
  destination: destinationReducer,
  pickupLocations: pickupReducer,
+ profile: profileReducer,
  error: errorReducer
 });
 
