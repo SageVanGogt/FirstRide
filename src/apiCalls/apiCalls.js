@@ -134,7 +134,7 @@ const postNewProfile = async (profile) => {
   };
   const response = await fetch(url, body);
   const profileInfo = await response.json();
-  return 
+  return profileInfo;
 } 
 
 export {

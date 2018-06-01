@@ -433,4 +433,14 @@ describe('postNewProfile', () => {
 
     expect(window.fetch).toHaveBeenCalledWith(url, mockBody)
   })
+
+  it('should return the expected object', async () => {
+    let expected = {
+      id: 1,
+      ...mockProfile
+    };
+    let actual = await API.postNewProfile(mockProfile);
+
+    expect(actual).toEqual(expected);
+  })
 })
