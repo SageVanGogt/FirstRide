@@ -16,13 +16,17 @@ export class RidePopoverComponent extends Component {
   )
 
   unsignupForRideElement = (rideId) => (
-    <button >
+    <button onClick={() => 
+      this.props.handleRemovePassengerRide(rideId)}>
       remove me
     </button>
   )
 
   findExistingRide = (rideId) => {
-    const rideExists = this.props.ridesAccounted.find(ride => ride.ride_id === rideId);
+    const { user } = this.props;
+    const rideExists = this.props.ridesAccounted.find(ride => {
+      return ride.ride_id === rideId & ride.passenger_id === user.id
+    });
     return rideExists;
   }
   
@@ -60,7 +64,8 @@ export class RidePopoverComponent extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  ridesAccounted: state.ridesAccounted
+  ridesAccounted: state.ridesAccounted,
+  user: state.user
 })
 
 export default connect(mapStateToProps)(RidePopoverComponent);

@@ -31,14 +31,24 @@ export class RidesContainer extends Component {
   }
 
   loadRides = async () => {
-    const { setRides, destination } = this.props;
+    const { destination } = this.props;
     const response = await API.fetchRides(destination.id);
+    const ridesAccountedFor = await this.handleSettingRideAccountedFor();
+    await this.cleanAndSetRides(response.rides, ridesAccountedFor.ride);
+  }
+
+  cleanAndSetRides = (rides, ridesAccountedFor) => {
+    const cleanUpdatedRides = cleaner.seatsRemainingUpdate(rides, ridesAccountedFor); 
+    this.props.setRides(cleanUpdatedRides);
+  }
+
+  handleSettingRideAccountedFor = async () => {
+    const { rides, destination } = this.props;
     const ridesAccountedFor = await API.fetchRidesPassengers(destination.id);
     this.props.setRidesAccounted(ridesAccountedFor.ride);
-    const cleanUpdatedRides = cleaner.seatsRemainingUpdate(response.rides, ridesAccountedFor.ride);
-    
-    await setRides(cleanUpdatedRides);
-  }
+    this.cleanAndSetRides(rides, this.props.ridesAccounted)
+    return ridesAccountedFor;
+  } 
 
   handleChange = (event) => {
     const { name, value } = event.target;
@@ -78,7 +88,8 @@ export class RidesContainer extends Component {
     return (
       <RidePopoverComponent 
         rides={this.props.rides} 
-        submitRideSignup={this.submitRideSignup}/> 
+        submitRideSignup={this.submitRideSignup}
+        handleRemovePassengerRide={this.handleRemovePassengerRide}/> 
     )}
 
   handleShowOffer = () => {
@@ -87,8 +98,10 @@ export class RidesContainer extends Component {
     })
   }
 
-  handleRemove = () => {
-    
+  handleRemovePassengerRide = async (rideId) => {
+    const { user, destination } = this.props;
+    await API.removePassengerRide(rideId, user.id, destination.id);
+    this.loadRides();
   }
   
   render() {
@@ -136,7 +149,8 @@ export class RidesContainer extends Component {
 export const mapStateToProps = (state) => ({
   destination: state.destination,
   rides: state.rides,
-  user: state.user
+  user: state.user,
+  ridesAccounted: state.ridesAccounted
 })
 
 export const mapDispatchToProps = (dispatch) => ({
