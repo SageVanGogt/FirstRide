@@ -28,6 +28,18 @@ describe('UserRidesContainer', () => {
     })
   })
 
+  describe('loadRideDetails', () => {
+    it('should call fetchRidesFrom user with the correct params', async () => {
+      let expected = 1;
+      let mockRideArray = [{
+          ride_id: 1
+      }];
+      await wrapper.instance().loadRideDetails(mockRideArray);
+
+      expect(API.fetchRidesFromUser).toHaveBeenCalledWith(1)
+    })
+  })
+
   describe('mapStateToProps', () => {
     it('should map the user to props', () => {
       let mockState = {

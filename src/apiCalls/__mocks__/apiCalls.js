@@ -68,6 +68,11 @@ Promise.resolve({
   rides: [{}, {}]
 }));
 
+const fetchRidesFromUser = jest.fn().mockImplementation(() => 
+Promise.resolve({
+  rides: [{}, {}]
+}));
+
 export {
   signinUser,
   signupUser,
@@ -80,5 +85,6 @@ export {
   postRidesPassengers,
   fetchRidesPassengers,
   postNewProfile,
-  fetchUserRides
+  fetchUserRides,
+  fetchRidesFromUser
 }

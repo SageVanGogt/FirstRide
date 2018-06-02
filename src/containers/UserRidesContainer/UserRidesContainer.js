@@ -10,12 +10,17 @@ export class UserRidesContainer extends Component {
 
   loadPassengerRides = async () => {
     const rides = await API.fetchUserRides(this.props.user.id);
-    const rideInfo = await this.loadRideDetails(rides);
+    const rideInfo = await this.loadRideDetails(rides.rides);
     return rideInfo
   }
 
   loadRideDetails = async (rideArray) => {
-    
+    let allRideInfo = rideArray.map( async ride => {
+      const response = await API.fetchRidesFromUser(ride.ride_id);
+      return response;
+    })
+    await Promise.all(allRideInfo);
+    return allRideInfo;
   }
 
   render() {
