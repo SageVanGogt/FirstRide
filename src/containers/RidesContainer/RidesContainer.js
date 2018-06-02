@@ -33,7 +33,8 @@ export class RidesContainer extends Component {
   loadRides = async () => {
     const { destination } = this.props;
     const response = await API.fetchRides(destination.id);
-    const ridesAccountedFor = await this.handleSettingRideAccountedFor();
+    const ridesAccountedFor = await API.fetchRidesPassengers(destination.id);
+    this.props.setRidesAccounted(ridesAccountedFor.ride);
     await this.cleanAndSetRides(response.rides, ridesAccountedFor.ride);
   }
 
@@ -41,14 +42,6 @@ export class RidesContainer extends Component {
     const cleanUpdatedRides = cleaner.seatsRemainingUpdate(rides, ridesAccountedFor); 
     this.props.setRides(cleanUpdatedRides);
   }
-
-  handleSettingRideAccountedFor = async () => {
-    const { rides, destination } = this.props;
-    const ridesAccountedFor = await API.fetchRidesPassengers(destination.id);
-    this.props.setRidesAccounted(ridesAccountedFor.ride);
-    this.cleanAndSetRides(rides, this.props.ridesAccounted)
-    return ridesAccountedFor;
-  } 
 
   handleChange = (event) => {
     const { name, value } = event.target;
@@ -149,8 +142,7 @@ export class RidesContainer extends Component {
 export const mapStateToProps = (state) => ({
   destination: state.destination,
   rides: state.rides,
-  user: state.user,
-  ridesAccounted: state.ridesAccounted
+  user: state.user
 })
 
 export const mapDispatchToProps = (dispatch) => ({
