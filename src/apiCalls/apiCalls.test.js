@@ -481,7 +481,9 @@ describe('fetchUserRide', () => {
   let mockRides;
 
   beforeEach(() => {
-    mockRides = [{}, {}]
+    mockRides = {
+      rides: [{}, {}]
+    };
     mockUserId = 1;
     mockBody = {
       method: "POST",
