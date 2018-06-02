@@ -8,8 +8,8 @@ export class UserRidesContainer extends Component {
     super(props)
   };
 
-  loadPassengerRides = async (locationId) => {
-    const rides
+  loadPassengerRides = async () => {
+    const rides = await API.fetchUserRides(this.props.user.id)
   }
 
   loadRideDetails = async (rideArray) => {
@@ -37,7 +37,7 @@ export class UserRidesContainer extends Component {
 };
 
 export const mapStateToProps = (state) => ({
-
+  user: state.user
 });
 
 export const mapDispatchToProps = (dispatch) => ({

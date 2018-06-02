@@ -53,7 +53,7 @@ Promise.resolve({
   }]
 }));
 
-const postNewProfile =jest.fn().mockImplementation(() => 
+const postNewProfile = jest.fn().mockImplementation(() => 
 Promise.resolve({
   id: 1,
   profile_id: 1,
@@ -61,6 +61,11 @@ Promise.resolve({
   user_img: '',
   rating: '4',
   reviews: ''
+}));
+
+const fetchUserRides = jest.fn().mockImplementation(() => 
+Promise.resolve({
+  rides: [{}, {}]
 }));
 
 export {
@@ -74,5 +79,6 @@ export {
   submitNewRide,
   postRidesPassengers,
   fetchRidesPassengers,
-  postNewProfile
+  postNewProfile,
+  fetchUserRides
 }
