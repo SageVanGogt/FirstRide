@@ -148,6 +148,32 @@ const removePassengerRide = async (rideId, passengerId, destinationId) => {
   const response = await fetch(url, body);
 }
 
+const fetchUserRides = async (userId) => {
+  const url = `http://localhost:3000/api/rides_passengers/get/rides/${userId}`;
+  const body = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  };
+  const response = await fetch(url, body);
+  const rides = response.json();
+  return rides;
+}
+
+const fetchRidesFromUser = async (rideId) => {
+  const url = `http://localhost:3000/api/rides/${rideId}/get/user/`;
+  const body = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  };
+  const response = await fetch(url, body);
+  const ridesInfo = await response.json();
+  return ridesInfo
+}
+
 export {
   signinUser,
   signupUser,
@@ -160,5 +186,7 @@ export {
   fetchRidesPassengers,
   postRidesPassengers,
   postNewProfile,
-  removePassengerRide
+  removePassengerRide,
+  fetchUserRides,
+  fetchRidesFromUser
 }

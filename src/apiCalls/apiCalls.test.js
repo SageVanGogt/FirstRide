@@ -473,3 +473,85 @@ describe('removePassengerRide', () => {
     expect(window.fetch).toHaveBeenCalledWith(url, mockBody)
   });
 });
+
+describe('fetchUserRide', () => {
+  let url;
+  let mockUserId;
+  let mockBody;
+  let mockRides;
+
+  beforeEach(() => {
+    mockRides = {
+      rides: [{}, {}]
+    };
+    mockUserId = 1;
+    mockBody = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    };
+    url = `http://localhost:3000/api/rides_passengers/get/rides/${mockUserId}`;
+    window.fetch = jest.fn().mockImplementation(() => 
+    Promise.resolve({
+      status: 200,
+      json: () => Promise.resolve({
+        rides: [{}, {}]
+      })
+    }));
+  });
+
+  it('should be called with the correct params', async () => {
+    await API.fetchUserRides(mockUserId);
+
+    expect(window.fetch).toHaveBeenCalledWith(url, mockBody);
+  })
+
+  it('should resolve to the correct object', async () => {
+    let expected = mockRides;
+    let actual = await API.fetchUserRides(mockUserId);
+
+    expect(actual).toEqual(expected);
+  })
+})
+
+describe('fetchRidesFromUser', () => {
+  let url;
+  let mockRideId;
+  let mockBody;
+  let mockRides;
+
+  beforeEach(() => {
+    mockRides = {
+      rides: [{}, {}]
+    };
+    mockRideId = 1;
+    mockBody = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    };
+    url = `http://localhost:3000/api/rides/${mockRideId}/get/user/`;
+    window.fetch = jest.fn().mockImplementation(() => 
+    Promise.resolve({
+      status: 200,
+      json: () => Promise.resolve({
+        rides: [{}, {}]
+      })
+    }));
+  });
+
+  it('should be called with the correct params', async () => {
+    await API.fetchRidesFromUser(mockRideId);
+
+    expect(window.fetch).toHaveBeenCalledWith(url, mockBody);
+  })
+
+  it('should resolve to the correct object', async () => {
+    let expected = mockRides;
+    let actual = await API.fetchRidesFromUser(mockRideId);
+
+    expect(actual).toEqual(expected);
+  })
+})

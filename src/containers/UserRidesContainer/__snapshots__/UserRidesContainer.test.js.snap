@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserRidesContainer should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <UserRidesContainer
+    user={
+        Object {
+            "id": 1,
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <article>
+          <h2>
+                    Red Rocks
+          </h2>
+          <ul>
+                    Promise {}
+          </ul>
+</article>,
+        <article>
+          <h2>
+                    Breckenridge
+          </h2>
+          <ul>
+                    Promise {}
+          </ul>
+</article>,
+      ],
+      "className": "user-rides-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              Red Rocks
+</h2>,
+            <ul>
+              Promise {}
+</ul>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Red Rocks",
+            },
+            "ref": null,
+            "rendered": "Red Rocks",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Promise {},
+            },
+            "ref": null,
+            "rendered": Promise {},
+            "type": "ul",
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              Breckenridge
+</h2>,
+            <ul>
+              Promise {}
+</ul>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Breckenridge",
+            },
+            "ref": null,
+            "rendered": "Breckenridge",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Promise {},
+            },
+            "ref": null,
+            "rendered": Promise {},
+            "type": "ul",
+          },
+        ],
+        "type": "article",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <article>
+            <h2>
+                        Red Rocks
+            </h2>
+            <ul>
+                        Promise {}
+            </ul>
+</article>,
+          <article>
+            <h2>
+                        Breckenridge
+            </h2>
+            <ul>
+                        Promise {}
+            </ul>
+</article>,
+        ],
+        "className": "user-rides-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Red Rocks
+</h2>,
+              <ul>
+                Promise {}
+</ul>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Red Rocks",
+              },
+              "ref": null,
+              "rendered": "Red Rocks",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Promise {},
+              },
+              "ref": null,
+              "rendered": Promise {},
+              "type": "ul",
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Breckenridge
+</h2>,
+              <ul>
+                Promise {}
+</ul>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Breckenridge",
+              },
+              "ref": null,
+              "rendered": "Breckenridge",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Promise {},
+              },
+              "ref": null,
+              "rendered": Promise {},
+              "type": "ul",
+            },
+          ],
+          "type": "article",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
