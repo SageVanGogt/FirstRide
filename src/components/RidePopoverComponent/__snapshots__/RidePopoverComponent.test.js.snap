@@ -17,6 +17,11 @@ ShallowWrapper {
             Object {},
           ]
     }
+    user={
+        Object {
+            "id": 1,
+          }
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -36,6 +41,7 @@ ShallowWrapper {
           container={
                     RidePopoverComponent {
                               "context": Object {},
+                              "findExistingRide": [Function],
                               "props": Object {
                                 "rides": Array [
                                   Object {},
@@ -45,6 +51,9 @@ ShallowWrapper {
                                   Object {},
                                   Object {},
                                 ],
+                                "user": Object {
+                                  "id": 1,
+                                },
                               },
                               "refs": Object {},
                               "signupForRideElement": [Function],
@@ -66,6 +75,11 @@ ShallowWrapper {
                                                                     Object {},
                                                                     Object {},
                                                                   ]
+                                    }
+                                    user={
+                                                    Object {
+                                                                    "id": 1,
+                                                                  }
                                     }
                     />,
                                   "_forcedUpdate": false,
@@ -101,7 +115,11 @@ ShallowWrapper {
                                                                                                                     You'll leave at 
                                                                                                                      on 
                                                                                                     </li>
-                                                                                                    [Function]
+                                                                                                    <button
+                                                                                                                    onClick={[Function]}
+                                                                                                    >
+                                                                                                                    I want in
+                                                                                                    </button>
                                                                                     </ul>
                                                                     </Popover>
                                                     }
@@ -142,7 +160,11 @@ ShallowWrapper {
                                                                                                                     You'll leave at 
                                                                                                                      on 
                                                                                                     </li>
-                                                                                                    [Function]
+                                                                                                    <button
+                                                                                                                    onClick={[Function]}
+                                                                                                    >
+                                                                                                                    I want in
+                                                                                                    </button>
                                                                                     </ul>
                                                                     </Popover>
                                                     }
@@ -188,7 +210,11 @@ ShallowWrapper {
                                                   You'll leave at 
                                                    on 
                                         </li>
-                                        [Function]
+                                        <button
+                                                  onClick={[Function]}
+                                        >
+                                                  I want in
+                                        </button>
                               </ul>
                     </Popover>
           }
@@ -207,6 +233,7 @@ ShallowWrapper {
           container={
                     RidePopoverComponent {
                               "context": Object {},
+                              "findExistingRide": [Function],
                               "props": Object {
                                 "rides": Array [
                                   Object {},
@@ -216,6 +243,9 @@ ShallowWrapper {
                                   Object {},
                                   Object {},
                                 ],
+                                "user": Object {
+                                  "id": 1,
+                                },
                               },
                               "refs": Object {},
                               "signupForRideElement": [Function],
@@ -237,6 +267,11 @@ ShallowWrapper {
                                                                     Object {},
                                                                     Object {},
                                                                   ]
+                                    }
+                                    user={
+                                                    Object {
+                                                                    "id": 1,
+                                                                  }
                                     }
                     />,
                                   "_forcedUpdate": false,
@@ -272,7 +307,11 @@ ShallowWrapper {
                                                                                                                     You'll leave at 
                                                                                                                      on 
                                                                                                     </li>
-                                                                                                    [Function]
+                                                                                                    <button
+                                                                                                                    onClick={[Function]}
+                                                                                                    >
+                                                                                                                    I want in
+                                                                                                    </button>
                                                                                     </ul>
                                                                     </Popover>
                                                     }
@@ -313,7 +352,11 @@ ShallowWrapper {
                                                                                                                     You'll leave at 
                                                                                                                      on 
                                                                                                     </li>
-                                                                                                    [Function]
+                                                                                                    <button
+                                                                                                                    onClick={[Function]}
+                                                                                                    >
+                                                                                                                    I want in
+                                                                                                    </button>
                                                                                     </ul>
                                                                     </Popover>
                                                     }
@@ -359,7 +402,11 @@ ShallowWrapper {
                                                   You'll leave at 
                                                    on 
                                         </li>
-                                        [Function]
+                                        <button
+                                                  onClick={[Function]}
+                                        >
+                                                  I want in
+                                        </button>
                               </ul>
                     </Popover>
           }
@@ -393,6 +440,7 @@ ShallowWrapper {
 />,
           "container": RidePopoverComponent {
             "context": Object {},
+            "findExistingRide": [Function],
             "props": Object {
               "rides": Array [
                 Object {},
@@ -402,6 +450,9 @@ ShallowWrapper {
                 Object {},
                 Object {},
               ],
+              "user": Object {
+                "id": 1,
+              },
             },
             "refs": Object {},
             "signupForRideElement": [Function],
@@ -423,6 +474,11 @@ ShallowWrapper {
                                                       Object {},
                                                       Object {},
                                                     ]
+                  }
+                  user={
+                                    Object {
+                                                      "id": 1,
+                                                    }
                   }
 />,
                 "_forcedUpdate": false,
@@ -458,7 +514,11 @@ ShallowWrapper {
                                                                                                             You'll leave at 
                                                                                                              on 
                                                                                           </li>
-                                                                                          [Function]
+                                                                                          <button
+                                                                                                            onClick={[Function]}
+                                                                                          >
+                                                                                                            I want in
+                                                                                          </button>
                                                                         </ul>
                                                       </Popover>
                                     }
@@ -499,7 +559,11 @@ ShallowWrapper {
                                                                                                             You'll leave at 
                                                                                                              on 
                                                                                           </li>
-                                                                                          [Function]
+                                                                                          <button
+                                                                                                            onClick={[Function]}
+                                                                                          >
+                                                                                                            I want in
+                                                                                          </button>
                                                                         </ul>
                                                       </Popover>
                                     }
@@ -543,7 +607,11 @@ ShallowWrapper {
                                     You'll leave at 
                                      on 
                         </li>
-                        [Function]
+                        <button
+                                    onClick={[Function]}
+                        >
+                                    I want in
+                        </button>
             </ul>
 </Popover>,
           "placement": "right",
@@ -582,6 +650,7 @@ ShallowWrapper {
 />,
           "container": RidePopoverComponent {
             "context": Object {},
+            "findExistingRide": [Function],
             "props": Object {
               "rides": Array [
                 Object {},
@@ -591,6 +660,9 @@ ShallowWrapper {
                 Object {},
                 Object {},
               ],
+              "user": Object {
+                "id": 1,
+              },
             },
             "refs": Object {},
             "signupForRideElement": [Function],
@@ -612,6 +684,11 @@ ShallowWrapper {
                                                       Object {},
                                                       Object {},
                                                     ]
+                  }
+                  user={
+                                    Object {
+                                                      "id": 1,
+                                                    }
                   }
 />,
                 "_forcedUpdate": false,
@@ -647,7 +724,11 @@ ShallowWrapper {
                                                                                                             You'll leave at 
                                                                                                              on 
                                                                                           </li>
-                                                                                          [Function]
+                                                                                          <button
+                                                                                                            onClick={[Function]}
+                                                                                          >
+                                                                                                            I want in
+                                                                                          </button>
                                                                         </ul>
                                                       </Popover>
                                     }
@@ -688,7 +769,11 @@ ShallowWrapper {
                                                                                                             You'll leave at 
                                                                                                              on 
                                                                                           </li>
-                                                                                          [Function]
+                                                                                          <button
+                                                                                                            onClick={[Function]}
+                                                                                          >
+                                                                                                            I want in
+                                                                                          </button>
                                                                         </ul>
                                                       </Popover>
                                     }
@@ -732,7 +817,11 @@ ShallowWrapper {
                                     You'll leave at 
                                      on 
                         </li>
-                        [Function]
+                        <button
+                                    onClick={[Function]}
+                        >
+                                    I want in
+                        </button>
             </ul>
 </Popover>,
           "placement": "right",
@@ -772,6 +861,7 @@ ShallowWrapper {
             container={
                         RidePopoverComponent {
                                     "context": Object {},
+                                    "findExistingRide": [Function],
                                     "props": Object {
                                       "rides": Array [
                                         Object {},
@@ -781,6 +871,9 @@ ShallowWrapper {
                                         Object {},
                                         Object {},
                                       ],
+                                      "user": Object {
+                                        "id": 1,
+                                      },
                                     },
                                     "refs": Object {},
                                     "signupForRideElement": [Function],
@@ -802,6 +895,11 @@ ShallowWrapper {
                                                                               Object {},
                                                                               Object {},
                                                                             ]
+                                          }
+                                          user={
+                                                            Object {
+                                                                              "id": 1,
+                                                                            }
                                           }
                         />,
                                         "_forcedUpdate": false,
@@ -837,7 +935,11 @@ ShallowWrapper {
                                                                                                                                     You'll leave at 
                                                                                                                                      on 
                                                                                                                   </li>
-                                                                                                                  [Function]
+                                                                                                                  <button
+                                                                                                                                    onClick={[Function]}
+                                                                                                                  >
+                                                                                                                                    I want in
+                                                                                                                  </button>
                                                                                                 </ul>
                                                                               </Popover>
                                                             }
@@ -878,7 +980,11 @@ ShallowWrapper {
                                                                                                                                     You'll leave at 
                                                                                                                                      on 
                                                                                                                   </li>
-                                                                                                                  [Function]
+                                                                                                                  <button
+                                                                                                                                    onClick={[Function]}
+                                                                                                                  >
+                                                                                                                                    I want in
+                                                                                                                  </button>
                                                                                                 </ul>
                                                                               </Popover>
                                                             }
@@ -924,7 +1030,11 @@ ShallowWrapper {
                                                             You'll leave at 
                                                              on 
                                                 </li>
-                                                [Function]
+                                                <button
+                                                            onClick={[Function]}
+                                                >
+                                                            I want in
+                                                </button>
                                     </ul>
                         </Popover>
             }
@@ -943,6 +1053,7 @@ ShallowWrapper {
             container={
                         RidePopoverComponent {
                                     "context": Object {},
+                                    "findExistingRide": [Function],
                                     "props": Object {
                                       "rides": Array [
                                         Object {},
@@ -952,6 +1063,9 @@ ShallowWrapper {
                                         Object {},
                                         Object {},
                                       ],
+                                      "user": Object {
+                                        "id": 1,
+                                      },
                                     },
                                     "refs": Object {},
                                     "signupForRideElement": [Function],
@@ -973,6 +1087,11 @@ ShallowWrapper {
                                                                               Object {},
                                                                               Object {},
                                                                             ]
+                                          }
+                                          user={
+                                                            Object {
+                                                                              "id": 1,
+                                                                            }
                                           }
                         />,
                                         "_forcedUpdate": false,
@@ -1008,7 +1127,11 @@ ShallowWrapper {
                                                                                                                                     You'll leave at 
                                                                                                                                      on 
                                                                                                                   </li>
-                                                                                                                  [Function]
+                                                                                                                  <button
+                                                                                                                                    onClick={[Function]}
+                                                                                                                  >
+                                                                                                                                    I want in
+                                                                                                                  </button>
                                                                                                 </ul>
                                                                               </Popover>
                                                             }
@@ -1049,7 +1172,11 @@ ShallowWrapper {
                                                                                                                                     You'll leave at 
                                                                                                                                      on 
                                                                                                                   </li>
-                                                                                                                  [Function]
+                                                                                                                  <button
+                                                                                                                                    onClick={[Function]}
+                                                                                                                  >
+                                                                                                                                    I want in
+                                                                                                                  </button>
                                                                                                 </ul>
                                                                               </Popover>
                                                             }
@@ -1095,7 +1222,11 @@ ShallowWrapper {
                                                             You'll leave at 
                                                              on 
                                                 </li>
-                                                [Function]
+                                                <button
+                                                            onClick={[Function]}
+                                                >
+                                                            I want in
+                                                </button>
                                     </ul>
                         </Popover>
             }
@@ -1129,6 +1260,7 @@ ShallowWrapper {
 />,
             "container": RidePopoverComponent {
               "context": Object {},
+              "findExistingRide": [Function],
               "props": Object {
                 "rides": Array [
                   Object {},
@@ -1138,6 +1270,9 @@ ShallowWrapper {
                   Object {},
                   Object {},
                 ],
+                "user": Object {
+                  "id": 1,
+                },
               },
               "refs": Object {},
               "signupForRideElement": [Function],
@@ -1159,6 +1294,11 @@ ShallowWrapper {
                                                             Object {},
                                                             Object {},
                                                           ]
+                    }
+                    user={
+                                        Object {
+                                                            "id": 1,
+                                                          }
                     }
 />,
                   "_forcedUpdate": false,
@@ -1194,7 +1334,11 @@ ShallowWrapper {
                                                                                                                         You'll leave at 
                                                                                                                          on 
                                                                                                     </li>
-                                                                                                    [Function]
+                                                                                                    <button
+                                                                                                                        onClick={[Function]}
+                                                                                                    >
+                                                                                                                        I want in
+                                                                                                    </button>
                                                                                 </ul>
                                                             </Popover>
                                         }
@@ -1235,7 +1379,11 @@ ShallowWrapper {
                                                                                                                         You'll leave at 
                                                                                                                          on 
                                                                                                     </li>
-                                                                                                    [Function]
+                                                                                                    <button
+                                                                                                                        onClick={[Function]}
+                                                                                                    >
+                                                                                                                        I want in
+                                                                                                    </button>
                                                                                 </ul>
                                                             </Popover>
                                         }
@@ -1279,7 +1427,11 @@ ShallowWrapper {
                                           You'll leave at 
                                            on 
                             </li>
-                            [Function]
+                            <button
+                                          onClick={[Function]}
+                            >
+                                          I want in
+                            </button>
               </ul>
 </Popover>,
             "placement": "right",
@@ -1318,6 +1470,7 @@ ShallowWrapper {
 />,
             "container": RidePopoverComponent {
               "context": Object {},
+              "findExistingRide": [Function],
               "props": Object {
                 "rides": Array [
                   Object {},
@@ -1327,6 +1480,9 @@ ShallowWrapper {
                   Object {},
                   Object {},
                 ],
+                "user": Object {
+                  "id": 1,
+                },
               },
               "refs": Object {},
               "signupForRideElement": [Function],
@@ -1348,6 +1504,11 @@ ShallowWrapper {
                                                             Object {},
                                                             Object {},
                                                           ]
+                    }
+                    user={
+                                        Object {
+                                                            "id": 1,
+                                                          }
                     }
 />,
                   "_forcedUpdate": false,
@@ -1383,7 +1544,11 @@ ShallowWrapper {
                                                                                                                         You'll leave at 
                                                                                                                          on 
                                                                                                     </li>
-                                                                                                    [Function]
+                                                                                                    <button
+                                                                                                                        onClick={[Function]}
+                                                                                                    >
+                                                                                                                        I want in
+                                                                                                    </button>
                                                                                 </ul>
                                                             </Popover>
                                         }
@@ -1424,7 +1589,11 @@ ShallowWrapper {
                                                                                                                         You'll leave at 
                                                                                                                          on 
                                                                                                     </li>
-                                                                                                    [Function]
+                                                                                                    <button
+                                                                                                                        onClick={[Function]}
+                                                                                                    >
+                                                                                                                        I want in
+                                                                                                    </button>
                                                                                 </ul>
                                                             </Popover>
                                         }
@@ -1468,7 +1637,11 @@ ShallowWrapper {
                                           You'll leave at 
                                            on 
                             </li>
-                            [Function]
+                            <button
+                                          onClick={[Function]}
+                            >
+                                          I want in
+                            </button>
               </ul>
 </Popover>,
             "placement": "right",
