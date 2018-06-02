@@ -9,11 +9,13 @@ export class UserRidesContainer extends Component {
   };
 
   loadPassengerRides = async () => {
-    const rides = await API.fetchUserRides(this.props.user.id)
+    const rides = await API.fetchUserRides(this.props.user.id);
+    const rideInfo = await this.loadRideDetails(rides);
+    return rideInfo
   }
 
   loadRideDetails = async (rideArray) => {
-
+    
   }
 
   render() {
@@ -22,13 +24,13 @@ export class UserRidesContainer extends Component {
         <article>
           <h2>Red Rocks</h2>
           <ul>
-            {this.loadPassengerRides(1)}
+            {this.loadPassengerRides()}
           </ul>
         </article>
         <article>
           <h2>Breckenridge</h2>
           <ul>
-            {this.loadPassengerRides(2)}
+            {this.loadPassengerRides()}
           </ul>
         </article>
       </div>
