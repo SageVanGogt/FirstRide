@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { UserRidesContainer, mapStateToProps } from './UserRidesContainer';
+import { UserRidesContainer, mapStateToProps, mapDispatchToProps } from './UserRidesContainer';
 import * as API from './../../apiCalls/apiCalls';
 
 jest.mock('./../../apiCalls/apiCalls');
@@ -69,5 +69,33 @@ describe('UserRidesContainer', () => {
 
       expect(actual).toEqual(expected);
     });
+
+    it('should map the userRides to props', () => {
+      let mockState = {
+        user: {id: 1},
+        rides: [{}, {}],
+        userRides: [{}, {}]
+      };
+      let mappedProps = mapStateToProps(mockState);
+      let expected = mockState.userRides;
+      let actual = mappedProps.userRides;
+
+      expect(actual).toEqual(expected);
+    });
   });
+
+  describe('mapDispatchToProps', () => {
+    it('should call dispatch with the correct params', () => {
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let mockRides = [{}, {}]
+      let expected = {
+        type: "ADD_USER_RIDES",
+        userRides: mockRides
+      }
+      let actual = mappedProps.setUserRides(mockRides);
+      
+      expect(mockDispatch).toHaveBeenCalledWith(expected)
+    })
+  })
 });

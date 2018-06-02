@@ -10,6 +10,7 @@ import ProfileContainer from './../ProfileContainer/ProfileContainer';
 import NavContainer from './../NavContainer/NavContainer';
 import LoginComponent from './../../components/LoginComponent/LoginComponent';
 import * as actions from './../../actions/error';
+import UserRidesContainer from './../../containers/UserRidesContainer/UserRidesContainer';
 export class App extends Component {
   constructor() {
     super(),

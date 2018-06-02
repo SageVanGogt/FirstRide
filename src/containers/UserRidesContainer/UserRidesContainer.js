@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as API from './../../apiCalls/apiCalls';
+import * as actions from './../../actions/userRides';
 import './UserRidesContainer.css';
 
 export class UserRidesContainer extends Component {
@@ -44,11 +45,12 @@ export class UserRidesContainer extends Component {
 };
 
 export const mapStateToProps = (state) => ({
-  user: state.user
+  user: state.user,
+  userRides: state.userRides
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-
+  setUserRides: (rides) => dispatch(actions.addUserRides(rides))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(UserRidesContainer);
