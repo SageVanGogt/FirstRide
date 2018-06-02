@@ -33,6 +33,7 @@ export class NavContainer extends Component {
                 Signin
               </button>
           }
+          <button onClick={this.props.toggleShowUserRides}>My Rides</button>
           <NavLink className="nav-link" to="/profile">Me</NavLink>
         </div>
       </div>

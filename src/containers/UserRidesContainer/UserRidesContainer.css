@@ -1,0 +1,7 @@
+.user-rides-container {
+  position: absolute;
+  z-index: 4;
+  height: 400px;
+  width: 600px;
+  background-color: white;
+}

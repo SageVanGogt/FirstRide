@@ -10,20 +10,28 @@ import ProfileContainer from './../ProfileContainer/ProfileContainer';
 import NavContainer from './../NavContainer/NavContainer';
 import LoginComponent from './../../components/LoginComponent/LoginComponent';
 import * as actions from './../../actions/error';
+import UserRidesContainer from './../../containers/UserRidesContainer/UserRidesContainer';
 export class App extends Component {
   constructor() {
     super(),
 
     this.state = {
-      showLogin: false
+      showLogin: false,
+      showUserRides: false
     }
   }
 
   toggleLogin = () => {
     this.setState({
       showLogin: !this.state.showLogin
-    })
-  }
+    });
+  };
+
+  toggleShowUserRides = () => {
+    this.setState({
+      showUserRides: !this.state.showUserRides
+    });
+  };
 
   errorElement = () => {
     return (
@@ -38,11 +46,18 @@ export class App extends Component {
     return (
       <div className="App">
         <div className="nav-container">
-          <NavContainer toggleLogin={this.toggleLogin}/>
+          <NavContainer 
+            toggleLogin={this.toggleLogin}
+            toggleShowUserRides={this.toggleShowUserRides}/>
         </div>
         {
           this.props.error.length &&
           this.errorElement()
+        }
+        {
+          this.state.showUserRides &&
+          <UserRidesContainer
+          toggleShowUserRides={this.toggleShowUserRides} />
         }
         {
           this.state.showLogin & !this.props.user.id && 

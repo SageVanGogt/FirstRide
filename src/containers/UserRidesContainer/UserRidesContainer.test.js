@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { UserRidesContainer, mapStateToProps } from './UserRidesContainer';
+import { UserRidesContainer, mapStateToProps, mapDispatchToProps } from './UserRidesContainer';
 import * as API from './../../apiCalls/apiCalls';
 
 jest.mock('./../../apiCalls/apiCalls');
@@ -8,11 +8,15 @@ jest.mock('./../../apiCalls/apiCalls');
 describe('UserRidesContainer', () => {
   let wrapper;
   let mockUser;
+  let mockSetUserRides;
+  let mockUserRides;
 
   beforeEach(() => {
+    mockSetUserRides = jest.fn();
     mockUser = {id: 1};
     wrapper = shallow(<UserRidesContainer 
-    user={mockUser}/>);
+    user={mockUser}
+    setUserRides={mockSetUserRides}/>);
   })
 
   it('should match the snapshot', () => {
@@ -27,11 +31,11 @@ describe('UserRidesContainer', () => {
       expect(API.fetchUserRides).toHaveBeenCalledWith(expected);
     });
 
-    it('should return the expected array', async () => {
+    it('should call setUserRides with expected array', async () => {
       let expected = [{}, {}];
-      let actual = await wrapper.instance().loadPassengerRides();
+      await wrapper.instance().loadPassengerRides();
 
-      expect(actual).toEqual(expected);
+      expect(mockSetUserRides).toHaveBeenCalledWith(expected);
     });
   })
 
@@ -69,5 +73,33 @@ describe('UserRidesContainer', () => {
 
       expect(actual).toEqual(expected);
     });
+
+    it('should map the userRides to props', () => {
+      let mockState = {
+        user: {id: 1},
+        rides: [{}, {}],
+        userRides: [{}, {}]
+      };
+      let mappedProps = mapStateToProps(mockState);
+      let expected = mockState.userRides;
+      let actual = mappedProps.userRides;
+
+      expect(actual).toEqual(expected);
+    });
   });
+
+  describe('mapDispatchToProps', () => {
+    it('should call dispatch with the correct params', () => {
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let mockRides = [{}, {}]
+      let expected = {
+        type: "ADD_USER_RIDES",
+        rides: mockRides
+      }
+      let actual = mappedProps.setUserRides(mockRides);
+      
+      expect(mockDispatch).toHaveBeenCalledWith(expected)
+    })
+  })
 });
