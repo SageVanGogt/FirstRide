@@ -25,7 +25,14 @@ describe('UserRidesContainer', () => {
       await wrapper.instance().loadPassengerRides();
 
       expect(API.fetchUserRides).toHaveBeenCalledWith(expected);
-    })
+    });
+
+    it('should return the expected array', async () => {
+      let expected = [{}, {}];
+      let actual = await wrapper.instance().loadPassengerRides();
+
+      expect(actual).toEqual(expected);
+    });
   })
 
   describe('loadRideDetails', () => {

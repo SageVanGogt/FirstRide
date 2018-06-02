@@ -19,7 +19,7 @@ export class UserRidesContainer extends Component {
       const response = await API.fetchRidesFromUser(ride.ride_id);
       return response;
     })
-    await Promise.all(allRideInfo);
+    allRideInfo = await Promise.all(allRideInfo);
     return allRideInfo;
   }
 
