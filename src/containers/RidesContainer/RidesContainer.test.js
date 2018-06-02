@@ -155,6 +155,20 @@ describe('RidesContainer', () => {
 
       expect(actual).toEqual(expected);
     })
+
+    it('should not toggle state if no user exists', () => {
+      let wrapper = shallow(<RidesContainer 
+        user={{}}
+        rides={mockRides}
+        setLocation={mockSetLocation}
+        destination={mockDestination}
+        setRides={mockSetRides}/>)
+      wrapper.instance().handleShowOffer();
+      let expected = false;
+      let actual = wrapper.state('showOffer')
+
+      expect(actual).toEqual(expected)
+    })
   })
 
   describe('mapStateToProps', () => {
