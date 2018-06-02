@@ -60,7 +60,8 @@ export class OfferContainer extends Component {
       ride_id: rideId,
       location_id: this.state.location_id,
       lat: geoLocation.lat,
-      lng: geoLocation.lng
+      lng: geoLocation.lng,
+      isShowing: false
     };
     await API.submitNewPickup(pickupInfo);
   }

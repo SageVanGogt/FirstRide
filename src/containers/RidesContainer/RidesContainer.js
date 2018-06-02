@@ -152,13 +152,13 @@ export const mapStateToProps = (state) => ({
   destination: state.destination,
   rides: state.rides,
   user: state.user
-})
+});
 
 export const mapDispatchToProps = (dispatch) => ({
   setRides: (rides) => dispatch(addRides(rides)),
   setLocation: (location) => dispatch(addCurrentLocation(location)),
   setRidesAccounted: (ridesAccounted) => dispatch(addRidesAccounted(ridesAccounted)),
   setError: (error) => dispatch(addError(error))
-})
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(RidesContainer);

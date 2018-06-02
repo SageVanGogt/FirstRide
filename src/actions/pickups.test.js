@@ -13,3 +13,18 @@ describe('addPickups', () => {
     expect(actual).toEqual(expected)
   })
 })
+
+describe('updatePickupShowing', () => {
+  it('should return an object with type TOGGLE_SHOWING', () => {
+    let mockPickup = {
+      id: 1
+    };
+    let expected = {
+      type: "TOGGLE_SHOWING",
+      pickup: mockPickup
+    };
+    let actual = actions.updatePickupShowing(mockPickup);
+
+    expect(actual).toEqual(expected);
+  })
+})

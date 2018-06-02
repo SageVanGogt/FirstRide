@@ -4,3 +4,10 @@ export const addPickups = (pickups) => {
     pickups
   })
 }
+
+export const updatePickupShowing = (pickup) => {
+  return ({
+    type: "TOGGLE_SHOWING",
+    pickup
+  });
+}

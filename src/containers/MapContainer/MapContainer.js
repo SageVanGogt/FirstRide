@@ -19,13 +19,13 @@ export class MapContainer extends Component {
     if (prevProps.rides !== this.props.rides) {
       this.loadPickups();
     }
-  }    
+  };    
 
   loadPickups = async () => {
     const { setPickups, destination } = this.props;
     const response = await fetchPickups(destination.id);
     setPickups(response.pickup);
-  }
+  };
 
   containerElement = () => (
     <div className="availableRidesMap"/>
@@ -42,6 +42,7 @@ export class MapContainer extends Component {
           position={this.props.currentLocation}
           googleMapURL={mapUrl}
           markerCoords={this.props.pickupLocations}
+          onMarkerClick={this.onMarkerClick}
           loadingElement={this.loadingElement()}
           containerElement={this.containerElement()}
           mapElement={this.mapElement()} />
