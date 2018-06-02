@@ -142,8 +142,7 @@ export class RidesContainer extends Component {
 export const mapStateToProps = (state) => ({
   destination: state.destination,
   rides: state.rides,
-  user: state.user,
-  ridesAccounted: state.ridesAccounted
+  user: state.user
 })
 
 export const mapDispatchToProps = (dispatch) => ({
