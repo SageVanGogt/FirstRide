@@ -12,7 +12,7 @@ export class UserRidesContainer extends Component {
   loadPassengerRides = async () => {
     const rides = await API.fetchUserRides(this.props.user.id);
     const rideInfo = await this.loadRideDetails(rides.rides);
-    return rideInfo
+    this.props.setUserRides(rideInfo);
   }
 
   loadRideDetails = async (rideArray) => {
