@@ -110,6 +110,7 @@ ShallowWrapper {
                     className="ride-list"
           >
                     <Connect(RidePopoverComponent)
+                              handleRemovePassengerRide={[Function]}
                               rides={
                                         Array [
                                                   Object {
@@ -208,6 +209,7 @@ ShallowWrapper {
               className="ride-list"
 >
               <Connect(RidePopoverComponent)
+                            handleRemovePassengerRide={[Function]}
                             rides={
                                           Array [
                                                         Object {
@@ -352,6 +354,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": <Connect(RidePopoverComponent)
+                handleRemovePassengerRide={[Function]}
                 rides={
                                 Array [
                                                 Object {
@@ -396,6 +399,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
+                "handleRemovePassengerRide": [Function],
                 "rides": Array [
                   Object {
                     "car_capacity": "5",
@@ -502,6 +506,7 @@ ShallowWrapper {
                         className="ride-list"
             >
                         <Connect(RidePopoverComponent)
+                                    handleRemovePassengerRide={[Function]}
                                     rides={
                                                 Array [
                                                             Object {
@@ -600,6 +605,7 @@ ShallowWrapper {
                 className="ride-list"
 >
                 <Connect(RidePopoverComponent)
+                                handleRemovePassengerRide={[Function]}
                                 rides={
                                                 Array [
                                                                 Object {
@@ -744,6 +750,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": <Connect(RidePopoverComponent)
+                  handleRemovePassengerRide={[Function]}
                   rides={
                                     Array [
                                                       Object {
@@ -788,6 +795,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
+                  "handleRemovePassengerRide": [Function],
                   "rides": Array [
                     Object {
                       "car_capacity": "5",

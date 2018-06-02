@@ -124,7 +124,7 @@ describe('RidesContainer', () => {
       expect(mockSetRides).toHaveBeenCalledWith(expected)
     })
 
-    it.skip('should call setRidesAccounted with correct params', async () => {
+    it('should call setRidesAccounted with correct params', async () => {
       const expected = [{
         id: 1,
         ride_id: 2,
@@ -132,7 +132,7 @@ describe('RidesContainer', () => {
         passenger_id: 1
       }];
       await wrapper.instance().loadRides()
-      expect(mockSetRides).toHaveBeenCalledWith(expected)
+      expect(mockSetRidesAccounted).toHaveBeenCalledWith(expected)
     })
 
     it('should call fetchRides with the correct params', async () => {
