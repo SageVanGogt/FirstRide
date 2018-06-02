@@ -147,6 +147,16 @@ describe('RidesContainer', () => {
     })
   })
 
+  describe('handleShowOffer', () => {
+    it('should toggle the showOffer state if a user exists', () => {
+      let expected = true;
+      wrapper.instance().handleShowOffer();
+      let actual = wrapper.state('showOffer');
+
+      expect(actual).toEqual(expected);
+    })
+  })
+
   describe('mapStateToProps', () => {
     
     it('should return a state with the destination prop', () => {

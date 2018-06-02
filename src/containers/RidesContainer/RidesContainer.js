@@ -86,6 +86,10 @@ export class RidesContainer extends Component {
     )}
 
   handleShowOffer = () => {
+    if (!this.props.user.id) {
+      
+      return
+    }
     this.setState({
       showOffer: !this.state.showOffer
     })
