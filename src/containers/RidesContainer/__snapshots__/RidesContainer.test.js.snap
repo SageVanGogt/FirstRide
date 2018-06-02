@@ -45,6 +45,7 @@ ShallowWrapper {
             },
           ]
     }
+    setError={[Function]}
     setLocation={[Function]}
     setRides={[Function]}
     setRidesAccounted={[Function]}

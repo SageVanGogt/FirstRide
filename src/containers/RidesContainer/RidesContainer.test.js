@@ -15,8 +15,10 @@ describe('RidesContainer', () => {
   let mockRides;
   let mockUser;
   let mockSetRidesAccounted;
+  let mockSetError;
 
   beforeEach(() => {
+    mockSetError = jest.fn();
     mockUser = {
       id: 1
     }
@@ -34,7 +36,8 @@ describe('RidesContainer', () => {
       destination={mockDestination}
       setRides={mockSetRides}
       user={mockUser}
-      setRidesAccounted={mockSetRidesAccounted}/>
+      setRidesAccounted={mockSetRidesAccounted}
+      setError={mockSetError}/>
     );
   })
 
@@ -147,6 +150,39 @@ describe('RidesContainer', () => {
     })
   })
 
+  describe('handleShowOffer', () => {
+    it('should toggle the showOffer state if a user exists', () => {
+      let expected = true;
+      wrapper.instance().handleShowOffer();
+      let actual = wrapper.state('showOffer');
+
+      expect(actual).toEqual(expected);
+    })
+
+    it.skip('should not toggle state if no user exists', () => {
+      let wrapper = shallow(<RidesContainer 
+        user={{}}
+        rides={mockRides}
+        setLocation={mockSetLocation}
+        destination={mockDestination}
+        setRides={mockSetRides}/>)
+      wrapper.instance().handleShowOffer();
+      let expected = false;
+      let actual = wrapper.state('showOffer')
+
+      expect(actual).toEqual(expected)
+    })
+
+    it.skip('should call setError with correct params if no user exists', () => {
+      let wrapper = shallow(<RidesContainer 
+        />)
+      wrapper.instance().handleShowOffer();
+      let expected = 'Please login before you do that';
+      
+      expect(mockSetError).toHaveBeenCalledWith(expected)
+    })
+  })
+
   describe('mapStateToProps', () => {
     
     it('should return a state with the destination prop', () => {
@@ -226,6 +262,18 @@ describe('RidesContainer', () => {
         ridesAccounted: [{}, {}]
       }
       mappedProps.setRidesAccounted([{}, {}]);
+
+      expect(mockDispatch).toBeCalledWith(expected)
+    })
+
+    it('should dispatch setError with the correct params', () => {
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let expected = {
+        type: "ADD_ERROR",
+        error: 'nono'
+      }
+      mappedProps.setError('nono');
 
       expect(mockDispatch).toBeCalledWith(expected)
     })

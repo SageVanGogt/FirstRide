@@ -7,6 +7,7 @@ import * as API from './../../apiCalls/apiCalls';
 import { addRides } from './../../actions/rides';
 import { addCurrentLocation } from './../../actions/currentLocation';
 import { addRidesAccounted } from './../../actions/rideAccounted';
+import { addError } from './../../actions/error';
 import * as cleaner from './../../cleaners/cleaners';
 import OfferContainer from './../OfferContainer/OfferContainer';
 import RidePopoverComponent from './../../components/RidePopoverComponent/RidePopoverComponent';
@@ -68,6 +69,10 @@ export class RidesContainer extends Component {
   }
   
   submitRideSignup = async (rideId) => {
+    if (!this.props.user.id) {
+      this.props.setError('Please login before you do that');
+      return;
+    };
     const ridePassenger = {
       ride_id: rideId,
       passenger_id: this.props.user.id,
@@ -86,9 +91,13 @@ export class RidesContainer extends Component {
     )}
 
   handleShowOffer = () => {
+    if (!this.props.user.id) {
+      this.props.setError('Please login before you do that');
+      return;
+    };
     this.setState({
       showOffer: !this.state.showOffer
-    })
+    });
   }
 
   handleRemovePassengerRide = async (rideId) => {
@@ -148,7 +157,8 @@ export const mapStateToProps = (state) => ({
 export const mapDispatchToProps = (dispatch) => ({
   setRides: (rides) => dispatch(addRides(rides)),
   setLocation: (location) => dispatch(addCurrentLocation(location)),
-  setRidesAccounted: (ridesAccounted) => dispatch(addRidesAccounted(ridesAccounted))
+  setRidesAccounted: (ridesAccounted) => dispatch(addRidesAccounted(ridesAccounted)),
+  setError: (error) => dispatch(addError(error))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(RidesContainer);
