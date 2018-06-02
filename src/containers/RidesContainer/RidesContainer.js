@@ -69,6 +69,10 @@ export class RidesContainer extends Component {
   }
   
   submitRideSignup = async (rideId) => {
+    if (!this.props.user.id) {
+      this.props.setError('Please login before you do that');
+      return;
+    };
     const ridePassenger = {
       ride_id: rideId,
       passenger_id: this.props.user.id,
@@ -88,12 +92,12 @@ export class RidesContainer extends Component {
 
   handleShowOffer = () => {
     if (!this.props.user.id) {
-
-      return
-    }
+      this.props.setError('Please login before you do that');
+      return;
+    };
     this.setState({
       showOffer: !this.state.showOffer
-    })
+    });
   }
 
   handleRemovePassengerRide = async (rideId) => {
