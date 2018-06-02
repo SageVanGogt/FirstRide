@@ -12,4 +12,15 @@ describe('userRidesReducer', () => {
 
     expect(actual).toEqual(expected);
   })
+
+  it('should return a state with an empty array in REMOVE case', () => {
+    let mockAction = {
+      type: "REMOVE_USER_RIDES"
+    }
+    let initialState = [{}, {}];
+    let expected = [];
+    let actual = userRidesReducer(initialState, mockAction);
+
+    expect(actual).toEqual(expected);
+  })
 })
