@@ -43,7 +43,17 @@ describe('UserRidesContainer', () => {
       }];
       await wrapper.instance().loadRideDetails(mockRideArray);
 
-      expect(API.fetchRidesFromUser).toHaveBeenCalledWith(1)
+      expect(API.fetchRidesFromUser).toHaveBeenCalledWith(expected);
+    })
+
+    it('should return an object', async () => {
+      let expected = [{}];
+      let mockRideArray = [{
+          ride_id: 1
+      }];
+      let actual = await wrapper.instance().loadRideDetails(mockRideArray);
+
+      expect(actual).toEqual(expected);
     })
   })
 
