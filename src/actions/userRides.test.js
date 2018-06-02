@@ -12,3 +12,14 @@ describe('addUserRides', () => {
     expect(actual).toEqual(expected);
   })
 })
+
+describe('removeUserRides', () => {
+  it('should return an object with type REMOVE_USER_RIDES', () => {
+    let expected = {
+      type: "REMOVE_USER_RIDES"
+    }
+    let actual = actions.removeUserRides();
+
+    expect(actual).toEqual(expected);
+  })
+})

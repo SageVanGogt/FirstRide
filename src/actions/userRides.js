@@ -5,3 +5,9 @@ export const addUserRides = (rides) => {
     rides
   });
 }
+
+export const removeUserRides = () => {
+  return ({
+    type: "REMOVE_USER_RIDES"
+  });
+}
