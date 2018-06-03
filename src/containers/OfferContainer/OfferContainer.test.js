@@ -85,8 +85,9 @@ describe('OfferContainer', () => {
         ride_id: 1,
         location_id: 1,
         lat: 39.7594866,
-        lng: -104.9994026
-      }
+        lng: -104.9994026,
+        isShowing: false
+      };
 
       await wrapper.instance().handleSubmitPickup(mockRideId);
 

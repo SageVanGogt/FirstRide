@@ -115,5 +115,17 @@ describe('MapContainer', () => {
 
       expect(mockDispatch).toHaveBeenCalledWith(expected);
     });
+
+    it('should call dispatch with the correct params', () => {
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let expected = {
+        type: "TOGGLE_SHOWING", 
+        pickup: {}
+      };
+      mappedProps.toggleShowing(expected.pickup);
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected);
+    });
   })
 })
