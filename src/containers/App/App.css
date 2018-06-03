@@ -34,7 +34,8 @@
 }
 
 .error-close-btn {
-  background-color: #DC0CE8;
+  background-color: #253450;
+  color: white;
   margin-top: 10px;
   border-radius: 3px;
 }

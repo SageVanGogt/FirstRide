@@ -36,7 +36,7 @@ export class App extends Component {
   errorElement = () => {
     return (
       <div className="error-container">
-        <h1>Whoops\!</h1>
+        <h1>Whoops!</h1>
         <strong>{this.props.error}</strong>
         <button 
           onClick={this.props.removeError}
