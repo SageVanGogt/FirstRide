@@ -27,6 +27,10 @@ export class MapContainer extends Component {
     setPickups(response.pickup);
   };
 
+  toggleIsShowing = (pickup) => {
+
+  } 
+
   containerElement = () => (
     <div className="availableRidesMap"/>
   );
@@ -59,7 +63,8 @@ export const mapStateToProps = (state) => ({
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  setPickups: (pickups) => dispatch(actions.addPickups(pickups))
+  setPickups: (pickups) => dispatch(actions.addPickups(pickups)),
+  toggleShowing: (pickup) => dispatch(actions.updatePickupShowing(pickup))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(MapContainer);
