@@ -84,59 +84,71 @@ export class OfferContainer extends Component {
 
   render() {
     return (
-      <div className="offer-container">
+      <div className="offer-container"> 
         <form 
           action="" 
           onSubmit={this.handleSubmitRide}
           className="offer-form">
-          <div className="car-input">
-            <input 
-              type="text" 
-              name="car_capacity" 
-              onChange={this.handleChange} 
-              placeholder="car capacity"
-              className="offer-input"/>
-            <input 
-              type="text" 
-              name="car_type" 
-              onChange={this.handleChange} 
-              placeholder="car type"
-              className="offer-input"/>
-            <input 
-              type="text" 
-              name="date" 
-              onChange={this.handleChange} 
-              placeholder="date"
-              className="offer-input"/>
-            <input 
-              type="text" 
-              name="time" 
-              onChange={this.handleChange} 
-              placeholder="time of departure"
-              className="offer-input"/>
+           <legend className="offer-instructions">
+          this is where you input car info 
+          please input all the fields
+          </legend>
+          <button 
+            onClick={this.props.handleShowOffer}
+            className="offer-back-btn">
+            exit
+          </button>          
+          <div className="offer-inputs-container">
+            <div className="car-input">
+              <input 
+                type="text" 
+                name="car_capacity" 
+                onChange={this.handleChange} 
+                placeholder="car capacity"
+                className="offer-input"/>
+              <input 
+                type="text" 
+                name="car_type" 
+                onChange={this.handleChange} 
+                placeholder="car type"
+                className="offer-input"/>
+              <input 
+                type="text" 
+                name="date" 
+                onChange={this.handleChange} 
+                placeholder="date"
+                className="offer-input"/>
+              <input 
+                type="text" 
+                name="time" 
+                onChange={this.handleChange} 
+                placeholder="time of departure"
+                className="offer-input"/>
+            </div>
+            <div className="address-input">
+              <input 
+                type="text" 
+                name="street" 
+                onChange={this.handleChange} 
+                placeholder="street"
+                className="offer-input"/>
+              <input 
+                type="text" 
+                name="city" 
+                onChange={this.handleChange} 
+                placeholder="city"
+                className="offer-input"/>
+              <input 
+                type="text" 
+                name="state" 
+                onChange={this.handleChange} 
+                placeholder="state"
+                className="offer-input"/>
+            </div>
           </div>
-          <div className="address-input">
-            <input 
-              type="text" 
-              name="street" 
-              onChange={this.handleChange} 
-              placeholder="street"
-              className="offer-input"/>
-            <input 
-              type="text" 
-              name="city" 
-              onChange={this.handleChange} 
-              placeholder="city"
-              className="offer-input"/>
-            <input 
-              type="text" 
-              name="state" 
-              onChange={this.handleChange} 
-              placeholder="state"
-              className="offer-input"/>
-            <input type="submit"/>
-            <button onClick={this.props.handleShowOffer}>Back</button>
-          </div>
+          <input 
+            type="submit"
+            className="offer-submit-btn"/>
         </form>
       </div>
     )

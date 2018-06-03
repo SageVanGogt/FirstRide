@@ -28,13 +28,22 @@ export class UserRidesContainer extends Component {
     return allRideInfo;
   };
 
-  ridesElement = () => (
+  ridesElement = (destination) => (
     this.props.userRides.map(ride => (
-      <article>
-        <h1>destination: RedRocks</h1>
-        <h2>car type: {ride.car_type}</h2>
-        <h3>seats remaining: {ride.seats_remaining}</h3>
-      </article>
+      <li className="ride-item">
+        <article className="ride-info">
+          <h3 className="time-info">{ride.date} - {ride.time}</h3>
+          <h4 className="destination-info">Going To -> 
+            {
+              ride.location_id === 1 ? 
+              'Red Rocks' :
+              'Breckenridge'
+            }
+          </h4>
+          <h4 className="car-info">Car Type: {ride.car_type}</h4>
+          <h5 className="seating-info">Seats Remaining: {ride.seats_remaining}</h5>
+        </article>
+      </li>
     ))
   );
 
@@ -42,17 +51,16 @@ export class UserRidesContainer extends Component {
     return (
       <div className="user-rides-container">
         <article>
-          <h2>Red Rocks</h2>
+          <h1>My Rides</h1>
           <ul>
             {this.ridesElement()}
           </ul>
         </article>
-        <article>
-          <h2>Breckenridge</h2>
-          <ul>
-          </ul>
-        </article>
-        <button onClick={this.props.toggleShowUserRides}>return</button>
+        <button 
+          className="user-rides-return-btn"
+          onClick={this.props.toggleShowUserRides}>
+          exit
+        </button>
       </div>
     );
   };

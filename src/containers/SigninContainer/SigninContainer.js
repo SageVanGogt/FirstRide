@@ -53,7 +53,9 @@ export class SigninContainer extends Component {
             placeholder="password"
           />
           <input 
+            className="cred-submit-btn"
             type="submit"
+            value="Login"            
           />
         </form>
       </div>

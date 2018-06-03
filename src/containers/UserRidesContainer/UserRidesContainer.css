@@ -3,5 +3,58 @@
   z-index: 4;
   height: 400px;
   width: 600px;
-  background-color: white;
+  top: calc(50% - 200px);
+  bottom: calc(50% - 200px);
+  left: calc(50% - 300px);
+  right: calc(50% - 300px);
+  background-color: #577BBD;
+  overflow: scroll;
+  border-radius: 5px;
+}
+
+.user-rides-container h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;   
+}
+
+.ride-item {
+  margin-top: 8px;
+  margin-right: 40px;
+  padding: 10px;
+  background-color: rgba(219, 171, 12, 0.776);
+  list-style: none;
+  border-radius: 5px;
+}
+
+.ride-item:hover {
+  background-color: rgba(249, 165, 81, 0.646);  
+}
+
+.ride-info {  
+  display: flex;
+}
+
+.user-rides-return-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;     
+}
+
+.user-rides-return-btn:hover {
+  border: 2px solid #FAA10E;
+  color: #FAA10E;  
+}
+
+.time-info {
+  border-right: 1px solid white;
+}
+
+.seating-info, .car-info, .destination-info, .time-info  {
+  margin: 0 10px;
 }

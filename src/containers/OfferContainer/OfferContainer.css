@@ -7,18 +7,24 @@
 }
 
 .offer-form {
-  position: absolute;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: fixed;
+  z-index: 5;
   width: 600px;
-  height: 500px;
-  top: 50px;
-  left: 25%;
-  right: 25%;
-  background-color: grey;
+  height: 400px;
+  top: calc(50% - 200px);
+  left: calc(50% - 300px);
+  right: calc(50% - 300px);
+  bottom: calc(50% - 200px);
+  background-color: #476399;
   border-radius: 8px;
+}
+
+.offer-inputs-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  margin-top: 100px;
 }
 
 .offer-input {
@@ -27,4 +33,55 @@
   font-size: 1.5rem;
   margin-top: 10px;
   border-radius: 5px;
+}
+
+.car-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.address-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+
+.offer-instructions {
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  z-index: 3;
+  width: 100%;
+}
+
+.offer-submit-btn {
+  display: block;
+  margin: auto;
+  width: 90px;
+  padding: 8px;
+  background-color: #e88c30;
+  border: none;
+  border-radius: 16px;
+  color: white;
+  font-family: 'Roboto', sans-serif;   
+}
+
+.offer-back-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 5;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.offer-back-btn:hover {
+  border: 2px solid #FAA10E;
+  color: #FAA10E;  
 }

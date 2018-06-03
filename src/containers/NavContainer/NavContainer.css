@@ -3,15 +3,15 @@
   z-index: 1;
   width: 100vw;
   height: 90px;
-  background-color: #404040;
+  background-color: #FAA10E;
 }
 
 .site-name {
   float: left;
   color: white;
-  margin-left: 60px;
-  font-size: 3rem;
-  font-family: 'Roboto', sans-serif;
+  margin: 40px 0 0 60px;
+  font-size: 4rem;
+  font-family: 'Cabin', sans-serif;
 }
 
 .links {
@@ -20,7 +20,7 @@
   margin-right: 100px;
 }
 
-.nav-link {
+.nav-link, .nav-btn {
   padding: 0 0 12px;
   border-bottom: 3px solid transparent;
   margin-right: 40px;
@@ -29,10 +29,23 @@
   color: white;
 }
 
-.nav-link:hover {
-  border-bottom: 3px solid white;  
+.nav-link {
+  padding: 0 0 14px;  
 }
 
-/* .links {
-  left: 400px;
-} */
+.nav-link:hover {
+  border-bottom: 3px solid white;  
+  text-decoration: none;
+  color: white;
+}
+
+.nav-btn {    
+  background: none;
+  border: none;
+  color: white;
+}
+
+.nav-btn:hover {
+  border-bottom: 3px solid white;    
+}
+

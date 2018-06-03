@@ -111,33 +111,39 @@ export class RidesContainer extends Component {
       <div className="ride-page">
         <button className="offer-btn" onClick={this.handleShowOffer}>Offer a Ride</button>
         <section className="rides-container">
-          <form 
-            action="submit" 
-            onSubmit={this.handleSubmit}
-            className="current-location-form">
-            <input 
-              type="text" 
-              name="street" 
-              onChange={this.handleChange} 
-              placeholder="street"
-              className="street-input"/>
-            <input 
-              type="text" 
-              name="city" 
-              onChange={this.handleChange} 
-              placeholder="city"
-              className="city-input"/>
-            <input 
-              type="text" 
-              name="state" 
-              onChange={this.handleChange} 
-              placeholder="state"
-              className="state-input"/>
-            <input type="submit"/>
-          </form>
-          <section className="ride-list">
-            {this.props.rides.length && this.rideListElement()}
-          </section>
+          <article
+            className="form-article">
+            <form 
+              action="submit" 
+              onSubmit={this.handleSubmit}
+              className="current-location-form">
+              <input 
+                type="text" 
+                name="street" 
+                onChange={this.handleChange} 
+                placeholder="street"
+                className="street-input"/>
+              <input 
+                type="text" 
+                name="city" 
+                onChange={this.handleChange} 
+                placeholder="city"
+                className="city-input"/>
+              <input 
+                type="text" 
+                name="state" 
+                onChange={this.handleChange} 
+                placeholder="state"
+                className="state-input"/>
+              <input 
+                type="submit"
+                className="address-sbmt-btn"
+                value="Submit your current address here"/>
+            </form>
+          </article>
+          <article className="ride-list">
+            {this.props.rides.length >= 1 && this.rideListElement()}
+          </article>
         </section>
        {this.state.showOffer && <OfferContainer 
           handleShowOffer={this.handleShowOffer}
