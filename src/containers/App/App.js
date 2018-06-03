@@ -29,7 +29,7 @@ export class App extends Component {
 
   toggleShowUserRides = () => {
     if (!this.props.user.id) {
-      this.props.setError('You must ')
+      this.props.setError('You must be logged in to see your rides');
       return;
     };
     this.setState({
