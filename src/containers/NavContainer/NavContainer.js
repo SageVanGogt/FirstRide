@@ -26,7 +26,7 @@ export class NavContainer extends Component {
               <button 
                 className="nav-btn"
                 onClick={this.handleSignout}>
-                signout
+                Signout
               </button> :
               <button 
                 className="nav-btn" 

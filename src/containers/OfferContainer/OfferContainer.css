@@ -71,7 +71,17 @@
 
 .offer-back-btn {
   position: absolute;
+  top: 5px;
+  right: 5px;
   z-index: 5;
-  right: 0;
-  top: 0;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.offer-back-btn:hover {
+  border: 2px solid #FAA10E;
+  color: #FAA10E;  
 }

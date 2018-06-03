@@ -96,7 +96,7 @@ export class OfferContainer extends Component {
           <button 
             onClick={this.props.handleShowOffer}
             className="offer-back-btn">
-            Back
+            exit
           </button>          
           <div className="offer-inputs-container">
             <div className="car-input">
