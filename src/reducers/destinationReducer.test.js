@@ -19,5 +19,16 @@ describe('destinationReducer', () => {
     const actual = destinationReducer(initialState, mockAction);
 
     expect(actual).toEqual(expected);
-  })
+  });
+
+  it('should return the state in default case', () => {
+    let initialState = {id: 1};
+    let mockAction = {
+      type: 'DEFAULT'
+    };
+    let actual = destinationReducer(initialState, mockAction);
+    let expected = initialState;
+
+    expect(actual).toEqual(expected);
+  });
 })

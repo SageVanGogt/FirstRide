@@ -23,4 +23,15 @@ describe('userRidesReducer', () => {
 
     expect(actual).toEqual(expected);
   })
+
+  it('should return the state in default case', () => {
+    let initialState = [{}, {}];
+    let mockAction = {
+      type: 'DEFAULT'
+    };
+    let actual = userRidesReducer(initialState, mockAction);
+    let expected = initialState;
+
+    expect(actual).toEqual(expected);
+  })
 })

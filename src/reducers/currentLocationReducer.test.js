@@ -18,4 +18,15 @@ describe('currentLocationReducer', () => {
     }
     let actual = currentLocationReducer(initialState, mockAction);
   })
+
+  it('should return the state in default case', () => {
+    let initialState = {lat: 1, lng: 2};
+    let mockAction = {
+      type: 'DEFAULT'
+    };
+    let actual = currentLocationReducer(initialState, mockAction);
+    let expected = initialState;
+
+    expect(actual).toEqual(expected);
+  })
 })
