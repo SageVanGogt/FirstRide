@@ -36,10 +36,14 @@ ShallowWrapper {
         <div
           className="error-container"
 >
+          <h1>
+                    Whoops!
+          </h1>
           <strong>
                     nono
           </strong>
           <button
+                    className="error-close-btn"
                     onClick={undefined}
           >
                     ok!
@@ -101,10 +105,14 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <h1>
+              Whoops!
+</h1>,
             <strong>
               nono
 </strong>,
             <button
+              className="error-close-btn"
               onClick={undefined}
 >
               ok!
@@ -114,6 +122,17 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Whoops!",
+            },
+            "ref": null,
+            "rendered": "Whoops!",
+            "type": "h1",
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -131,6 +150,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "ok!",
+              "className": "error-close-btn",
               "onClick": undefined,
             },
             "ref": null,
@@ -230,10 +250,14 @@ ShallowWrapper {
           <div
             className="error-container"
 >
+            <h1>
+                        Whoops!
+            </h1>
             <strong>
                         nono
             </strong>
             <button
+                        className="error-close-btn"
                         onClick={undefined}
             >
                         ok!
@@ -295,10 +319,14 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              <h1>
+                Whoops!
+</h1>,
               <strong>
                 nono
 </strong>,
               <button
+                className="error-close-btn"
                 onClick={undefined}
 >
                 ok!
@@ -308,6 +336,17 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Whoops!",
+              },
+              "ref": null,
+              "rendered": "Whoops!",
+              "type": "h1",
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -325,6 +364,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "ok!",
+                "className": "error-close-btn",
                 "onClick": undefined,
               },
               "ref": null,

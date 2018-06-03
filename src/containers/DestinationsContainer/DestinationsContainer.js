@@ -25,6 +25,9 @@ export class DestinationsContainer extends Component {
   render() {
     return (
       <div className="destinations">
+        <h1 className="landing-instructions">
+          Choose a destination to see available rides.
+        </h1>
         <div className="redrocks-container">
           <NavLink  
             to='/rides'

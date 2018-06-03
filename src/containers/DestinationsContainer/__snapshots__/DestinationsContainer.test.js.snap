@@ -18,8 +18,13 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <h1
+          className="landing-instructions"
+>
+          Choose a destination to see available rides.
+</h1>,
         <div
-          className="location-container"
+          className="redrocks-container"
 >
           <NavLink
                     activeClassName="active"
@@ -30,13 +35,10 @@ ShallowWrapper {
                     to="/rides"
           >
                     Red Rocks
-                    <div
-                              className="pulse"
-                    />
           </NavLink>
 </div>,
         <div
-          className="location-container"
+          className="breck-container"
 >
           <NavLink
                     activeClassName="active"
@@ -48,15 +50,24 @@ ShallowWrapper {
           >
                     Breckenridge
           </NavLink>
-          <div
-                    className="pulse"
-          />
 </div>,
       ],
       "className": "destinations",
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Choose a destination to see available rides.",
+          "className": "landing-instructions",
+        },
+        "ref": null,
+        "rendered": "Choose a destination to see available rides.",
+        "type": "h1",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -71,11 +82,8 @@ ShallowWrapper {
             to="/rides"
 >
             Red Rocks
-            <div
-                        className="pulse"
-            />
 </NavLink>,
-          "className": "location-container",
+          "className": "redrocks-container",
         },
         "ref": null,
         "rendered": Object {
@@ -85,32 +93,14 @@ ShallowWrapper {
           "props": Object {
             "activeClassName": "active",
             "ariaCurrent": "true",
-            "children": Array [
-              "Red Rocks",
-              <div
-                className="pulse"
-/>,
-            ],
+            "children": "Red Rocks",
             "className": "location-pin",
             "name": "Red Rocks",
             "onClick": [Function],
             "to": "/rides",
           },
           "ref": null,
-          "rendered": Array [
-            "Red Rocks",
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "pulse",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "div",
-            },
-          ],
+          "rendered": "Red Rocks",
           "type": [Function],
         },
         "type": "div",
@@ -120,8 +110,141 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
+          "children": <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            className="location-pin"
+            name="Breckenridge"
+            onClick={[Function]}
+            to="/rides"
+>
+            Breckenridge
+</NavLink>,
+          "className": "breck-container",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Breckenridge",
+            "className": "location-pin",
+            "name": "Breckenridge",
+            "onClick": [Function],
+            "to": "/rides",
+          },
+          "ref": null,
+          "rendered": "Breckenridge",
+          "type": [Function],
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="landing-instructions"
+>
+            Choose a destination to see available rides.
+</h1>,
+          <div
+            className="redrocks-container"
+>
             <NavLink
+                        activeClassName="active"
+                        ariaCurrent="true"
+                        className="location-pin"
+                        name="Red Rocks"
+                        onClick={[Function]}
+                        to="/rides"
+            >
+                        Red Rocks
+            </NavLink>
+</div>,
+          <div
+            className="breck-container"
+>
+            <NavLink
+                        activeClassName="active"
+                        ariaCurrent="true"
+                        className="location-pin"
+                        name="Breckenridge"
+                        onClick={[Function]}
+                        to="/rides"
+            >
+                        Breckenridge
+            </NavLink>
+</div>,
+        ],
+        "className": "destinations",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Choose a destination to see available rides.",
+            "className": "landing-instructions",
+          },
+          "ref": null,
+          "rendered": "Choose a destination to see available rides.",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              className="location-pin"
+              name="Red Rocks"
+              onClick={[Function]}
+              to="/rides"
+>
+              Red Rocks
+</NavLink>,
+            "className": "redrocks-container",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "ariaCurrent": "true",
+              "children": "Red Rocks",
+              "className": "location-pin",
+              "name": "Red Rocks",
+              "onClick": [Function],
+              "to": "/rides",
+            },
+            "ref": null,
+            "rendered": "Red Rocks",
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <NavLink
               activeClassName="active"
               ariaCurrent="true"
               className="location-pin"
@@ -131,15 +254,10 @@ ShallowWrapper {
 >
               Breckenridge
 </NavLink>,
-            <div
-              className="pulse"
-/>,
-          ],
-          "className": "location-container",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
+            "className": "breck-container",
+          },
+          "ref": null,
+          "rendered": Object {
             "instance": null,
             "key": undefined,
             "nodeType": "function",
@@ -156,180 +274,6 @@ ShallowWrapper {
             "rendered": "Breckenridge",
             "type": [Function],
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": "pulse",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "div",
-          },
-        ],
-        "type": "div",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <div
-            className="location-container"
->
-            <NavLink
-                        activeClassName="active"
-                        ariaCurrent="true"
-                        className="location-pin"
-                        name="Red Rocks"
-                        onClick={[Function]}
-                        to="/rides"
-            >
-                        Red Rocks
-                        <div
-                                    className="pulse"
-                        />
-            </NavLink>
-</div>,
-          <div
-            className="location-container"
->
-            <NavLink
-                        activeClassName="active"
-                        ariaCurrent="true"
-                        className="location-pin"
-                        name="Breckenridge"
-                        onClick={[Function]}
-                        to="/rides"
-            >
-                        Breckenridge
-            </NavLink>
-            <div
-                        className="pulse"
-            />
-</div>,
-        ],
-        "className": "destinations",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <NavLink
-              activeClassName="active"
-              ariaCurrent="true"
-              className="location-pin"
-              name="Red Rocks"
-              onClick={[Function]}
-              to="/rides"
->
-              Red Rocks
-              <div
-                            className="pulse"
-              />
-</NavLink>,
-            "className": "location-container",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "activeClassName": "active",
-              "ariaCurrent": "true",
-              "children": Array [
-                "Red Rocks",
-                <div
-                  className="pulse"
-/>,
-              ],
-              "className": "location-pin",
-              "name": "Red Rocks",
-              "onClick": [Function],
-              "to": "/rides",
-            },
-            "ref": null,
-            "rendered": Array [
-              "Red Rocks",
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "pulse",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "div",
-              },
-            ],
-            "type": [Function],
-          },
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <NavLink
-                activeClassName="active"
-                ariaCurrent="true"
-                className="location-pin"
-                name="Breckenridge"
-                onClick={[Function]}
-                to="/rides"
->
-                Breckenridge
-</NavLink>,
-              <div
-                className="pulse"
-/>,
-            ],
-            "className": "location-container",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "activeClassName": "active",
-                "ariaCurrent": "true",
-                "children": "Breckenridge",
-                "className": "location-pin",
-                "name": "Breckenridge",
-                "onClick": [Function],
-                "to": "/rides",
-              },
-              "ref": null,
-              "rendered": "Breckenridge",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "pulse",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "div",
-            },
-          ],
           "type": "div",
         },
       ],

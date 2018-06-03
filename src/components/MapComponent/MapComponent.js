@@ -22,7 +22,11 @@ export const MapComponent = withScriptjs(withGoogleMap((
           options={{ closeBoxURL: ``, enableEventPropagation: true }}>
             <div className="info-box">
               <div className="info-text-box">
-                <h1>{rideInfo.seats_remaining}</h1>
+                <h1>{rideInfo.seats_remaining} seats remaining</h1>
+                <h2>
+                  Departing at {rideInfo.time}  
+                  on {rideInfo.date}
+                </h2>
               </div>
             </div>
           </InfoBox>

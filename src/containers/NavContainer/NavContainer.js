@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import * as actions from './../../actions/user';
+import { removeUserRides } from './../../actions/userRides';
 import './NavContainer.css';
 
 export class NavContainer extends Component {
@@ -13,6 +14,7 @@ export class NavContainer extends Component {
   handleSignout = () => {
     this.props.logoutUser();
     this.props.toggleLogin();
+    this.props.removeUserRides();
   };
 
   render() {
@@ -51,7 +53,8 @@ export const mapStateToProps = (state) => ({
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  logoutUser: () => dispatch(actions.signoutUser())
+  logoutUser: () => dispatch(actions.signoutUser()),
+  removeUserRides: () => dispatch(removeUserRides())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(NavContainer);

@@ -15,17 +15,17 @@ export class MapContainer extends Component {
     super(props);
   }
 
-  componentDidUpdate = (prevProps) => {
-    if (prevProps.rides !== this.props.rides) {
-      this.loadPickups();
-    }
-  };    
+  // componentDidUpdate = (prevProps) => {
+  //   if (prevProps.pickupLocations !== this.props.pickupLocations) {
+  //     this.loadPickups();
+  //   }
+  // };    
 
-  loadPickups = async () => {
-    const { setPickups, destination } = this.props;
-    const response = await fetchPickups(destination.id);
-    setPickups(response.pickup);
-  };
+  // loadPickups = async () => {
+  //   const { setPickups, destination } = this.props;
+  //   const response = await fetchPickups(destination.id);
+  //   setPickups(response.pickup);
+  // };
 
   toggleShowing = (pickup) => {
     this.props.toggleShowing(pickup);

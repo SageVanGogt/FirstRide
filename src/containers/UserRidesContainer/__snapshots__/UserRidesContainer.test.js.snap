@@ -32,44 +32,75 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <article>
-          <h2>
-                    Red Rocks
-          </h2>
+          <h1>
+                    My Rides
+          </h1>
           <ul>
-                    <article>
-                              <h1>
-                                        destination: RedRocks
-                              </h1>
-                              <h2>
-                                        car type: 
-                              </h2>
-                              <h3>
-                                        seats remaining: 
-                              </h3>
-                    </article>
-                    <article>
-                              <h1>
-                                        destination: RedRocks
-                              </h1>
-                              <h2>
-                                        car type: 
-                              </h2>
-                              <h3>
-                                        seats remaining: 
-                              </h3>
-                    </article>
+                    <li
+                              className="ride-item"
+                    >
+                              <article
+                                        className="ride-info"
+                              >
+                                        <h3
+                                                  className="time-info"
+                                        >
+                                                   - 
+                                        </h3>
+                                        <h4
+                                                  className="destination-info"
+                                        >
+                                                  Going To -&gt;
+                                                  Breckenridge
+                                        </h4>
+                                        <h4
+                                                  className="car-info"
+                                        >
+                                                  Car Type: 
+                                        </h4>
+                                        <h5
+                                                  className="seating-info"
+                                        >
+                                                  Seats Remaining: 
+                                        </h5>
+                              </article>
+                    </li>
+                    <li
+                              className="ride-item"
+                    >
+                              <article
+                                        className="ride-info"
+                              >
+                                        <h3
+                                                  className="time-info"
+                                        >
+                                                   - 
+                                        </h3>
+                                        <h4
+                                                  className="destination-info"
+                                        >
+                                                  Going To -&gt;
+                                                  Breckenridge
+                                        </h4>
+                                        <h4
+                                                  className="car-info"
+                                        >
+                                                  Car Type: 
+                                        </h4>
+                                        <h5
+                                                  className="seating-info"
+                                        >
+                                                  Seats Remaining: 
+                                        </h5>
+                              </article>
+                    </li>
           </ul>
 </article>,
-        <article>
-          <h2>
-                    Breckenridge
-          </h2>
-          <ul />
-</article>,
         <button
+          className="user-rides-return-btn"
           onClick={undefined}
 >
-          return
+          exit
 </button>,
       ],
       "className": "user-rides-container",
@@ -82,32 +113,68 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h2>
-              Red Rocks
-</h2>,
+            <h1>
+              My Rides
+</h1>,
             <ul>
-              <article>
-                            <h1>
-                                          destination: RedRocks
-                            </h1>
-                            <h2>
-                                          car type: 
-                            </h2>
-                            <h3>
-                                          seats remaining: 
-                            </h3>
-              </article>
-              <article>
-                            <h1>
-                                          destination: RedRocks
-                            </h1>
-                            <h2>
-                                          car type: 
-                            </h2>
-                            <h3>
-                                          seats remaining: 
-                            </h3>
-              </article>
+              <li
+                            className="ride-item"
+              >
+                            <article
+                                          className="ride-info"
+                            >
+                                          <h3
+                                                        className="time-info"
+                                          >
+                                                         - 
+                                          </h3>
+                                          <h4
+                                                        className="destination-info"
+                                          >
+                                                        Going To -&gt;
+                                                        Breckenridge
+                                          </h4>
+                                          <h4
+                                                        className="car-info"
+                                          >
+                                                        Car Type: 
+                                          </h4>
+                                          <h5
+                                                        className="seating-info"
+                                          >
+                                                        Seats Remaining: 
+                                          </h5>
+                            </article>
+              </li>
+              <li
+                            className="ride-item"
+              >
+                            <article
+                                          className="ride-info"
+                            >
+                                          <h3
+                                                        className="time-info"
+                                          >
+                                                         - 
+                                          </h3>
+                                          <h4
+                                                        className="destination-info"
+                                          >
+                                                        Going To -&gt;
+                                                        Breckenridge
+                                          </h4>
+                                          <h4
+                                                        className="car-info"
+                                          >
+                                                        Car Type: 
+                                          </h4>
+                                          <h5
+                                                        className="seating-info"
+                                          >
+                                                        Seats Remaining: 
+                                          </h5>
+                            </article>
+              </li>
 </ul>,
           ],
         },
@@ -118,11 +185,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Red Rocks",
+              "children": "My Rides",
             },
             "ref": null,
-            "rendered": "Red Rocks",
-            "type": "h2",
+            "rendered": "My Rides",
+            "type": "h1",
           },
           Object {
             "instance": null,
@@ -130,28 +197,64 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <article>
-                  <h1>
-                                    destination: RedRocks
-                  </h1>
-                  <h2>
-                                    car type: 
-                  </h2>
-                  <h3>
-                                    seats remaining: 
-                  </h3>
-</article>,
-                <article>
-                  <h1>
-                                    destination: RedRocks
-                  </h1>
-                  <h2>
-                                    car type: 
-                  </h2>
-                  <h3>
-                                    seats remaining: 
-                  </h3>
-</article>,
+                <li
+                  className="ride-item"
+>
+                  <article
+                                    className="ride-info"
+                  >
+                                    <h3
+                                                      className="time-info"
+                                    >
+                                                       - 
+                                    </h3>
+                                    <h4
+                                                      className="destination-info"
+                                    >
+                                                      Going To -&gt;
+                                                      Breckenridge
+                                    </h4>
+                                    <h4
+                                                      className="car-info"
+                                    >
+                                                      Car Type: 
+                                    </h4>
+                                    <h5
+                                                      className="seating-info"
+                                    >
+                                                      Seats Remaining: 
+                                    </h5>
+                  </article>
+</li>,
+                <li
+                  className="ride-item"
+>
+                  <article
+                                    className="ride-info"
+                  >
+                                    <h3
+                                                      className="time-info"
+                                    >
+                                                       - 
+                                    </h3>
+                                    <h4
+                                                      className="destination-info"
+                                    >
+                                                      Going To -&gt;
+                                                      Breckenridge
+                                    </h4>
+                                    <h4
+                                                      className="car-info"
+                                    >
+                                                      Car Type: 
+                                    </h4>
+                                    <h5
+                                                      className="seating-info"
+                                    >
+                                                      Seats Remaining: 
+                                    </h5>
+                  </article>
+</li>,
               ],
             },
             "ref": null,
@@ -161,134 +264,288 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": Array [
-                    <h1>
-                      destination: RedRocks
-</h1>,
-                    <h2>
-                      car type: 
-</h2>,
-                    <h3>
-                      seats remaining: 
-</h3>,
-                  ],
+                  "children": <article
+                    className="ride-info"
+>
+                    <h3
+                                        className="time-info"
+                    >
+                                         - 
+                    </h3>
+                    <h4
+                                        className="destination-info"
+                    >
+                                        Going To -&gt;
+                                        Breckenridge
+                    </h4>
+                    <h4
+                                        className="car-info"
+                    >
+                                        Car Type: 
+                    </h4>
+                    <h5
+                                        className="seating-info"
+                    >
+                                        Seats Remaining: 
+                    </h5>
+</article>,
+                  "className": "ride-item",
                 },
                 "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "destination: RedRocks",
-                    },
-                    "ref": null,
-                    "rendered": "destination: RedRocks",
-                    "type": "h1",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <h3
+                        className="time-info"
+>
+                         - 
+</h3>,
+                      <h4
+                        className="destination-info"
+>
+                        Going To -&gt;
+                        Breckenridge
+</h4>,
+                      <h4
+                        className="car-info"
+>
+                        Car Type: 
+</h4>,
+                      <h5
+                        className="seating-info"
+>
+                        Seats Remaining: 
+</h5>,
+                    ],
+                    "className": "ride-info",
                   },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        "car type: ",
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          undefined,
+                          " - ",
+                          undefined,
+                        ],
+                        "className": "time-info",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        undefined,
+                        " - ",
                         undefined,
                       ],
+                      "type": "h3",
                     },
-                    "ref": null,
-                    "rendered": Array [
-                      "car type: ",
-                      undefined,
-                    ],
-                    "type": "h2",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        "seats remaining: ",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Going To ->",
+                          "Breckenridge",
+                        ],
+                        "className": "destination-info",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Going To ->",
+                        "Breckenridge",
+                      ],
+                      "type": "h4",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Car Type: ",
+                          undefined,
+                        ],
+                        "className": "car-info",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Car Type: ",
                         undefined,
                       ],
+                      "type": "h4",
                     },
-                    "ref": null,
-                    "rendered": Array [
-                      "seats remaining: ",
-                      undefined,
-                    ],
-                    "type": "h3",
-                  },
-                ],
-                "type": "article",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Seats Remaining: ",
+                          undefined,
+                        ],
+                        "className": "seating-info",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Seats Remaining: ",
+                        undefined,
+                      ],
+                      "type": "h5",
+                    },
+                  ],
+                  "type": "article",
+                },
+                "type": "li",
               },
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": Array [
-                    <h1>
-                      destination: RedRocks
-</h1>,
-                    <h2>
-                      car type: 
-</h2>,
-                    <h3>
-                      seats remaining: 
-</h3>,
-                  ],
+                  "children": <article
+                    className="ride-info"
+>
+                    <h3
+                                        className="time-info"
+                    >
+                                         - 
+                    </h3>
+                    <h4
+                                        className="destination-info"
+                    >
+                                        Going To -&gt;
+                                        Breckenridge
+                    </h4>
+                    <h4
+                                        className="car-info"
+                    >
+                                        Car Type: 
+                    </h4>
+                    <h5
+                                        className="seating-info"
+                    >
+                                        Seats Remaining: 
+                    </h5>
+</article>,
+                  "className": "ride-item",
                 },
                 "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "destination: RedRocks",
-                    },
-                    "ref": null,
-                    "rendered": "destination: RedRocks",
-                    "type": "h1",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <h3
+                        className="time-info"
+>
+                         - 
+</h3>,
+                      <h4
+                        className="destination-info"
+>
+                        Going To -&gt;
+                        Breckenridge
+</h4>,
+                      <h4
+                        className="car-info"
+>
+                        Car Type: 
+</h4>,
+                      <h5
+                        className="seating-info"
+>
+                        Seats Remaining: 
+</h5>,
+                    ],
+                    "className": "ride-info",
                   },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        "car type: ",
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          undefined,
+                          " - ",
+                          undefined,
+                        ],
+                        "className": "time-info",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        undefined,
+                        " - ",
                         undefined,
                       ],
+                      "type": "h3",
                     },
-                    "ref": null,
-                    "rendered": Array [
-                      "car type: ",
-                      undefined,
-                    ],
-                    "type": "h2",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        "seats remaining: ",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Going To ->",
+                          "Breckenridge",
+                        ],
+                        "className": "destination-info",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Going To ->",
+                        "Breckenridge",
+                      ],
+                      "type": "h4",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Car Type: ",
+                          undefined,
+                        ],
+                        "className": "car-info",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Car Type: ",
                         undefined,
                       ],
+                      "type": "h4",
                     },
-                    "ref": null,
-                    "rendered": Array [
-                      "seats remaining: ",
-                      undefined,
-                    ],
-                    "type": "h3",
-                  },
-                ],
-                "type": "article",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Seats Remaining: ",
+                          undefined,
+                        ],
+                        "className": "seating-info",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Seats Remaining: ",
+                        undefined,
+                      ],
+                      "type": "h5",
+                    },
+                  ],
+                  "type": "article",
+                },
+                "type": "li",
               },
             ],
             "type": "ul",
@@ -301,48 +558,12 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            <h2>
-              Breckenridge
-</h2>,
-            <ul />,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Breckenridge",
-            },
-            "ref": null,
-            "rendered": "Breckenridge",
-            "type": "h2",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": "ul",
-          },
-        ],
-        "type": "article",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "return",
+          "children": "exit",
+          "className": "user-rides-return-btn",
           "onClick": undefined,
         },
         "ref": null,
-        "rendered": "return",
+        "rendered": "exit",
         "type": "button",
       },
     ],
@@ -356,44 +577,75 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <article>
-            <h2>
-                        Red Rocks
-            </h2>
+            <h1>
+                        My Rides
+            </h1>
             <ul>
-                        <article>
-                                    <h1>
-                                                destination: RedRocks
-                                    </h1>
-                                    <h2>
-                                                car type: 
-                                    </h2>
-                                    <h3>
-                                                seats remaining: 
-                                    </h3>
-                        </article>
-                        <article>
-                                    <h1>
-                                                destination: RedRocks
-                                    </h1>
-                                    <h2>
-                                                car type: 
-                                    </h2>
-                                    <h3>
-                                                seats remaining: 
-                                    </h3>
-                        </article>
+                        <li
+                                    className="ride-item"
+                        >
+                                    <article
+                                                className="ride-info"
+                                    >
+                                                <h3
+                                                            className="time-info"
+                                                >
+                                                             - 
+                                                </h3>
+                                                <h4
+                                                            className="destination-info"
+                                                >
+                                                            Going To -&gt;
+                                                            Breckenridge
+                                                </h4>
+                                                <h4
+                                                            className="car-info"
+                                                >
+                                                            Car Type: 
+                                                </h4>
+                                                <h5
+                                                            className="seating-info"
+                                                >
+                                                            Seats Remaining: 
+                                                </h5>
+                                    </article>
+                        </li>
+                        <li
+                                    className="ride-item"
+                        >
+                                    <article
+                                                className="ride-info"
+                                    >
+                                                <h3
+                                                            className="time-info"
+                                                >
+                                                             - 
+                                                </h3>
+                                                <h4
+                                                            className="destination-info"
+                                                >
+                                                            Going To -&gt;
+                                                            Breckenridge
+                                                </h4>
+                                                <h4
+                                                            className="car-info"
+                                                >
+                                                            Car Type: 
+                                                </h4>
+                                                <h5
+                                                            className="seating-info"
+                                                >
+                                                            Seats Remaining: 
+                                                </h5>
+                                    </article>
+                        </li>
             </ul>
 </article>,
-          <article>
-            <h2>
-                        Breckenridge
-            </h2>
-            <ul />
-</article>,
           <button
+            className="user-rides-return-btn"
             onClick={undefined}
 >
-            return
+            exit
 </button>,
         ],
         "className": "user-rides-container",
@@ -406,32 +658,68 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h2>
-                Red Rocks
-</h2>,
+              <h1>
+                My Rides
+</h1>,
               <ul>
-                <article>
-                                <h1>
-                                                destination: RedRocks
-                                </h1>
-                                <h2>
-                                                car type: 
-                                </h2>
-                                <h3>
-                                                seats remaining: 
-                                </h3>
-                </article>
-                <article>
-                                <h1>
-                                                destination: RedRocks
-                                </h1>
-                                <h2>
-                                                car type: 
-                                </h2>
-                                <h3>
-                                                seats remaining: 
-                                </h3>
-                </article>
+                <li
+                                className="ride-item"
+                >
+                                <article
+                                                className="ride-info"
+                                >
+                                                <h3
+                                                                className="time-info"
+                                                >
+                                                                 - 
+                                                </h3>
+                                                <h4
+                                                                className="destination-info"
+                                                >
+                                                                Going To -&gt;
+                                                                Breckenridge
+                                                </h4>
+                                                <h4
+                                                                className="car-info"
+                                                >
+                                                                Car Type: 
+                                                </h4>
+                                                <h5
+                                                                className="seating-info"
+                                                >
+                                                                Seats Remaining: 
+                                                </h5>
+                                </article>
+                </li>
+                <li
+                                className="ride-item"
+                >
+                                <article
+                                                className="ride-info"
+                                >
+                                                <h3
+                                                                className="time-info"
+                                                >
+                                                                 - 
+                                                </h3>
+                                                <h4
+                                                                className="destination-info"
+                                                >
+                                                                Going To -&gt;
+                                                                Breckenridge
+                                                </h4>
+                                                <h4
+                                                                className="car-info"
+                                                >
+                                                                Car Type: 
+                                                </h4>
+                                                <h5
+                                                                className="seating-info"
+                                                >
+                                                                Seats Remaining: 
+                                                </h5>
+                                </article>
+                </li>
 </ul>,
             ],
           },
@@ -442,11 +730,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Red Rocks",
+                "children": "My Rides",
               },
               "ref": null,
-              "rendered": "Red Rocks",
-              "type": "h2",
+              "rendered": "My Rides",
+              "type": "h1",
             },
             Object {
               "instance": null,
@@ -454,28 +742,64 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <article>
-                    <h1>
-                                        destination: RedRocks
-                    </h1>
-                    <h2>
-                                        car type: 
-                    </h2>
-                    <h3>
-                                        seats remaining: 
-                    </h3>
-</article>,
-                  <article>
-                    <h1>
-                                        destination: RedRocks
-                    </h1>
-                    <h2>
-                                        car type: 
-                    </h2>
-                    <h3>
-                                        seats remaining: 
-                    </h3>
-</article>,
+                  <li
+                    className="ride-item"
+>
+                    <article
+                                        className="ride-info"
+                    >
+                                        <h3
+                                                            className="time-info"
+                                        >
+                                                             - 
+                                        </h3>
+                                        <h4
+                                                            className="destination-info"
+                                        >
+                                                            Going To -&gt;
+                                                            Breckenridge
+                                        </h4>
+                                        <h4
+                                                            className="car-info"
+                                        >
+                                                            Car Type: 
+                                        </h4>
+                                        <h5
+                                                            className="seating-info"
+                                        >
+                                                            Seats Remaining: 
+                                        </h5>
+                    </article>
+</li>,
+                  <li
+                    className="ride-item"
+>
+                    <article
+                                        className="ride-info"
+                    >
+                                        <h3
+                                                            className="time-info"
+                                        >
+                                                             - 
+                                        </h3>
+                                        <h4
+                                                            className="destination-info"
+                                        >
+                                                            Going To -&gt;
+                                                            Breckenridge
+                                        </h4>
+                                        <h4
+                                                            className="car-info"
+                                        >
+                                                            Car Type: 
+                                        </h4>
+                                        <h5
+                                                            className="seating-info"
+                                        >
+                                                            Seats Remaining: 
+                                        </h5>
+                    </article>
+</li>,
                 ],
               },
               "ref": null,
@@ -485,134 +809,288 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [
-                      <h1>
-                        destination: RedRocks
-</h1>,
-                      <h2>
-                        car type: 
-</h2>,
-                      <h3>
-                        seats remaining: 
-</h3>,
-                    ],
+                    "children": <article
+                      className="ride-info"
+>
+                      <h3
+                                            className="time-info"
+                      >
+                                             - 
+                      </h3>
+                      <h4
+                                            className="destination-info"
+                      >
+                                            Going To -&gt;
+                                            Breckenridge
+                      </h4>
+                      <h4
+                                            className="car-info"
+                      >
+                                            Car Type: 
+                      </h4>
+                      <h5
+                                            className="seating-info"
+                      >
+                                            Seats Remaining: 
+                      </h5>
+</article>,
+                    "className": "ride-item",
                   },
                   "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "destination: RedRocks",
-                      },
-                      "ref": null,
-                      "rendered": "destination: RedRocks",
-                      "type": "h1",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <h3
+                          className="time-info"
+>
+                           - 
+</h3>,
+                        <h4
+                          className="destination-info"
+>
+                          Going To -&gt;
+                          Breckenridge
+</h4>,
+                        <h4
+                          className="car-info"
+>
+                          Car Type: 
+</h4>,
+                        <h5
+                          className="seating-info"
+>
+                          Seats Remaining: 
+</h5>,
+                      ],
+                      "className": "ride-info",
                     },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
-                          "car type: ",
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            undefined,
+                            " - ",
+                            undefined,
+                          ],
+                          "className": "time-info",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          undefined,
+                          " - ",
                           undefined,
                         ],
+                        "type": "h3",
                       },
-                      "ref": null,
-                      "rendered": Array [
-                        "car type: ",
-                        undefined,
-                      ],
-                      "type": "h2",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
-                          "seats remaining: ",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Going To ->",
+                            "Breckenridge",
+                          ],
+                          "className": "destination-info",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Going To ->",
+                          "Breckenridge",
+                        ],
+                        "type": "h4",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Car Type: ",
+                            undefined,
+                          ],
+                          "className": "car-info",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Car Type: ",
                           undefined,
                         ],
+                        "type": "h4",
                       },
-                      "ref": null,
-                      "rendered": Array [
-                        "seats remaining: ",
-                        undefined,
-                      ],
-                      "type": "h3",
-                    },
-                  ],
-                  "type": "article",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Seats Remaining: ",
+                            undefined,
+                          ],
+                          "className": "seating-info",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Seats Remaining: ",
+                          undefined,
+                        ],
+                        "type": "h5",
+                      },
+                    ],
+                    "type": "article",
+                  },
+                  "type": "li",
                 },
                 Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [
-                      <h1>
-                        destination: RedRocks
-</h1>,
-                      <h2>
-                        car type: 
-</h2>,
-                      <h3>
-                        seats remaining: 
-</h3>,
-                    ],
+                    "children": <article
+                      className="ride-info"
+>
+                      <h3
+                                            className="time-info"
+                      >
+                                             - 
+                      </h3>
+                      <h4
+                                            className="destination-info"
+                      >
+                                            Going To -&gt;
+                                            Breckenridge
+                      </h4>
+                      <h4
+                                            className="car-info"
+                      >
+                                            Car Type: 
+                      </h4>
+                      <h5
+                                            className="seating-info"
+                      >
+                                            Seats Remaining: 
+                      </h5>
+</article>,
+                    "className": "ride-item",
                   },
                   "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "destination: RedRocks",
-                      },
-                      "ref": null,
-                      "rendered": "destination: RedRocks",
-                      "type": "h1",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <h3
+                          className="time-info"
+>
+                           - 
+</h3>,
+                        <h4
+                          className="destination-info"
+>
+                          Going To -&gt;
+                          Breckenridge
+</h4>,
+                        <h4
+                          className="car-info"
+>
+                          Car Type: 
+</h4>,
+                        <h5
+                          className="seating-info"
+>
+                          Seats Remaining: 
+</h5>,
+                      ],
+                      "className": "ride-info",
                     },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
-                          "car type: ",
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            undefined,
+                            " - ",
+                            undefined,
+                          ],
+                          "className": "time-info",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          undefined,
+                          " - ",
                           undefined,
                         ],
+                        "type": "h3",
                       },
-                      "ref": null,
-                      "rendered": Array [
-                        "car type: ",
-                        undefined,
-                      ],
-                      "type": "h2",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
-                          "seats remaining: ",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Going To ->",
+                            "Breckenridge",
+                          ],
+                          "className": "destination-info",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Going To ->",
+                          "Breckenridge",
+                        ],
+                        "type": "h4",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Car Type: ",
+                            undefined,
+                          ],
+                          "className": "car-info",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Car Type: ",
                           undefined,
                         ],
+                        "type": "h4",
                       },
-                      "ref": null,
-                      "rendered": Array [
-                        "seats remaining: ",
-                        undefined,
-                      ],
-                      "type": "h3",
-                    },
-                  ],
-                  "type": "article",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Seats Remaining: ",
+                            undefined,
+                          ],
+                          "className": "seating-info",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Seats Remaining: ",
+                          undefined,
+                        ],
+                        "type": "h5",
+                      },
+                    ],
+                    "type": "article",
+                  },
+                  "type": "li",
                 },
               ],
               "type": "ul",
@@ -625,48 +1103,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <h2>
-                Breckenridge
-</h2>,
-              <ul />,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Breckenridge",
-              },
-              "ref": null,
-              "rendered": "Breckenridge",
-              "type": "h2",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": "ul",
-            },
-          ],
-          "type": "article",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "return",
+            "children": "exit",
+            "className": "user-rides-return-btn",
             "onClick": undefined,
           },
           "ref": null,
-          "rendered": "return",
+          "rendered": "exit",
           "type": "button",
         },
       ],

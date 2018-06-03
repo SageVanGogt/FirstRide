@@ -31,7 +31,9 @@ export class RidePopoverComponent extends Component {
   }
   
   render() {
-    const allPopovers = this.props.rides.map(ride => {
+    const { rides, pickupLocations } = this.props;
+    const allPopovers = rides.map(ride => {
+      const rideMarker = pickupLocations.find(pickup => pickup.ride_id === ride.id);
       return (
         <OverlayTrigger
           container={this}
@@ -52,7 +54,13 @@ export class RidePopoverComponent extends Component {
             </ul>
           </Popover>}
         >
-          <Button>{ride.time}</Button>
+          <Button
+            style={{
+              backgroundColor: rideMarker.isShowing ? '#CDCBC4' : 'white'
+            }}
+            >
+          {ride.time}
+          </Button>
         </OverlayTrigger>
       )})
     return (
@@ -65,7 +73,8 @@ export class RidePopoverComponent extends Component {
 
 export const mapStateToProps = (state) => ({
   ridesAccounted: state.ridesAccounted,
-  user: state.user
+  user: state.user,
+  pickupLocations: state.pickupLocations
 })
 
 export default connect(mapStateToProps)(RidePopoverComponent);
