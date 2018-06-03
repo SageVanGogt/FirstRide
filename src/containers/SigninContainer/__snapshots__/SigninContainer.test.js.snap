@@ -39,7 +39,9 @@ ShallowWrapper {
                 type="password"
         />
         <input
+                className="cred-submit-btn"
                 type="submit"
+                value="Login"
         />
 </form>,
       "className": "signin-container",
@@ -67,7 +69,9 @@ ShallowWrapper {
             type="password"
 />,
           <input
+            className="cred-submit-btn"
             type="submit"
+            value="Login"
 />,
         ],
         "className": "signin-form",
@@ -110,7 +114,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "className": "cred-submit-btn",
             "type": "submit",
+            "value": "Login",
           },
           "ref": null,
           "rendered": null,
@@ -147,7 +153,9 @@ ShallowWrapper {
                     type="password"
           />
           <input
+                    className="cred-submit-btn"
                     type="submit"
+                    value="Login"
           />
 </form>,
         "className": "signin-container",
@@ -175,7 +183,9 @@ ShallowWrapper {
               type="password"
 />,
             <input
+              className="cred-submit-btn"
               type="submit"
+              value="Login"
 />,
           ],
           "className": "signin-form",
@@ -218,7 +228,9 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "className": "cred-submit-btn",
               "type": "submit",
+              "value": "Login",
             },
             "ref": null,
             "rendered": null,

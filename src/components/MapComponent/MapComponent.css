@@ -1,13 +1,18 @@
 
 .info-box {
-  width: 100px;
-  background-color: lightblue;
+  width: 200px;
+  background-color: #CDCBC4;
   opacity: 0.75;
   padding: 12px;
   border-radius: 5px;
 }
 
 .info-text-box h1 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.info-text-box h2 {
   font-size: 1.5rem;
   color: black;
 }

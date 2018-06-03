@@ -14,7 +14,7 @@
 .ride-page {
   margin-top: 72px;
   height: calc(100vh - 90px);
-  background-color: grey;
+  background-color: #E5E5E5;
   width: 300px;
   display: flex;
   overflow: scroll;

@@ -34,71 +34,82 @@ ShallowWrapper {
         className="offer-form"
         onSubmit={[Function]}
 >
-        <div
-                className="car-input"
+        <legend
+                className="offer-instructions"
         >
-                <input
-                        className="offer-input"
-                        name="car_capacity"
-                        onChange={[Function]}
-                        placeholder="car capacity"
-                        type="text"
-                />
-                <input
-                        className="offer-input"
-                        name="car_type"
-                        onChange={[Function]}
-                        placeholder="car type"
-                        type="text"
-                />
-                <input
-                        className="offer-input"
-                        name="date"
-                        onChange={[Function]}
-                        placeholder="date"
-                        type="text"
-                />
-                <input
-                        className="offer-input"
-                        name="time"
-                        onChange={[Function]}
-                        placeholder="time of departure"
-                        type="text"
-                />
-        </div>
-        <div
-                className="address-input"
+                this is where you input car info please input all the fields
+        </legend>
+        <button
+                className="offer-back-btn"
+                onClick={undefined}
         >
-                <input
-                        className="offer-input"
-                        name="street"
-                        onChange={[Function]}
-                        placeholder="street"
-                        type="text"
-                />
-                <input
-                        className="offer-input"
-                        name="city"
-                        onChange={[Function]}
-                        placeholder="city"
-                        type="text"
-                />
-                <input
-                        className="offer-input"
-                        name="state"
-                        onChange={[Function]}
-                        placeholder="state"
-                        type="text"
-                />
-                <input
-                        type="submit"
-                />
-                <button
-                        onClick={undefined}
+                exit
+        </button>
+        <div
+                className="offer-inputs-container"
+        >
+                <div
+                        className="car-input"
                 >
-                        Back
-                </button>
+                        <input
+                                className="offer-input"
+                                name="car_capacity"
+                                onChange={[Function]}
+                                placeholder="car capacity"
+                                type="text"
+                        />
+                        <input
+                                className="offer-input"
+                                name="car_type"
+                                onChange={[Function]}
+                                placeholder="car type"
+                                type="text"
+                        />
+                        <input
+                                className="offer-input"
+                                name="date"
+                                onChange={[Function]}
+                                placeholder="date"
+                                type="text"
+                        />
+                        <input
+                                className="offer-input"
+                                name="time"
+                                onChange={[Function]}
+                                placeholder="time of departure"
+                                type="text"
+                        />
+                </div>
+                <div
+                        className="address-input"
+                >
+                        <input
+                                className="offer-input"
+                                name="street"
+                                onChange={[Function]}
+                                placeholder="street"
+                                type="text"
+                        />
+                        <input
+                                className="offer-input"
+                                name="city"
+                                onChange={[Function]}
+                                placeholder="city"
+                                type="text"
+                        />
+                        <input
+                                className="offer-input"
+                                name="state"
+                                onChange={[Function]}
+                                placeholder="state"
+                                type="text"
+                        />
+                </div>
         </div>
+        <input
+                className="offer-submit-btn"
+                type="submit"
+        />
 </form>,
       "className": "offer-container",
     },
@@ -110,71 +121,82 @@ ShallowWrapper {
       "props": Object {
         "action": "",
         "children": Array [
-          <div
-            className="car-input"
+          <legend
+            className="offer-instructions"
 >
-            <input
-                        className="offer-input"
-                        name="car_capacity"
-                        onChange={[Function]}
-                        placeholder="car capacity"
-                        type="text"
-            />
-            <input
-                        className="offer-input"
-                        name="car_type"
-                        onChange={[Function]}
-                        placeholder="car type"
-                        type="text"
-            />
-            <input
-                        className="offer-input"
-                        name="date"
-                        onChange={[Function]}
-                        placeholder="date"
-                        type="text"
-            />
-            <input
-                        className="offer-input"
-                        name="time"
-                        onChange={[Function]}
-                        placeholder="time of departure"
-                        type="text"
-            />
-</div>,
-          <div
-            className="address-input"
+            this is where you input car info please input all the fields
+</legend>,
+          <button
+            className="offer-back-btn"
+            onClick={undefined}
 >
-            <input
-                        className="offer-input"
-                        name="street"
-                        onChange={[Function]}
-                        placeholder="street"
-                        type="text"
-            />
-            <input
-                        className="offer-input"
-                        name="city"
-                        onChange={[Function]}
-                        placeholder="city"
-                        type="text"
-            />
-            <input
-                        className="offer-input"
-                        name="state"
-                        onChange={[Function]}
-                        placeholder="state"
-                        type="text"
-            />
-            <input
-                        type="submit"
-            />
-            <button
-                        onClick={undefined}
+            exit
+</button>,
+          <div
+            className="offer-inputs-container"
+>
+            <div
+                        className="car-input"
             >
-                        Back
-            </button>
+                        <input
+                                    className="offer-input"
+                                    name="car_capacity"
+                                    onChange={[Function]}
+                                    placeholder="car capacity"
+                                    type="text"
+                        />
+                        <input
+                                    className="offer-input"
+                                    name="car_type"
+                                    onChange={[Function]}
+                                    placeholder="car type"
+                                    type="text"
+                        />
+                        <input
+                                    className="offer-input"
+                                    name="date"
+                                    onChange={[Function]}
+                                    placeholder="date"
+                                    type="text"
+                        />
+                        <input
+                                    className="offer-input"
+                                    name="time"
+                                    onChange={[Function]}
+                                    placeholder="time of departure"
+                                    type="text"
+                        />
+            </div>
+            <div
+                        className="address-input"
+            >
+                        <input
+                                    className="offer-input"
+                                    name="street"
+                                    onChange={[Function]}
+                                    placeholder="street"
+                                    type="text"
+                        />
+                        <input
+                                    className="offer-input"
+                                    name="city"
+                                    onChange={[Function]}
+                                    placeholder="city"
+                                    type="text"
+                        />
+                        <input
+                                    className="offer-input"
+                                    name="state"
+                                    onChange={[Function]}
+                                    placeholder="state"
+                                    type="text"
+                        />
+            </div>
 </div>,
+          <input
+            className="offer-submit-btn"
+            type="submit"
+/>,
         ],
         "className": "offer-form",
         "onSubmit": [Function],
@@ -186,37 +208,91 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "children": "this is where you input car info please input all the fields",
+            "className": "offer-instructions",
+          },
+          "ref": null,
+          "rendered": "this is where you input car info please input all the fields",
+          "type": "legend",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "exit",
+            "className": "offer-back-btn",
+            "onClick": undefined,
+          },
+          "ref": null,
+          "rendered": "exit",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "children": Array [
-              <input
-                className="offer-input"
-                name="car_capacity"
-                onChange={[Function]}
-                placeholder="car capacity"
-                type="text"
-/>,
-              <input
-                className="offer-input"
-                name="car_type"
-                onChange={[Function]}
-                placeholder="car type"
-                type="text"
-/>,
-              <input
-                className="offer-input"
-                name="date"
-                onChange={[Function]}
-                placeholder="date"
-                type="text"
-/>,
-              <input
-                className="offer-input"
-                name="time"
-                onChange={[Function]}
-                placeholder="time of departure"
-                type="text"
-/>,
+              <div
+                className="car-input"
+>
+                <input
+                                className="offer-input"
+                                name="car_capacity"
+                                onChange={[Function]}
+                                placeholder="car capacity"
+                                type="text"
+                />
+                <input
+                                className="offer-input"
+                                name="car_type"
+                                onChange={[Function]}
+                                placeholder="car type"
+                                type="text"
+                />
+                <input
+                                className="offer-input"
+                                name="date"
+                                onChange={[Function]}
+                                placeholder="date"
+                                type="text"
+                />
+                <input
+                                className="offer-input"
+                                name="time"
+                                onChange={[Function]}
+                                placeholder="time of departure"
+                                type="text"
+                />
+</div>,
+              <div
+                className="address-input"
+>
+                <input
+                                className="offer-input"
+                                name="street"
+                                onChange={[Function]}
+                                placeholder="street"
+                                type="text"
+                />
+                <input
+                                className="offer-input"
+                                name="city"
+                                onChange={[Function]}
+                                placeholder="city"
+                                type="text"
+                />
+                <input
+                                className="offer-input"
+                                name="state"
+                                onChange={[Function]}
+                                placeholder="state"
+                                type="text"
+                />
+</div>,
             ],
-            "className": "car-input",
+            "className": "offer-inputs-container",
           },
           "ref": null,
           "rendered": Array [
@@ -225,60 +301,182 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "className": "offer-input",
-                "name": "car_capacity",
-                "onChange": [Function],
-                "placeholder": "car capacity",
-                "type": "text",
+                "children": Array [
+                  <input
+                    className="offer-input"
+                    name="car_capacity"
+                    onChange={[Function]}
+                    placeholder="car capacity"
+                    type="text"
+/>,
+                  <input
+                    className="offer-input"
+                    name="car_type"
+                    onChange={[Function]}
+                    placeholder="car type"
+                    type="text"
+/>,
+                  <input
+                    className="offer-input"
+                    name="date"
+                    onChange={[Function]}
+                    placeholder="date"
+                    type="text"
+/>,
+                  <input
+                    className="offer-input"
+                    name="time"
+                    onChange={[Function]}
+                    placeholder="time of departure"
+                    type="text"
+/>,
+                ],
+                "className": "car-input",
               },
               "ref": null,
-              "rendered": null,
-              "type": "input",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "offer-input",
+                    "name": "car_capacity",
+                    "onChange": [Function],
+                    "placeholder": "car capacity",
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "offer-input",
+                    "name": "car_type",
+                    "onChange": [Function],
+                    "placeholder": "car type",
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "offer-input",
+                    "name": "date",
+                    "onChange": [Function],
+                    "placeholder": "date",
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "offer-input",
+                    "name": "time",
+                    "onChange": [Function],
+                    "placeholder": "time of departure",
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "div",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "className": "offer-input",
-                "name": "car_type",
-                "onChange": [Function],
-                "placeholder": "car type",
-                "type": "text",
+                "children": Array [
+                  <input
+                    className="offer-input"
+                    name="street"
+                    onChange={[Function]}
+                    placeholder="street"
+                    type="text"
+/>,
+                  <input
+                    className="offer-input"
+                    name="city"
+                    onChange={[Function]}
+                    placeholder="city"
+                    type="text"
+/>,
+                  <input
+                    className="offer-input"
+                    name="state"
+                    onChange={[Function]}
+                    placeholder="state"
+                    type="text"
+/>,
+                ],
+                "className": "address-input",
               },
               "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "offer-input",
-                "name": "date",
-                "onChange": [Function],
-                "placeholder": "date",
-                "type": "text",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "offer-input",
-                "name": "time",
-                "onChange": [Function],
-                "placeholder": "time of departure",
-                "type": "text",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "offer-input",
+                    "name": "street",
+                    "onChange": [Function],
+                    "placeholder": "street",
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "offer-input",
+                    "name": "city",
+                    "onChange": [Function],
+                    "placeholder": "city",
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "offer-input",
+                    "name": "state",
+                    "onChange": [Function],
+                    "placeholder": "state",
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "div",
             },
           ],
           "type": "div",
@@ -288,111 +486,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <input
-                className="offer-input"
-                name="street"
-                onChange={[Function]}
-                placeholder="street"
-                type="text"
-/>,
-              <input
-                className="offer-input"
-                name="city"
-                onChange={[Function]}
-                placeholder="city"
-                type="text"
-/>,
-              <input
-                className="offer-input"
-                name="state"
-                onChange={[Function]}
-                placeholder="state"
-                type="text"
-/>,
-              <input
-                type="submit"
-/>,
-              <button
-                onClick={undefined}
->
-                Back
-</button>,
-            ],
-            "className": "address-input",
+            "className": "offer-submit-btn",
+            "type": "submit",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "offer-input",
-                "name": "street",
-                "onChange": [Function],
-                "placeholder": "street",
-                "type": "text",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "offer-input",
-                "name": "city",
-                "onChange": [Function],
-                "placeholder": "city",
-                "type": "text",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "offer-input",
-                "name": "state",
-                "onChange": [Function],
-                "placeholder": "state",
-                "type": "text",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "type": "submit",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Back",
-                "onClick": undefined,
-              },
-              "ref": null,
-              "rendered": "Back",
-              "type": "button",
-            },
-          ],
-          "type": "div",
+          "rendered": null,
+          "type": "input",
         },
       ],
       "type": "form",
@@ -410,71 +509,82 @@ ShallowWrapper {
           className="offer-form"
           onSubmit={[Function]}
 >
-          <div
-                    className="car-input"
+          <legend
+                    className="offer-instructions"
           >
-                    <input
-                              className="offer-input"
-                              name="car_capacity"
-                              onChange={[Function]}
-                              placeholder="car capacity"
-                              type="text"
-                    />
-                    <input
-                              className="offer-input"
-                              name="car_type"
-                              onChange={[Function]}
-                              placeholder="car type"
-                              type="text"
-                    />
-                    <input
-                              className="offer-input"
-                              name="date"
-                              onChange={[Function]}
-                              placeholder="date"
-                              type="text"
-                    />
-                    <input
-                              className="offer-input"
-                              name="time"
-                              onChange={[Function]}
-                              placeholder="time of departure"
-                              type="text"
-                    />
-          </div>
-          <div
-                    className="address-input"
+                    this is where you input car info please input all the fields
+          </legend>
+          <button
+                    className="offer-back-btn"
+                    onClick={undefined}
           >
-                    <input
-                              className="offer-input"
-                              name="street"
-                              onChange={[Function]}
-                              placeholder="street"
-                              type="text"
-                    />
-                    <input
-                              className="offer-input"
-                              name="city"
-                              onChange={[Function]}
-                              placeholder="city"
-                              type="text"
-                    />
-                    <input
-                              className="offer-input"
-                              name="state"
-                              onChange={[Function]}
-                              placeholder="state"
-                              type="text"
-                    />
-                    <input
-                              type="submit"
-                    />
-                    <button
-                              onClick={undefined}
+                    exit
+          </button>
+          <div
+                    className="offer-inputs-container"
+          >
+                    <div
+                              className="car-input"
                     >
-                              Back
-                    </button>
+                              <input
+                                        className="offer-input"
+                                        name="car_capacity"
+                                        onChange={[Function]}
+                                        placeholder="car capacity"
+                                        type="text"
+                              />
+                              <input
+                                        className="offer-input"
+                                        name="car_type"
+                                        onChange={[Function]}
+                                        placeholder="car type"
+                                        type="text"
+                              />
+                              <input
+                                        className="offer-input"
+                                        name="date"
+                                        onChange={[Function]}
+                                        placeholder="date"
+                                        type="text"
+                              />
+                              <input
+                                        className="offer-input"
+                                        name="time"
+                                        onChange={[Function]}
+                                        placeholder="time of departure"
+                                        type="text"
+                              />
+                    </div>
+                    <div
+                              className="address-input"
+                    >
+                              <input
+                                        className="offer-input"
+                                        name="street"
+                                        onChange={[Function]}
+                                        placeholder="street"
+                                        type="text"
+                              />
+                              <input
+                                        className="offer-input"
+                                        name="city"
+                                        onChange={[Function]}
+                                        placeholder="city"
+                                        type="text"
+                              />
+                              <input
+                                        className="offer-input"
+                                        name="state"
+                                        onChange={[Function]}
+                                        placeholder="state"
+                                        type="text"
+                              />
+                    </div>
           </div>
+          <input
+                    className="offer-submit-btn"
+                    type="submit"
+          />
 </form>,
         "className": "offer-container",
       },
@@ -486,71 +596,82 @@ ShallowWrapper {
         "props": Object {
           "action": "",
           "children": Array [
-            <div
-              className="car-input"
+            <legend
+              className="offer-instructions"
 >
-              <input
-                            className="offer-input"
-                            name="car_capacity"
-                            onChange={[Function]}
-                            placeholder="car capacity"
-                            type="text"
-              />
-              <input
-                            className="offer-input"
-                            name="car_type"
-                            onChange={[Function]}
-                            placeholder="car type"
-                            type="text"
-              />
-              <input
-                            className="offer-input"
-                            name="date"
-                            onChange={[Function]}
-                            placeholder="date"
-                            type="text"
-              />
-              <input
-                            className="offer-input"
-                            name="time"
-                            onChange={[Function]}
-                            placeholder="time of departure"
-                            type="text"
-              />
-</div>,
-            <div
-              className="address-input"
+              this is where you input car info please input all the fields
+</legend>,
+            <button
+              className="offer-back-btn"
+              onClick={undefined}
 >
-              <input
-                            className="offer-input"
-                            name="street"
-                            onChange={[Function]}
-                            placeholder="street"
-                            type="text"
-              />
-              <input
-                            className="offer-input"
-                            name="city"
-                            onChange={[Function]}
-                            placeholder="city"
-                            type="text"
-              />
-              <input
-                            className="offer-input"
-                            name="state"
-                            onChange={[Function]}
-                            placeholder="state"
-                            type="text"
-              />
-              <input
-                            type="submit"
-              />
-              <button
-                            onClick={undefined}
+              exit
+</button>,
+            <div
+              className="offer-inputs-container"
+>
+              <div
+                            className="car-input"
               >
-                            Back
-              </button>
+                            <input
+                                          className="offer-input"
+                                          name="car_capacity"
+                                          onChange={[Function]}
+                                          placeholder="car capacity"
+                                          type="text"
+                            />
+                            <input
+                                          className="offer-input"
+                                          name="car_type"
+                                          onChange={[Function]}
+                                          placeholder="car type"
+                                          type="text"
+                            />
+                            <input
+                                          className="offer-input"
+                                          name="date"
+                                          onChange={[Function]}
+                                          placeholder="date"
+                                          type="text"
+                            />
+                            <input
+                                          className="offer-input"
+                                          name="time"
+                                          onChange={[Function]}
+                                          placeholder="time of departure"
+                                          type="text"
+                            />
+              </div>
+              <div
+                            className="address-input"
+              >
+                            <input
+                                          className="offer-input"
+                                          name="street"
+                                          onChange={[Function]}
+                                          placeholder="street"
+                                          type="text"
+                            />
+                            <input
+                                          className="offer-input"
+                                          name="city"
+                                          onChange={[Function]}
+                                          placeholder="city"
+                                          type="text"
+                            />
+                            <input
+                                          className="offer-input"
+                                          name="state"
+                                          onChange={[Function]}
+                                          placeholder="state"
+                                          type="text"
+                            />
+              </div>
 </div>,
+            <input
+              className="offer-submit-btn"
+              type="submit"
+/>,
           ],
           "className": "offer-form",
           "onSubmit": [Function],
@@ -562,37 +683,91 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "children": "this is where you input car info please input all the fields",
+              "className": "offer-instructions",
+            },
+            "ref": null,
+            "rendered": "this is where you input car info please input all the fields",
+            "type": "legend",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "exit",
+              "className": "offer-back-btn",
+              "onClick": undefined,
+            },
+            "ref": null,
+            "rendered": "exit",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
               "children": Array [
-                <input
-                  className="offer-input"
-                  name="car_capacity"
-                  onChange={[Function]}
-                  placeholder="car capacity"
-                  type="text"
-/>,
-                <input
-                  className="offer-input"
-                  name="car_type"
-                  onChange={[Function]}
-                  placeholder="car type"
-                  type="text"
-/>,
-                <input
-                  className="offer-input"
-                  name="date"
-                  onChange={[Function]}
-                  placeholder="date"
-                  type="text"
-/>,
-                <input
-                  className="offer-input"
-                  name="time"
-                  onChange={[Function]}
-                  placeholder="time of departure"
-                  type="text"
-/>,
+                <div
+                  className="car-input"
+>
+                  <input
+                                    className="offer-input"
+                                    name="car_capacity"
+                                    onChange={[Function]}
+                                    placeholder="car capacity"
+                                    type="text"
+                  />
+                  <input
+                                    className="offer-input"
+                                    name="car_type"
+                                    onChange={[Function]}
+                                    placeholder="car type"
+                                    type="text"
+                  />
+                  <input
+                                    className="offer-input"
+                                    name="date"
+                                    onChange={[Function]}
+                                    placeholder="date"
+                                    type="text"
+                  />
+                  <input
+                                    className="offer-input"
+                                    name="time"
+                                    onChange={[Function]}
+                                    placeholder="time of departure"
+                                    type="text"
+                  />
+</div>,
+                <div
+                  className="address-input"
+>
+                  <input
+                                    className="offer-input"
+                                    name="street"
+                                    onChange={[Function]}
+                                    placeholder="street"
+                                    type="text"
+                  />
+                  <input
+                                    className="offer-input"
+                                    name="city"
+                                    onChange={[Function]}
+                                    placeholder="city"
+                                    type="text"
+                  />
+                  <input
+                                    className="offer-input"
+                                    name="state"
+                                    onChange={[Function]}
+                                    placeholder="state"
+                                    type="text"
+                  />
+</div>,
               ],
-              "className": "car-input",
+              "className": "offer-inputs-container",
             },
             "ref": null,
             "rendered": Array [
@@ -601,60 +776,182 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "className": "offer-input",
-                  "name": "car_capacity",
-                  "onChange": [Function],
-                  "placeholder": "car capacity",
-                  "type": "text",
+                  "children": Array [
+                    <input
+                      className="offer-input"
+                      name="car_capacity"
+                      onChange={[Function]}
+                      placeholder="car capacity"
+                      type="text"
+/>,
+                    <input
+                      className="offer-input"
+                      name="car_type"
+                      onChange={[Function]}
+                      placeholder="car type"
+                      type="text"
+/>,
+                    <input
+                      className="offer-input"
+                      name="date"
+                      onChange={[Function]}
+                      placeholder="date"
+                      type="text"
+/>,
+                    <input
+                      className="offer-input"
+                      name="time"
+                      onChange={[Function]}
+                      placeholder="time of departure"
+                      type="text"
+/>,
+                  ],
+                  "className": "car-input",
                 },
                 "ref": null,
-                "rendered": null,
-                "type": "input",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "offer-input",
+                      "name": "car_capacity",
+                      "onChange": [Function],
+                      "placeholder": "car capacity",
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "offer-input",
+                      "name": "car_type",
+                      "onChange": [Function],
+                      "placeholder": "car type",
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "offer-input",
+                      "name": "date",
+                      "onChange": [Function],
+                      "placeholder": "date",
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "offer-input",
+                      "name": "time",
+                      "onChange": [Function],
+                      "placeholder": "time of departure",
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "div",
               },
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "className": "offer-input",
-                  "name": "car_type",
-                  "onChange": [Function],
-                  "placeholder": "car type",
-                  "type": "text",
+                  "children": Array [
+                    <input
+                      className="offer-input"
+                      name="street"
+                      onChange={[Function]}
+                      placeholder="street"
+                      type="text"
+/>,
+                    <input
+                      className="offer-input"
+                      name="city"
+                      onChange={[Function]}
+                      placeholder="city"
+                      type="text"
+/>,
+                    <input
+                      className="offer-input"
+                      name="state"
+                      onChange={[Function]}
+                      placeholder="state"
+                      type="text"
+/>,
+                  ],
+                  "className": "address-input",
                 },
                 "ref": null,
-                "rendered": null,
-                "type": "input",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "offer-input",
-                  "name": "date",
-                  "onChange": [Function],
-                  "placeholder": "date",
-                  "type": "text",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "input",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "offer-input",
-                  "name": "time",
-                  "onChange": [Function],
-                  "placeholder": "time of departure",
-                  "type": "text",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "input",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "offer-input",
+                      "name": "street",
+                      "onChange": [Function],
+                      "placeholder": "street",
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "offer-input",
+                      "name": "city",
+                      "onChange": [Function],
+                      "placeholder": "city",
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "offer-input",
+                      "name": "state",
+                      "onChange": [Function],
+                      "placeholder": "state",
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "div",
               },
             ],
             "type": "div",
@@ -664,111 +961,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                <input
-                  className="offer-input"
-                  name="street"
-                  onChange={[Function]}
-                  placeholder="street"
-                  type="text"
-/>,
-                <input
-                  className="offer-input"
-                  name="city"
-                  onChange={[Function]}
-                  placeholder="city"
-                  type="text"
-/>,
-                <input
-                  className="offer-input"
-                  name="state"
-                  onChange={[Function]}
-                  placeholder="state"
-                  type="text"
-/>,
-                <input
-                  type="submit"
-/>,
-                <button
-                  onClick={undefined}
->
-                  Back
-</button>,
-              ],
-              "className": "address-input",
+              "className": "offer-submit-btn",
+              "type": "submit",
             },
             "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "offer-input",
-                  "name": "street",
-                  "onChange": [Function],
-                  "placeholder": "street",
-                  "type": "text",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "input",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "offer-input",
-                  "name": "city",
-                  "onChange": [Function],
-                  "placeholder": "city",
-                  "type": "text",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "input",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "offer-input",
-                  "name": "state",
-                  "onChange": [Function],
-                  "placeholder": "state",
-                  "type": "text",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "input",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "type": "submit",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "input",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Back",
-                  "onClick": undefined,
-                },
-                "ref": null,
-                "rendered": "Back",
-                "type": "button",
-              },
-            ],
-            "type": "div",
+            "rendered": null,
+            "type": "input",
           },
         ],
         "type": "form",
