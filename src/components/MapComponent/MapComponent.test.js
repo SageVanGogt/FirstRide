@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import MapComponent from './MapComponent';
+import MapComponent, { mapStateToProps } from './MapComponent';
 
 describe('MapComponent', () => {
   let wrapper;
@@ -12,4 +12,5 @@ describe('MapComponent', () => {
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
+
 })

@@ -69,7 +69,9 @@ Promise.resolve({
 }));
 
 const fetchRidesFromUser = jest.fn().mockImplementation(() => 
-Promise.resolve({}));
+Promise.resolve({
+  rides: [{}, {}]
+}));
 
 export {
   signinUser,

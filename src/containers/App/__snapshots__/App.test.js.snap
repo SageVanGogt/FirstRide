@@ -30,6 +30,7 @@ ShallowWrapper {
 >
           <Connect(NavContainer)
                     toggleLogin={[Function]}
+                    toggleShowUserRides={[Function]}
           />
 </div>,
         <div
@@ -44,6 +45,7 @@ ShallowWrapper {
                     ok!
           </button>
 </div>,
+        false,
         0,
         <Switch>
           <Route
@@ -74,6 +76,7 @@ ShallowWrapper {
         "props": Object {
           "children": <Connect(NavContainer)
             toggleLogin={[Function]}
+            toggleShowUserRides={[Function]}
 />,
           "className": "nav-container",
         },
@@ -84,6 +87,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "toggleLogin": [Function],
+            "toggleShowUserRides": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -136,6 +140,7 @@ ShallowWrapper {
         ],
         "type": "div",
       },
+      false,
       0,
       Object {
         "instance": null,
@@ -219,6 +224,7 @@ ShallowWrapper {
 >
             <Connect(NavContainer)
                         toggleLogin={[Function]}
+                        toggleShowUserRides={[Function]}
             />
 </div>,
           <div
@@ -233,6 +239,7 @@ ShallowWrapper {
                         ok!
             </button>
 </div>,
+          false,
           0,
           <Switch>
             <Route
@@ -263,6 +270,7 @@ ShallowWrapper {
           "props": Object {
             "children": <Connect(NavContainer)
               toggleLogin={[Function]}
+              toggleShowUserRides={[Function]}
 />,
             "className": "nav-container",
           },
@@ -273,6 +281,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "toggleLogin": [Function],
+              "toggleShowUserRides": [Function],
             },
             "ref": null,
             "rendered": null,
@@ -325,6 +334,7 @@ ShallowWrapper {
           ],
           "type": "div",
         },
+        false,
         0,
         Object {
           "instance": null,

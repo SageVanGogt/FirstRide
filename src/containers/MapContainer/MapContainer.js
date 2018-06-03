@@ -45,6 +45,7 @@ export class MapContainer extends Component {
           // loading={this.props.loading}
           position={this.props.currentLocation}
           googleMapURL={mapUrl}
+          rides={this.props.rides}
           markerCoords={this.props.pickupLocations}
           toggleShowing={this.toggleShowing}
           loadingElement={this.loadingElement()}

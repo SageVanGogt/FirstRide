@@ -14,8 +14,10 @@ describe('UserRidesContainer', () => {
   beforeEach(() => {
     mockSetUserRides = jest.fn();
     mockUser = {id: 1};
+    mockUserRides = [{}, {}]
     wrapper = shallow(<UserRidesContainer 
     user={mockUser}
+    userRides={mockUserRides}
     setUserRides={mockSetUserRides}/>);
   })
 

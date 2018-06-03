@@ -50,6 +50,11 @@ ShallowWrapper {
           >
                     Signin
           </button>
+          <button
+                    onClick={undefined}
+          >
+                    My Rides
+          </button>
           <NavLink
                     activeClassName="active"
                     ariaCurrent="true"
@@ -96,6 +101,11 @@ ShallowWrapper {
 >
               Signin
 </button>,
+            <button
+              onClick={undefined}
+>
+              My Rides
+</button>,
             <NavLink
               activeClassName="active"
               ariaCurrent="true"
@@ -135,6 +145,18 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": "Signin",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "My Rides",
+              "onClick": undefined,
+            },
+            "ref": null,
+            "rendered": "My Rides",
             "type": "button",
           },
           Object {
@@ -187,6 +209,11 @@ ShallowWrapper {
             >
                         Signin
             </button>
+            <button
+                        onClick={undefined}
+            >
+                        My Rides
+            </button>
             <NavLink
                         activeClassName="active"
                         ariaCurrent="true"
@@ -233,6 +260,11 @@ ShallowWrapper {
 >
                 Signin
 </button>,
+              <button
+                onClick={undefined}
+>
+                My Rides
+</button>,
               <NavLink
                 activeClassName="active"
                 ariaCurrent="true"
@@ -272,6 +304,18 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": "Signin",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "My Rides",
+                "onClick": undefined,
+              },
+              "ref": null,
+              "rendered": "My Rides",
               "type": "button",
             },
             Object {
