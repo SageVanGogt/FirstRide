@@ -25,17 +25,16 @@ export class DestinationsContainer extends Component {
   render() {
     return (
       <div className="destinations">
-        <div className="location-container">
+        <div className="redrocks-container">
           <NavLink  
             to='/rides'
             onClick={this.handleSelectDestination} 
             name="Red Rocks"
             className="location-pin">
             Red Rocks
-            <div className="pulse"></div>
           </NavLink>
         </div>
-        <div className="location-container">
+        <div className="breck-container">
           <NavLink
             to='/rides'
             onClick={this.handleSelectDestination} 
@@ -43,7 +42,6 @@ export class DestinationsContainer extends Component {
             className="location-pin">
             Breckenridge
           </NavLink>
-          <div className="pulse"></div>
         </div>
       </div>
     );
