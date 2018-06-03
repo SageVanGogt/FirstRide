@@ -28,6 +28,10 @@ export class App extends Component {
   };
 
   toggleShowUserRides = () => {
+    if (!this.props.user.id) {
+      this.props.setError('You must ')
+      return;
+    };
     this.setState({
       showUserRides: !this.state.showUserRides
     });
@@ -95,7 +99,8 @@ export const mapStateToProps = (state) => ({
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  removeError: () => dispatch(actions.removeError())
+  removeError: () => dispatch(actions.removeError()),
+  setError: (error) => dispatch(actions.addError(error))
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App))
