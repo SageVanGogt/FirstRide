@@ -27,9 +27,9 @@ export class MapContainer extends Component {
     setPickups(response.pickup);
   };
 
-  toggleIsShowing = (pickup) => {
-
-  } 
+  toggleShowing = (pickup) => {
+    this.props.toggleShowing(pickup);
+  };
 
   containerElement = () => (
     <div className="availableRidesMap"/>
@@ -46,7 +46,7 @@ export class MapContainer extends Component {
           position={this.props.currentLocation}
           googleMapURL={mapUrl}
           markerCoords={this.props.pickupLocations}
-          onMarkerClick={this.onMarkerClick}
+          toggleShowing={this.toggleShowing}
           loadingElement={this.loadingElement()}
           containerElement={this.containerElement()}
           mapElement={this.mapElement()} />

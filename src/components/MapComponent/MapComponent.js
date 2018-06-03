@@ -7,7 +7,7 @@ import { InfoBox } from "react-google-maps/lib/components/addons/InfoBox";
 const { compose, withStateHandlers } = require("recompose");
 
 export const MapComponent = withScriptjs(withGoogleMap((
-  { position, markerCoords, ...props}
+  { position, markerCoords, toggleShowing, ...props}
 ) => {
   const markers = markerCoords.map(location => {
     let { lat, lng } = location;
@@ -15,16 +15,18 @@ export const MapComponent = withScriptjs(withGoogleMap((
     lng = parseFloat(lng);
     return (
       <Marker
+        onClick={() => toggleShowing(location)}
         position={{lat: lat, lng: lng}}>
-        <InfoBox
-          options={{ closeBoxURL: ``, enableEventPropagation: true }}
-        >
-        <div style={{ backgroundColor: `yellow`, opacity: 0.75, padding: `12px` }}>
-          <div style={{ fontSize: `16px`, fontColor: `#08233B` }}>
-            Hello, jack!
-          </div>
-        </div>
-      </InfoBox>
+       {
+        location.isShowing === true && <InfoBox
+          options={{ closeBoxURL: ``, enableEventPropagation: true }}>
+            <div style={{ backgroundColor: `yellow`, opacity: 0.75, padding: `12px` }}>
+              <div style={{ fontSize: `16px`, fontColor: `#08233B` }}>
+                Hello, jack!
+              </div>
+            </div>
+          </InfoBox>
+        }
       </Marker>
     );
   });
