@@ -44,4 +44,15 @@ describe('pickupReducer', () => {
 
     expect(actual).toEqual(expected);
   })
+
+  it('should return the state in default case', () => {
+    let initialState = [{}, {}];
+    let mockAction = {
+      type: 'DEFAULT'
+    };
+    let actual = pickupReducer(initialState, mockAction);
+    let expected = initialState;
+
+    expect(actual).toEqual(expected);
+  })
 })

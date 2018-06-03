@@ -13,5 +13,16 @@ describe('ridesAccountedReducer', () => {
     let actual = ridesAccountedReducer(initialState, mockAction);
 
     expect(actual).toEqual(mockRidesAccounted);
-  })
+  });
+
+  it('should return the state in default case', () => {
+    let initialState = [{}, {}];
+    let mockAction = {
+      type: 'DEFAULT'
+    };
+    let actual = ridesAccountedReducer(initialState, mockAction);
+    let expected = initialState;
+
+    expect(actual).toEqual(expected);
+  });
 })
