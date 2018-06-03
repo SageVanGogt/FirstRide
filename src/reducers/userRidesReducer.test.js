@@ -4,10 +4,10 @@ describe('userRidesReducer', () => {
   it('should return a state with an array of rides in ADD case', () => {
     let mockAction = {
       type: "ADD_USER_RIDES",
-      userRides: [{}, {}]
+      rides: [{}, {}]
     }
     let initialState = [];
-    let expected = mockAction.userRides;
+    let expected = mockAction.rides;
     let actual = userRidesReducer(initialState, mockAction);
 
     expect(actual).toEqual(expected);
