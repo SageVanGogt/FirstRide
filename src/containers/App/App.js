@@ -36,8 +36,13 @@ export class App extends Component {
   errorElement = () => {
     return (
       <div className="error-container">
+        <h1>Whoops\!</h1>
         <strong>{this.props.error}</strong>
-        <button onClick={this.props.removeError}>ok!</button>
+        <button 
+          onClick={this.props.removeError}
+          className="error-close-btn">
+          ok!
+        </button>
       </div>
     );
   }
@@ -62,7 +67,7 @@ export class App extends Component {
         {
           this.state.showLogin & !this.props.user.id && 
           <LoginComponent
-            toggleLogin={this.toggleLogin} />
+            toggleLogin={this.toggleLogin}/>
         }
         <Switch>
           <Route 
