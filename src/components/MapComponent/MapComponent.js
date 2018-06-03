@@ -1,16 +1,16 @@
 import React from 'react';
 import { withScriptjs, withGoogleMap, GoogleMap, Marker }
   from 'react-google-maps';
-import './MapComponent.css';
-import PropTypes from 'prop-types';
-import { InfoBox } from "react-google-maps/lib/components/addons/InfoBox";
-const { compose, withStateHandlers } = require("recompose");
+  import PropTypes from 'prop-types';
+  import { InfoBox } from "react-google-maps/lib/components/addons/InfoBox";
+  import './MapComponent.css';
 
 export const MapComponent = withScriptjs(withGoogleMap((
-  { position, markerCoords, toggleShowing, ...props}
+  { position, markerCoords, toggleShowing, rides, ...props}
 ) => {
   const markers = markerCoords.map(location => {
     let { lat, lng } = location;
+    let rideInfo = rides.find(ride => ride.id === location.ride_id);
     lat = parseFloat(lat);
     lng = parseFloat(lng);
     return (
@@ -20,9 +20,9 @@ export const MapComponent = withScriptjs(withGoogleMap((
        {
         location.isShowing === true && <InfoBox
           options={{ closeBoxURL: ``, enableEventPropagation: true }}>
-            <div style={{ backgroundColor: `yellow`, opacity: 0.75, padding: `12px` }}>
-              <div style={{ fontSize: `16px`, fontColor: `#08233B` }}>
-                Hello, jack!
+            <div className="info-box">
+              <div className="info-text-box">
+                <h1>{rideInfo.seats_remaining}</h1>
               </div>
             </div>
           </InfoBox>

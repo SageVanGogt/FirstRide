@@ -11,6 +11,12 @@ ShallowWrapper {
             "id": 1,
           }
     }
+    userRides={
+        Array [
+            Object {},
+            Object {},
+          ]
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -30,17 +36,41 @@ ShallowWrapper {
                     Red Rocks
           </h2>
           <ul>
-                    Promise {}
+                    <article>
+                              <h1>
+                                        destination: RedRocks
+                              </h1>
+                              <h2>
+                                        car type: 
+                              </h2>
+                              <h3>
+                                        seats remaining: 
+                              </h3>
+                    </article>
+                    <article>
+                              <h1>
+                                        destination: RedRocks
+                              </h1>
+                              <h2>
+                                        car type: 
+                              </h2>
+                              <h3>
+                                        seats remaining: 
+                              </h3>
+                    </article>
           </ul>
 </article>,
         <article>
           <h2>
                     Breckenridge
           </h2>
-          <ul>
-                    Promise {}
-          </ul>
+          <ul />
 </article>,
+        <button
+          onClick={undefined}
+>
+          return
+</button>,
       ],
       "className": "user-rides-container",
     },
@@ -56,7 +86,28 @@ ShallowWrapper {
               Red Rocks
 </h2>,
             <ul>
-              Promise {}
+              <article>
+                            <h1>
+                                          destination: RedRocks
+                            </h1>
+                            <h2>
+                                          car type: 
+                            </h2>
+                            <h3>
+                                          seats remaining: 
+                            </h3>
+              </article>
+              <article>
+                            <h1>
+                                          destination: RedRocks
+                            </h1>
+                            <h2>
+                                          car type: 
+                            </h2>
+                            <h3>
+                                          seats remaining: 
+                            </h3>
+              </article>
 </ul>,
           ],
         },
@@ -78,10 +129,168 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Promise {},
+              "children": Array [
+                <article>
+                  <h1>
+                                    destination: RedRocks
+                  </h1>
+                  <h2>
+                                    car type: 
+                  </h2>
+                  <h3>
+                                    seats remaining: 
+                  </h3>
+</article>,
+                <article>
+                  <h1>
+                                    destination: RedRocks
+                  </h1>
+                  <h2>
+                                    car type: 
+                  </h2>
+                  <h3>
+                                    seats remaining: 
+                  </h3>
+</article>,
+              ],
             },
             "ref": null,
-            "rendered": Promise {},
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h1>
+                      destination: RedRocks
+</h1>,
+                    <h2>
+                      car type: 
+</h2>,
+                    <h3>
+                      seats remaining: 
+</h3>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "destination: RedRocks",
+                    },
+                    "ref": null,
+                    "rendered": "destination: RedRocks",
+                    "type": "h1",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "car type: ",
+                        undefined,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "car type: ",
+                      undefined,
+                    ],
+                    "type": "h2",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "seats remaining: ",
+                        undefined,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "seats remaining: ",
+                      undefined,
+                    ],
+                    "type": "h3",
+                  },
+                ],
+                "type": "article",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h1>
+                      destination: RedRocks
+</h1>,
+                    <h2>
+                      car type: 
+</h2>,
+                    <h3>
+                      seats remaining: 
+</h3>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "destination: RedRocks",
+                    },
+                    "ref": null,
+                    "rendered": "destination: RedRocks",
+                    "type": "h1",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "car type: ",
+                        undefined,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "car type: ",
+                      undefined,
+                    ],
+                    "type": "h2",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "seats remaining: ",
+                        undefined,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "seats remaining: ",
+                      undefined,
+                    ],
+                    "type": "h3",
+                  },
+                ],
+                "type": "article",
+              },
+            ],
             "type": "ul",
           },
         ],
@@ -96,9 +305,7 @@ ShallowWrapper {
             <h2>
               Breckenridge
 </h2>,
-            <ul>
-              Promise {}
-</ul>,
+            <ul />,
           ],
         },
         "ref": null,
@@ -118,15 +325,25 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
-            "props": Object {
-              "children": Promise {},
-            },
+            "props": Object {},
             "ref": null,
-            "rendered": Promise {},
+            "rendered": null,
             "type": "ul",
           },
         ],
         "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "return",
+          "onClick": undefined,
+        },
+        "ref": null,
+        "rendered": "return",
+        "type": "button",
       },
     ],
     "type": "div",
@@ -143,17 +360,41 @@ ShallowWrapper {
                         Red Rocks
             </h2>
             <ul>
-                        Promise {}
+                        <article>
+                                    <h1>
+                                                destination: RedRocks
+                                    </h1>
+                                    <h2>
+                                                car type: 
+                                    </h2>
+                                    <h3>
+                                                seats remaining: 
+                                    </h3>
+                        </article>
+                        <article>
+                                    <h1>
+                                                destination: RedRocks
+                                    </h1>
+                                    <h2>
+                                                car type: 
+                                    </h2>
+                                    <h3>
+                                                seats remaining: 
+                                    </h3>
+                        </article>
             </ul>
 </article>,
           <article>
             <h2>
                         Breckenridge
             </h2>
-            <ul>
-                        Promise {}
-            </ul>
+            <ul />
 </article>,
+          <button
+            onClick={undefined}
+>
+            return
+</button>,
         ],
         "className": "user-rides-container",
       },
@@ -169,7 +410,28 @@ ShallowWrapper {
                 Red Rocks
 </h2>,
               <ul>
-                Promise {}
+                <article>
+                                <h1>
+                                                destination: RedRocks
+                                </h1>
+                                <h2>
+                                                car type: 
+                                </h2>
+                                <h3>
+                                                seats remaining: 
+                                </h3>
+                </article>
+                <article>
+                                <h1>
+                                                destination: RedRocks
+                                </h1>
+                                <h2>
+                                                car type: 
+                                </h2>
+                                <h3>
+                                                seats remaining: 
+                                </h3>
+                </article>
 </ul>,
             ],
           },
@@ -191,10 +453,168 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": Promise {},
+                "children": Array [
+                  <article>
+                    <h1>
+                                        destination: RedRocks
+                    </h1>
+                    <h2>
+                                        car type: 
+                    </h2>
+                    <h3>
+                                        seats remaining: 
+                    </h3>
+</article>,
+                  <article>
+                    <h1>
+                                        destination: RedRocks
+                    </h1>
+                    <h2>
+                                        car type: 
+                    </h2>
+                    <h3>
+                                        seats remaining: 
+                    </h3>
+</article>,
+                ],
               },
               "ref": null,
-              "rendered": Promise {},
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <h1>
+                        destination: RedRocks
+</h1>,
+                      <h2>
+                        car type: 
+</h2>,
+                      <h3>
+                        seats remaining: 
+</h3>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "destination: RedRocks",
+                      },
+                      "ref": null,
+                      "rendered": "destination: RedRocks",
+                      "type": "h1",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "car type: ",
+                          undefined,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "car type: ",
+                        undefined,
+                      ],
+                      "type": "h2",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "seats remaining: ",
+                          undefined,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "seats remaining: ",
+                        undefined,
+                      ],
+                      "type": "h3",
+                    },
+                  ],
+                  "type": "article",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <h1>
+                        destination: RedRocks
+</h1>,
+                      <h2>
+                        car type: 
+</h2>,
+                      <h3>
+                        seats remaining: 
+</h3>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "destination: RedRocks",
+                      },
+                      "ref": null,
+                      "rendered": "destination: RedRocks",
+                      "type": "h1",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "car type: ",
+                          undefined,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "car type: ",
+                        undefined,
+                      ],
+                      "type": "h2",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "seats remaining: ",
+                          undefined,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "seats remaining: ",
+                        undefined,
+                      ],
+                      "type": "h3",
+                    },
+                  ],
+                  "type": "article",
+                },
+              ],
               "type": "ul",
             },
           ],
@@ -209,9 +629,7 @@ ShallowWrapper {
               <h2>
                 Breckenridge
 </h2>,
-              <ul>
-                Promise {}
-</ul>,
+              <ul />,
             ],
           },
           "ref": null,
@@ -231,15 +649,25 @@ ShallowWrapper {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
-              "props": Object {
-                "children": Promise {},
-              },
+              "props": Object {},
               "ref": null,
-              "rendered": Promise {},
+              "rendered": null,
               "type": "ul",
             },
           ],
           "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "return",
+            "onClick": undefined,
+          },
+          "ref": null,
+          "rendered": "return",
+          "type": "button",
         },
       ],
       "type": "div",
