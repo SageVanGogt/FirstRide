@@ -18,22 +18,27 @@ export class NavContainer extends Component {
   render() {
     return (
       <div className="nav-bar">
-        <h1 className="site-name">FirstRide</h1>
+        <h1 className="site-name">FirstRide.</h1>
         <div className="links">
           <NavLink className="nav-link" to="/">Home</NavLink>
           { 
             this.props.user.id ? 
               <button 
+                className="nav-btn"
                 onClick={this.handleSignout}>
                 signout
               </button> :
               <button 
-                className="" 
+                className="nav-btn" 
                 onClick={this.props.toggleLogin}>
                 Signin
               </button>
           }
-          <button onClick={this.props.toggleShowUserRides}>My Rides</button>
+          <button 
+            className="nav-btn"
+            onClick={this.props.toggleShowUserRides}>
+            My Rides
+          </button>
           <NavLink className="nav-link" to="/profile">Me</NavLink>
         </div>
       </div>

@@ -61,7 +61,8 @@ export class App extends Component {
         }
         {
           this.state.showLogin & !this.props.user.id && 
-          <LoginComponent />
+          <LoginComponent
+            toggleLogin={this.toggleLogin} />
         }
         <Switch>
           <Route 

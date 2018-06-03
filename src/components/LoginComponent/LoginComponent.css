@@ -2,9 +2,20 @@
   position: fixed;
   z-index: 3;
   display: flex;
-  background-color: purple;
+  align-items: center;
+  background-color: rgba(249,194,85, 0.7);
+  left: calc(50% - 350px);
+  right: calc(50% - 350px);
+  top: calc(50% - 200px);
+  bottom: calc(50% - 200px);
   height: 400px;
-  width: 600px;
-  margin: auto;
+  width: 700px;
   border-radius: 8px;
+}
+
+.back-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
 }

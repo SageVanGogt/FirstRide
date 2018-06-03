@@ -14,4 +14,12 @@
 .signup-input {
   height: 40px;
   margin-top: 20px;
+  border: none;
+  padding: 4px;
+  background-color: rgba(221, 165, 52, 0.6); 
+  border-radius: 5px;
+}
+
+.signup-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px rgba(221, 165, 52, 0.6) inset;
 }

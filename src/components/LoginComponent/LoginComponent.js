@@ -3,11 +3,16 @@ import SigninContainer from './../../containers/SigninContainer/SigninContainer'
 import SignupContainer from './../../containers/SignupContainer/SignupContainer';
 import './LoginComponent.css'
 
-const LoginComponent = () => {
+const LoginComponent = ({toggleLogin}) => {
   return (
-    <div className="login-container">
-      <SigninContainer />
-      <SignupContainer />
+    <div className="login-backdrop">
+      <div className="login-container">
+      <div 
+        className="back-btn"
+        onClick={toggleLogin}>back</div>
+        <SigninContainer />
+        <SignupContainer />
+      </div> 
     </div>
   );
 }

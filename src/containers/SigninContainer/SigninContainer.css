@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;  
   width: 50%;
+  height: 70%;
+  border-right: 1px solid black;
 }
 
 .signin-form {
@@ -15,4 +17,22 @@
 .signin-input {
   height: 40px;
   margin-top: 20px;
+  border: none;
+  padding: 4px;  
+  background-color: rgba(221, 165, 52, 0.6); 
+  border-radius: 5px;
+}
+
+.signin-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px rgba(221, 165, 52, 0.6) inset;
+}
+
+.cred-submit-btn {
+  width: 150px;
+  padding: 10px 0;
+  margin: 10px auto 0;
+  background: #DC0CE8;
+  color: white;
+  border: none;
+  border-radius: 20px;
 }

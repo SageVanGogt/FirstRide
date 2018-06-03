@@ -13,14 +13,14 @@ export class SignupContainer extends Component {
       email: '',
       password: ''
     };
-  }
+  };
 
   handleChange = (event) => {
     const { name, value } = event.target;
     this.setState({
       [name]: value
     });
-  }
+  };
 
   handleSubmit = async (event) => {
     event.preventDefault();
@@ -30,7 +30,7 @@ export class SignupContainer extends Component {
       user_name: this.state.user_name
     }
     await this.props.setUser(user);
-  }
+  };
 
   render() {
     return (
@@ -61,20 +61,22 @@ export class SignupContainer extends Component {
             placeholder="password"
           />
           <input 
+            className="cred-submit-btn"
             type="submit"
+            value="Signup"
           />
         </form>
       </div>
     );
-  }
-}
+  };
+};
 
 export const mapStateToProps = (state) => ({
 
-})
+});
 
 export const mapDispatchToProps = (dispatch) => ({
   setUser: (user) => dispatch(actions.signinUser(user))
-})
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(SignupContainer);
