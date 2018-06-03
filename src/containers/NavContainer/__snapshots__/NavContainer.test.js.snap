@@ -6,6 +6,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <NavContainer
     logoutUser={[Function]}
+    removeUserRides={[Function]}
     rides={
         Array [
             Object {},
@@ -31,7 +32,7 @@ ShallowWrapper {
         <h1
           className="site-name"
 >
-          FirstRide
+          FirstRide.
 </h1>,
         <div
           className="links"
@@ -45,12 +46,13 @@ ShallowWrapper {
                     Home
           </NavLink>
           <button
-                    className=""
+                    className="nav-btn"
                     onClick={[Function]}
           >
                     Signin
           </button>
           <button
+                    className="nav-btn"
                     onClick={undefined}
           >
                     My Rides
@@ -74,11 +76,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "FirstRide",
+          "children": "FirstRide.",
           "className": "site-name",
         },
         "ref": null,
-        "rendered": "FirstRide",
+        "rendered": "FirstRide.",
         "type": "h1",
       },
       Object {
@@ -96,12 +98,13 @@ ShallowWrapper {
               Home
 </NavLink>,
             <button
-              className=""
+              className="nav-btn"
               onClick={[Function]}
 >
               Signin
 </button>,
             <button
+              className="nav-btn"
               onClick={undefined}
 >
               My Rides
@@ -140,7 +143,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Signin",
-              "className": "",
+              "className": "nav-btn",
               "onClick": [Function],
             },
             "ref": null,
@@ -153,6 +156,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "My Rides",
+              "className": "nav-btn",
               "onClick": undefined,
             },
             "ref": null,
@@ -190,7 +194,7 @@ ShallowWrapper {
           <h1
             className="site-name"
 >
-            FirstRide
+            FirstRide.
 </h1>,
           <div
             className="links"
@@ -204,12 +208,13 @@ ShallowWrapper {
                         Home
             </NavLink>
             <button
-                        className=""
+                        className="nav-btn"
                         onClick={[Function]}
             >
                         Signin
             </button>
             <button
+                        className="nav-btn"
                         onClick={undefined}
             >
                         My Rides
@@ -233,11 +238,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "FirstRide",
+            "children": "FirstRide.",
             "className": "site-name",
           },
           "ref": null,
-          "rendered": "FirstRide",
+          "rendered": "FirstRide.",
           "type": "h1",
         },
         Object {
@@ -255,12 +260,13 @@ ShallowWrapper {
                 Home
 </NavLink>,
               <button
-                className=""
+                className="nav-btn"
                 onClick={[Function]}
 >
                 Signin
 </button>,
               <button
+                className="nav-btn"
                 onClick={undefined}
 >
                 My Rides
@@ -299,7 +305,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Signin",
-                "className": "",
+                "className": "nav-btn",
                 "onClick": [Function],
               },
               "ref": null,
@@ -312,6 +318,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "My Rides",
+                "className": "nav-btn",
                 "onClick": undefined,
               },
               "ref": null,

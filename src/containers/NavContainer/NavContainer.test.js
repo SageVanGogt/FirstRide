@@ -7,8 +7,10 @@ describe('NavContainer', () => {
   let mockState;
   let mockLogoutUser;
   let mockToggleLogin;
+  let mockRemoveUserRides;
 
   beforeEach(() => {
+    mockRemoveUserRides = jest.fn();
     mockToggleLogin = jest.fn();
     mockLogoutUser = jest.fn();
     mockState = {
@@ -19,6 +21,7 @@ describe('NavContainer', () => {
       {...mockState}
       toggleLogin={mockToggleLogin}
       logoutUser={mockLogoutUser}
+      removeUserRides={mockRemoveUserRides}
     />);
   })
 
@@ -31,6 +34,18 @@ describe('NavContainer', () => {
       wrapper.instance().handleSignout();
       
       expect(mockLogoutUser).toHaveBeenCalled();
+    })
+
+    it('should call toggleLogin', () => {
+      wrapper.instance().handleSignout();
+      
+      expect(mockRemoveUserRides).toHaveBeenCalled();
+    })
+
+    it('should call removeUserRides', () => {
+      wrapper.instance().handleSignout();
+      
+      expect(mockToggleLogin).toHaveBeenCalled();
     })
   })
 
@@ -45,13 +60,25 @@ describe('NavContainer', () => {
   })
 
   describe('mapDispatchToProps', () => {
-    it('should call dispatch with the correct params', () => {
+    
+    it('should call dispatch with the correct params for logoutUser', () => {
       let mockDispatch = jest.fn();
       let mappedProps = mapDispatchToProps(mockDispatch);
       let expected = {
         type: 'SIGNOUT_USER'
       }
       mappedProps.logoutUser();
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected);
+    })
+
+    it('should call dispatch with the correct params for removeUserRides', () => {
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let expected = {
+        type: 'REMOVE_USER_RIDES'
+      }
+      mappedProps.removeUserRides();
 
       expect(mockDispatch).toHaveBeenCalledWith(expected);
     })

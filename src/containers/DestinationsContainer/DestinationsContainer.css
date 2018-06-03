@@ -52,13 +52,11 @@
   visibility: hidden;
 }
 
-.breck-container:hover 
-.location-pin {
+.breck-container:hover .location-pin {
   visibility: visible;
 }
 
-.redrocks-container:hover 
-.location-pin {
+.redrocks-container:hover .location-pin {
   visibility: visible;
 }
 
@@ -71,13 +69,16 @@
 
 .landing-instructions {
   position: absolute;
-  z-index: 5;
+  z-index: 1;
   top: 200px;
   text-align: center;
   font-size: 4rem;
-  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
   color: white;
-  font-family: 'Cabin', sans-serif;  
+  font-family: 'Work Sans', sans-serif;  
   font-weight: 800;
-  letter-spacing: 2pt;
+  letter-spacing: 1pt;
+  pointer-events: none;
 }
