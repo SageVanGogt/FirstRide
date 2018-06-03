@@ -35,7 +35,8 @@
   height: 100%;
 }
 
-.redrocks-container:hover, .breck-container:hover {
+.redrocks-container:hover, 
+.breck-container:hover {
   opacity: 1;
   filter: grayscale(0%);
 }
@@ -44,20 +45,39 @@
   font-size: 3rem;
   color: white;
   text-decoration: none;
+  padding: 5px 15px;
+  border: 2px solid transparent;
+  border-radius: 5px;
   transition: .3s;
   visibility: hidden;
 }
 
-.breck-container:hover .location-pin {
+.breck-container:hover 
+.location-pin {
   visibility: visible;
 }
 
-.redrocks-container:hover .location-pin {
+.redrocks-container:hover 
+.location-pin {
   visibility: visible;
 }
 
 .location-pin:hover {
   font-size: 3rem;
   text-decoration: none;
+  color: white;
+  border: 2px solid white;  
 }
 
+.landing-instructions {
+  position: absolute;
+  z-index: 5;
+  top: 200px;
+  text-align: center;
+  font-size: 4rem;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+  color: white;
+  font-family: 'Cabin', sans-serif;  
+  font-weight: 800;
+  letter-spacing: 2pt;
+}
