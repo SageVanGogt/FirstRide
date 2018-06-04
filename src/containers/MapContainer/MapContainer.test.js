@@ -8,34 +8,26 @@ jest.mock('./../../apiCalls/apiCalls');
 
 describe('MapContainer', () => {
   let wrapper;
-  let mockSetPickups
+  let mockToggleShowing;
   let mockDestination;
 
   beforeEach(() => {
-    mockSetPickups = jest.fn();
+    mockToggleShowing = jest.fn();
     mockDestination = {
       id: 1
-    }
+    };
     wrapper = shallow(<MapContainer 
-      setPickups={mockSetPickups}
       destination={mockDestination}
+      toggleShowing={mockToggleShowing}
     />);
   })
 
-  describe('loadPickups', () => {
+  describe('toggleShowing', () => {
+    it('should call toggleShowing with the correct params', () => {
+      let expected = {};
+      wrapper.instance().toggleShowing({});
 
-    it('should call fetchPickups with the correct params', async () => {
-      let expected = 1;
-      await wrapper.instance().loadPickups();
-
-      expect(API.fetchPickups).toHaveBeenCalledWith(expected);
-    })
-
-    it('should call setPickups with the correct params', async () => {
-      let expected = MOCK.mockPickups.pickup;
-      await wrapper.instance().loadPickups();
-
-      expect(mockSetPickups).toHaveBeenCalledWith(expected);
+      expect(mockToggleShowing).toHaveBeenCalledWith(expected);
     })
   })
 
@@ -103,18 +95,6 @@ describe('MapContainer', () => {
   })
 
   describe('mapDispatchToProps', () => {
-
-    it('should call dispatch with the correct params', () => {
-      let mockDispatch = jest.fn();
-      let mappedProps = mapDispatchToProps(mockDispatch);
-      let expected = {
-        type: "ADD_PICKUPS", 
-        pickups: MOCK.mockPickups.pickup
-      };
-      mappedProps.setPickups(MOCK.mockPickups.pickup);
-
-      expect(mockDispatch).toHaveBeenCalledWith(expected);
-    });
 
     it('should call dispatch with the correct params', () => {
       let mockDispatch = jest.fn();

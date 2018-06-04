@@ -7,15 +7,18 @@ describe('RidePopoverComponent', () => {
   let mockRidesAccounted;
   let mockRides;
   let mockUser;
+  let mockPickupLocations;
 
   beforeEach(() => {
+    mockPickupLocations = [{}, {}];
     mockUser = {id: 1};
     mockRides = [{}, {}];
     mockRidesAccounted = [{}, {}];
     wrapper = shallow(<RidePopoverComponent 
     ridesAccounted={mockRidesAccounted}
     rides={mockRides}
-    user={mockUser}/>);
+    user={mockUser}
+    pickupLocations={mockPickupLocations}/>);
   })
 
   it('should match the snapshot', () => {
