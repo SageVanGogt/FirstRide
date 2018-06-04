@@ -10,8 +10,12 @@ describe('NavContainer', () => {
   let mockRemoveUserRides;
   let mockRemoveDestination;
   let mockRemoveCurrentLocation;
+  let mockRemoveRides;
+  let mockRemovePickups;
 
   beforeEach(() => {
+    mockRemoveRides = jest.fn();
+    mockRemovePickups = jest.fn();
     mockRemoveCurrentLocation = jest.fn();
     mockRemoveUserRides = jest.fn();
     mockRemoveDestination = jest.fn();
@@ -28,6 +32,8 @@ describe('NavContainer', () => {
       removeUserRides={mockRemoveUserRides}
       removeDestination={mockRemoveDestination}
       removeCurrentLocation={mockRemoveCurrentLocation}
+      removePickups={mockRemovePickups}
+      removeRides={mockRemoveRides}
     />);
   });
 
@@ -66,7 +72,19 @@ describe('NavContainer', () => {
       wrapper.instance().handleReturnHome();
       
       expect(mockRemoveDestination).toHaveBeenCalled();
-    })
+    });
+
+    it('should call removeRides', () => {
+      wrapper.instance().handleReturnHome();
+      
+      expect(mockRemoveRides).toHaveBeenCalled();
+    });
+
+    it('should call removePickups', () => {
+      wrapper.instance().handleReturnHome();
+      
+      expect(mockRemovePickups).toHaveBeenCalled();
+    });
   })
 
   describe('mapStateToProps', () => {

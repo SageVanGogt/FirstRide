@@ -24,6 +24,8 @@ export class NavContainer extends Component {
   handleReturnHome = () => {
     this.props.removeCurrentLocation();
     this.props.removeDestination();
+    this.props.removeRides();
+    this.props.removePickups();
   }
 
   render() {
@@ -82,6 +84,8 @@ NavContainer.propTypes = {
   removeUserRides: PropTypes.func,
   removeCurrentLocation: PropTypes.func,
   removeDestination: PropTypes.func,
+  removeRides: PropTypes.func,
+  removePickups: PropTypes.func,
   user: PropTypes.object
 };
 

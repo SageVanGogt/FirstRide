@@ -8,6 +8,8 @@ ShallowWrapper {
     logoutUser={[Function]}
     removeCurrentLocation={[Function]}
     removeDestination={[Function]}
+    removePickups={[Function]}
+    removeRides={[Function]}
     removeUserRides={[Function]}
     rides={
         Array [
