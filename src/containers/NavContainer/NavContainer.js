@@ -9,7 +9,7 @@ import './NavContainer.css';
 export class NavContainer extends Component {
   constructor(props) {
     super(props);
-  };
+  }
 
   handleSignout = () => {
     this.props.logoutUser();
@@ -22,7 +22,10 @@ export class NavContainer extends Component {
       <div className="nav-bar">
         <h1 className="site-name">FirstRide.</h1>
         <div className="links">
-          <NavLink className="nav-link" to="/">Home</NavLink>
+          <NavLink 
+            className="nav-link" 
+            to="/"
+            onClick={}>Home</NavLink>
           { 
             this.props.user.id ? 
               <button 
@@ -45,8 +48,8 @@ export class NavContainer extends Component {
         </div>
       </div>
     );
-  };
-};
+  }
+}
 
 export const mapStateToProps = (state) => ({
   user: state.user
@@ -56,5 +59,13 @@ export const mapDispatchToProps = (dispatch) => ({
   logoutUser: () => dispatch(actions.signoutUser()),
   removeUserRides: () => dispatch(removeUserRides())
 });
+
+NavContainer.propTypes = {
+  toggleLogin: PropTypes.func,
+  toggleShowUserRides: PropTypes.func,
+  logoutUser: PropTypes.func,
+  removeUserRides: PropTypes.func,
+  user: PropTypes.object
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(NavContainer);

@@ -39,7 +39,7 @@ export class OfferContainer extends Component {
       car_type,
       date,
       time
-    } = this.state
+    } = this.state;
     const rideInfo = {
       location_id,
       driver_id,
@@ -47,12 +47,12 @@ export class OfferContainer extends Component {
       seats_remaining: car_capacity, 
       car_type, 
       date, 
-      time, 
-    }
+      time
+    };
     const response = await API.submitNewRide(rideInfo);
     const rideId = response.id;
     await this.handleSubmitPickup(rideId);
-    await this.props.loadRides();
+    await this.props.loadRides(); //change to a reducer function
   };
 
   handleSubmitPickup = async (rideId) => {
@@ -92,7 +92,7 @@ export class OfferContainer extends Component {
           action="" 
           onSubmit={this.handleSubmitRide}
           className="offer-form">
-           <legend className="offer-instructions">
+          <legend className="offer-instructions">
           this is where you input car info 
           please input all the fields
           </legend>
@@ -154,7 +154,7 @@ export class OfferContainer extends Component {
             className="offer-submit-btn"/>
         </form>
       </div>
-    )
+    );
   }
 }
 
@@ -166,5 +166,13 @@ export const mapStateToProps = (state) => ({
 export const mapDispatchToProps = (dispatch) => ({
   setNewPickup: (pickup) => dispatch(actions.addSinglePickup(pickup))
 });
+
+OfferContainer.propTypes = {
+  setNewPickup: PropTypes.func,
+  ridesAccounted: PropTypes.func,
+  handleShowOffer: PropTypes.func,
+  destination: PropTypes.object,
+  user: PropTypes.object
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(OfferContainer)
