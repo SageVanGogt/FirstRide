@@ -9,7 +9,7 @@ const pickupReducer = (state = [], action) => {
         }
         return location
       })]
-      return toggledState
+      return toggledState;
     default:
       return state;
   }

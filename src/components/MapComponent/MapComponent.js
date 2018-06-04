@@ -35,9 +35,10 @@ export const MapComponent = withScriptjs(withGoogleMap((
     );
   });
   return (
-    // props.loading ?
+    // !position.id ?
     // <div className='map-loading'>
-    //   <h3>Waiting on Location...</h3>
+    //   {props.loadingElement}
+    //   <h3>{props.loadingElement}</h3>
     // </div>
     // :
     <GoogleMap

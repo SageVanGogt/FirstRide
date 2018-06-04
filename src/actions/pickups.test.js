@@ -28,3 +28,16 @@ describe('updatePickupShowing', () => {
     expect(actual).toEqual(expected);
   })
 })
+
+describe('ADD_NEW_PICKUP', () => {
+  it('should return an object with type ADD_NEW_PICKUP', () => {
+    let mockPickup = {id: 1};
+    let expected = {
+      type: 'ADD_NEW_PICKUP',
+      pickup: mockPickup
+    };
+    let actual = actions.addSinglePickup(mockPickup);
+    
+    expect(actual).toEqual(expected);
+  })
+})

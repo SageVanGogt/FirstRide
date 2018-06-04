@@ -11,3 +11,10 @@ export const updatePickupShowing = (pickup) => {
     pickup
   });
 }
+
+export const addSinglePickup = (pickup) => {
+  return ({
+    type: 'ADD_NEW_PICKUP',
+    pickup
+  });
+};

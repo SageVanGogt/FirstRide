@@ -63,7 +63,7 @@ export class OfferContainer extends Component {
       lng: geoLocation.lng,
       isShowing: false
     };
-    await API.submitNewPickup(pickupInfo);
+    const newPickup = await API.submitNewPickup(pickupInfo);
   }
 
   getGeoInfo = async () => {
