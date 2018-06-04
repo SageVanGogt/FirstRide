@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { ButtonToolbar, Popover, Overlay, OverlayTrigger, Button } from 'react-bootstrap';
 import './RidePopoverComponent.css';
 import { connect } from 'react-redux';
@@ -32,10 +33,11 @@ export class RidePopoverComponent extends Component {
   
   render() {
     const { rides, pickupLocations } = this.props;
-    const allPopovers = rides.map(ride => {
+    const allPopovers = rides.map((ride, index) => {
       const rideMarker = pickupLocations.find(pickup => pickup.ride_id === ride.id);
       return (
         <OverlayTrigger
+          key={`popover ${index}`}
           container={this}
           trigger="click"
           placement="right"
@@ -74,6 +76,14 @@ export const mapStateToProps = (state) => ({
   ridesAccounted: state.ridesAccounted,
   user: state.user,
   pickupLocations: state.pickupLocations
-})
+});
+
+RidePopoverComponent.propTypes = {
+  pickupLocations: PropTypes.array,
+  user: PropTypes.object,
+  ridesAccounted: PropTypes.array,
+  handleRemovePassengerRide: PropTypes.func,
+  submitRideSignup: PropTypes.func
+};
 
 export default connect(mapStateToProps)(RidePopoverComponent);

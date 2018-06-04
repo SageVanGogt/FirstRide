@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import * as API from './../../apiCalls/apiCalls';
 import * as actions from './../../actions/userRides';
 import './UserRidesContainer.css';
@@ -28,16 +29,16 @@ export class UserRidesContainer extends Component {
     return allRideInfo;
   };
 
-  ridesElement = (destination) => (
-    this.props.userRides.map(ride => (
-      <li className="ride-item">
+  ridesElement = () => (
+    this.props.userRides.map((ride, index) => (
+      <li className="ride-item" key={index}>
         <article className="ride-info">
           <h3 className="time-info">{ride.date} - {ride.time}</h3>
           <h4 className="destination-info">Going To -> 
             {
               ride.location_id === 1 ? 
-              'Red Rocks' :
-              'Breckenridge'
+                'Red Rocks' :
+                'Breckenridge'
             }
           </h4>
           <h4 className="car-info">Car Type: {ride.car_type}</h4>
@@ -74,5 +75,12 @@ export const mapStateToProps = (state) => ({
 export const mapDispatchToProps = (dispatch) => ({
   setUserRides: (rides) => dispatch(actions.addUserRides(rides))
 });
+
+UserRidesContainer.propTypes = {
+  user: PropTypes.object,
+  userRides: PropTypes.array,
+  setUserRides: PropTypes.func,
+  toggleShowUserRides: PropTypes.func
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(UserRidesContainer);

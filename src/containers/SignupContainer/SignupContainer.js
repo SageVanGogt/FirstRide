@@ -71,12 +71,12 @@ export class SignupContainer extends Component {
   };
 };
 
-export const mapStateToProps = (state) => ({
-
-});
-
 export const mapDispatchToProps = (dispatch) => ({
   setUser: (user) => dispatch(actions.signinUser(user))
 });
+
+SignupContainer.propTypes = {
+  setUser: PropTypes.func
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(SignupContainer);

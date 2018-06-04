@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { mapKey } from './../../apiKey';
+import PropTypes from 'prop-types';
 import MapComponent from '../../components/MapComponent/MapComponent';
 import { connect } from 'react-redux';
 import * as actions from './../../actions/pickups';
@@ -50,5 +51,12 @@ export const mapStateToProps = (state) => ({
 export const mapDispatchToProps = (dispatch) => ({
   toggleShowing: (pickup) => dispatch(actions.updatePickupShowing(pickup))
 });
+
+MapContainer.propTypes = {
+  toggleShowing: PropTypes.func,
+  pickupLocations: PropTypes.array,
+  currentLocation: PropTypes.object,
+  rides: PropTypes.array
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(MapContainer);
