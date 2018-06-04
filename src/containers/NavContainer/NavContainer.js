@@ -6,6 +6,8 @@ import * as actions from './../../actions/user';
 import { removeDestination } from './../../actions/destination';
 import { removeCurrentLocation } from './../../actions/currentLocation';
 import { removeUserRides } from './../../actions/userRides';
+import { removeRides } from './../../actions/rides';
+import { removePickups } from './../../actions/pickups';
 import './NavContainer.css';
 
 export class NavContainer extends Component {
@@ -68,7 +70,9 @@ export const mapDispatchToProps = (dispatch) => ({
   logoutUser: () => dispatch(actions.signoutUser()),
   removeUserRides: () => dispatch(removeUserRides()),
   removeCurrentLocation: () => dispatch(removeCurrentLocation()),
-  removeDestination: () => dispatch(removeDestination())
+  removeDestination: () => dispatch(removeDestination()),
+  removeRides: () => dispatch(removeRides()),
+  removePickups: () => dispatch(removePickups())
 });
 
 NavContainer.propTypes = {

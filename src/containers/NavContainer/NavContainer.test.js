@@ -29,24 +29,24 @@ describe('NavContainer', () => {
       removeDestination={mockRemoveDestination}
       removeCurrentLocation={mockRemoveCurrentLocation}
     />);
-  })
+  });
 
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
-  })
+  });
 
   describe('handleSignout', () => {
     it('should call logoutUser', () => {
       wrapper.instance().handleSignout();
       
       expect(mockLogoutUser).toHaveBeenCalled();
-    })
+    });
 
     it('should call toggleLogin', () => {
       wrapper.instance().handleSignout();
       
       expect(mockRemoveUserRides).toHaveBeenCalled();
-    })
+    });
 
     it('should call removeUserRides', () => {
       wrapper.instance().handleSignout();
@@ -121,6 +121,28 @@ describe('NavContainer', () => {
         type: 'REMOVE_DESTINATION'
       };
       mappedProps.removeDestination();
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected);
+    });
+
+    it('should call dispatch with the correct params for removePickups', () => {
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let expected = {
+        type: 'REMOVE_PICKUPS'
+      };
+      mappedProps.removePickups();
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected);
+    });
+
+    it('should call dispatch with the correct params for removeRides', () => {
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let expected = {
+        type: 'REMOVE_RIDES'
+      };
+      mappedProps.removeRides();
 
       expect(mockDispatch).toHaveBeenCalledWith(expected);
     });

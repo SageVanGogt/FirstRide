@@ -35,5 +35,5 @@ describe('ridesReducer', () => {
     let expected = initialState;
 
     expect(actual).toEqual(expected);
-  })
-})
+  });
+});
