@@ -56,7 +56,8 @@ export const mapDispatchToProps = (dispatch) => ({
 });
 
 DestinationsContainer.propTypes = {
-  setDestination: PropTypes.func
+  setDestination: PropTypes.func,
+  handleSelectDestination: PropTypes.func
 };
 
 export default connect(null, mapDispatchToProps)(DestinationsContainer);

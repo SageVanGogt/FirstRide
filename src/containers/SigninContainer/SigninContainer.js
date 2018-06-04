@@ -63,12 +63,12 @@ export class SigninContainer extends Component {
   }
 }
 
-export const mapStateToProps = (state) => ({
-
-})
-
 export const mapDispatchToProps = (dispatch) => ({
   signinUser: (userData) => dispatch(actions.signinUser(userData))
-})
+});
+
+SigninContainer.propTypes = {
+  signinUser: PropTypes.func
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(SigninContainer);
