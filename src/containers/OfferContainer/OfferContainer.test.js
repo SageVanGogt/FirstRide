@@ -11,8 +11,12 @@ describe('OfferContainer', () => {
   let mockDestination;
   let mockUser;
   let mockLoadRides;
+  let mockSetNewPickup;
+  let mockHandleShowOffer;
 
   beforeEach(() => {
+    mockHandleShowOffer = jest.fn();
+    mockSetNewPickup = jest.fn();
     mockLoadRides = jest.fn();
     mockDestination = { id: 1 };
     mockUser = { id: 1 };
@@ -20,6 +24,8 @@ describe('OfferContainer', () => {
       user={mockUser}
       destination={mockDestination}
       loadRides={mockLoadRides}
+      setNewPickup={mockSetNewPickup}
+      handleShowOffer={mockHandleShowOffer}
     />);
   })
 
@@ -93,6 +99,19 @@ describe('OfferContainer', () => {
 
       expect(API.submitNewPickup).toHaveBeenCalledWith(expected);
     })
+
+    it('should call setNewPickup with the correct params', async () => {
+      let expected = {id: 1};
+      await wrapper.instance().handleSubmitPickup(mockRideId);
+      
+      expect(mockSetNewPickup).toHaveBeenCalledWith(expected);
+    })
+
+    it('should call handleShowOffer', async () => {
+      await wrapper.instance().handleSubmitPickup(mockRideId);
+      
+      expect(mockHandleShowOffer).toHaveBeenCalled();
+    })
   })
 
   describe('getGeoInfo', () => {
@@ -153,6 +172,21 @@ describe('OfferContainer', () => {
       let actual = mappedProps.user;
 
       expect(actual).toEqual(expected);
+    })
+  })
+
+  describe('mapDispatchToProps', () => {
+    it('should call dispatch for setNewPickup with the correct params', () => {
+      let mockPickup = {};
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let expected = {
+        type: "ADD_NEW_PICKUP",
+        pickup: mockPickup
+      }
+      mappedProps.setNewPickup(mockPickup);
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected);
     })
   })
 })

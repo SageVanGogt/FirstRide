@@ -45,6 +45,18 @@ describe('pickupReducer', () => {
     expect(actual).toEqual(expected);
   })
 
+  it('should return an updated state with ADD_NEW_PICKUP case', () => {
+    let initialState = [{}, {}];
+    let mockAction = {
+      type: 'ADD_NEW_PICKUP',
+      pickup: {}
+    };
+    let actual = pickupReducer(initialState, mockAction);
+    let expected = [{}, {}, {}];
+
+    expect(actual).toEqual(expected);
+  })
+
   it('should return the state in default case', () => {
     let initialState = [{}, {}];
     let mockAction = {

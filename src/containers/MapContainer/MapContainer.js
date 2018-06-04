@@ -31,18 +31,15 @@ export class MapContainer extends Component {
     this.props.toggleShowing(pickup);
   };
 
-  containerElement = () => (
-    <div className="availableRidesMap"/>
-  );
+  containerElement = () => (<div className="availableRidesMap"/>);
   
-  loadingElement = () => (<div style={{ height: `100%` }} />)
-  mapElement = () => (<div style={{ height: `100%` }} />)
+  loadingElement = () => (<div style={{ height: `100%` }}/>);
+  mapElement = () => (<div style={{ height: `100%` }} />);
 
   render() {
     return (
       <div className="map-container">
         <MapComponent
-          // loading={this.props.loading}
           position={this.props.currentLocation}
           googleMapURL={mapUrl}
           rides={this.props.rides}

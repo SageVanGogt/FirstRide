@@ -57,9 +57,8 @@ export class RidePopoverComponent extends Component {
           <Button
             style={{
               backgroundColor: rideMarker.isShowing ? '#CDCBC4' : 'white'
-            }}
-            >
-          {ride.time}
+            }}>
+            {ride.time}
           </Button>
         </OverlayTrigger>
       )})

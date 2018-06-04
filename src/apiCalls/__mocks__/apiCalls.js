@@ -35,7 +35,7 @@ Promise.resolve({
 
 const submitNewPickup = jest.fn().mockImplementation(() => 
 Promise.resolve({
-  id: 1
+  pickup: {id: 1}
 }));
 
 const postRidesPassengers = jest.fn().mockImplementation(() => 

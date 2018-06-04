@@ -9,7 +9,9 @@ const pickupReducer = (state = [], action) => {
         }
         return location
       })]
-      return toggledState
+      return toggledState;
+    case 'ADD_NEW_PICKUP':
+      return [...state, action.pickup];
     default:
       return state;
   }

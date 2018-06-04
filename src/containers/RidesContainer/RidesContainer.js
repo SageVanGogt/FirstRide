@@ -74,7 +74,7 @@ export class RidesContainer extends Component {
     return (
       `${street},+${city},+${state}`
     );
-  }
+  };
   
   submitRideSignup = async (rideId) => {
     if (!this.props.user.id) {
@@ -88,7 +88,7 @@ export class RidesContainer extends Component {
     }
     await API.postRidesPassengers(ridePassenger);
     this.loadRides();
-  }
+  };
 
   rideListElement = () =>{ 
     return (
@@ -96,7 +96,8 @@ export class RidesContainer extends Component {
         rides={this.props.rides} 
         submitRideSignup={this.submitRideSignup}
         handleRemovePassengerRide={this.handleRemovePassengerRide}/> 
-    )}
+    );
+  };
 
   handleShowOffer = () => {
     if (!this.props.user.id) {
@@ -106,13 +107,13 @@ export class RidesContainer extends Component {
     this.setState({
       showOffer: !this.state.showOffer
     });
-  }
+  };
 
   handleRemovePassengerRide = async (rideId) => {
     const { user, destination } = this.props;
     await API.removePassengerRide(rideId, user.id, destination.id);
     this.loadRides();
-  }
+  };
   
   render() {
     return (
