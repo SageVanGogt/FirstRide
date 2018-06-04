@@ -11,8 +11,10 @@ describe('OfferContainer', () => {
   let mockDestination;
   let mockUser;
   let mockLoadRides;
+  let mockSetNewPickup;
 
   beforeEach(() => {
+    mockSetNewPickup = jest.fn();
     mockLoadRides = jest.fn();
     mockDestination = { id: 1 };
     mockUser = { id: 1 };
@@ -20,6 +22,7 @@ describe('OfferContainer', () => {
       user={mockUser}
       destination={mockDestination}
       loadRides={mockLoadRides}
+      setNewPickup={mockSetNewPickup}
     />);
   })
 
@@ -92,6 +95,13 @@ describe('OfferContainer', () => {
       await wrapper.instance().handleSubmitPickup(mockRideId);
 
       expect(API.submitNewPickup).toHaveBeenCalledWith(expected);
+    })
+
+    it('should call setNewPickup with the correct params', async () => {
+      let expected = {id: 1};
+      await wrapper.instance().handleSubmitPickup(mockRideId);
+      
+      expect(mockSetNewPickup).toHaveBeenCalledWith(expected);
     })
   })
 

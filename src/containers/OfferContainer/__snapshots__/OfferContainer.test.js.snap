@@ -11,6 +11,7 @@ ShallowWrapper {
           }
     }
     loadRides={[Function]}
+    setNewPickup={[Function]}
     user={
         Object {
             "id": 1,

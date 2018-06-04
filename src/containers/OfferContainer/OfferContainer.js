@@ -65,6 +65,7 @@ export class OfferContainer extends Component {
       isShowing: false
     };
     const newPickup = await API.submitNewPickup(pickupInfo);
+    this.props.setNewPickup(newPickup.pickup);
   }
 
   getGeoInfo = async () => {
