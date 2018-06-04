@@ -42,7 +42,6 @@ export class MapContainer extends Component {
 };
 
 export const mapStateToProps = (state) => ({
-  destination: state.destination,
   pickupLocations: state.pickupLocations,
   currentLocation: state.currentLocation,
   rides: state.rides
