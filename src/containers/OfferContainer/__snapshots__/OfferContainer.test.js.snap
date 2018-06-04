@@ -10,6 +10,7 @@ ShallowWrapper {
             "id": 1,
           }
     }
+    handleShowOffer={[Function]}
     loadRides={[Function]}
     setNewPickup={[Function]}
     user={
@@ -42,7 +43,7 @@ ShallowWrapper {
         </legend>
         <button
                 className="offer-back-btn"
-                onClick={undefined}
+                onClick={[Function]}
         >
                 exit
         </button>
@@ -129,7 +130,7 @@ ShallowWrapper {
 </legend>,
           <button
             className="offer-back-btn"
-            onClick={undefined}
+            onClick={[Function]}
 >
             exit
 </button>,
@@ -223,7 +224,7 @@ ShallowWrapper {
           "props": Object {
             "children": "exit",
             "className": "offer-back-btn",
-            "onClick": undefined,
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": "exit",
@@ -517,7 +518,7 @@ ShallowWrapper {
           </legend>
           <button
                     className="offer-back-btn"
-                    onClick={undefined}
+                    onClick={[Function]}
           >
                     exit
           </button>
@@ -604,7 +605,7 @@ ShallowWrapper {
 </legend>,
             <button
               className="offer-back-btn"
-              onClick={undefined}
+              onClick={[Function]}
 >
               exit
 </button>,
@@ -698,7 +699,7 @@ ShallowWrapper {
             "props": Object {
               "children": "exit",
               "className": "offer-back-btn",
-              "onClick": undefined,
+              "onClick": [Function],
             },
             "ref": null,
             "rendered": "exit",
