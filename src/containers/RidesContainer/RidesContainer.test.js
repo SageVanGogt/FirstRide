@@ -102,6 +102,8 @@ describe('RidesContainer', () => {
 
       expect(cleaner.geocodeCleaner).toHaveBeenCalledWith(expected);
     });
+
+    it('should throw an error if ')
   });
 
   describe('formatAddress', () => {

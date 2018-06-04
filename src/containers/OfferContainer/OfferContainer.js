@@ -20,15 +20,15 @@ export class OfferContainer extends Component {
       street: '',
       city: '',
       state: ''
-    }
-  }
+    };
+  };
 
   handleChange = (event) => {
     const { name, value } = event.target;
     this.setState({
       [name]: value
     });
-  }
+  };
 
   handleSubmitRide = async (event) => {
     event.preventDefault();
@@ -53,7 +53,7 @@ export class OfferContainer extends Component {
     const rideId = response.id;
     await this.handleSubmitPickup(rideId);
     await this.props.loadRides();
-  }
+  };
 
   handleSubmitPickup = async (rideId) => {
     const geoLocation = await this.getGeoInfo();
@@ -67,14 +67,14 @@ export class OfferContainer extends Component {
     const newPickup = await API.submitNewPickup(pickupInfo);
     this.props.setNewPickup(newPickup.pickup);
     this.props.handleShowOffer(); 
-  }
+  };
 
   getGeoInfo = async () => {
     const formattedAddress = this.formatAddress();
     const response = await API.fetchGeocode(formattedAddress);
     const geoLocation = await cleaner.geocodeCleaner(response);
     return geoLocation;
-  }
+  };
 
   formatAddress = () => {
     const street = this.state.street.replace(' ', '+');
@@ -83,7 +83,7 @@ export class OfferContainer extends Component {
     return (
       `${street},+${city},+${state}`
     );
-  }
+  };
 
   render() {
     return (
@@ -161,10 +161,10 @@ export class OfferContainer extends Component {
 export const mapStateToProps = (state) => ({
   destination: state.destination,
   user: state.user
-})
+});
 
 export const mapDispatchToProps = (dispatch) => ({
   setNewPickup: (pickup) => dispatch(actions.addSinglePickup(pickup))
-})
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(OfferContainer)

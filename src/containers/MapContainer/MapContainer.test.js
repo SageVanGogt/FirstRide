@@ -20,7 +20,11 @@ describe('MapContainer', () => {
       destination={mockDestination}
       toggleShowing={mockToggleShowing}
     />);
-  })
+  });
+
+  it('should match the snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
 
   describe('toggleShowing', () => {
     it('should call toggleShowing with the correct params', () => {
