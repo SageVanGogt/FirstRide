@@ -155,4 +155,19 @@ describe('OfferContainer', () => {
       expect(actual).toEqual(expected);
     })
   })
+
+  describe('mapDispatchToProps', () => {
+    it('should call dispatch for setNewPickup with the correct params', () => {
+      let mockPickup = {};
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let expected = {
+        type: "ADD_NEW_PICKUP",
+        pickup: mockPickup
+      }
+      mappedProps.setNewPickup(mockPickup);
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected);
+    })
+  })
 })

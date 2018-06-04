@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import * as API from './../../apiCalls/apiCalls';
 import * as cleaner from './../../cleaners/cleaners';
+import * as actions from './../../actions/pickups';
 import './OfferContainer.css';
 
 export class OfferContainer extends Component {
@@ -161,7 +162,7 @@ export const mapStateToProps = (state) => ({
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-
+  setNewPickup: (pickup) => dispatch(actions.addSinglePickup(pickup))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(OfferContainer)
