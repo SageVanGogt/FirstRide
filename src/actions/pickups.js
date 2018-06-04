@@ -18,3 +18,9 @@ export const addSinglePickup = (pickup) => {
     pickup
   });
 };
+
+export const removePickups = () => {
+  return ({
+    type: "REMOVE_PICKUPS"
+  });
+};
