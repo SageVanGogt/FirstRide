@@ -6,6 +6,8 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <NavContainer
     logoutUser={[Function]}
+    removeCurrentLocation={[Function]}
+    removeDestination={[Function]}
     removeUserRides={[Function]}
     rides={
         Array [
@@ -45,7 +47,7 @@ ShallowWrapper {
                     activeClassName="active"
                     ariaCurrent="true"
                     className="nav-link"
-                    onClick={undefined}
+                    onClick={[Function]}
                     to="/"
           >
                     Home
@@ -98,7 +100,7 @@ ShallowWrapper {
               activeClassName="active"
               ariaCurrent="true"
               className="nav-link"
-              onClick={undefined}
+              onClick={[Function]}
               to="/"
 >
               Home
@@ -137,7 +139,7 @@ ShallowWrapper {
               "ariaCurrent": "true",
               "children": "Home",
               "className": "nav-link",
-              "onClick": undefined,
+              "onClick": [Function],
               "to": "/",
             },
             "ref": null,
@@ -210,7 +212,7 @@ ShallowWrapper {
                         activeClassName="active"
                         ariaCurrent="true"
                         className="nav-link"
-                        onClick={undefined}
+                        onClick={[Function]}
                         to="/"
             >
                         Home
@@ -263,7 +265,7 @@ ShallowWrapper {
                 activeClassName="active"
                 ariaCurrent="true"
                 className="nav-link"
-                onClick={undefined}
+                onClick={[Function]}
                 to="/"
 >
                 Home
@@ -302,7 +304,7 @@ ShallowWrapper {
                 "ariaCurrent": "true",
                 "children": "Home",
                 "className": "nav-link",
-                "onClick": undefined,
+                "onClick": [Function],
                 "to": "/",
               },
               "ref": null,

@@ -19,6 +19,11 @@ export class NavContainer extends Component {
     this.props.removeUserRides();
   };
 
+  handleReturnHome = () => {
+    this.props.removeCurrentLocation();
+    this.props.removeDestination();
+  }
+
   render() {
     return (
       <div className="nav-bar">
@@ -27,7 +32,7 @@ export class NavContainer extends Component {
           <NavLink 
             className="nav-link" 
             to="/"
-            onClick={this.props.removeCurrentLocation}>
+            onClick={this.handleReturnHome}>
             Home
           </NavLink>
           { 
@@ -72,6 +77,7 @@ NavContainer.propTypes = {
   logoutUser: PropTypes.func,
   removeUserRides: PropTypes.func,
   removeCurrentLocation: PropTypes.func,
+  removeDestination: PropTypes.func,
   user: PropTypes.object
 };
 

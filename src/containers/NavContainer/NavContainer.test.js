@@ -8,9 +8,13 @@ describe('NavContainer', () => {
   let mockLogoutUser;
   let mockToggleLogin;
   let mockRemoveUserRides;
+  let mockRemoveDestination;
+  let mockRemoveCurrentLocation;
 
   beforeEach(() => {
+    mockRemoveCurrentLocation = jest.fn();
     mockRemoveUserRides = jest.fn();
+    mockRemoveDestination = jest.fn();
     mockToggleLogin = jest.fn();
     mockLogoutUser = jest.fn();
     mockState = {
@@ -22,6 +26,8 @@ describe('NavContainer', () => {
       toggleLogin={mockToggleLogin}
       logoutUser={mockLogoutUser}
       removeUserRides={mockRemoveUserRides}
+      removeDestination={mockRemoveDestination}
+      removeCurrentLocation={mockRemoveCurrentLocation}
     />);
   })
 
@@ -46,6 +52,20 @@ describe('NavContainer', () => {
       wrapper.instance().handleSignout();
       
       expect(mockToggleLogin).toHaveBeenCalled();
+    })
+  })
+
+  describe('handleReturnHome', () => {
+    it('should call removeCurrentLocation', () => {
+      wrapper.instance().handleReturnHome();
+
+      expect(mockRemoveCurrentLocation).toHaveBeenCalled();
+    })
+
+    it('should call removeDestination', () => {
+      wrapper.instance().handleReturnHome();
+      
+      expect(mockRemoveDestination).toHaveBeenCalled();
     })
   })
 
