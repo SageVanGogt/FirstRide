@@ -93,5 +93,16 @@ describe('NavContainer', () => {
 
       expect(mockDispatch).toHaveBeenCalledWith(expected);
     });
+
+    it('should call dispatch with the correct params for removeDestination', () => {
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let expected = {
+        type: 'REMOVE_DESTINATION'
+      };
+      mappedProps.removeDestination();
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected);
+    });
   });
 });

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import * as actions from './../../actions/user';
+import { removeDestination } from './../../actions/destination';
 import { removeCurrentLocation } from './../../actions/currentLocation';
 import { removeUserRides } from './../../actions/userRides';
 import './NavContainer.css';
@@ -61,7 +62,8 @@ export const mapStateToProps = (state) => ({
 export const mapDispatchToProps = (dispatch) => ({
   logoutUser: () => dispatch(actions.signoutUser()),
   removeUserRides: () => dispatch(removeUserRides()),
-  removeCurrentLocation: () => dispatch(removeCurrentLocation())
+  removeCurrentLocation: () => dispatch(removeCurrentLocation()),
+  removeDestination: () => dispatch(removeDestination())
 });
 
 NavContainer.propTypes = {
