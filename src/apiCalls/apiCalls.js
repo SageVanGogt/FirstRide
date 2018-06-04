@@ -63,9 +63,13 @@ const fetchPickups = async (location) => {
 
 const fetchGeocode = async (address) => {
   const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${geoKey}`;  
-  const response = await fetch(url);
-  const locationData = await response.json();
-  return locationData
+  try {
+    const response = await fetch(url);
+    const locationData = await response.json();
+    return locationData;
+  } catch (error) {
+    throw error;
+  }
 } 
 
 const submitNewRide = async (ride) => {

@@ -5,6 +5,12 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <RidePopoverComponent
+    pickupLocations={
+        Array [
+            Object {},
+            Object {},
+          ]
+    }
     rides={
         Array [
             Object {},
@@ -43,6 +49,10 @@ ShallowWrapper {
                               "context": Object {},
                               "findExistingRide": [Function],
                               "props": Object {
+                                "pickupLocations": Array [
+                                  Object {},
+                                  Object {},
+                                ],
                                 "rides": Array [
                                   Object {},
                                   Object {},
@@ -64,6 +74,12 @@ ShallowWrapper {
                                 "_renderer": ReactShallowRenderer {
                                   "_context": Object {},
                                   "_element": <RidePopoverComponent
+                                    pickupLocations={
+                                                    Array [
+                                                                    Object {},
+                                                                    Object {},
+                                                                  ]
+                                    }
                                     rides={
                                                     Array [
                                                                     Object {},
@@ -132,6 +148,11 @@ ShallowWrapper {
                                                                     bsClass="btn"
                                                                     bsStyle="default"
                                                                     disabled={false}
+                                                                    style={
+                                                                                    Object {
+                                                                                                    "backgroundColor": "white",
+                                                                                                  }
+                                                                    }
                                                     />
                                     </OverlayTrigger>
                                     <OverlayTrigger
@@ -177,6 +198,11 @@ ShallowWrapper {
                                                                     bsClass="btn"
                                                                     bsStyle="default"
                                                                     disabled={false}
+                                                                    style={
+                                                                                    Object {
+                                                                                                    "backgroundColor": "white",
+                                                                                                  }
+                                                                    }
                                                     />
                                     </OverlayTrigger>
                     </ButtonToolbar>,
@@ -227,6 +253,11 @@ ShallowWrapper {
                     bsClass="btn"
                     bsStyle="default"
                     disabled={false}
+                    style={
+                              Object {
+                                        "backgroundColor": "white",
+                                      }
+                    }
           />
 </OverlayTrigger>,
         <OverlayTrigger
@@ -235,6 +266,10 @@ ShallowWrapper {
                               "context": Object {},
                               "findExistingRide": [Function],
                               "props": Object {
+                                "pickupLocations": Array [
+                                  Object {},
+                                  Object {},
+                                ],
                                 "rides": Array [
                                   Object {},
                                   Object {},
@@ -256,6 +291,12 @@ ShallowWrapper {
                                 "_renderer": ReactShallowRenderer {
                                   "_context": Object {},
                                   "_element": <RidePopoverComponent
+                                    pickupLocations={
+                                                    Array [
+                                                                    Object {},
+                                                                    Object {},
+                                                                  ]
+                                    }
                                     rides={
                                                     Array [
                                                                     Object {},
@@ -324,6 +365,11 @@ ShallowWrapper {
                                                                     bsClass="btn"
                                                                     bsStyle="default"
                                                                     disabled={false}
+                                                                    style={
+                                                                                    Object {
+                                                                                                    "backgroundColor": "white",
+                                                                                                  }
+                                                                    }
                                                     />
                                     </OverlayTrigger>
                                     <OverlayTrigger
@@ -369,6 +415,11 @@ ShallowWrapper {
                                                                     bsClass="btn"
                                                                     bsStyle="default"
                                                                     disabled={false}
+                                                                    style={
+                                                                                    Object {
+                                                                                                    "backgroundColor": "white",
+                                                                                                  }
+                                                                    }
                                                     />
                                     </OverlayTrigger>
                     </ButtonToolbar>,
@@ -419,6 +470,11 @@ ShallowWrapper {
                     bsClass="btn"
                     bsStyle="default"
                     disabled={false}
+                    style={
+                              Object {
+                                        "backgroundColor": "white",
+                                      }
+                    }
           />
 </OverlayTrigger>,
       ],
@@ -437,11 +493,20 @@ ShallowWrapper {
             bsClass="btn"
             bsStyle="default"
             disabled={false}
+            style={
+                        Object {
+                                    "backgroundColor": "white",
+                                  }
+            }
 />,
           "container": RidePopoverComponent {
             "context": Object {},
             "findExistingRide": [Function],
             "props": Object {
+              "pickupLocations": Array [
+                Object {},
+                Object {},
+              ],
               "rides": Array [
                 Object {},
                 Object {},
@@ -463,6 +528,12 @@ ShallowWrapper {
               "_renderer": ReactShallowRenderer {
                 "_context": Object {},
                 "_element": <RidePopoverComponent
+                  pickupLocations={
+                                    Array [
+                                                      Object {},
+                                                      Object {},
+                                                    ]
+                  }
                   rides={
                                     Array [
                                                       Object {},
@@ -531,6 +602,11 @@ ShallowWrapper {
                                                       bsClass="btn"
                                                       bsStyle="default"
                                                       disabled={false}
+                                                      style={
+                                                                        Object {
+                                                                                          "backgroundColor": "white",
+                                                                                        }
+                                                      }
                                     />
                   </OverlayTrigger>
                   <OverlayTrigger
@@ -576,6 +652,11 @@ ShallowWrapper {
                                                       bsClass="btn"
                                                       bsStyle="default"
                                                       disabled={false}
+                                                      style={
+                                                                        Object {
+                                                                                          "backgroundColor": "white",
+                                                                                        }
+                                                      }
                                     />
                   </OverlayTrigger>
 </ButtonToolbar>,
@@ -629,6 +710,9 @@ ShallowWrapper {
             "bsStyle": "default",
             "children": undefined,
             "disabled": false,
+            "style": Object {
+              "backgroundColor": "white",
+            },
           },
           "ref": null,
           "rendered": null,
@@ -647,11 +731,20 @@ ShallowWrapper {
             bsClass="btn"
             bsStyle="default"
             disabled={false}
+            style={
+                        Object {
+                                    "backgroundColor": "white",
+                                  }
+            }
 />,
           "container": RidePopoverComponent {
             "context": Object {},
             "findExistingRide": [Function],
             "props": Object {
+              "pickupLocations": Array [
+                Object {},
+                Object {},
+              ],
               "rides": Array [
                 Object {},
                 Object {},
@@ -673,6 +766,12 @@ ShallowWrapper {
               "_renderer": ReactShallowRenderer {
                 "_context": Object {},
                 "_element": <RidePopoverComponent
+                  pickupLocations={
+                                    Array [
+                                                      Object {},
+                                                      Object {},
+                                                    ]
+                  }
                   rides={
                                     Array [
                                                       Object {},
@@ -741,6 +840,11 @@ ShallowWrapper {
                                                       bsClass="btn"
                                                       bsStyle="default"
                                                       disabled={false}
+                                                      style={
+                                                                        Object {
+                                                                                          "backgroundColor": "white",
+                                                                                        }
+                                                      }
                                     />
                   </OverlayTrigger>
                   <OverlayTrigger
@@ -786,6 +890,11 @@ ShallowWrapper {
                                                       bsClass="btn"
                                                       bsStyle="default"
                                                       disabled={false}
+                                                      style={
+                                                                        Object {
+                                                                                          "backgroundColor": "white",
+                                                                                        }
+                                                      }
                                     />
                   </OverlayTrigger>
 </ButtonToolbar>,
@@ -839,6 +948,9 @@ ShallowWrapper {
             "bsStyle": "default",
             "children": undefined,
             "disabled": false,
+            "style": Object {
+              "backgroundColor": "white",
+            },
           },
           "ref": null,
           "rendered": null,
@@ -863,6 +975,10 @@ ShallowWrapper {
                                     "context": Object {},
                                     "findExistingRide": [Function],
                                     "props": Object {
+                                      "pickupLocations": Array [
+                                        Object {},
+                                        Object {},
+                                      ],
                                       "rides": Array [
                                         Object {},
                                         Object {},
@@ -884,6 +1000,12 @@ ShallowWrapper {
                                       "_renderer": ReactShallowRenderer {
                                         "_context": Object {},
                                         "_element": <RidePopoverComponent
+                                          pickupLocations={
+                                                            Array [
+                                                                              Object {},
+                                                                              Object {},
+                                                                            ]
+                                          }
                                           rides={
                                                             Array [
                                                                               Object {},
@@ -952,6 +1074,11 @@ ShallowWrapper {
                                                                               bsClass="btn"
                                                                               bsStyle="default"
                                                                               disabled={false}
+                                                                              style={
+                                                                                                Object {
+                                                                                                                  "backgroundColor": "white",
+                                                                                                                }
+                                                                              }
                                                             />
                                           </OverlayTrigger>
                                           <OverlayTrigger
@@ -997,6 +1124,11 @@ ShallowWrapper {
                                                                               bsClass="btn"
                                                                               bsStyle="default"
                                                                               disabled={false}
+                                                                              style={
+                                                                                                Object {
+                                                                                                                  "backgroundColor": "white",
+                                                                                                                }
+                                                                              }
                                                             />
                                           </OverlayTrigger>
                         </ButtonToolbar>,
@@ -1047,6 +1179,11 @@ ShallowWrapper {
                         bsClass="btn"
                         bsStyle="default"
                         disabled={false}
+                        style={
+                                    Object {
+                                                "backgroundColor": "white",
+                                              }
+                        }
             />
 </OverlayTrigger>,
           <OverlayTrigger
@@ -1055,6 +1192,10 @@ ShallowWrapper {
                                     "context": Object {},
                                     "findExistingRide": [Function],
                                     "props": Object {
+                                      "pickupLocations": Array [
+                                        Object {},
+                                        Object {},
+                                      ],
                                       "rides": Array [
                                         Object {},
                                         Object {},
@@ -1076,6 +1217,12 @@ ShallowWrapper {
                                       "_renderer": ReactShallowRenderer {
                                         "_context": Object {},
                                         "_element": <RidePopoverComponent
+                                          pickupLocations={
+                                                            Array [
+                                                                              Object {},
+                                                                              Object {},
+                                                                            ]
+                                          }
                                           rides={
                                                             Array [
                                                                               Object {},
@@ -1144,6 +1291,11 @@ ShallowWrapper {
                                                                               bsClass="btn"
                                                                               bsStyle="default"
                                                                               disabled={false}
+                                                                              style={
+                                                                                                Object {
+                                                                                                                  "backgroundColor": "white",
+                                                                                                                }
+                                                                              }
                                                             />
                                           </OverlayTrigger>
                                           <OverlayTrigger
@@ -1189,6 +1341,11 @@ ShallowWrapper {
                                                                               bsClass="btn"
                                                                               bsStyle="default"
                                                                               disabled={false}
+                                                                              style={
+                                                                                                Object {
+                                                                                                                  "backgroundColor": "white",
+                                                                                                                }
+                                                                              }
                                                             />
                                           </OverlayTrigger>
                         </ButtonToolbar>,
@@ -1239,6 +1396,11 @@ ShallowWrapper {
                         bsClass="btn"
                         bsStyle="default"
                         disabled={false}
+                        style={
+                                    Object {
+                                                "backgroundColor": "white",
+                                              }
+                        }
             />
 </OverlayTrigger>,
         ],
@@ -1257,11 +1419,20 @@ ShallowWrapper {
               bsClass="btn"
               bsStyle="default"
               disabled={false}
+              style={
+                            Object {
+                                          "backgroundColor": "white",
+                                        }
+              }
 />,
             "container": RidePopoverComponent {
               "context": Object {},
               "findExistingRide": [Function],
               "props": Object {
+                "pickupLocations": Array [
+                  Object {},
+                  Object {},
+                ],
                 "rides": Array [
                   Object {},
                   Object {},
@@ -1283,6 +1454,12 @@ ShallowWrapper {
                 "_renderer": ReactShallowRenderer {
                   "_context": Object {},
                   "_element": <RidePopoverComponent
+                    pickupLocations={
+                                        Array [
+                                                            Object {},
+                                                            Object {},
+                                                          ]
+                    }
                     rides={
                                         Array [
                                                             Object {},
@@ -1351,6 +1528,11 @@ ShallowWrapper {
                                                             bsClass="btn"
                                                             bsStyle="default"
                                                             disabled={false}
+                                                            style={
+                                                                                Object {
+                                                                                                    "backgroundColor": "white",
+                                                                                                  }
+                                                            }
                                         />
                     </OverlayTrigger>
                     <OverlayTrigger
@@ -1396,6 +1578,11 @@ ShallowWrapper {
                                                             bsClass="btn"
                                                             bsStyle="default"
                                                             disabled={false}
+                                                            style={
+                                                                                Object {
+                                                                                                    "backgroundColor": "white",
+                                                                                                  }
+                                                            }
                                         />
                     </OverlayTrigger>
 </ButtonToolbar>,
@@ -1449,6 +1636,9 @@ ShallowWrapper {
               "bsStyle": "default",
               "children": undefined,
               "disabled": false,
+              "style": Object {
+                "backgroundColor": "white",
+              },
             },
             "ref": null,
             "rendered": null,
@@ -1467,11 +1657,20 @@ ShallowWrapper {
               bsClass="btn"
               bsStyle="default"
               disabled={false}
+              style={
+                            Object {
+                                          "backgroundColor": "white",
+                                        }
+              }
 />,
             "container": RidePopoverComponent {
               "context": Object {},
               "findExistingRide": [Function],
               "props": Object {
+                "pickupLocations": Array [
+                  Object {},
+                  Object {},
+                ],
                 "rides": Array [
                   Object {},
                   Object {},
@@ -1493,6 +1692,12 @@ ShallowWrapper {
                 "_renderer": ReactShallowRenderer {
                   "_context": Object {},
                   "_element": <RidePopoverComponent
+                    pickupLocations={
+                                        Array [
+                                                            Object {},
+                                                            Object {},
+                                                          ]
+                    }
                     rides={
                                         Array [
                                                             Object {},
@@ -1561,6 +1766,11 @@ ShallowWrapper {
                                                             bsClass="btn"
                                                             bsStyle="default"
                                                             disabled={false}
+                                                            style={
+                                                                                Object {
+                                                                                                    "backgroundColor": "white",
+                                                                                                  }
+                                                            }
                                         />
                     </OverlayTrigger>
                     <OverlayTrigger
@@ -1606,6 +1816,11 @@ ShallowWrapper {
                                                             bsClass="btn"
                                                             bsStyle="default"
                                                             disabled={false}
+                                                            style={
+                                                                                Object {
+                                                                                                    "backgroundColor": "white",
+                                                                                                  }
+                                                            }
                                         />
                     </OverlayTrigger>
 </ButtonToolbar>,
@@ -1659,6 +1874,9 @@ ShallowWrapper {
               "bsStyle": "default",
               "children": undefined,
               "disabled": false,
+              "style": Object {
+                "backgroundColor": "white",
+              },
             },
             "ref": null,
             "rendered": null,

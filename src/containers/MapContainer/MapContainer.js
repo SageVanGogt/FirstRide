@@ -15,18 +15,6 @@ export class MapContainer extends Component {
     super(props);
   }
 
-  // componentDidUpdate = (prevProps) => {
-  //   if (prevProps.pickupLocations !== this.props.pickupLocations) {
-  //     this.loadPickups();
-  //   }
-  // };    
-
-  // loadPickups = async () => {
-  //   const { setPickups, destination } = this.props;
-  //   const response = await fetchPickups(destination.id);
-  //   setPickups(response.pickup);
-  // };
-
   toggleShowing = (pickup) => {
     this.props.toggleShowing(pickup);
   };
@@ -54,14 +42,12 @@ export class MapContainer extends Component {
 };
 
 export const mapStateToProps = (state) => ({
-  destination: state.destination,
   pickupLocations: state.pickupLocations,
   currentLocation: state.currentLocation,
   rides: state.rides
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  setPickups: (pickups) => dispatch(actions.addPickups(pickups)),
   toggleShowing: (pickup) => dispatch(actions.updatePickupShowing(pickup))
 });
 
