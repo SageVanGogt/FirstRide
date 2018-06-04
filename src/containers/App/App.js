@@ -66,7 +66,7 @@ export class App extends Component {
         {
           this.state.showUserRides &&
           <UserRidesContainer
-          toggleShowUserRides={this.toggleShowUserRides} />
+            toggleShowUserRides={this.toggleShowUserRides} />
         }
         {
           this.state.showLogin & !this.props.user.id && 
@@ -102,5 +102,13 @@ export const mapDispatchToProps = (dispatch) => ({
   removeError: () => dispatch(actions.removeError()),
   setError: (error) => dispatch(actions.addError(error))
 });
+
+App.propTypes = {
+  setError: PropTypes.func,
+  removeError: PropTypes.func,
+  destination: PropTypes.object,
+  rides: PropTypes.array,
+  user: PropTypes.object
+};
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App))

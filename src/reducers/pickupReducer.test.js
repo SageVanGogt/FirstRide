@@ -66,5 +66,16 @@ describe('pickupReducer', () => {
     let expected = initialState;
 
     expect(actual).toEqual(expected);
+  });
+
+  it('should return an empty array in REMOVE_PICKUPS case', () => {
+    let initialState = [{}, {}];
+    let mockAction = {
+      type: 'REMOVE_PICKUPS'
+    };
+    let actual = pickupReducer(initialState, mockAction);
+    let expected = [];
+
+    expect(actual).toEqual(expected);
   })
-})
+});

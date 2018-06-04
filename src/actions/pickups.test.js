@@ -39,5 +39,16 @@ describe('ADD_NEW_PICKUP', () => {
     let actual = actions.addSinglePickup(mockPickup);
     
     expect(actual).toEqual(expected);
-  })
-})
+  });
+});
+
+describe('removePickups', () => {
+  it('should return an object with type REMOVE_PICKUPS', () => {
+    let expected = {
+      type: "REMOVE_PICKUPS"
+    };
+    let actual = actions.removePickups();
+
+    expect(actual).toEqual(expected);
+  });
+});

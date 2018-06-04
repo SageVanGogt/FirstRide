@@ -4,11 +4,11 @@ import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { fetchDestination } from '../../apiCalls/apiCalls';
 import { setDestination } from './../../actions/destination';
-import './DestinationsContainer.css'
+import './DestinationsContainer.css';
 
 export class DestinationsContainer extends Component {
   constructor(props) {
-    super();
+    super(props);
   }
 
   handleSelectDestination = async (event) => {
@@ -18,7 +18,7 @@ export class DestinationsContainer extends Component {
       const finalDestination = response.locations[0];
       this.props.setDestination(finalDestination);
     } catch (err) {
-      return err
+      return err;
     }
   }
 
@@ -51,12 +51,12 @@ export class DestinationsContainer extends Component {
   }
 }
 
-export const mapStateToProps = (state) => ({
-
-})
-
 export const mapDispatchToProps = (dispatch) => ({
   setDestination: (data) => dispatch(setDestination(data))
-})
+});
 
-export default connect(mapStateToProps, mapDispatchToProps)(DestinationsContainer);
+DestinationsContainer.propTypes = {
+  setDestination: PropTypes.func
+};
+
+export default connect(null, mapDispatchToProps)(DestinationsContainer);

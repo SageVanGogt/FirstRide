@@ -13,7 +13,18 @@ describe('ridesReducer', () => {
     let actual = ridesReducer(initialState, mockAction);
 
     expect(actual).toEqual(expected);
-  })
+  });
+
+  it('should return the state of empty array in REMOVE_RIDES case', () => {
+    let initialState = [{}, {}];
+    let mockAction = {
+      type: 'REMOVE_RIDES'
+    };
+    let actual = ridesReducer(initialState, mockAction);
+    let expected = [];
+
+    expect(actual).toEqual(expected);
+  });
 
   it('should return the state in default case', () => {
     let initialState = [{}, {}];
@@ -24,5 +35,5 @@ describe('ridesReducer', () => {
     let expected = initialState;
 
     expect(actual).toEqual(expected);
-  })
-})
+  });
+});

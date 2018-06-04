@@ -48,7 +48,7 @@ export class RidesContainer extends Component {
   };
 
   cleanAndSetRides = (rides, ridesAccountedFor) => {
-    const cleanUpdatedRides = cleaner.seatsRemainingUpdate(rides, ridesAccountedFor); 
+    const cleanUpdatedRides = cleaner.seatsRemainingUpdate(rides, ridesAccountedFor);
     this.props.setRides(cleanUpdatedRides);
   }
 
@@ -70,8 +70,8 @@ export class RidesContainer extends Component {
       }
       const cleanLocation = cleaner.geocodeCleaner(locationInfo);
       this.props.setLocation(cleanLocation);
-    } catch(error) {
-      throw error;
+    } catch (error) {
+      throw Error(error.message);
     }
   };
 
@@ -83,7 +83,7 @@ export class RidesContainer extends Component {
       `${street},+${city},+${state}`
     );
   };
-  
+
   submitRideSignup = async (rideId) => {
     if (!this.props.user.id) {
       this.props.setError('Please login before you do that');
@@ -93,17 +93,17 @@ export class RidesContainer extends Component {
       ride_id: rideId,
       passenger_id: this.props.user.id,
       location_id: this.props.destination.id
-    }
+    };
     await API.postRidesPassengers(ridePassenger);
     this.loadRides();
   };
 
-  rideListElement = () =>{ 
+  rideListElement = () => {
     return (
-      <RidePopoverComponent 
-        rides={this.props.rides} 
+      <RidePopoverComponent
+        rides={this.props.rides}
         submitRideSignup={this.submitRideSignup}
-        handleRemovePassengerRide={this.handleRemovePassengerRide}/> 
+        handleRemovePassengerRide={this.handleRemovePassengerRide} />
     );
   };
 
@@ -122,7 +122,7 @@ export class RidesContainer extends Component {
     await API.removePassengerRide(rideId, user.id, destination.id);
     this.loadRides();
   };
-  
+
   render() {
     return (
       <div className="ride-page">
@@ -130,41 +130,44 @@ export class RidesContainer extends Component {
         <section className="rides-container">
           <article
             className="form-article">
-            <form 
-              action="submit" 
+            <form
+              action="submit"
               onSubmit={this.handleSubmit}
               className="current-location-form">
-              <input 
-                type="text" 
-                name="street" 
-                onChange={this.handleChange} 
+              <input
+                type="text"
+                name="street"
+                onChange={this.handleChange}
                 placeholder="street"
-                className="street-input"/>
-              <input 
-                type="text" 
-                name="city" 
-                onChange={this.handleChange} 
+                className="street-input" />
+              <input
+                type="text"
+                name="city"
+                onChange={this.handleChange}
                 placeholder="city"
-                className="city-input"/>
-              <input 
-                type="text" 
-                name="state" 
-                onChange={this.handleChange} 
+                className="city-input" />
+              <input
+                type="text"
+                name="state"
+                onChange={this.handleChange}
                 placeholder="state"
-                className="state-input"/>
-              <input 
+                className="state-input" />
+              <input
                 type="submit"
                 className="address-sbmt-btn"
-                value="Submit your current address here"/>
+                value="Submit your current address here" />
             </form>
           </article>
           <article className="ride-list">
             {this.props.rides.length >= 1 && this.rideListElement()}
           </article>
         </section>
-       {this.state.showOffer && <OfferContainer 
-          handleShowOffer={this.handleShowOffer}
-          loadRides={this.loadRides}/>} 
+        {
+          this.state.showOffer &&
+          <OfferContainer
+            handleShowOffer={this.handleShowOffer}
+            loadRides={this.loadRides} />
+        }
         <MapContainer />
       </div>
     );
@@ -182,7 +185,18 @@ export const mapDispatchToProps = (dispatch) => ({
   setLocation: (location) => dispatch(addCurrentLocation(location)),
   setRidesAccounted: (ridesAccounted) => dispatch(addRidesAccounted(ridesAccounted)),
   setError: (error) => dispatch(addError(error)),
-  setPickups: (pickups) => dispatch(addPickups(pickups)),  
+  setPickups: (pickups) => dispatch(addPickups(pickups))
 });
+
+RidesContainer.propTypes = {
+  setRides: PropTypes.func,
+  setLocation: PropTypes.func,
+  ridessAccounted: PropTypes.func,
+  setError: PropTypes.func,
+  setPickups: PropTypes.func,
+  destination: PropTypes.object,
+  rides: PropTypes.array,
+  user: PropTypes.object
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(RidesContainer);

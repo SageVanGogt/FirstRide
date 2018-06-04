@@ -17,7 +17,20 @@ describe('currentLocationReducer', () => {
       lng: 4
     }
     let actual = currentLocationReducer(initialState, mockAction);
-  })
+
+    expect(actual).toEqual(expected);
+  });
+
+  it('should return an empty object in case REMOVE_CURR_LOCATION', () => {
+    let expected = {};
+    let mockAction = {
+      type: "REMOVE_CURR_LOCATION"
+    };
+    let initialState = {id: 1, name: 'scoop'};
+    let actual = currentLocationReducer(initialState, mockAction);
+
+    expect(actual).toEqual(expected);
+  });
 
   it('should return the state in default case', () => {
     let initialState = {lat: 1, lng: 2};
@@ -28,5 +41,5 @@ describe('currentLocationReducer', () => {
     let expected = initialState;
 
     expect(actual).toEqual(expected);
-  })
-})
+  });
+});
