@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import * as actions from './../../actions/user';
+import { removeCurrentLocation } from './../../actions/currentLocation';
 import { removeUserRides } from './../../actions/userRides';
 import './NavContainer.css';
 
@@ -25,7 +26,7 @@ export class NavContainer extends Component {
           <NavLink 
             className="nav-link" 
             to="/"
-            onClick={}>Home</NavLink>
+            onClick={this.props.removeCurrentLocation}>Home</NavLink>
           { 
             this.props.user.id ? 
               <button 
@@ -57,7 +58,8 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => ({
   logoutUser: () => dispatch(actions.signoutUser()),
-  removeUserRides: () => dispatch(removeUserRides())
+  removeUserRides: () => dispatch(removeUserRides()),
+  removeCurrentLocation: () => dispatch(removeCurrentLocation())
 });
 
 NavContainer.propTypes = {
@@ -65,6 +67,7 @@ NavContainer.propTypes = {
   toggleShowUserRides: PropTypes.func,
   logoutUser: PropTypes.func,
   removeUserRides: PropTypes.func,
+  removeCurrentLocation: PropTypes.func,
   user: PropTypes.object
 };
 

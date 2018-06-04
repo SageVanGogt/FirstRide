@@ -14,7 +14,7 @@ describe('NavContainer', () => {
     mockToggleLogin = jest.fn();
     mockLogoutUser = jest.fn();
     mockState = {
-      user: 'sage',
+      user: {id: 1},
       rides: [{}, {}]
     };
     wrapper = shallow(<NavContainer 
@@ -51,7 +51,7 @@ describe('NavContainer', () => {
 
   describe('mapStateToProps', () => {
     it('should get the user from the store', () => {
-      let expected = 'sage';
+      let expected = {id: 1};
       let mappedProps = mapStateToProps(mockState);
       let actual = mappedProps.user;
       
@@ -81,6 +81,17 @@ describe('NavContainer', () => {
       mappedProps.removeUserRides();
 
       expect(mockDispatch).toHaveBeenCalledWith(expected);
-    })
-  })
-})
+    });
+
+    it('should call dispatch with the correct params for removeCurrentLocation', () => {
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let expected = {
+        type: 'REMOVE_CURR_LOCATION'
+      };
+      mappedProps.removeCurrentLocation();
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected);
+    });
+  });
+});

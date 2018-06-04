@@ -14,7 +14,11 @@ ShallowWrapper {
           ]
     }
     toggleLogin={[Function]}
-    user="sage"
+    user={
+        Object {
+            "id": 1,
+          }
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -41,6 +45,7 @@ ShallowWrapper {
                     activeClassName="active"
                     ariaCurrent="true"
                     className="nav-link"
+                    onClick={undefined}
                     to="/"
           >
                     Home
@@ -49,7 +54,7 @@ ShallowWrapper {
                     className="nav-btn"
                     onClick={[Function]}
           >
-                    Signin
+                    Signout
           </button>
           <button
                     className="nav-btn"
@@ -93,6 +98,7 @@ ShallowWrapper {
               activeClassName="active"
               ariaCurrent="true"
               className="nav-link"
+              onClick={undefined}
               to="/"
 >
               Home
@@ -101,7 +107,7 @@ ShallowWrapper {
               className="nav-btn"
               onClick={[Function]}
 >
-              Signin
+              Signout
 </button>,
             <button
               className="nav-btn"
@@ -131,6 +137,7 @@ ShallowWrapper {
               "ariaCurrent": "true",
               "children": "Home",
               "className": "nav-link",
+              "onClick": undefined,
               "to": "/",
             },
             "ref": null,
@@ -142,12 +149,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Signin",
+              "children": "Signout",
               "className": "nav-btn",
               "onClick": [Function],
             },
             "ref": null,
-            "rendered": "Signin",
+            "rendered": "Signout",
             "type": "button",
           },
           Object {
@@ -203,6 +210,7 @@ ShallowWrapper {
                         activeClassName="active"
                         ariaCurrent="true"
                         className="nav-link"
+                        onClick={undefined}
                         to="/"
             >
                         Home
@@ -211,7 +219,7 @@ ShallowWrapper {
                         className="nav-btn"
                         onClick={[Function]}
             >
-                        Signin
+                        Signout
             </button>
             <button
                         className="nav-btn"
@@ -255,6 +263,7 @@ ShallowWrapper {
                 activeClassName="active"
                 ariaCurrent="true"
                 className="nav-link"
+                onClick={undefined}
                 to="/"
 >
                 Home
@@ -263,7 +272,7 @@ ShallowWrapper {
                 className="nav-btn"
                 onClick={[Function]}
 >
-                Signin
+                Signout
 </button>,
               <button
                 className="nav-btn"
@@ -293,6 +302,7 @@ ShallowWrapper {
                 "ariaCurrent": "true",
                 "children": "Home",
                 "className": "nav-link",
+                "onClick": undefined,
                 "to": "/",
               },
               "ref": null,
@@ -304,12 +314,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Signin",
+                "children": "Signout",
                 "className": "nav-btn",
                 "onClick": [Function],
               },
               "ref": null,
-              "rendered": "Signin",
+              "rendered": "Signout",
               "type": "button",
             },
             Object {
