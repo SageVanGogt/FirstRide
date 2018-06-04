@@ -26,7 +26,9 @@ export class NavContainer extends Component {
           <NavLink 
             className="nav-link" 
             to="/"
-            onClick={this.props.removeCurrentLocation}>Home</NavLink>
+            onClick={this.props.removeCurrentLocation}>
+            Home
+          </NavLink>
           { 
             this.props.user.id ? 
               <button 
