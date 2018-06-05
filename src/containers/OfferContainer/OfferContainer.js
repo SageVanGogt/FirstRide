@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { NavLink } from 'react-router-dom';
 import * as API from './../../apiCalls/apiCalls';
 import * as cleaner from './../../cleaners/cleaners';
 import * as actions from './../../actions/pickups';
 import { addNewRide } from './../../actions/rides';
+import { addError } from './../../actions/error';
 import './OfferContainer.css';
 
 export class OfferContainer extends Component {
@@ -80,9 +80,13 @@ export class OfferContainer extends Component {
 
   getGeoInfo = async () => {
     const formattedAddress = this.formatAddress();
-    const response = await API.fetchGeocode(formattedAddress);
-    const geoLocation = await cleaner.geocodeCleaner(response);
-    return geoLocation;
+    try {
+      const response = await API.fetchGeocode(formattedAddress);
+      const geoLocation = await cleaner.geocodeCleaner(response);
+      return geoLocation;
+    } catch (error) {
+      throw error;
+    }
   };
 
   formatAddress = () => {
@@ -180,13 +184,15 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => ({
   setNewPickup: (pickup) => dispatch(actions.addSinglePickup(pickup)),
-  setNewRide: (ride) => dispatch(addNewRide(ride))
+  setNewRide: (ride) => dispatch(addNewRide(ride)),
+  setError: (error) => dispatch(addError(error))
 });
 
 OfferContainer.propTypes = {
   setNewPickup: PropTypes.func,
   ridesAccounted: PropTypes.func,
   handleShowOffer: PropTypes.func,
+  setError: PropTypes.func,
   setNewRide: PropTypes.func,
   destination: PropTypes.object,
   user: PropTypes.object
