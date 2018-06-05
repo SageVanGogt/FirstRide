@@ -152,7 +152,9 @@ const removePassengerRide = async (rideId, passengerId, destinationId) => {
       "Content-Type": "application/json"
     }
   };
-  await fetch(url, body);
+  const response = await fetch(url, body);
+  const deletedId = await response.json();
+  return deletedId;
 };
 
 const fetchUserRides = async (userId) => {

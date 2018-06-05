@@ -17,14 +17,14 @@ describe('ridesAccountedReducer', () => {
 
   it('should return an updated state with one less ride if requirements are met', () => {
     let initialState = [
-      {ride_id: 1, passenger_id: 1}, 
-      {ride_id: 1, passenger_id: 2}
+      {id: 1}, 
+      {id: 2}
     ];
     let mockAction = {
       type: 'REMOVE_RIDE_ACCOUNTED',
-      ride: {ride_id: 1, passenger_id: 1}
+      ride: 1
     };
-    let expected = [{ride_id: 1, passenger_id: 2}];
+    let expected = [{id: 2}];
     let actual = ridesAccountedReducer(initialState, mockAction);
     
     expect(actual).toEqual(expected);

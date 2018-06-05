@@ -6,7 +6,7 @@ import MapContainer from './../MapContainer/MapContainer';
 import * as API from './../../apiCalls/apiCalls';
 import { addRides } from './../../actions/rides';
 import { addCurrentLocation } from './../../actions/currentLocation';
-import { addRidesAccounted } from './../../actions/rideAccounted';
+import { addRidesAccounted, removeRideAccounted } from './../../actions/rideAccounted';
 import { addError } from './../../actions/error';
 import { addPickups } from './../../actions/pickups';
 import * as cleaner from './../../cleaners/cleaners';
@@ -88,7 +88,7 @@ export class RidesContainer extends Component {
     if (!this.props.user.id) {
       this.props.setError('Please login before you do that');
       return;
-    };
+    }
     const ridePassenger = {
       ride_id: rideId,
       passenger_id: this.props.user.id,
@@ -111,15 +111,16 @@ export class RidesContainer extends Component {
     if (!this.props.user.id) {
       this.props.setError('Please login before you do that');
       return;
-    };
+    }
     this.setState({
       showOffer: !this.state.showOffer
     });
   };
 
   handleRemovePassengerRide = async (rideId) => {
-    const { user, destination } = this.props;
-    await API.removePassengerRide(rideId, user.id, destination.id);
+    const { user, destination, ridesAccounted } = this.props;
+    const response = await API.removePassengerRide(rideId, user.id, destination.id);
+    this.props.removeRideAccounted(response.id[0]);
     this.loadRides();
   };
 
@@ -181,7 +182,8 @@ export class RidesContainer extends Component {
 export const mapStateToProps = (state) => ({
   destination: state.destination,
   rides: state.rides,
-  user: state.user
+  user: state.user,
+  ridesAccounted: state.ridesAccounted
 });
 
 export const mapDispatchToProps = (dispatch) => ({
@@ -189,18 +191,21 @@ export const mapDispatchToProps = (dispatch) => ({
   setLocation: (location) => dispatch(addCurrentLocation(location)),
   setRidesAccounted: (ridesAccounted) => dispatch(addRidesAccounted(ridesAccounted)),
   setError: (error) => dispatch(addError(error)),
-  setPickups: (pickups) => dispatch(addPickups(pickups))
+  setPickups: (pickups) => dispatch(addPickups(pickups)),
+  removeRideAccounted: (ride) => dispatch(removeRideAccounted(ride))
 });
 
 RidesContainer.propTypes = {
   setRides: PropTypes.func,
   setLocation: PropTypes.func,
   setRidesAccounted: PropTypes.func,
+  removeRideAccounted: PropTypes.func,
   setError: PropTypes.func,
   setPickups: PropTypes.func,
   destination: PropTypes.object,
   rides: PropTypes.array,
-  user: PropTypes.object
+  user: PropTypes.object,
+  ridesAccounted: PropTypes.array
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(RidesContainer);
