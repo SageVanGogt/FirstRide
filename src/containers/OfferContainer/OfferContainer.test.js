@@ -14,9 +14,11 @@ describe('OfferContainer', () => {
   let mockLoadRides;
   let mockSetNewPickup;
   let mockHandleShowOffer;
+  let mockSetNewRide;
 
   beforeEach(() => {
     mockHandleShowOffer = jest.fn();
+    mockSetNewRide = jest.fn();
     mockSetNewPickup = jest.fn();
     mockLoadRides = jest.fn();
     mockDestination = { id: 1 };
@@ -27,6 +29,7 @@ describe('OfferContainer', () => {
       loadRides={mockLoadRides}
       setNewPickup={mockSetNewPickup}
       handleShowOffer={mockHandleShowOffer}
+      setNewRide={mockSetNewRide}
     />);
   })
 
@@ -51,6 +54,7 @@ describe('OfferContainer', () => {
   })
 
   describe('handleSubmitRide', () => {
+
     it('should call submitNewRide with correct params', async () => {
       let expected = {
         location_id: 1,
@@ -69,16 +73,26 @@ describe('OfferContainer', () => {
       expect(API.submitNewRide).toHaveBeenCalledWith(expected)
     })
 
-    it('should call loadRides on handle submit', async () => {
+    it('should call setNewPickup on handle submit', async () => {
       let mockEvent = {
         preventDefault: jest.fn()
       };
 
       await wrapper.instance().handleSubmitRide(mockEvent);
 
-      expect(mockLoadRides).toHaveBeenCalled();
-    })
-  })
+      expect(mockSetNewRide).toHaveBeenCalled();
+    });
+
+    it('should call handleShowOffer on handle submit', async () => {
+      let mockEvent = {
+        preventDefault: jest.fn()
+      };
+
+      await wrapper.instance().handleSubmitRide(mockEvent);
+
+      expect(mockHandleShowOffer).toHaveBeenCalled();
+    });
+  });
 
   describe('handleSubmitPickup', () => {
     let mockRideId;
@@ -93,7 +107,8 @@ describe('OfferContainer', () => {
         location_id: 1,
         lat: 39.7594866,
         lng: -104.9994026,
-        isShowing: false
+        isShowing: false,
+        address: "277 Bedford Avenue, Brooklyn, NY 11211, USA"
       };
 
       await wrapper.instance().handleSubmitPickup(mockRideId);
