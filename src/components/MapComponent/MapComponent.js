@@ -13,7 +13,6 @@ export const MapComponent = withScriptjs(withGoogleMap((
     let rideInfo = rides.find(ride => ride.id === location.ride_id);
     lat = parseFloat(lat);
     lng = parseFloat(lng);
-    let address = this.reverseGeoCode(lat, lng);
     return (
       <Marker
         onClick={() => toggleShowing(location)}
@@ -23,11 +22,12 @@ export const MapComponent = withScriptjs(withGoogleMap((
           options={{ closeBoxURL: ``, enableEventPropagation: true }}>
             <div className="info-box">
               <div className="info-text-box">
-                <h1>{rideInfo.seats_remaining} seats remaining</h1>
+                <h2>{location.address}</h2>
+                {/* <h1>{rideInfo.seats_remaining} seats remaining</h1>
                 <h2>
                   Departing at {rideInfo.time}  
                   on {rideInfo.date}
-                </h2>
+                </h2> */}
               </div>
             </div>
           </InfoBox>

@@ -57,16 +57,24 @@ export class OfferContainer extends Component {
 
   handleSubmitPickup = async (rideId) => {
     const geoLocation = await this.getGeoInfo();
+    const address = await this.getAddress(geoLocation.lat, geoLocation.lng);
     const pickupInfo = {
       ride_id: rideId,
       location_id: this.state.location_id,
       lat: geoLocation.lat,
       lng: geoLocation.lng,
-      isShowing: false
+      isShowing: false,
+      address
     };
     const newPickup = await API.submitNewPickup(pickupInfo);
     this.props.setNewPickup(newPickup.pickup);
     this.props.handleShowOffer(); 
+  };
+
+  getAddress = async (lat, lng) => {
+    const response = await API.reverseGeoCode(lat, lng);
+    const cleanAddress = await cleaner.latLngToAddress(response);
+    return cleanAddress;
   };
 
   getGeoInfo = async () => {
