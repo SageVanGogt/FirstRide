@@ -35,16 +35,26 @@ export class UserRidesContainer extends Component {
     this.props.userRides.map((ride, index) => (
       <li className="ride-item" key={index}>
         <article className="ride-info">
-          <h3 className="time-info">{ride.date} - {ride.time}</h3>
-          <h4 className="destination-info">Going To -> 
-            {
-              ride.location_id === 1 ? 
-                'Red Rocks' :
-                'Breckenridge'
-            }
-          </h4>
-          <h4 className="car-info">Car Type: {ride.car_type}</h4>
-          <h5 className="seating-info">Seats Remaining: {ride.seats_remaining}</h5>
+          <div>
+            <h3 className="time-info">{ride.date} - {ride.time}</h3>
+          </div>
+          <div>
+            <h4 className="destination-info">Going To:  
+              <span className="destination">
+                {
+                  ride.location_id === 1 ? 
+                    'Red Rocks' :
+                    'Breckenridge'
+                }
+              </span>
+            </h4>
+          </div>
+          <div>
+            <h4 className="car-info">Car Type: {ride.car_type}</h4>
+          </div>
+          <div>
+            <h5 className="seating-info">Seats Remaining: {ride.seats_remaining}</h5>
+          </div>
         </article>
       </li>
     ))

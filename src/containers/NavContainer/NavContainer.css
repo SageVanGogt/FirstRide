@@ -67,7 +67,7 @@
   color: #FAA10E;
 }
 
-.my-rides {
+.my-rides, .signout-btn {
   background: none;
   border: none;
   color: white;
@@ -81,7 +81,7 @@
   color: white;
 }
 
-.my-rides:hover {
+.my-rides:hover, .signout-btn:hover {
   border-bottom: 3px solid white;  
   text-decoration: none;
   color: white;

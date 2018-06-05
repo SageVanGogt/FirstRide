@@ -75,11 +75,11 @@ export class App extends Component {
         }
         <Switch>
           <Route 
-            exact path="/" 
+            exact path="/"
             component={DestinationsContainer}
           />
           <Route 
-            exact path="/rides" 
+            exact path="/rides"
             component={RidesContainer}
           />
           <Route 
