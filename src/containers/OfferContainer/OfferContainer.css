@@ -3,7 +3,7 @@
   z-index: 1;
   width: 100vw;
   height: 100vh;
-  background-color:rgba(40, 29, 29, 0.4) 
+  background-color:rgba(40, 29, 29, 0.8) 
 }
 
 .offer-form {
@@ -15,7 +15,7 @@
   left: calc(50% - 300px);
   right: calc(50% - 300px);
   bottom: calc(50% - 200px);
-  background-color: #476399;
+  background-color: #C0C0C0;
   border-radius: 8px;
 }
 
@@ -31,22 +31,19 @@
   height: 30px;
   padding: 4px;
   font-size: 1.5rem;
-  margin-top: 10px;
   border-radius: 5px;
 }
 
 .car-input {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
 .address-input {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;  
+  justify-content: left;  
 }
 
 .offer-instructions {
@@ -55,11 +52,13 @@
   padding: 20px;
   z-index: 3;
   width: 100%;
+  background-color: #909090;
+  border-radius: 8px 8px 0 0;
 }
 
 .offer-submit-btn {
   display: block;
-  margin: auto;
+  margin: 40px auto;
   width: 90px;
   padding: 8px;
   background-color: #e88c30;
@@ -74,6 +73,7 @@
   top: 5px;
   right: 5px;
   z-index: 5;
+  padding: 0 5px;
   background: none;
   color: white;
   border: 2px solid white;
@@ -84,4 +84,10 @@
 .offer-back-btn:hover {
   border: 2px solid #FAA10E;
   color: #FAA10E;  
+}
+
+.offer-form label {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 0;
 }

@@ -24,6 +24,11 @@ ShallowWrapper {
         className="signin-form"
         onSubmit={[Function]}
 >
+        <label
+                name="email"
+        >
+                email:
+        </label>
         <input
                 className="signin-input"
                 name="email"
@@ -31,6 +36,11 @@ ShallowWrapper {
                 placeholder="email"
                 type="text"
         />
+        <label
+                name="password"
+        >
+                password:
+        </label>
         <input
                 className="signin-input"
                 name="password"
@@ -54,6 +64,11 @@ ShallowWrapper {
       "props": Object {
         "action": "submit",
         "children": Array [
+          <label
+            name="email"
+>
+            email:
+</label>,
           <input
             className="signin-input"
             name="email"
@@ -61,6 +76,11 @@ ShallowWrapper {
             placeholder="email"
             type="text"
 />,
+          <label
+            name="password"
+>
+            password:
+</label>,
           <input
             className="signin-input"
             name="password"
@@ -84,6 +104,18 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "children": "email:",
+            "name": "email",
+          },
+          "ref": null,
+          "rendered": "email:",
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "className": "signin-input",
             "name": "email",
             "onChange": [Function],
@@ -93,6 +125,18 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "password:",
+            "name": "password",
+          },
+          "ref": null,
+          "rendered": "password:",
+          "type": "label",
         },
         Object {
           "instance": null,
@@ -138,6 +182,11 @@ ShallowWrapper {
           className="signin-form"
           onSubmit={[Function]}
 >
+          <label
+                    name="email"
+          >
+                    email:
+          </label>
           <input
                     className="signin-input"
                     name="email"
@@ -145,6 +194,11 @@ ShallowWrapper {
                     placeholder="email"
                     type="text"
           />
+          <label
+                    name="password"
+          >
+                    password:
+          </label>
           <input
                     className="signin-input"
                     name="password"
@@ -168,6 +222,11 @@ ShallowWrapper {
         "props": Object {
           "action": "submit",
           "children": Array [
+            <label
+              name="email"
+>
+              email:
+</label>,
             <input
               className="signin-input"
               name="email"
@@ -175,6 +234,11 @@ ShallowWrapper {
               placeholder="email"
               type="text"
 />,
+            <label
+              name="password"
+>
+              password:
+</label>,
             <input
               className="signin-input"
               name="password"
@@ -198,6 +262,18 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "children": "email:",
+              "name": "email",
+            },
+            "ref": null,
+            "rendered": "email:",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
               "className": "signin-input",
               "name": "email",
               "onChange": [Function],
@@ -207,6 +283,18 @@ ShallowWrapper {
             "ref": null,
             "rendered": null,
             "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "password:",
+              "name": "password",
+            },
+            "ref": null,
+            "rendered": "password:",
+            "type": "label",
           },
           Object {
             "instance": null,

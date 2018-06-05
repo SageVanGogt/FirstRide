@@ -464,7 +464,10 @@ describe('removePassengerRide', () => {
     };
     url = `http://localhost:3000/api/rides/${mockRideId}/passengers/${mockPassengerId}/destination/${mockDestinationId}`;
     window.fetch = jest.fn().mockImplementation(() => 
-    Promise.resolve({status: 200}));
+      Promise.resolve({
+        status: 200,
+        json: () => Promise.resolve()
+      }));
   });
 
   it('should be called with the correct params', async () => {

@@ -6,7 +6,7 @@ import MapContainer from './../MapContainer/MapContainer';
 import * as API from './../../apiCalls/apiCalls';
 import { addRides } from './../../actions/rides';
 import { addCurrentLocation } from './../../actions/currentLocation';
-import { addRidesAccounted } from './../../actions/rideAccounted';
+import { addRidesAccounted, removeRideAccounted } from './../../actions/rideAccounted';
 import { addError } from './../../actions/error';
 import { addPickups } from './../../actions/pickups';
 import * as cleaner from './../../cleaners/cleaners';
@@ -88,7 +88,7 @@ export class RidesContainer extends Component {
     if (!this.props.user.id) {
       this.props.setError('Please login before you do that');
       return;
-    };
+    }
     const ridePassenger = {
       ride_id: rideId,
       passenger_id: this.props.user.id,
@@ -111,7 +111,7 @@ export class RidesContainer extends Component {
     if (!this.props.user.id) {
       this.props.setError('Please login before you do that');
       return;
-    };
+    }
     this.setState({
       showOffer: !this.state.showOffer
     });
@@ -134,6 +134,9 @@ export class RidesContainer extends Component {
               action="submit"
               onSubmit={this.handleSubmit}
               className="current-location-form">
+              <legend className="address-form-legend">
+                Enter your full address here.
+              </legend>
               <input
                 type="text"
                 name="street"
@@ -155,10 +158,11 @@ export class RidesContainer extends Component {
               <input
                 type="submit"
                 className="address-sbmt-btn"
-                value="Submit your current address here" />
+                value="Submit" />
             </form>
           </article>
           <article className="ride-list">
+            <h3 className="rides-legend">Available Rides:</h3>
             {this.props.rides.length >= 1 && this.rideListElement()}
           </article>
         </section>

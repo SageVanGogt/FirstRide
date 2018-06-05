@@ -4,3 +4,10 @@ export const addRidesAccounted = (ridesAccounted) => {
     ridesAccounted
   })
 }
+
+export const removeRideAccounted = (ride) => {
+  return ({
+    type: 'REMOVE_RIDE_ACCOUNTED',
+    ride
+  });
+};

@@ -100,7 +100,7 @@ ShallowWrapper {
           className="user-rides-return-btn"
           onClick={undefined}
 >
-          exit
+          X
 </button>,
       ],
       "className": "user-rides-container",
@@ -261,7 +261,7 @@ ShallowWrapper {
             "rendered": Array [
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "0",
                 "nodeType": "host",
                 "props": Object {
                   "children": <article
@@ -405,7 +405,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "1",
                 "nodeType": "host",
                 "props": Object {
                   "children": <article
@@ -558,12 +558,12 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "exit",
+          "children": "X",
           "className": "user-rides-return-btn",
           "onClick": undefined,
         },
         "ref": null,
-        "rendered": "exit",
+        "rendered": "X",
         "type": "button",
       },
     ],
@@ -645,7 +645,7 @@ ShallowWrapper {
             className="user-rides-return-btn"
             onClick={undefined}
 >
-            exit
+            X
 </button>,
         ],
         "className": "user-rides-container",
@@ -806,7 +806,7 @@ ShallowWrapper {
               "rendered": Array [
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "0",
                   "nodeType": "host",
                   "props": Object {
                     "children": <article
@@ -950,7 +950,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": undefined,
+                  "key": "1",
                   "nodeType": "host",
                   "props": Object {
                     "children": <article
@@ -1103,12 +1103,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "exit",
+            "children": "X",
             "className": "user-rides-return-btn",
             "onClick": undefined,
           },
           "ref": null,
-          "rendered": "exit",
+          "rendered": "X",
           "type": "button",
         },
       ],

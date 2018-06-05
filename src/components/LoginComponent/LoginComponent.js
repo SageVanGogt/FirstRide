@@ -9,7 +9,7 @@ const LoginComponent = ({toggleLogin}) => {
       <div className="login-container">
       <div 
         className="back-btn"
-        onClick={toggleLogin}>back</div>
+        onClick={toggleLogin}>X</div>
         <SigninContainer />
         <SignupContainer />
       </div> 
