@@ -79,4 +79,4 @@ SignupContainer.propTypes = {
   setUser: PropTypes.func
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(SignupContainer);
+export default connect(null, mapDispatchToProps)(SignupContainer);

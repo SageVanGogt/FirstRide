@@ -7,12 +7,14 @@ import './UserRidesContainer.css';
 
 export class UserRidesContainer extends Component {
   constructor(props) {
-    super(props)
-  };
+    super(props);
+  }
 
   componentDidMount() {
-    this.loadPassengerRides();
-  };
+    if (this.props.userRides.length <= 1) {
+      this.loadPassengerRides();
+    }
+  }
 
   loadPassengerRides = async () => {
     const rides = await API.fetchUserRides(this.props.user.id);

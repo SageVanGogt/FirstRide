@@ -71,4 +71,4 @@ SigninContainer.propTypes = {
   signinUser: PropTypes.func
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(SigninContainer);
+export default connect(null, mapDispatchToProps)(SigninContainer);
