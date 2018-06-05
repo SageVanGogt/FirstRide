@@ -10,4 +10,8 @@ export const removeUserRides = () => {
   return ({
     type: "REMOVE_USER_RIDES"
   });
-}
+};
+
+// export const removeOneUserRide = (ride) => {
+
+// }

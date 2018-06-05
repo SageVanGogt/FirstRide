@@ -1,6 +1,5 @@
 
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import { mapKey } from './../../apiKey';
 import PropTypes from 'prop-types';
 import MapComponent from '../../components/MapComponent/MapComponent';
