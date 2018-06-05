@@ -102,8 +102,7 @@ export class OfferContainer extends Component {
           onSubmit={this.handleSubmitRide}
           className="offer-form">
           <legend className="offer-instructions">
-          this is where you input car info 
-          please input all the fields
+          Please fill out all the information to submit a ride offer
           </legend>
           <button 
             onClick={this.props.handleShowOffer}
@@ -112,24 +111,28 @@ export class OfferContainer extends Component {
           </button>          
           <div className="offer-inputs-container">
             <div className="car-input">
+              <label name="car_capicity">Car Capacity:</label>          
               <input 
                 type="text" 
                 name="car_capacity" 
                 onChange={this.handleChange} 
                 placeholder="car capacity"
                 className="offer-input"/>
+              <label name="car_type">car type:</label>
               <input 
                 type="text" 
                 name="car_type" 
                 onChange={this.handleChange} 
                 placeholder="car type"
                 className="offer-input"/>
+              <label name="data">date:</label>
               <input 
                 type="text" 
                 name="date" 
                 onChange={this.handleChange} 
                 placeholder="date"
                 className="offer-input"/>
+              <label name="time">time of departure:</label>
               <input 
                 type="text" 
                 name="time" 
@@ -138,18 +141,21 @@ export class OfferContainer extends Component {
                 className="offer-input"/>
             </div>
             <div className="address-input">
+              <label name="street">street:</label>
               <input 
                 type="text" 
                 name="street" 
                 onChange={this.handleChange} 
                 placeholder="street"
                 className="offer-input"/>
+              <label name="city">city:</label>
               <input 
                 type="text" 
                 name="city" 
                 onChange={this.handleChange} 
                 placeholder="city"
                 className="offer-input"/>
+              <label name="state">state:</label>
               <input 
                 type="text" 
                 name="state" 
