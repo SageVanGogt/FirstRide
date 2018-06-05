@@ -40,7 +40,7 @@ export class NavContainer extends Component {
             Home
           </NavLink>
           <button 
-            className="nav-btn"
+            className="my-rides"
             onClick={this.props.toggleShowUserRides}>
             My Rides
           </button>
