@@ -48,7 +48,7 @@ export class NavContainer extends Component {
           { 
             this.props.user.id ? 
               <button 
-                className="nav-btn"
+                className="signout-btn"
                 onClick={this.handleSignout}>
                 Signout
               </button> :

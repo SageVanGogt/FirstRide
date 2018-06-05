@@ -13,10 +13,6 @@
   margin: 10px 0 5px 0;
 }
 
-.ride-item:hover {
-  background-color: pink;
-}
-
 .ride-page {
   margin-top: 72px;
   height: calc(100vh - 90px);
@@ -75,6 +71,10 @@
 
 .state-input {
   width: 100px;
+}
+
+.current-location-form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
 }
 
 .address-sbmt-btn {

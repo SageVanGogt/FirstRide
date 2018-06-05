@@ -10,3 +10,38 @@
 .ride-popover-list {
   list-style: none;
 }
+
+.ride-btn {
+  display: block;
+}
+
+.date {
+  font-style: italic;  
+  margin-left: 10px;
+  float:left;
+}
+
+.time {
+  font-style: italic;
+  margin-right: 10px;
+  float:right;
+}
+
+.text {
+  font-style: normal;
+  font-weight: 800;  
+}
+
+.info {
+  font-weight: 800;
+}
+
+.join-ride-btn {
+  font-weight: 800;  
+  border-radius: 3px;
+}
+
+.join-ride-btn:hover {
+  background-color: #FAA10E;
+  color: white;
+}

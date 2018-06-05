@@ -10,14 +10,18 @@ export class RidePopoverComponent extends Component {
   }
 
   signupForRideElement = (rideId) => (
-    <button onClick={() => 
+    <button 
+      className="join-ride-btn"
+      onClick={() => 
       this.props.submitRideSignup(rideId)}>
       I want in
     </button>
   )
 
   unsignupForRideElement = (rideId) => (
-    <button onClick={() => 
+    <button 
+      className="join-ride-btn"
+      onClick={() => 
       this.props.handleRemovePassengerRide(rideId)}>
       remove me
     </button>
@@ -45,9 +49,9 @@ export class RidePopoverComponent extends Component {
             <Popover id="popovers" title="All your ride info">
               <strong>{ride.seats_remaining} seats left!</strong>
               <ul className="ride-popover-list">
-                <li>Leaving at{ride.time}</li>
-                <li>You'd be riding in a {ride.car_type}</li>
-                <li>You'll leave at {ride.time} on {ride.date}</li>
+                <li>Leaving at <span className="info">{ride.time}</span></li>
+                <li>You'd be riding in a <span className="info">{ride.car_type}</span></li>
+                <li>You'll leave on {ride.date}</li>
                 {
                   this.findExistingRide(ride.id) ?
                     this.unsignupForRideElement(ride.id) :
@@ -60,14 +64,20 @@ export class RidePopoverComponent extends Component {
           <Button
             style={{
               backgroundColor: rideMarker.isShowing ? '#CDCBC4' : 'white'
-            }}>
-            leaving on: {ride.date} at: {ride.time}
+            }}
+            className="ride-btn">
+            <span className="date">
+            leaving on: <span className="text">{ride.date}</span>
+            </span>
+            <span className="time">
+            at: <span className="text"> {ride.time} </span>
+            </span> 
           </Button>
         </OverlayTrigger>
       )})
     return (
       <ButtonToolbar id="popover-container">
-          {allPopovers}
+        {allPopovers}
       </ButtonToolbar>
     );
   }

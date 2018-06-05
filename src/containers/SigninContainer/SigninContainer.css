@@ -18,12 +18,16 @@
   height: 40px;
   border: none;
   padding: 4px;  
-  background-color: rgba(221, 165, 52, 0.6); 
+  background-color: white; 
   border-radius: 5px;
 }
 
+.signin-input {
+  outline: none;
+}
+
 .signin-input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 30px rgba(221, 165, 52, 0.6) inset;
+  -webkit-box-shadow: 0 0 0 30px white inset;
 }
 
 .cred-submit-btn {
