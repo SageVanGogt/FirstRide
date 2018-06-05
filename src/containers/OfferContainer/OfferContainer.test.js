@@ -82,16 +82,6 @@ describe('OfferContainer', () => {
 
       expect(mockSetNewRide).toHaveBeenCalled();
     });
-
-    it('should call handleShowOffer on handle submit', async () => {
-      let mockEvent = {
-        preventDefault: jest.fn()
-      };
-
-      await wrapper.instance().handleSubmitRide(mockEvent);
-
-      expect(mockHandleShowOffer).toHaveBeenCalled();
-    });
   });
 
   describe('handleSubmitPickup', () => {
@@ -127,8 +117,8 @@ describe('OfferContainer', () => {
       await wrapper.instance().handleSubmitPickup(mockRideId);
       
       expect(mockHandleShowOffer).toHaveBeenCalled();
-    })
-  })
+    });
+  });
 
   describe('getAddress', () => {
 
