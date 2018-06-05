@@ -134,6 +134,9 @@ export class RidesContainer extends Component {
               action="submit"
               onSubmit={this.handleSubmit}
               className="current-location-form">
+              <legend className="address-form-legend">
+                Enter your full address here.
+              </legend>
               <input
                 type="text"
                 name="street"
@@ -155,10 +158,11 @@ export class RidesContainer extends Component {
               <input
                 type="submit"
                 className="address-sbmt-btn"
-                value="Submit your current address here" />
+                value="Submit" />
             </form>
           </article>
           <article className="ride-list">
+            <h3 className="rides-legend">Available Rides:</h3>
             {this.props.rides.length >= 1 && this.rideListElement()}
           </article>
         </section>

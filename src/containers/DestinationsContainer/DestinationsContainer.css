@@ -54,17 +54,18 @@
 
 .breck-container:hover .location-pin {
   visibility: visible;
+  font-size: 3rem;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white; 
 }
 
 .redrocks-container:hover .location-pin {
   visibility: visible;
-}
-
-.location-pin:hover {
   font-size: 3rem;
   text-decoration: none;
   color: white;
-  border: 2px solid white;  
+  border: 2px solid white; 
 }
 
 .landing-instructions {

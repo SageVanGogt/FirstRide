@@ -1,10 +1,16 @@
 .ride-list {
-  margin-top: 40px;
+  margin-top: 135px;
   width: 300px;
 }
 
 .ride-item {
   padding: 10px 0;
+}
+
+.rides-legend {
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 800;
+  margin: 10px 0 5px 0;
 }
 
 .ride-item:hover {
@@ -60,27 +66,31 @@
 }
 
 .street-input {
- width: 155px;
+ width: 300px;
 }
 
 .city-input {
-  width: 95px;
+  width: 200px;
 } 
 
 .state-input {
-  width: 50px;
+  width: 100px;
 }
 
 .address-sbmt-btn {
   height: 30px;
-  width: 80%;
-  margin: 4px auto;
+  width: 100%;
   background-color: #2E4163;
   color: white;
   font-family: 'Roboto', sans-serif; 
-  border-radius: 15px;   
 }
 
 .address-sbmt-btn:hover {
   background-color: #253450
+}
+
+.address-form-legend {
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 800;
+  margin: 10px 0 5px 0;
 }
