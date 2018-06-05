@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import { OfferContainer, mapStateToProps, mapDispatchToProps } from './OfferContainer';
 import * as API from './../../apiCalls/apiCalls';
 import * as MOCK from './../../apiCalls/mockData';
+import * as cleaner from './../../cleaners/cleaners';
 
 jest.mock('./../../apiCalls/apiCalls');
 
@@ -114,6 +115,26 @@ describe('OfferContainer', () => {
     })
   })
 
+  describe('getAddress', () => {
+
+    it('should call the api call with the correct params', async () => {
+      let mockLat = 2;
+      let mockLng = 6;
+      await wrapper.instance().getAddress(mockLat, mockLng);
+
+      expect(API.reverseGeoCode).toHaveBeenCalledWith(mockLat, mockLng);
+    });
+
+    it('should return the correct value', async () => {
+      let mockLat = 2;
+      let mockLng = 6;
+      let expected = "277 Bedford Avenue, Brooklyn, NY 11211, USA";
+      let actual = await wrapper.instance().getAddress(mockLat, mockLng);
+
+      expect(actual).toEqual(expected);
+    })
+  })
+
   describe('getGeoInfo', () => {
     
     it('should call fetchGeoCode with the correct params', async () => {
@@ -121,9 +142,9 @@ describe('OfferContainer', () => {
 
       await wrapper.instance().getGeoInfo();
 
-      expect(API.fetchGeocode).toHaveBeenCalledWith(expected)
-    })
-  })
+      expect(API.fetchGeocode).toHaveBeenCalledWith(expected);
+    });
+  });
 
   describe('formatAddress', () => {
 
@@ -188,5 +209,18 @@ describe('OfferContainer', () => {
 
       expect(mockDispatch).toHaveBeenCalledWith(expected);
     })
-  })
-})
+
+    it('should call dispatch for setNewRide with the correct params', () => {
+      let mockRide = {};
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let expected = {
+        type: "ADD_NEW_RIDE",
+        ride: mockRide
+      };
+      mappedProps.setNewRide(mockRide);
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected);
+    });
+  });
+});
