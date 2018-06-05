@@ -13,6 +13,7 @@ export const MapComponent = withScriptjs(withGoogleMap((
     let rideInfo = rides.find(ride => ride.id === location.ride_id);
     lat = parseFloat(lat);
     lng = parseFloat(lng);
+    let address = this.reverseGeoCode(lat, lng);
     return (
       <Marker
         onClick={() => toggleShowing(location)}
@@ -52,6 +53,6 @@ export const MapComponent = withScriptjs(withGoogleMap((
 MapComponent.propTypes = {
   position: PropTypes.object,
   markerCoords: PropTypes.array
-}
+};
 
 export default MapComponent;

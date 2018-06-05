@@ -28,3 +28,12 @@ describe('seatsRemainingCleaner', () => {
     expect(actual).toEqual(expected);
   }})
 })
+
+describe('reversGeoCodeCleaner', () => {
+  it('should return a clean adderess', () => {
+    let expected = "277 Bedford Avenue, Brooklyn, NY 11211, USA";
+    let actual = cleaner.latLngToAddress(MOCK.mockReverseGeoInfo);
+
+    expect(actual).toEqual(expected);
+  });
+});

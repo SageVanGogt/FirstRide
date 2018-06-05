@@ -11,7 +11,7 @@ export class SigninContainer extends Component {
     this.state = {
       email: '',
       password: ''
-    }
+    };
   }
 
   handleChange = (event) => {

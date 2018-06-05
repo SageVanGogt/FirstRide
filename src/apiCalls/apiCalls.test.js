@@ -555,3 +555,20 @@ describe('fetchRidesFromUser', () => {
     expect(actual).toEqual(expected);
   })
 })
+
+describe('reverseGeoCode', () => {
+  let url;
+  let mockLat;
+  let mockLng;
+
+  beforeEach(() => {
+    mockLat = 23;
+    mockLng = 23;
+    url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${mockLat},${mockLng}&key=YOUR_API_KEY`;
+    window.fetch = jest.fn().mockImplementation(() => 
+    Promise.resolve({
+      status: 200,
+      json: () => Promise.resolve()
+    }))
+  })
+})
