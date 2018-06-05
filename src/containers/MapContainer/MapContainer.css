@@ -10,3 +10,22 @@
   left: 300px;
   width: calc(100vw - 300px);
 }
+
+.map-instructions {
+  display: flex;  
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #A8A8A8;
+}
+
+.map-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  height: 100px;
+  padding: 30px;
+  color: black;
+  background-color: #E0E0E0;
+  border-radius: 10px;
+}
