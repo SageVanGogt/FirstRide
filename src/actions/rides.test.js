@@ -24,3 +24,18 @@ describe('removeRides', () => {
     expect(actual).toEqual(expected);
   });
 });
+
+describe('addNewRides', () => {
+  it('should return an object with type ADD_NEW_RIDE', () => {
+    let mockRide = {
+      id: 1
+    };
+    let expected = {
+      type: "ADD_NEW_RIDE",
+      ride: mockRide
+    };
+    let actual = actions.addNewRide(mockRide);
+
+    expect(actual).toEqual(expected);
+  })
+})

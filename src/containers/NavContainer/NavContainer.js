@@ -39,6 +39,12 @@ export class NavContainer extends Component {
             onClick={this.handleReturnHome}>
             Home
           </NavLink>
+          <button 
+            className="nav-btn"
+            onClick={this.props.toggleShowUserRides}>
+            My Rides
+          </button>
+          <NavLink className="nav-link" to="/profile">Me</NavLink>
           { 
             this.props.user.id ? 
               <button 
@@ -47,17 +53,11 @@ export class NavContainer extends Component {
                 Signout
               </button> :
               <button 
-                className="nav-btn" 
+                className="nav-btn signin-btn" 
                 onClick={this.props.toggleLogin}>
-                Signin
+                Signin / Signup
               </button>
           }
-          <button 
-            className="nav-btn"
-            onClick={this.props.toggleShowUserRides}>
-            My Rides
-          </button>
-          <NavLink className="nav-link" to="/profile">Me</NavLink>
         </div>
       </div>
     );

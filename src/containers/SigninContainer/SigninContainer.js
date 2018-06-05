@@ -11,7 +11,7 @@ export class SigninContainer extends Component {
     this.state = {
       email: '',
       password: ''
-    }
+    };
   }
 
   handleChange = (event) => {
@@ -71,4 +71,4 @@ SigninContainer.propTypes = {
   signinUser: PropTypes.func
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(SigninContainer);
+export default connect(null, mapDispatchToProps)(SigninContainer);

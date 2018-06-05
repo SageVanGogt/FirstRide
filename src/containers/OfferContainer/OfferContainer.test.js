@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import { OfferContainer, mapStateToProps, mapDispatchToProps } from './OfferContainer';
 import * as API from './../../apiCalls/apiCalls';
 import * as MOCK from './../../apiCalls/mockData';
+import * as cleaner from './../../cleaners/cleaners';
 
 jest.mock('./../../apiCalls/apiCalls');
 
@@ -13,9 +14,11 @@ describe('OfferContainer', () => {
   let mockLoadRides;
   let mockSetNewPickup;
   let mockHandleShowOffer;
+  let mockSetNewRide;
 
   beforeEach(() => {
     mockHandleShowOffer = jest.fn();
+    mockSetNewRide = jest.fn();
     mockSetNewPickup = jest.fn();
     mockLoadRides = jest.fn();
     mockDestination = { id: 1 };
@@ -26,6 +29,7 @@ describe('OfferContainer', () => {
       loadRides={mockLoadRides}
       setNewPickup={mockSetNewPickup}
       handleShowOffer={mockHandleShowOffer}
+      setNewRide={mockSetNewRide}
     />);
   })
 
@@ -50,6 +54,7 @@ describe('OfferContainer', () => {
   })
 
   describe('handleSubmitRide', () => {
+
     it('should call submitNewRide with correct params', async () => {
       let expected = {
         location_id: 1,
@@ -68,16 +73,16 @@ describe('OfferContainer', () => {
       expect(API.submitNewRide).toHaveBeenCalledWith(expected)
     })
 
-    it('should call loadRides on handle submit', async () => {
+    it('should call setNewPickup on handle submit', async () => {
       let mockEvent = {
         preventDefault: jest.fn()
       };
 
       await wrapper.instance().handleSubmitRide(mockEvent);
 
-      expect(mockLoadRides).toHaveBeenCalled();
-    })
-  })
+      expect(mockSetNewRide).toHaveBeenCalled();
+    });
+  });
 
   describe('handleSubmitPickup', () => {
     let mockRideId;
@@ -92,7 +97,8 @@ describe('OfferContainer', () => {
         location_id: 1,
         lat: 39.7594866,
         lng: -104.9994026,
-        isShowing: false
+        isShowing: false,
+        address: "277 Bedford Avenue, Brooklyn, NY 11211, USA"
       };
 
       await wrapper.instance().handleSubmitPickup(mockRideId);
@@ -111,6 +117,26 @@ describe('OfferContainer', () => {
       await wrapper.instance().handleSubmitPickup(mockRideId);
       
       expect(mockHandleShowOffer).toHaveBeenCalled();
+    });
+  });
+
+  describe('getAddress', () => {
+
+    it('should call the api call with the correct params', async () => {
+      let mockLat = 2;
+      let mockLng = 6;
+      await wrapper.instance().getAddress(mockLat, mockLng);
+
+      expect(API.reverseGeoCode).toHaveBeenCalledWith(mockLat, mockLng);
+    });
+
+    it('should return the correct value', async () => {
+      let mockLat = 2;
+      let mockLng = 6;
+      let expected = "277 Bedford Avenue, Brooklyn, NY 11211, USA";
+      let actual = await wrapper.instance().getAddress(mockLat, mockLng);
+
+      expect(actual).toEqual(expected);
     })
   })
 
@@ -121,9 +147,9 @@ describe('OfferContainer', () => {
 
       await wrapper.instance().getGeoInfo();
 
-      expect(API.fetchGeocode).toHaveBeenCalledWith(expected)
-    })
-  })
+      expect(API.fetchGeocode).toHaveBeenCalledWith(expected);
+    });
+  });
 
   describe('formatAddress', () => {
 
@@ -188,5 +214,18 @@ describe('OfferContainer', () => {
 
       expect(mockDispatch).toHaveBeenCalledWith(expected);
     })
-  })
-})
+
+    it('should call dispatch for setNewRide with the correct params', () => {
+      let mockRide = {};
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let expected = {
+        type: "ADD_NEW_RIDE",
+        ride: mockRide
+      };
+      mappedProps.setNewRide(mockRide);
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected);
+    });
+  });
+});

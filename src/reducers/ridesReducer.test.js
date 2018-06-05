@@ -26,6 +26,18 @@ describe('ridesReducer', () => {
     expect(actual).toEqual(expected);
   });
 
+  it('should a state with additional ride in ADD_NEW_RIDE case', () => {
+    let intialState = [{}, {}];
+    let mockAction = {
+      type: "ADD_NEW_RIDE",
+      ride: {}
+    };
+    let expected = [{}, {}, {}];
+    let actual = ridesReducer(intialState, mockAction);
+
+    expect(actual).toEqual(expected);
+  })
+
   it('should return the state in default case', () => {
     let initialState = [{}, {}];
     let mockAction = {

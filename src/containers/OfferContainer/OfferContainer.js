@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import * as API from './../../apiCalls/apiCalls';
 import * as cleaner from './../../cleaners/cleaners';
 import * as actions from './../../actions/pickups';
+import { addNewRide } from './../../actions/rides';
 import './OfferContainer.css';
 
 export class OfferContainer extends Component {
@@ -52,21 +53,29 @@ export class OfferContainer extends Component {
     const response = await API.submitNewRide(rideInfo);
     const rideId = response.id;
     await this.handleSubmitPickup(rideId);
-    await this.props.loadRides(); //change to a reducer function
+    this.props.setNewRide(response.ride);
   };
 
   handleSubmitPickup = async (rideId) => {
     const geoLocation = await this.getGeoInfo();
+    const address = await this.getAddress(geoLocation.lat, geoLocation.lng);
     const pickupInfo = {
       ride_id: rideId,
       location_id: this.state.location_id,
       lat: geoLocation.lat,
       lng: geoLocation.lng,
-      isShowing: false
+      isShowing: false,
+      address
     };
     const newPickup = await API.submitNewPickup(pickupInfo);
     this.props.setNewPickup(newPickup.pickup);
     this.props.handleShowOffer(); 
+  };
+
+  getAddress = async (lat, lng) => {
+    const response = await API.reverseGeoCode(lat, lng);
+    const cleanAddress = await cleaner.latLngToAddress(response);
+    return cleanAddress;
   };
 
   getGeoInfo = async () => {
@@ -164,13 +173,15 @@ export const mapStateToProps = (state) => ({
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  setNewPickup: (pickup) => dispatch(actions.addSinglePickup(pickup))
+  setNewPickup: (pickup) => dispatch(actions.addSinglePickup(pickup)),
+  setNewRide: (ride) => dispatch(addNewRide(ride))
 });
 
 OfferContainer.propTypes = {
   setNewPickup: PropTypes.func,
   ridesAccounted: PropTypes.func,
   handleShowOffer: PropTypes.func,
+  setNewRide: PropTypes.func,
   destination: PropTypes.object,
   user: PropTypes.object
 };

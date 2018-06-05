@@ -4,6 +4,8 @@ const ridesReducer = (state = [], action) => {
       return action.rides;
     case 'REMOVE_RIDES':
       return [];
+    case "ADD_NEW_RIDE":
+      return [...state, action.ride];
     default: 
       return state;
   }

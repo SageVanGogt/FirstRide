@@ -14,3 +14,8 @@ export const seatsRemainingUpdate = (rides, passengers) => {
   
   return updatedRides;
 }
+
+export const latLngToAddress = (data) => {
+  let address = data.results[0].formatted_address;
+  return address;
+}

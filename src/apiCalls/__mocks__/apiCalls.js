@@ -73,6 +73,10 @@ Promise.resolve({
   rides: [{}, {}]
 }));
 
+const reverseGeoCode = jest.fn().mockImplementation(() => 
+  Promise.resolve(MOCK.mockReverseGeoInfo)
+)
+
 export {
   signinUser,
   signupUser,
@@ -86,5 +90,6 @@ export {
   fetchRidesPassengers,
   postNewProfile,
   fetchUserRides,
-  fetchRidesFromUser
-}
+  fetchRidesFromUser,
+  reverseGeoCode
+};

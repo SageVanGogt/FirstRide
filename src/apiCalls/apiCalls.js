@@ -181,6 +181,13 @@ const fetchRidesFromUser = async (rideId) => {
   return ridesInfo;
 };
 
+const reverseGeoCode = async (lat, lng) => {
+  const url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=${geoKey}`;
+  const response = await fetch(url);
+  const geoData = await response.json();
+  return geoData;
+}
+
 export {
   signinUser,
   signupUser,
@@ -195,5 +202,6 @@ export {
   postNewProfile,
   removePassengerRide,
   fetchUserRides,
-  fetchRidesFromUser
+  fetchRidesFromUser,
+  reverseGeoCode
 };

@@ -22,11 +22,12 @@ export const MapComponent = withScriptjs(withGoogleMap((
           options={{ closeBoxURL: ``, enableEventPropagation: true }}>
             <div className="info-box">
               <div className="info-text-box">
-                <h1>{rideInfo.seats_remaining} seats remaining</h1>
+                <h2>{location.address}</h2>
+                {/* <h1>{rideInfo.seats_remaining} seats remaining</h1>
                 <h2>
                   Departing at {rideInfo.time}  
                   on {rideInfo.date}
-                </h2>
+                </h2> */}
               </div>
             </div>
           </InfoBox>
@@ -52,6 +53,6 @@ export const MapComponent = withScriptjs(withGoogleMap((
 MapComponent.propTypes = {
   position: PropTypes.object,
   markerCoords: PropTypes.array
-}
+};
 
 export default MapComponent;

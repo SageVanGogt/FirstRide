@@ -11,3 +11,10 @@ export const removeRides = () => {
     type: 'REMOVE_RIDES'
   });
 };
+
+export const addNewRide = (ride) => {
+  return ({
+    type: "ADD_NEW_RIDE",
+    ride
+  });
+};

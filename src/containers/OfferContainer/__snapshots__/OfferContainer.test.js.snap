@@ -13,6 +13,7 @@ ShallowWrapper {
     handleShowOffer={[Function]}
     loadRides={[Function]}
     setNewPickup={[Function]}
+    setNewRide={[Function]}
     user={
         Object {
             "id": 1,
