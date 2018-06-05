@@ -5,6 +5,12 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <MapContainer
+    currentLocation={
+        Object {
+            "lat": 1,
+            "lng": 1,
+          }
+    }
     destination={
         Object {
             "id": 1,
@@ -50,7 +56,12 @@ ShallowWrapper {
                 />
         }
         markerCoords={undefined}
-        position={undefined}
+        position={
+                Object {
+                        "lat": 1,
+                        "lng": 1,
+                      }
+        }
         rides={undefined}
         toggleShowing={[Function]}
 />,
@@ -81,7 +92,10 @@ ShallowWrapper {
           }
 />,
         "markerCoords": undefined,
-        "position": undefined,
+        "position": Object {
+          "lat": 1,
+          "lng": 1,
+        },
         "rides": undefined,
         "toggleShowing": [Function],
       },
@@ -123,7 +137,12 @@ ShallowWrapper {
                     />
           }
           markerCoords={undefined}
-          position={undefined}
+          position={
+                    Object {
+                              "lat": 1,
+                              "lng": 1,
+                            }
+          }
           rides={undefined}
           toggleShowing={[Function]}
 />,
@@ -154,7 +173,10 @@ ShallowWrapper {
             }
 />,
           "markerCoords": undefined,
-          "position": undefined,
+          "position": Object {
+            "lat": 1,
+            "lng": 1,
+          },
           "rides": undefined,
           "toggleShowing": [Function],
         },

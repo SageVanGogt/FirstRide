@@ -56,12 +56,6 @@ ShallowWrapper {
           </NavLink>
           <button
                     className="nav-btn"
-                    onClick={[Function]}
-          >
-                    Signout
-          </button>
-          <button
-                    className="nav-btn"
                     onClick={undefined}
           >
                     My Rides
@@ -74,6 +68,12 @@ ShallowWrapper {
           >
                     Me
           </NavLink>
+          <button
+                    className="nav-btn"
+                    onClick={[Function]}
+          >
+                    Signout
+          </button>
 </div>,
       ],
       "className": "nav-bar",
@@ -109,12 +109,6 @@ ShallowWrapper {
 </NavLink>,
             <button
               className="nav-btn"
-              onClick={[Function]}
->
-              Signout
-</button>,
-            <button
-              className="nav-btn"
               onClick={undefined}
 >
               My Rides
@@ -127,6 +121,12 @@ ShallowWrapper {
 >
               Me
 </NavLink>,
+            <button
+              className="nav-btn"
+              onClick={[Function]}
+>
+              Signout
+</button>,
           ],
           "className": "links",
         },
@@ -147,19 +147,6 @@ ShallowWrapper {
             "ref": null,
             "rendered": "Home",
             "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Signout",
-              "className": "nav-btn",
-              "onClick": [Function],
-            },
-            "ref": null,
-            "rendered": "Signout",
-            "type": "button",
           },
           Object {
             "instance": null,
@@ -188,6 +175,19 @@ ShallowWrapper {
             "ref": null,
             "rendered": "Me",
             "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Signout",
+              "className": "nav-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Signout",
+            "type": "button",
           },
         ],
         "type": "div",
@@ -221,12 +221,6 @@ ShallowWrapper {
             </NavLink>
             <button
                         className="nav-btn"
-                        onClick={[Function]}
-            >
-                        Signout
-            </button>
-            <button
-                        className="nav-btn"
                         onClick={undefined}
             >
                         My Rides
@@ -239,6 +233,12 @@ ShallowWrapper {
             >
                         Me
             </NavLink>
+            <button
+                        className="nav-btn"
+                        onClick={[Function]}
+            >
+                        Signout
+            </button>
 </div>,
         ],
         "className": "nav-bar",
@@ -274,12 +274,6 @@ ShallowWrapper {
 </NavLink>,
               <button
                 className="nav-btn"
-                onClick={[Function]}
->
-                Signout
-</button>,
-              <button
-                className="nav-btn"
                 onClick={undefined}
 >
                 My Rides
@@ -292,6 +286,12 @@ ShallowWrapper {
 >
                 Me
 </NavLink>,
+              <button
+                className="nav-btn"
+                onClick={[Function]}
+>
+                Signout
+</button>,
             ],
             "className": "links",
           },
@@ -312,19 +312,6 @@ ShallowWrapper {
               "ref": null,
               "rendered": "Home",
               "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Signout",
-                "className": "nav-btn",
-                "onClick": [Function],
-              },
-              "ref": null,
-              "rendered": "Signout",
-              "type": "button",
             },
             Object {
               "instance": null,
@@ -353,6 +340,19 @@ ShallowWrapper {
               "ref": null,
               "rendered": "Me",
               "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Signout",
+                "className": "nav-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Signout",
+              "type": "button",
             },
           ],
           "type": "div",

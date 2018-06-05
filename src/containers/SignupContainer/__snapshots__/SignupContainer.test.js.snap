@@ -24,6 +24,11 @@ ShallowWrapper {
         className="signup-form"
         onSubmit={[Function]}
 >
+        <label
+                name="user_name"
+        >
+                user name:
+        </label>
         <input
                 className="signup-input"
                 name="user_name"
@@ -31,6 +36,11 @@ ShallowWrapper {
                 placeholder="name"
                 type="text"
         />
+        <label
+                name="email"
+        >
+                email:
+        </label>
         <input
                 className="signup-input"
                 name="email"
@@ -38,6 +48,11 @@ ShallowWrapper {
                 placeholder="email"
                 type="text"
         />
+        <label
+                name="password"
+        >
+                password:
+        </label>
         <input
                 className="signup-input"
                 name="password"
@@ -61,6 +76,11 @@ ShallowWrapper {
       "props": Object {
         "action": "submit",
         "children": Array [
+          <label
+            name="user_name"
+>
+            user name:
+</label>,
           <input
             className="signup-input"
             name="user_name"
@@ -68,6 +88,11 @@ ShallowWrapper {
             placeholder="name"
             type="text"
 />,
+          <label
+            name="email"
+>
+            email:
+</label>,
           <input
             className="signup-input"
             name="email"
@@ -75,6 +100,11 @@ ShallowWrapper {
             placeholder="email"
             type="text"
 />,
+          <label
+            name="password"
+>
+            password:
+</label>,
           <input
             className="signup-input"
             name="password"
@@ -98,6 +128,18 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "children": "user name:",
+            "name": "user_name",
+          },
+          "ref": null,
+          "rendered": "user name:",
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "className": "signup-input",
             "name": "user_name",
             "onChange": [Function],
@@ -113,6 +155,18 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "children": "email:",
+            "name": "email",
+          },
+          "ref": null,
+          "rendered": "email:",
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "className": "signup-input",
             "name": "email",
             "onChange": [Function],
@@ -122,6 +176,18 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "password:",
+            "name": "password",
+          },
+          "ref": null,
+          "rendered": "password:",
+          "type": "label",
         },
         Object {
           "instance": null,
@@ -167,6 +233,11 @@ ShallowWrapper {
           className="signup-form"
           onSubmit={[Function]}
 >
+          <label
+                    name="user_name"
+          >
+                    user name:
+          </label>
           <input
                     className="signup-input"
                     name="user_name"
@@ -174,6 +245,11 @@ ShallowWrapper {
                     placeholder="name"
                     type="text"
           />
+          <label
+                    name="email"
+          >
+                    email:
+          </label>
           <input
                     className="signup-input"
                     name="email"
@@ -181,6 +257,11 @@ ShallowWrapper {
                     placeholder="email"
                     type="text"
           />
+          <label
+                    name="password"
+          >
+                    password:
+          </label>
           <input
                     className="signup-input"
                     name="password"
@@ -204,6 +285,11 @@ ShallowWrapper {
         "props": Object {
           "action": "submit",
           "children": Array [
+            <label
+              name="user_name"
+>
+              user name:
+</label>,
             <input
               className="signup-input"
               name="user_name"
@@ -211,6 +297,11 @@ ShallowWrapper {
               placeholder="name"
               type="text"
 />,
+            <label
+              name="email"
+>
+              email:
+</label>,
             <input
               className="signup-input"
               name="email"
@@ -218,6 +309,11 @@ ShallowWrapper {
               placeholder="email"
               type="text"
 />,
+            <label
+              name="password"
+>
+              password:
+</label>,
             <input
               className="signup-input"
               name="password"
@@ -241,6 +337,18 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "children": "user name:",
+              "name": "user_name",
+            },
+            "ref": null,
+            "rendered": "user name:",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
               "className": "signup-input",
               "name": "user_name",
               "onChange": [Function],
@@ -256,6 +364,18 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "children": "email:",
+              "name": "email",
+            },
+            "ref": null,
+            "rendered": "email:",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
               "className": "signup-input",
               "name": "email",
               "onChange": [Function],
@@ -265,6 +385,18 @@ ShallowWrapper {
             "ref": null,
             "rendered": null,
             "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "password:",
+              "name": "password",
+            },
+            "ref": null,
+            "rendered": "password:",
+            "type": "label",
           },
           Object {
             "instance": null,

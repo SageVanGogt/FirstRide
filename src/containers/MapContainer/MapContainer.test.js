@@ -10,8 +10,10 @@ describe('MapContainer', () => {
   let wrapper;
   let mockToggleShowing;
   let mockDestination;
+  let mockCurrentLocation;
 
   beforeEach(() => {
+    mockCurrentLocation = {lat: 1, lng: 1};
     mockToggleShowing = jest.fn();
     mockDestination = {
       id: 1
@@ -19,6 +21,7 @@ describe('MapContainer', () => {
     wrapper = shallow(<MapContainer 
       destination={mockDestination}
       toggleShowing={mockToggleShowing}
+      currentLocation={mockCurrentLocation}
     />);
   });
 

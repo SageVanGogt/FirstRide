@@ -3,14 +3,7 @@ import { shallow } from 'enzyme';
 import MapComponent, { mapStateToProps } from './MapComponent';
 
 describe('MapComponent', () => {
-  let wrapper;
+  it('should exists', () => {
 
-  beforeEach(() => {
-    wrapper = shallow(<MapComponent />);
   });
-
-  it('should match the snapshot', () => {
-    expect(wrapper).toMatchSnapshot();
-  });
-
-})
+});
