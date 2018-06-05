@@ -42,27 +42,39 @@ ShallowWrapper {
                               <article
                                         className="ride-info"
                               >
-                                        <h3
-                                                  className="time-info"
-                                        >
-                                                   - 
-                                        </h3>
-                                        <h4
-                                                  className="destination-info"
-                                        >
-                                                  Going To -&gt;
-                                                  Breckenridge
-                                        </h4>
-                                        <h4
-                                                  className="car-info"
-                                        >
-                                                  Car Type: 
-                                        </h4>
-                                        <h5
-                                                  className="seating-info"
-                                        >
-                                                  Seats Remaining: 
-                                        </h5>
+                                        <div>
+                                                  <h3
+                                                            className="time-info"
+                                                  >
+                                                             - 
+                                                  </h3>
+                                        </div>
+                                        <div>
+                                                  <h4
+                                                            className="destination-info"
+                                                  >
+                                                            Going To:
+                                                            <span
+                                                                      className="destination"
+                                                            >
+                                                                      Breckenridge
+                                                            </span>
+                                                  </h4>
+                                        </div>
+                                        <div>
+                                                  <h4
+                                                            className="car-info"
+                                                  >
+                                                            Car Type: 
+                                                  </h4>
+                                        </div>
+                                        <div>
+                                                  <h5
+                                                            className="seating-info"
+                                                  >
+                                                            Seats Remaining: 
+                                                  </h5>
+                                        </div>
                               </article>
                     </li>
                     <li
@@ -71,27 +83,39 @@ ShallowWrapper {
                               <article
                                         className="ride-info"
                               >
-                                        <h3
-                                                  className="time-info"
-                                        >
-                                                   - 
-                                        </h3>
-                                        <h4
-                                                  className="destination-info"
-                                        >
-                                                  Going To -&gt;
-                                                  Breckenridge
-                                        </h4>
-                                        <h4
-                                                  className="car-info"
-                                        >
-                                                  Car Type: 
-                                        </h4>
-                                        <h5
-                                                  className="seating-info"
-                                        >
-                                                  Seats Remaining: 
-                                        </h5>
+                                        <div>
+                                                  <h3
+                                                            className="time-info"
+                                                  >
+                                                             - 
+                                                  </h3>
+                                        </div>
+                                        <div>
+                                                  <h4
+                                                            className="destination-info"
+                                                  >
+                                                            Going To:
+                                                            <span
+                                                                      className="destination"
+                                                            >
+                                                                      Breckenridge
+                                                            </span>
+                                                  </h4>
+                                        </div>
+                                        <div>
+                                                  <h4
+                                                            className="car-info"
+                                                  >
+                                                            Car Type: 
+                                                  </h4>
+                                        </div>
+                                        <div>
+                                                  <h5
+                                                            className="seating-info"
+                                                  >
+                                                            Seats Remaining: 
+                                                  </h5>
+                                        </div>
                               </article>
                     </li>
           </ul>
@@ -123,27 +147,39 @@ ShallowWrapper {
                             <article
                                           className="ride-info"
                             >
-                                          <h3
-                                                        className="time-info"
-                                          >
-                                                         - 
-                                          </h3>
-                                          <h4
-                                                        className="destination-info"
-                                          >
-                                                        Going To -&gt;
-                                                        Breckenridge
-                                          </h4>
-                                          <h4
-                                                        className="car-info"
-                                          >
-                                                        Car Type: 
-                                          </h4>
-                                          <h5
-                                                        className="seating-info"
-                                          >
-                                                        Seats Remaining: 
-                                          </h5>
+                                          <div>
+                                                        <h3
+                                                                      className="time-info"
+                                                        >
+                                                                       - 
+                                                        </h3>
+                                          </div>
+                                          <div>
+                                                        <h4
+                                                                      className="destination-info"
+                                                        >
+                                                                      Going To:
+                                                                      <span
+                                                                                    className="destination"
+                                                                      >
+                                                                                    Breckenridge
+                                                                      </span>
+                                                        </h4>
+                                          </div>
+                                          <div>
+                                                        <h4
+                                                                      className="car-info"
+                                                        >
+                                                                      Car Type: 
+                                                        </h4>
+                                          </div>
+                                          <div>
+                                                        <h5
+                                                                      className="seating-info"
+                                                        >
+                                                                      Seats Remaining: 
+                                                        </h5>
+                                          </div>
                             </article>
               </li>
               <li
@@ -152,27 +188,39 @@ ShallowWrapper {
                             <article
                                           className="ride-info"
                             >
-                                          <h3
-                                                        className="time-info"
-                                          >
-                                                         - 
-                                          </h3>
-                                          <h4
-                                                        className="destination-info"
-                                          >
-                                                        Going To -&gt;
-                                                        Breckenridge
-                                          </h4>
-                                          <h4
-                                                        className="car-info"
-                                          >
-                                                        Car Type: 
-                                          </h4>
-                                          <h5
-                                                        className="seating-info"
-                                          >
-                                                        Seats Remaining: 
-                                          </h5>
+                                          <div>
+                                                        <h3
+                                                                      className="time-info"
+                                                        >
+                                                                       - 
+                                                        </h3>
+                                          </div>
+                                          <div>
+                                                        <h4
+                                                                      className="destination-info"
+                                                        >
+                                                                      Going To:
+                                                                      <span
+                                                                                    className="destination"
+                                                                      >
+                                                                                    Breckenridge
+                                                                      </span>
+                                                        </h4>
+                                          </div>
+                                          <div>
+                                                        <h4
+                                                                      className="car-info"
+                                                        >
+                                                                      Car Type: 
+                                                        </h4>
+                                          </div>
+                                          <div>
+                                                        <h5
+                                                                      className="seating-info"
+                                                        >
+                                                                      Seats Remaining: 
+                                                        </h5>
+                                          </div>
                             </article>
               </li>
 </ul>,
@@ -203,27 +251,39 @@ ShallowWrapper {
                   <article
                                     className="ride-info"
                   >
-                                    <h3
-                                                      className="time-info"
-                                    >
-                                                       - 
-                                    </h3>
-                                    <h4
-                                                      className="destination-info"
-                                    >
-                                                      Going To -&gt;
-                                                      Breckenridge
-                                    </h4>
-                                    <h4
-                                                      className="car-info"
-                                    >
-                                                      Car Type: 
-                                    </h4>
-                                    <h5
-                                                      className="seating-info"
-                                    >
-                                                      Seats Remaining: 
-                                    </h5>
+                                    <div>
+                                                      <h3
+                                                                        className="time-info"
+                                                      >
+                                                                         - 
+                                                      </h3>
+                                    </div>
+                                    <div>
+                                                      <h4
+                                                                        className="destination-info"
+                                                      >
+                                                                        Going To:
+                                                                        <span
+                                                                                          className="destination"
+                                                                        >
+                                                                                          Breckenridge
+                                                                        </span>
+                                                      </h4>
+                                    </div>
+                                    <div>
+                                                      <h4
+                                                                        className="car-info"
+                                                      >
+                                                                        Car Type: 
+                                                      </h4>
+                                    </div>
+                                    <div>
+                                                      <h5
+                                                                        className="seating-info"
+                                                      >
+                                                                        Seats Remaining: 
+                                                      </h5>
+                                    </div>
                   </article>
 </li>,
                 <li
@@ -232,27 +292,39 @@ ShallowWrapper {
                   <article
                                     className="ride-info"
                   >
-                                    <h3
-                                                      className="time-info"
-                                    >
-                                                       - 
-                                    </h3>
-                                    <h4
-                                                      className="destination-info"
-                                    >
-                                                      Going To -&gt;
-                                                      Breckenridge
-                                    </h4>
-                                    <h4
-                                                      className="car-info"
-                                    >
-                                                      Car Type: 
-                                    </h4>
-                                    <h5
-                                                      className="seating-info"
-                                    >
-                                                      Seats Remaining: 
-                                    </h5>
+                                    <div>
+                                                      <h3
+                                                                        className="time-info"
+                                                      >
+                                                                         - 
+                                                      </h3>
+                                    </div>
+                                    <div>
+                                                      <h4
+                                                                        className="destination-info"
+                                                      >
+                                                                        Going To:
+                                                                        <span
+                                                                                          className="destination"
+                                                                        >
+                                                                                          Breckenridge
+                                                                        </span>
+                                                      </h4>
+                                    </div>
+                                    <div>
+                                                      <h4
+                                                                        className="car-info"
+                                                      >
+                                                                        Car Type: 
+                                                      </h4>
+                                    </div>
+                                    <div>
+                                                      <h5
+                                                                        className="seating-info"
+                                                      >
+                                                                        Seats Remaining: 
+                                                      </h5>
+                                    </div>
                   </article>
 </li>,
               ],
@@ -267,27 +339,39 @@ ShallowWrapper {
                   "children": <article
                     className="ride-info"
 >
-                    <h3
-                                        className="time-info"
-                    >
-                                         - 
-                    </h3>
-                    <h4
-                                        className="destination-info"
-                    >
-                                        Going To -&gt;
-                                        Breckenridge
-                    </h4>
-                    <h4
-                                        className="car-info"
-                    >
-                                        Car Type: 
-                    </h4>
-                    <h5
-                                        className="seating-info"
-                    >
-                                        Seats Remaining: 
-                    </h5>
+                    <div>
+                                        <h3
+                                                            className="time-info"
+                                        >
+                                                             - 
+                                        </h3>
+                    </div>
+                    <div>
+                                        <h4
+                                                            className="destination-info"
+                                        >
+                                                            Going To:
+                                                            <span
+                                                                                className="destination"
+                                                            >
+                                                                                Breckenridge
+                                                            </span>
+                                        </h4>
+                    </div>
+                    <div>
+                                        <h4
+                                                            className="car-info"
+                                        >
+                                                            Car Type: 
+                                        </h4>
+                    </div>
+                    <div>
+                                        <h5
+                                                            className="seating-info"
+                                        >
+                                                            Seats Remaining: 
+                                        </h5>
+                    </div>
 </article>,
                   "className": "ride-item",
                 },
@@ -298,27 +382,39 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
-                      <h3
-                        className="time-info"
->
-                         - 
-</h3>,
-                      <h4
-                        className="destination-info"
->
-                        Going To -&gt;
-                        Breckenridge
-</h4>,
-                      <h4
-                        className="car-info"
->
-                        Car Type: 
-</h4>,
-                      <h5
-                        className="seating-info"
->
-                        Seats Remaining: 
-</h5>,
+                      <div>
+                        <h3
+                                                className="time-info"
+                        >
+                                                 - 
+                        </h3>
+</div>,
+                      <div>
+                        <h4
+                                                className="destination-info"
+                        >
+                                                Going To:
+                                                <span
+                                                                        className="destination"
+                                                >
+                                                                        Breckenridge
+                                                </span>
+                        </h4>
+</div>,
+                      <div>
+                        <h4
+                                                className="car-info"
+                        >
+                                                Car Type: 
+                        </h4>
+</div>,
+                      <div>
+                        <h5
+                                                className="seating-info"
+                        >
+                                                Seats Remaining: 
+                        </h5>
+</div>,
                     ],
                     "className": "ride-info",
                   },
@@ -329,74 +425,150 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": Array [
+                        "children": <h3
+                          className="time-info"
+>
+                           - 
+</h3>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            undefined,
+                            " - ",
+                            undefined,
+                          ],
+                          "className": "time-info",
+                        },
+                        "ref": null,
+                        "rendered": Array [
                           undefined,
                           " - ",
                           undefined,
                         ],
-                        "className": "time-info",
+                        "type": "h3",
                       },
-                      "ref": null,
-                      "rendered": Array [
-                        undefined,
-                        " - ",
-                        undefined,
-                      ],
-                      "type": "h3",
+                      "type": "div",
                     },
                     Object {
                       "instance": null,
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": Array [
-                          "Going To ->",
-                          "Breckenridge",
+                        "children": <h4
+                          className="destination-info"
+>
+                          Going To:
+                          <span
+                                                    className="destination"
+                          >
+                                                    Breckenridge
+                          </span>
+</h4>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Going To:",
+                            <span
+                              className="destination"
+>
+                              Breckenridge
+</span>,
+                          ],
+                          "className": "destination-info",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Going To:",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Breckenridge",
+                              "className": "destination",
+                            },
+                            "ref": null,
+                            "rendered": "Breckenridge",
+                            "type": "span",
+                          },
                         ],
-                        "className": "destination-info",
+                        "type": "h4",
                       },
-                      "ref": null,
-                      "rendered": Array [
-                        "Going To ->",
-                        "Breckenridge",
-                      ],
-                      "type": "h4",
+                      "type": "div",
                     },
                     Object {
                       "instance": null,
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": Array [
+                        "children": <h4
+                          className="car-info"
+>
+                          Car Type: 
+</h4>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Car Type: ",
+                            undefined,
+                          ],
+                          "className": "car-info",
+                        },
+                        "ref": null,
+                        "rendered": Array [
                           "Car Type: ",
                           undefined,
                         ],
-                        "className": "car-info",
+                        "type": "h4",
                       },
-                      "ref": null,
-                      "rendered": Array [
-                        "Car Type: ",
-                        undefined,
-                      ],
-                      "type": "h4",
+                      "type": "div",
                     },
                     Object {
                       "instance": null,
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": Array [
+                        "children": <h5
+                          className="seating-info"
+>
+                          Seats Remaining: 
+</h5>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Seats Remaining: ",
+                            undefined,
+                          ],
+                          "className": "seating-info",
+                        },
+                        "ref": null,
+                        "rendered": Array [
                           "Seats Remaining: ",
                           undefined,
                         ],
-                        "className": "seating-info",
+                        "type": "h5",
                       },
-                      "ref": null,
-                      "rendered": Array [
-                        "Seats Remaining: ",
-                        undefined,
-                      ],
-                      "type": "h5",
+                      "type": "div",
                     },
                   ],
                   "type": "article",
@@ -411,27 +583,39 @@ ShallowWrapper {
                   "children": <article
                     className="ride-info"
 >
-                    <h3
-                                        className="time-info"
-                    >
-                                         - 
-                    </h3>
-                    <h4
-                                        className="destination-info"
-                    >
-                                        Going To -&gt;
-                                        Breckenridge
-                    </h4>
-                    <h4
-                                        className="car-info"
-                    >
-                                        Car Type: 
-                    </h4>
-                    <h5
-                                        className="seating-info"
-                    >
-                                        Seats Remaining: 
-                    </h5>
+                    <div>
+                                        <h3
+                                                            className="time-info"
+                                        >
+                                                             - 
+                                        </h3>
+                    </div>
+                    <div>
+                                        <h4
+                                                            className="destination-info"
+                                        >
+                                                            Going To:
+                                                            <span
+                                                                                className="destination"
+                                                            >
+                                                                                Breckenridge
+                                                            </span>
+                                        </h4>
+                    </div>
+                    <div>
+                                        <h4
+                                                            className="car-info"
+                                        >
+                                                            Car Type: 
+                                        </h4>
+                    </div>
+                    <div>
+                                        <h5
+                                                            className="seating-info"
+                                        >
+                                                            Seats Remaining: 
+                                        </h5>
+                    </div>
 </article>,
                   "className": "ride-item",
                 },
@@ -442,27 +626,39 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
-                      <h3
-                        className="time-info"
->
-                         - 
-</h3>,
-                      <h4
-                        className="destination-info"
->
-                        Going To -&gt;
-                        Breckenridge
-</h4>,
-                      <h4
-                        className="car-info"
->
-                        Car Type: 
-</h4>,
-                      <h5
-                        className="seating-info"
->
-                        Seats Remaining: 
-</h5>,
+                      <div>
+                        <h3
+                                                className="time-info"
+                        >
+                                                 - 
+                        </h3>
+</div>,
+                      <div>
+                        <h4
+                                                className="destination-info"
+                        >
+                                                Going To:
+                                                <span
+                                                                        className="destination"
+                                                >
+                                                                        Breckenridge
+                                                </span>
+                        </h4>
+</div>,
+                      <div>
+                        <h4
+                                                className="car-info"
+                        >
+                                                Car Type: 
+                        </h4>
+</div>,
+                      <div>
+                        <h5
+                                                className="seating-info"
+                        >
+                                                Seats Remaining: 
+                        </h5>
+</div>,
                     ],
                     "className": "ride-info",
                   },
@@ -473,74 +669,150 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": Array [
+                        "children": <h3
+                          className="time-info"
+>
+                           - 
+</h3>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            undefined,
+                            " - ",
+                            undefined,
+                          ],
+                          "className": "time-info",
+                        },
+                        "ref": null,
+                        "rendered": Array [
                           undefined,
                           " - ",
                           undefined,
                         ],
-                        "className": "time-info",
+                        "type": "h3",
                       },
-                      "ref": null,
-                      "rendered": Array [
-                        undefined,
-                        " - ",
-                        undefined,
-                      ],
-                      "type": "h3",
+                      "type": "div",
                     },
                     Object {
                       "instance": null,
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": Array [
-                          "Going To ->",
-                          "Breckenridge",
+                        "children": <h4
+                          className="destination-info"
+>
+                          Going To:
+                          <span
+                                                    className="destination"
+                          >
+                                                    Breckenridge
+                          </span>
+</h4>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Going To:",
+                            <span
+                              className="destination"
+>
+                              Breckenridge
+</span>,
+                          ],
+                          "className": "destination-info",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Going To:",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Breckenridge",
+                              "className": "destination",
+                            },
+                            "ref": null,
+                            "rendered": "Breckenridge",
+                            "type": "span",
+                          },
                         ],
-                        "className": "destination-info",
+                        "type": "h4",
                       },
-                      "ref": null,
-                      "rendered": Array [
-                        "Going To ->",
-                        "Breckenridge",
-                      ],
-                      "type": "h4",
+                      "type": "div",
                     },
                     Object {
                       "instance": null,
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": Array [
+                        "children": <h4
+                          className="car-info"
+>
+                          Car Type: 
+</h4>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Car Type: ",
+                            undefined,
+                          ],
+                          "className": "car-info",
+                        },
+                        "ref": null,
+                        "rendered": Array [
                           "Car Type: ",
                           undefined,
                         ],
-                        "className": "car-info",
+                        "type": "h4",
                       },
-                      "ref": null,
-                      "rendered": Array [
-                        "Car Type: ",
-                        undefined,
-                      ],
-                      "type": "h4",
+                      "type": "div",
                     },
                     Object {
                       "instance": null,
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": Array [
+                        "children": <h5
+                          className="seating-info"
+>
+                          Seats Remaining: 
+</h5>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Seats Remaining: ",
+                            undefined,
+                          ],
+                          "className": "seating-info",
+                        },
+                        "ref": null,
+                        "rendered": Array [
                           "Seats Remaining: ",
                           undefined,
                         ],
-                        "className": "seating-info",
+                        "type": "h5",
                       },
-                      "ref": null,
-                      "rendered": Array [
-                        "Seats Remaining: ",
-                        undefined,
-                      ],
-                      "type": "h5",
+                      "type": "div",
                     },
                   ],
                   "type": "article",
@@ -587,27 +859,39 @@ ShallowWrapper {
                                     <article
                                                 className="ride-info"
                                     >
-                                                <h3
-                                                            className="time-info"
-                                                >
-                                                             - 
-                                                </h3>
-                                                <h4
-                                                            className="destination-info"
-                                                >
-                                                            Going To -&gt;
-                                                            Breckenridge
-                                                </h4>
-                                                <h4
-                                                            className="car-info"
-                                                >
-                                                            Car Type: 
-                                                </h4>
-                                                <h5
-                                                            className="seating-info"
-                                                >
-                                                            Seats Remaining: 
-                                                </h5>
+                                                <div>
+                                                            <h3
+                                                                        className="time-info"
+                                                            >
+                                                                         - 
+                                                            </h3>
+                                                </div>
+                                                <div>
+                                                            <h4
+                                                                        className="destination-info"
+                                                            >
+                                                                        Going To:
+                                                                        <span
+                                                                                    className="destination"
+                                                                        >
+                                                                                    Breckenridge
+                                                                        </span>
+                                                            </h4>
+                                                </div>
+                                                <div>
+                                                            <h4
+                                                                        className="car-info"
+                                                            >
+                                                                        Car Type: 
+                                                            </h4>
+                                                </div>
+                                                <div>
+                                                            <h5
+                                                                        className="seating-info"
+                                                            >
+                                                                        Seats Remaining: 
+                                                            </h5>
+                                                </div>
                                     </article>
                         </li>
                         <li
@@ -616,27 +900,39 @@ ShallowWrapper {
                                     <article
                                                 className="ride-info"
                                     >
-                                                <h3
-                                                            className="time-info"
-                                                >
-                                                             - 
-                                                </h3>
-                                                <h4
-                                                            className="destination-info"
-                                                >
-                                                            Going To -&gt;
-                                                            Breckenridge
-                                                </h4>
-                                                <h4
-                                                            className="car-info"
-                                                >
-                                                            Car Type: 
-                                                </h4>
-                                                <h5
-                                                            className="seating-info"
-                                                >
-                                                            Seats Remaining: 
-                                                </h5>
+                                                <div>
+                                                            <h3
+                                                                        className="time-info"
+                                                            >
+                                                                         - 
+                                                            </h3>
+                                                </div>
+                                                <div>
+                                                            <h4
+                                                                        className="destination-info"
+                                                            >
+                                                                        Going To:
+                                                                        <span
+                                                                                    className="destination"
+                                                                        >
+                                                                                    Breckenridge
+                                                                        </span>
+                                                            </h4>
+                                                </div>
+                                                <div>
+                                                            <h4
+                                                                        className="car-info"
+                                                            >
+                                                                        Car Type: 
+                                                            </h4>
+                                                </div>
+                                                <div>
+                                                            <h5
+                                                                        className="seating-info"
+                                                            >
+                                                                        Seats Remaining: 
+                                                            </h5>
+                                                </div>
                                     </article>
                         </li>
             </ul>
@@ -668,27 +964,39 @@ ShallowWrapper {
                                 <article
                                                 className="ride-info"
                                 >
-                                                <h3
-                                                                className="time-info"
-                                                >
-                                                                 - 
-                                                </h3>
-                                                <h4
-                                                                className="destination-info"
-                                                >
-                                                                Going To -&gt;
-                                                                Breckenridge
-                                                </h4>
-                                                <h4
-                                                                className="car-info"
-                                                >
-                                                                Car Type: 
-                                                </h4>
-                                                <h5
-                                                                className="seating-info"
-                                                >
-                                                                Seats Remaining: 
-                                                </h5>
+                                                <div>
+                                                                <h3
+                                                                                className="time-info"
+                                                                >
+                                                                                 - 
+                                                                </h3>
+                                                </div>
+                                                <div>
+                                                                <h4
+                                                                                className="destination-info"
+                                                                >
+                                                                                Going To:
+                                                                                <span
+                                                                                                className="destination"
+                                                                                >
+                                                                                                Breckenridge
+                                                                                </span>
+                                                                </h4>
+                                                </div>
+                                                <div>
+                                                                <h4
+                                                                                className="car-info"
+                                                                >
+                                                                                Car Type: 
+                                                                </h4>
+                                                </div>
+                                                <div>
+                                                                <h5
+                                                                                className="seating-info"
+                                                                >
+                                                                                Seats Remaining: 
+                                                                </h5>
+                                                </div>
                                 </article>
                 </li>
                 <li
@@ -697,27 +1005,39 @@ ShallowWrapper {
                                 <article
                                                 className="ride-info"
                                 >
-                                                <h3
-                                                                className="time-info"
-                                                >
-                                                                 - 
-                                                </h3>
-                                                <h4
-                                                                className="destination-info"
-                                                >
-                                                                Going To -&gt;
-                                                                Breckenridge
-                                                </h4>
-                                                <h4
-                                                                className="car-info"
-                                                >
-                                                                Car Type: 
-                                                </h4>
-                                                <h5
-                                                                className="seating-info"
-                                                >
-                                                                Seats Remaining: 
-                                                </h5>
+                                                <div>
+                                                                <h3
+                                                                                className="time-info"
+                                                                >
+                                                                                 - 
+                                                                </h3>
+                                                </div>
+                                                <div>
+                                                                <h4
+                                                                                className="destination-info"
+                                                                >
+                                                                                Going To:
+                                                                                <span
+                                                                                                className="destination"
+                                                                                >
+                                                                                                Breckenridge
+                                                                                </span>
+                                                                </h4>
+                                                </div>
+                                                <div>
+                                                                <h4
+                                                                                className="car-info"
+                                                                >
+                                                                                Car Type: 
+                                                                </h4>
+                                                </div>
+                                                <div>
+                                                                <h5
+                                                                                className="seating-info"
+                                                                >
+                                                                                Seats Remaining: 
+                                                                </h5>
+                                                </div>
                                 </article>
                 </li>
 </ul>,
@@ -748,27 +1068,39 @@ ShallowWrapper {
                     <article
                                         className="ride-info"
                     >
-                                        <h3
-                                                            className="time-info"
-                                        >
-                                                             - 
-                                        </h3>
-                                        <h4
-                                                            className="destination-info"
-                                        >
-                                                            Going To -&gt;
-                                                            Breckenridge
-                                        </h4>
-                                        <h4
-                                                            className="car-info"
-                                        >
-                                                            Car Type: 
-                                        </h4>
-                                        <h5
-                                                            className="seating-info"
-                                        >
-                                                            Seats Remaining: 
-                                        </h5>
+                                        <div>
+                                                            <h3
+                                                                                className="time-info"
+                                                            >
+                                                                                 - 
+                                                            </h3>
+                                        </div>
+                                        <div>
+                                                            <h4
+                                                                                className="destination-info"
+                                                            >
+                                                                                Going To:
+                                                                                <span
+                                                                                                    className="destination"
+                                                                                >
+                                                                                                    Breckenridge
+                                                                                </span>
+                                                            </h4>
+                                        </div>
+                                        <div>
+                                                            <h4
+                                                                                className="car-info"
+                                                            >
+                                                                                Car Type: 
+                                                            </h4>
+                                        </div>
+                                        <div>
+                                                            <h5
+                                                                                className="seating-info"
+                                                            >
+                                                                                Seats Remaining: 
+                                                            </h5>
+                                        </div>
                     </article>
 </li>,
                   <li
@@ -777,27 +1109,39 @@ ShallowWrapper {
                     <article
                                         className="ride-info"
                     >
-                                        <h3
-                                                            className="time-info"
-                                        >
-                                                             - 
-                                        </h3>
-                                        <h4
-                                                            className="destination-info"
-                                        >
-                                                            Going To -&gt;
-                                                            Breckenridge
-                                        </h4>
-                                        <h4
-                                                            className="car-info"
-                                        >
-                                                            Car Type: 
-                                        </h4>
-                                        <h5
-                                                            className="seating-info"
-                                        >
-                                                            Seats Remaining: 
-                                        </h5>
+                                        <div>
+                                                            <h3
+                                                                                className="time-info"
+                                                            >
+                                                                                 - 
+                                                            </h3>
+                                        </div>
+                                        <div>
+                                                            <h4
+                                                                                className="destination-info"
+                                                            >
+                                                                                Going To:
+                                                                                <span
+                                                                                                    className="destination"
+                                                                                >
+                                                                                                    Breckenridge
+                                                                                </span>
+                                                            </h4>
+                                        </div>
+                                        <div>
+                                                            <h4
+                                                                                className="car-info"
+                                                            >
+                                                                                Car Type: 
+                                                            </h4>
+                                        </div>
+                                        <div>
+                                                            <h5
+                                                                                className="seating-info"
+                                                            >
+                                                                                Seats Remaining: 
+                                                            </h5>
+                                        </div>
                     </article>
 </li>,
                 ],
@@ -812,27 +1156,39 @@ ShallowWrapper {
                     "children": <article
                       className="ride-info"
 >
-                      <h3
-                                            className="time-info"
-                      >
-                                             - 
-                      </h3>
-                      <h4
-                                            className="destination-info"
-                      >
-                                            Going To -&gt;
-                                            Breckenridge
-                      </h4>
-                      <h4
-                                            className="car-info"
-                      >
-                                            Car Type: 
-                      </h4>
-                      <h5
-                                            className="seating-info"
-                      >
-                                            Seats Remaining: 
-                      </h5>
+                      <div>
+                                            <h3
+                                                                  className="time-info"
+                                            >
+                                                                   - 
+                                            </h3>
+                      </div>
+                      <div>
+                                            <h4
+                                                                  className="destination-info"
+                                            >
+                                                                  Going To:
+                                                                  <span
+                                                                                        className="destination"
+                                                                  >
+                                                                                        Breckenridge
+                                                                  </span>
+                                            </h4>
+                      </div>
+                      <div>
+                                            <h4
+                                                                  className="car-info"
+                                            >
+                                                                  Car Type: 
+                                            </h4>
+                      </div>
+                      <div>
+                                            <h5
+                                                                  className="seating-info"
+                                            >
+                                                                  Seats Remaining: 
+                                            </h5>
+                      </div>
 </article>,
                     "className": "ride-item",
                   },
@@ -843,27 +1199,39 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": Array [
-                        <h3
-                          className="time-info"
->
-                           - 
-</h3>,
-                        <h4
-                          className="destination-info"
->
-                          Going To -&gt;
-                          Breckenridge
-</h4>,
-                        <h4
-                          className="car-info"
->
-                          Car Type: 
-</h4>,
-                        <h5
-                          className="seating-info"
->
-                          Seats Remaining: 
-</h5>,
+                        <div>
+                          <h3
+                                                    className="time-info"
+                          >
+                                                     - 
+                          </h3>
+</div>,
+                        <div>
+                          <h4
+                                                    className="destination-info"
+                          >
+                                                    Going To:
+                                                    <span
+                                                                              className="destination"
+                                                    >
+                                                                              Breckenridge
+                                                    </span>
+                          </h4>
+</div>,
+                        <div>
+                          <h4
+                                                    className="car-info"
+                          >
+                                                    Car Type: 
+                          </h4>
+</div>,
+                        <div>
+                          <h5
+                                                    className="seating-info"
+                          >
+                                                    Seats Remaining: 
+                          </h5>
+</div>,
                       ],
                       "className": "ride-info",
                     },
@@ -874,74 +1242,150 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": Array [
+                          "children": <h3
+                            className="time-info"
+>
+                             - 
+</h3>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              undefined,
+                              " - ",
+                              undefined,
+                            ],
+                            "className": "time-info",
+                          },
+                          "ref": null,
+                          "rendered": Array [
                             undefined,
                             " - ",
                             undefined,
                           ],
-                          "className": "time-info",
+                          "type": "h3",
                         },
-                        "ref": null,
-                        "rendered": Array [
-                          undefined,
-                          " - ",
-                          undefined,
-                        ],
-                        "type": "h3",
+                        "type": "div",
                       },
                       Object {
                         "instance": null,
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": Array [
-                            "Going To ->",
-                            "Breckenridge",
+                          "children": <h4
+                            className="destination-info"
+>
+                            Going To:
+                            <span
+                                                        className="destination"
+                            >
+                                                        Breckenridge
+                            </span>
+</h4>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "Going To:",
+                              <span
+                                className="destination"
+>
+                                Breckenridge
+</span>,
+                            ],
+                            "className": "destination-info",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "Going To:",
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "Breckenridge",
+                                "className": "destination",
+                              },
+                              "ref": null,
+                              "rendered": "Breckenridge",
+                              "type": "span",
+                            },
                           ],
-                          "className": "destination-info",
+                          "type": "h4",
                         },
-                        "ref": null,
-                        "rendered": Array [
-                          "Going To ->",
-                          "Breckenridge",
-                        ],
-                        "type": "h4",
+                        "type": "div",
                       },
                       Object {
                         "instance": null,
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": Array [
+                          "children": <h4
+                            className="car-info"
+>
+                            Car Type: 
+</h4>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "Car Type: ",
+                              undefined,
+                            ],
+                            "className": "car-info",
+                          },
+                          "ref": null,
+                          "rendered": Array [
                             "Car Type: ",
                             undefined,
                           ],
-                          "className": "car-info",
+                          "type": "h4",
                         },
-                        "ref": null,
-                        "rendered": Array [
-                          "Car Type: ",
-                          undefined,
-                        ],
-                        "type": "h4",
+                        "type": "div",
                       },
                       Object {
                         "instance": null,
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": Array [
+                          "children": <h5
+                            className="seating-info"
+>
+                            Seats Remaining: 
+</h5>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "Seats Remaining: ",
+                              undefined,
+                            ],
+                            "className": "seating-info",
+                          },
+                          "ref": null,
+                          "rendered": Array [
                             "Seats Remaining: ",
                             undefined,
                           ],
-                          "className": "seating-info",
+                          "type": "h5",
                         },
-                        "ref": null,
-                        "rendered": Array [
-                          "Seats Remaining: ",
-                          undefined,
-                        ],
-                        "type": "h5",
+                        "type": "div",
                       },
                     ],
                     "type": "article",
@@ -956,27 +1400,39 @@ ShallowWrapper {
                     "children": <article
                       className="ride-info"
 >
-                      <h3
-                                            className="time-info"
-                      >
-                                             - 
-                      </h3>
-                      <h4
-                                            className="destination-info"
-                      >
-                                            Going To -&gt;
-                                            Breckenridge
-                      </h4>
-                      <h4
-                                            className="car-info"
-                      >
-                                            Car Type: 
-                      </h4>
-                      <h5
-                                            className="seating-info"
-                      >
-                                            Seats Remaining: 
-                      </h5>
+                      <div>
+                                            <h3
+                                                                  className="time-info"
+                                            >
+                                                                   - 
+                                            </h3>
+                      </div>
+                      <div>
+                                            <h4
+                                                                  className="destination-info"
+                                            >
+                                                                  Going To:
+                                                                  <span
+                                                                                        className="destination"
+                                                                  >
+                                                                                        Breckenridge
+                                                                  </span>
+                                            </h4>
+                      </div>
+                      <div>
+                                            <h4
+                                                                  className="car-info"
+                                            >
+                                                                  Car Type: 
+                                            </h4>
+                      </div>
+                      <div>
+                                            <h5
+                                                                  className="seating-info"
+                                            >
+                                                                  Seats Remaining: 
+                                            </h5>
+                      </div>
 </article>,
                     "className": "ride-item",
                   },
@@ -987,27 +1443,39 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": Array [
-                        <h3
-                          className="time-info"
->
-                           - 
-</h3>,
-                        <h4
-                          className="destination-info"
->
-                          Going To -&gt;
-                          Breckenridge
-</h4>,
-                        <h4
-                          className="car-info"
->
-                          Car Type: 
-</h4>,
-                        <h5
-                          className="seating-info"
->
-                          Seats Remaining: 
-</h5>,
+                        <div>
+                          <h3
+                                                    className="time-info"
+                          >
+                                                     - 
+                          </h3>
+</div>,
+                        <div>
+                          <h4
+                                                    className="destination-info"
+                          >
+                                                    Going To:
+                                                    <span
+                                                                              className="destination"
+                                                    >
+                                                                              Breckenridge
+                                                    </span>
+                          </h4>
+</div>,
+                        <div>
+                          <h4
+                                                    className="car-info"
+                          >
+                                                    Car Type: 
+                          </h4>
+</div>,
+                        <div>
+                          <h5
+                                                    className="seating-info"
+                          >
+                                                    Seats Remaining: 
+                          </h5>
+</div>,
                       ],
                       "className": "ride-info",
                     },
@@ -1018,74 +1486,150 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": Array [
+                          "children": <h3
+                            className="time-info"
+>
+                             - 
+</h3>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              undefined,
+                              " - ",
+                              undefined,
+                            ],
+                            "className": "time-info",
+                          },
+                          "ref": null,
+                          "rendered": Array [
                             undefined,
                             " - ",
                             undefined,
                           ],
-                          "className": "time-info",
+                          "type": "h3",
                         },
-                        "ref": null,
-                        "rendered": Array [
-                          undefined,
-                          " - ",
-                          undefined,
-                        ],
-                        "type": "h3",
+                        "type": "div",
                       },
                       Object {
                         "instance": null,
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": Array [
-                            "Going To ->",
-                            "Breckenridge",
+                          "children": <h4
+                            className="destination-info"
+>
+                            Going To:
+                            <span
+                                                        className="destination"
+                            >
+                                                        Breckenridge
+                            </span>
+</h4>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "Going To:",
+                              <span
+                                className="destination"
+>
+                                Breckenridge
+</span>,
+                            ],
+                            "className": "destination-info",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "Going To:",
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "Breckenridge",
+                                "className": "destination",
+                              },
+                              "ref": null,
+                              "rendered": "Breckenridge",
+                              "type": "span",
+                            },
                           ],
-                          "className": "destination-info",
+                          "type": "h4",
                         },
-                        "ref": null,
-                        "rendered": Array [
-                          "Going To ->",
-                          "Breckenridge",
-                        ],
-                        "type": "h4",
+                        "type": "div",
                       },
                       Object {
                         "instance": null,
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": Array [
+                          "children": <h4
+                            className="car-info"
+>
+                            Car Type: 
+</h4>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "Car Type: ",
+                              undefined,
+                            ],
+                            "className": "car-info",
+                          },
+                          "ref": null,
+                          "rendered": Array [
                             "Car Type: ",
                             undefined,
                           ],
-                          "className": "car-info",
+                          "type": "h4",
                         },
-                        "ref": null,
-                        "rendered": Array [
-                          "Car Type: ",
-                          undefined,
-                        ],
-                        "type": "h4",
+                        "type": "div",
                       },
                       Object {
                         "instance": null,
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": Array [
+                          "children": <h5
+                            className="seating-info"
+>
+                            Seats Remaining: 
+</h5>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "Seats Remaining: ",
+                              undefined,
+                            ],
+                            "className": "seating-info",
+                          },
+                          "ref": null,
+                          "rendered": Array [
                             "Seats Remaining: ",
                             undefined,
                           ],
-                          "className": "seating-info",
+                          "type": "h5",
                         },
-                        "ref": null,
-                        "rendered": Array [
-                          "Seats Remaining: ",
-                          undefined,
-                        ],
-                        "type": "h5",
+                        "type": "div",
                       },
                     ],
                     "type": "article",

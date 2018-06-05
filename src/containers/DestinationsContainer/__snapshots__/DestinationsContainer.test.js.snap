@@ -21,7 +21,7 @@ ShallowWrapper {
         <h1
           className="landing-instructions"
 >
-          Choose a destination to see available rides.
+          Get a Ride.
 </h1>,
         <div
           className="redrocks-container"
@@ -61,11 +61,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Choose a destination to see available rides.",
+          "children": "Get a Ride.",
           "className": "landing-instructions",
         },
         "ref": null,
-        "rendered": "Choose a destination to see available rides.",
+        "rendered": "Get a Ride.",
         "type": "h1",
       },
       Object {
@@ -155,7 +155,7 @@ ShallowWrapper {
           <h1
             className="landing-instructions"
 >
-            Choose a destination to see available rides.
+            Get a Ride.
 </h1>,
           <div
             className="redrocks-container"
@@ -195,11 +195,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Choose a destination to see available rides.",
+            "children": "Get a Ride.",
             "className": "landing-instructions",
           },
           "ref": null,
-          "rendered": "Choose a destination to see available rides.",
+          "rendered": "Get a Ride.",
           "type": "h1",
         },
         Object {

@@ -122,16 +122,22 @@ ShallowWrapper {
                                                                                                     className="ride-popover-list"
                                                                                     >
                                                                                                     <li>
-                                                                                                                    Leaving at
+                                                                                                                    Leaving at 
+                                                                                                                    <span
+                                                                                                                                    className="info"
+                                                                                                                    />
                                                                                                     </li>
                                                                                                     <li>
                                                                                                                     You'd be riding in a 
+                                                                                                                    <span
+                                                                                                                                    className="info"
+                                                                                                                    />
                                                                                                     </li>
                                                                                                     <li>
-                                                                                                                    You'll leave at 
-                                                                                                                     on 
+                                                                                                                    You'll leave on 
                                                                                                     </li>
                                                                                                     <button
+                                                                                                                    className="join-ride-btn"
                                                                                                                     onClick={[Function]}
                                                                                                     >
                                                                                                                     I want in
@@ -147,13 +153,34 @@ ShallowWrapper {
                                                                     block={false}
                                                                     bsClass="btn"
                                                                     bsStyle="default"
+                                                                    className="ride-btn"
                                                                     disabled={false}
                                                                     style={
                                                                                     Object {
                                                                                                     "backgroundColor": "white",
                                                                                                   }
                                                                     }
-                                                    />
+                                                    >
+                                                                    <span
+                                                                                    className="date"
+                                                                    >
+                                                                                    leaving on: 
+                                                                                    <span
+                                                                                                    className="text"
+                                                                                    />
+                                                                    </span>
+                                                                    <span
+                                                                                    className="time"
+                                                                    >
+                                                                                    at: 
+                                                                                    <span
+                                                                                                    className="text"
+                                                                                    >
+                                                                                                     
+                                                                                                     
+                                                                                    </span>
+                                                                    </span>
+                                                    </Button>
                                     </OverlayTrigger>
                                     <OverlayTrigger
                                                     container={[Circular]}
@@ -172,16 +199,22 @@ ShallowWrapper {
                                                                                                     className="ride-popover-list"
                                                                                     >
                                                                                                     <li>
-                                                                                                                    Leaving at
+                                                                                                                    Leaving at 
+                                                                                                                    <span
+                                                                                                                                    className="info"
+                                                                                                                    />
                                                                                                     </li>
                                                                                                     <li>
                                                                                                                     You'd be riding in a 
+                                                                                                                    <span
+                                                                                                                                    className="info"
+                                                                                                                    />
                                                                                                     </li>
                                                                                                     <li>
-                                                                                                                    You'll leave at 
-                                                                                                                     on 
+                                                                                                                    You'll leave on 
                                                                                                     </li>
                                                                                                     <button
+                                                                                                                    className="join-ride-btn"
                                                                                                                     onClick={[Function]}
                                                                                                     >
                                                                                                                     I want in
@@ -197,13 +230,34 @@ ShallowWrapper {
                                                                     block={false}
                                                                     bsClass="btn"
                                                                     bsStyle="default"
+                                                                    className="ride-btn"
                                                                     disabled={false}
                                                                     style={
                                                                                     Object {
                                                                                                     "backgroundColor": "white",
                                                                                                   }
                                                                     }
-                                                    />
+                                                    >
+                                                                    <span
+                                                                                    className="date"
+                                                                    >
+                                                                                    leaving on: 
+                                                                                    <span
+                                                                                                    className="text"
+                                                                                    />
+                                                                    </span>
+                                                                    <span
+                                                                                    className="time"
+                                                                    >
+                                                                                    at: 
+                                                                                    <span
+                                                                                                    className="text"
+                                                                                    >
+                                                                                                     
+                                                                                                     
+                                                                                    </span>
+                                                                    </span>
+                                                    </Button>
                                     </OverlayTrigger>
                     </ButtonToolbar>,
                                   "_rendering": false,
@@ -227,16 +281,22 @@ ShallowWrapper {
                                         className="ride-popover-list"
                               >
                                         <li>
-                                                  Leaving at
+                                                  Leaving at 
+                                                  <span
+                                                            className="info"
+                                                  />
                                         </li>
                                         <li>
                                                   You'd be riding in a 
+                                                  <span
+                                                            className="info"
+                                                  />
                                         </li>
                                         <li>
-                                                  You'll leave at 
-                                                   on 
+                                                  You'll leave on 
                                         </li>
                                         <button
+                                                  className="join-ride-btn"
                                                   onClick={[Function]}
                                         >
                                                   I want in
@@ -252,13 +312,34 @@ ShallowWrapper {
                     block={false}
                     bsClass="btn"
                     bsStyle="default"
+                    className="ride-btn"
                     disabled={false}
                     style={
                               Object {
                                         "backgroundColor": "white",
                                       }
                     }
-          />
+          >
+                    <span
+                              className="date"
+                    >
+                              leaving on: 
+                              <span
+                                        className="text"
+                              />
+                    </span>
+                    <span
+                              className="time"
+                    >
+                              at: 
+                              <span
+                                        className="text"
+                              >
+                                         
+                                         
+                              </span>
+                    </span>
+          </Button>
 </OverlayTrigger>,
         <OverlayTrigger
           container={
@@ -339,16 +420,22 @@ ShallowWrapper {
                                                                                                     className="ride-popover-list"
                                                                                     >
                                                                                                     <li>
-                                                                                                                    Leaving at
+                                                                                                                    Leaving at 
+                                                                                                                    <span
+                                                                                                                                    className="info"
+                                                                                                                    />
                                                                                                     </li>
                                                                                                     <li>
                                                                                                                     You'd be riding in a 
+                                                                                                                    <span
+                                                                                                                                    className="info"
+                                                                                                                    />
                                                                                                     </li>
                                                                                                     <li>
-                                                                                                                    You'll leave at 
-                                                                                                                     on 
+                                                                                                                    You'll leave on 
                                                                                                     </li>
                                                                                                     <button
+                                                                                                                    className="join-ride-btn"
                                                                                                                     onClick={[Function]}
                                                                                                     >
                                                                                                                     I want in
@@ -364,13 +451,34 @@ ShallowWrapper {
                                                                     block={false}
                                                                     bsClass="btn"
                                                                     bsStyle="default"
+                                                                    className="ride-btn"
                                                                     disabled={false}
                                                                     style={
                                                                                     Object {
                                                                                                     "backgroundColor": "white",
                                                                                                   }
                                                                     }
-                                                    />
+                                                    >
+                                                                    <span
+                                                                                    className="date"
+                                                                    >
+                                                                                    leaving on: 
+                                                                                    <span
+                                                                                                    className="text"
+                                                                                    />
+                                                                    </span>
+                                                                    <span
+                                                                                    className="time"
+                                                                    >
+                                                                                    at: 
+                                                                                    <span
+                                                                                                    className="text"
+                                                                                    >
+                                                                                                     
+                                                                                                     
+                                                                                    </span>
+                                                                    </span>
+                                                    </Button>
                                     </OverlayTrigger>
                                     <OverlayTrigger
                                                     container={[Circular]}
@@ -389,16 +497,22 @@ ShallowWrapper {
                                                                                                     className="ride-popover-list"
                                                                                     >
                                                                                                     <li>
-                                                                                                                    Leaving at
+                                                                                                                    Leaving at 
+                                                                                                                    <span
+                                                                                                                                    className="info"
+                                                                                                                    />
                                                                                                     </li>
                                                                                                     <li>
                                                                                                                     You'd be riding in a 
+                                                                                                                    <span
+                                                                                                                                    className="info"
+                                                                                                                    />
                                                                                                     </li>
                                                                                                     <li>
-                                                                                                                    You'll leave at 
-                                                                                                                     on 
+                                                                                                                    You'll leave on 
                                                                                                     </li>
                                                                                                     <button
+                                                                                                                    className="join-ride-btn"
                                                                                                                     onClick={[Function]}
                                                                                                     >
                                                                                                                     I want in
@@ -414,13 +528,34 @@ ShallowWrapper {
                                                                     block={false}
                                                                     bsClass="btn"
                                                                     bsStyle="default"
+                                                                    className="ride-btn"
                                                                     disabled={false}
                                                                     style={
                                                                                     Object {
                                                                                                     "backgroundColor": "white",
                                                                                                   }
                                                                     }
-                                                    />
+                                                    >
+                                                                    <span
+                                                                                    className="date"
+                                                                    >
+                                                                                    leaving on: 
+                                                                                    <span
+                                                                                                    className="text"
+                                                                                    />
+                                                                    </span>
+                                                                    <span
+                                                                                    className="time"
+                                                                    >
+                                                                                    at: 
+                                                                                    <span
+                                                                                                    className="text"
+                                                                                    >
+                                                                                                     
+                                                                                                     
+                                                                                    </span>
+                                                                    </span>
+                                                    </Button>
                                     </OverlayTrigger>
                     </ButtonToolbar>,
                                   "_rendering": false,
@@ -444,16 +579,22 @@ ShallowWrapper {
                                         className="ride-popover-list"
                               >
                                         <li>
-                                                  Leaving at
+                                                  Leaving at 
+                                                  <span
+                                                            className="info"
+                                                  />
                                         </li>
                                         <li>
                                                   You'd be riding in a 
+                                                  <span
+                                                            className="info"
+                                                  />
                                         </li>
                                         <li>
-                                                  You'll leave at 
-                                                   on 
+                                                  You'll leave on 
                                         </li>
                                         <button
+                                                  className="join-ride-btn"
                                                   onClick={[Function]}
                                         >
                                                   I want in
@@ -469,13 +610,34 @@ ShallowWrapper {
                     block={false}
                     bsClass="btn"
                     bsStyle="default"
+                    className="ride-btn"
                     disabled={false}
                     style={
                               Object {
                                         "backgroundColor": "white",
                                       }
                     }
-          />
+          >
+                    <span
+                              className="date"
+                    >
+                              leaving on: 
+                              <span
+                                        className="text"
+                              />
+                    </span>
+                    <span
+                              className="time"
+                    >
+                              at: 
+                              <span
+                                        className="text"
+                              >
+                                         
+                                         
+                              </span>
+                    </span>
+          </Button>
 </OverlayTrigger>,
       ],
       "id": "popover-container",
@@ -492,13 +654,34 @@ ShallowWrapper {
             block={false}
             bsClass="btn"
             bsStyle="default"
+            className="ride-btn"
             disabled={false}
             style={
                         Object {
                                     "backgroundColor": "white",
                                   }
             }
-/>,
+>
+            <span
+                        className="date"
+            >
+                        leaving on: 
+                        <span
+                                    className="text"
+                        />
+            </span>
+            <span
+                        className="time"
+            >
+                        at: 
+                        <span
+                                    className="text"
+                        >
+                                     
+                                     
+                        </span>
+            </span>
+</Button>,
           "container": RidePopoverComponent {
             "context": Object {},
             "findExistingRide": [Function],
@@ -576,16 +759,22 @@ ShallowWrapper {
                                                                                           className="ride-popover-list"
                                                                         >
                                                                                           <li>
-                                                                                                            Leaving at
+                                                                                                            Leaving at 
+                                                                                                            <span
+                                                                                                                              className="info"
+                                                                                                            />
                                                                                           </li>
                                                                                           <li>
                                                                                                             You'd be riding in a 
+                                                                                                            <span
+                                                                                                                              className="info"
+                                                                                                            />
                                                                                           </li>
                                                                                           <li>
-                                                                                                            You'll leave at 
-                                                                                                             on 
+                                                                                                            You'll leave on 
                                                                                           </li>
                                                                                           <button
+                                                                                                            className="join-ride-btn"
                                                                                                             onClick={[Function]}
                                                                                           >
                                                                                                             I want in
@@ -601,13 +790,34 @@ ShallowWrapper {
                                                       block={false}
                                                       bsClass="btn"
                                                       bsStyle="default"
+                                                      className="ride-btn"
                                                       disabled={false}
                                                       style={
                                                                         Object {
                                                                                           "backgroundColor": "white",
                                                                                         }
                                                       }
-                                    />
+                                    >
+                                                      <span
+                                                                        className="date"
+                                                      >
+                                                                        leaving on: 
+                                                                        <span
+                                                                                          className="text"
+                                                                        />
+                                                      </span>
+                                                      <span
+                                                                        className="time"
+                                                      >
+                                                                        at: 
+                                                                        <span
+                                                                                          className="text"
+                                                                        >
+                                                                                           
+                                                                                           
+                                                                        </span>
+                                                      </span>
+                                    </Button>
                   </OverlayTrigger>
                   <OverlayTrigger
                                     container={[Circular]}
@@ -626,16 +836,22 @@ ShallowWrapper {
                                                                                           className="ride-popover-list"
                                                                         >
                                                                                           <li>
-                                                                                                            Leaving at
+                                                                                                            Leaving at 
+                                                                                                            <span
+                                                                                                                              className="info"
+                                                                                                            />
                                                                                           </li>
                                                                                           <li>
                                                                                                             You'd be riding in a 
+                                                                                                            <span
+                                                                                                                              className="info"
+                                                                                                            />
                                                                                           </li>
                                                                                           <li>
-                                                                                                            You'll leave at 
-                                                                                                             on 
+                                                                                                            You'll leave on 
                                                                                           </li>
                                                                                           <button
+                                                                                                            className="join-ride-btn"
                                                                                                             onClick={[Function]}
                                                                                           >
                                                                                                             I want in
@@ -651,13 +867,34 @@ ShallowWrapper {
                                                       block={false}
                                                       bsClass="btn"
                                                       bsStyle="default"
+                                                      className="ride-btn"
                                                       disabled={false}
                                                       style={
                                                                         Object {
                                                                                           "backgroundColor": "white",
                                                                                         }
                                                       }
-                                    />
+                                    >
+                                                      <span
+                                                                        className="date"
+                                                      >
+                                                                        leaving on: 
+                                                                        <span
+                                                                                          className="text"
+                                                                        />
+                                                      </span>
+                                                      <span
+                                                                        className="time"
+                                                      >
+                                                                        at: 
+                                                                        <span
+                                                                                          className="text"
+                                                                        >
+                                                                                           
+                                                                                           
+                                                                        </span>
+                                                      </span>
+                                    </Button>
                   </OverlayTrigger>
 </ButtonToolbar>,
                 "_rendering": false,
@@ -679,16 +916,22 @@ ShallowWrapper {
                         className="ride-popover-list"
             >
                         <li>
-                                    Leaving at
+                                    Leaving at 
+                                    <span
+                                                className="info"
+                                    />
                         </li>
                         <li>
                                     You'd be riding in a 
+                                    <span
+                                                className="info"
+                                    />
                         </li>
                         <li>
-                                    You'll leave at 
-                                     on 
+                                    You'll leave on 
                         </li>
                         <button
+                                    className="join-ride-btn"
                                     onClick={[Function]}
                         >
                                     I want in
@@ -708,14 +951,109 @@ ShallowWrapper {
             "block": false,
             "bsClass": "btn",
             "bsStyle": "default",
-            "children": undefined,
+            "children": Array [
+              <span
+                className="date"
+>
+                leaving on: 
+                <span
+                                className="text"
+                />
+</span>,
+              <span
+                className="time"
+>
+                at: 
+                <span
+                                className="text"
+                >
+                                 
+                                 
+                </span>
+</span>,
+            ],
+            "className": "ride-btn",
             "disabled": false,
             "style": Object {
               "backgroundColor": "white",
             },
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "leaving on: ",
+                  <span
+                    className="text"
+/>,
+                ],
+                "className": "date",
+              },
+              "ref": null,
+              "rendered": Array [
+                "leaving on: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": undefined,
+                    "className": "text",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "span",
+                },
+              ],
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "at: ",
+                  <span
+                    className="text"
+>
+                     
+                     
+</span>,
+                ],
+                "className": "time",
+              },
+              "ref": null,
+              "rendered": Array [
+                "at: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      undefined,
+                      " ",
+                    ],
+                    "className": "text",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    undefined,
+                    " ",
+                  ],
+                  "type": "span",
+                },
+              ],
+              "type": "span",
+            },
+          ],
           "type": [Function],
         },
         "type": [Function],
@@ -730,13 +1068,34 @@ ShallowWrapper {
             block={false}
             bsClass="btn"
             bsStyle="default"
+            className="ride-btn"
             disabled={false}
             style={
                         Object {
                                     "backgroundColor": "white",
                                   }
             }
-/>,
+>
+            <span
+                        className="date"
+            >
+                        leaving on: 
+                        <span
+                                    className="text"
+                        />
+            </span>
+            <span
+                        className="time"
+            >
+                        at: 
+                        <span
+                                    className="text"
+                        >
+                                     
+                                     
+                        </span>
+            </span>
+</Button>,
           "container": RidePopoverComponent {
             "context": Object {},
             "findExistingRide": [Function],
@@ -814,16 +1173,22 @@ ShallowWrapper {
                                                                                           className="ride-popover-list"
                                                                         >
                                                                                           <li>
-                                                                                                            Leaving at
+                                                                                                            Leaving at 
+                                                                                                            <span
+                                                                                                                              className="info"
+                                                                                                            />
                                                                                           </li>
                                                                                           <li>
                                                                                                             You'd be riding in a 
+                                                                                                            <span
+                                                                                                                              className="info"
+                                                                                                            />
                                                                                           </li>
                                                                                           <li>
-                                                                                                            You'll leave at 
-                                                                                                             on 
+                                                                                                            You'll leave on 
                                                                                           </li>
                                                                                           <button
+                                                                                                            className="join-ride-btn"
                                                                                                             onClick={[Function]}
                                                                                           >
                                                                                                             I want in
@@ -839,13 +1204,34 @@ ShallowWrapper {
                                                       block={false}
                                                       bsClass="btn"
                                                       bsStyle="default"
+                                                      className="ride-btn"
                                                       disabled={false}
                                                       style={
                                                                         Object {
                                                                                           "backgroundColor": "white",
                                                                                         }
                                                       }
-                                    />
+                                    >
+                                                      <span
+                                                                        className="date"
+                                                      >
+                                                                        leaving on: 
+                                                                        <span
+                                                                                          className="text"
+                                                                        />
+                                                      </span>
+                                                      <span
+                                                                        className="time"
+                                                      >
+                                                                        at: 
+                                                                        <span
+                                                                                          className="text"
+                                                                        >
+                                                                                           
+                                                                                           
+                                                                        </span>
+                                                      </span>
+                                    </Button>
                   </OverlayTrigger>
                   <OverlayTrigger
                                     container={[Circular]}
@@ -864,16 +1250,22 @@ ShallowWrapper {
                                                                                           className="ride-popover-list"
                                                                         >
                                                                                           <li>
-                                                                                                            Leaving at
+                                                                                                            Leaving at 
+                                                                                                            <span
+                                                                                                                              className="info"
+                                                                                                            />
                                                                                           </li>
                                                                                           <li>
                                                                                                             You'd be riding in a 
+                                                                                                            <span
+                                                                                                                              className="info"
+                                                                                                            />
                                                                                           </li>
                                                                                           <li>
-                                                                                                            You'll leave at 
-                                                                                                             on 
+                                                                                                            You'll leave on 
                                                                                           </li>
                                                                                           <button
+                                                                                                            className="join-ride-btn"
                                                                                                             onClick={[Function]}
                                                                                           >
                                                                                                             I want in
@@ -889,13 +1281,34 @@ ShallowWrapper {
                                                       block={false}
                                                       bsClass="btn"
                                                       bsStyle="default"
+                                                      className="ride-btn"
                                                       disabled={false}
                                                       style={
                                                                         Object {
                                                                                           "backgroundColor": "white",
                                                                                         }
                                                       }
-                                    />
+                                    >
+                                                      <span
+                                                                        className="date"
+                                                      >
+                                                                        leaving on: 
+                                                                        <span
+                                                                                          className="text"
+                                                                        />
+                                                      </span>
+                                                      <span
+                                                                        className="time"
+                                                      >
+                                                                        at: 
+                                                                        <span
+                                                                                          className="text"
+                                                                        >
+                                                                                           
+                                                                                           
+                                                                        </span>
+                                                      </span>
+                                    </Button>
                   </OverlayTrigger>
 </ButtonToolbar>,
                 "_rendering": false,
@@ -917,16 +1330,22 @@ ShallowWrapper {
                         className="ride-popover-list"
             >
                         <li>
-                                    Leaving at
+                                    Leaving at 
+                                    <span
+                                                className="info"
+                                    />
                         </li>
                         <li>
                                     You'd be riding in a 
+                                    <span
+                                                className="info"
+                                    />
                         </li>
                         <li>
-                                    You'll leave at 
-                                     on 
+                                    You'll leave on 
                         </li>
                         <button
+                                    className="join-ride-btn"
                                     onClick={[Function]}
                         >
                                     I want in
@@ -946,14 +1365,109 @@ ShallowWrapper {
             "block": false,
             "bsClass": "btn",
             "bsStyle": "default",
-            "children": undefined,
+            "children": Array [
+              <span
+                className="date"
+>
+                leaving on: 
+                <span
+                                className="text"
+                />
+</span>,
+              <span
+                className="time"
+>
+                at: 
+                <span
+                                className="text"
+                >
+                                 
+                                 
+                </span>
+</span>,
+            ],
+            "className": "ride-btn",
             "disabled": false,
             "style": Object {
               "backgroundColor": "white",
             },
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "leaving on: ",
+                  <span
+                    className="text"
+/>,
+                ],
+                "className": "date",
+              },
+              "ref": null,
+              "rendered": Array [
+                "leaving on: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": undefined,
+                    "className": "text",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "span",
+                },
+              ],
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "at: ",
+                  <span
+                    className="text"
+>
+                     
+                     
+</span>,
+                ],
+                "className": "time",
+              },
+              "ref": null,
+              "rendered": Array [
+                "at: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      undefined,
+                      " ",
+                    ],
+                    "className": "text",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    undefined,
+                    " ",
+                  ],
+                  "type": "span",
+                },
+              ],
+              "type": "span",
+            },
+          ],
           "type": [Function],
         },
         "type": [Function],
@@ -1048,16 +1562,22 @@ ShallowWrapper {
                                                                                                                   className="ride-popover-list"
                                                                                                 >
                                                                                                                   <li>
-                                                                                                                                    Leaving at
+                                                                                                                                    Leaving at 
+                                                                                                                                    <span
+                                                                                                                                                      className="info"
+                                                                                                                                    />
                                                                                                                   </li>
                                                                                                                   <li>
                                                                                                                                     You'd be riding in a 
+                                                                                                                                    <span
+                                                                                                                                                      className="info"
+                                                                                                                                    />
                                                                                                                   </li>
                                                                                                                   <li>
-                                                                                                                                    You'll leave at 
-                                                                                                                                     on 
+                                                                                                                                    You'll leave on 
                                                                                                                   </li>
                                                                                                                   <button
+                                                                                                                                    className="join-ride-btn"
                                                                                                                                     onClick={[Function]}
                                                                                                                   >
                                                                                                                                     I want in
@@ -1073,13 +1593,34 @@ ShallowWrapper {
                                                                               block={false}
                                                                               bsClass="btn"
                                                                               bsStyle="default"
+                                                                              className="ride-btn"
                                                                               disabled={false}
                                                                               style={
                                                                                                 Object {
                                                                                                                   "backgroundColor": "white",
                                                                                                                 }
                                                                               }
-                                                            />
+                                                            >
+                                                                              <span
+                                                                                                className="date"
+                                                                              >
+                                                                                                leaving on: 
+                                                                                                <span
+                                                                                                                  className="text"
+                                                                                                />
+                                                                              </span>
+                                                                              <span
+                                                                                                className="time"
+                                                                              >
+                                                                                                at: 
+                                                                                                <span
+                                                                                                                  className="text"
+                                                                                                >
+                                                                                                                   
+                                                                                                                   
+                                                                                                </span>
+                                                                              </span>
+                                                            </Button>
                                           </OverlayTrigger>
                                           <OverlayTrigger
                                                             container={[Circular]}
@@ -1098,16 +1639,22 @@ ShallowWrapper {
                                                                                                                   className="ride-popover-list"
                                                                                                 >
                                                                                                                   <li>
-                                                                                                                                    Leaving at
+                                                                                                                                    Leaving at 
+                                                                                                                                    <span
+                                                                                                                                                      className="info"
+                                                                                                                                    />
                                                                                                                   </li>
                                                                                                                   <li>
                                                                                                                                     You'd be riding in a 
+                                                                                                                                    <span
+                                                                                                                                                      className="info"
+                                                                                                                                    />
                                                                                                                   </li>
                                                                                                                   <li>
-                                                                                                                                    You'll leave at 
-                                                                                                                                     on 
+                                                                                                                                    You'll leave on 
                                                                                                                   </li>
                                                                                                                   <button
+                                                                                                                                    className="join-ride-btn"
                                                                                                                                     onClick={[Function]}
                                                                                                                   >
                                                                                                                                     I want in
@@ -1123,13 +1670,34 @@ ShallowWrapper {
                                                                               block={false}
                                                                               bsClass="btn"
                                                                               bsStyle="default"
+                                                                              className="ride-btn"
                                                                               disabled={false}
                                                                               style={
                                                                                                 Object {
                                                                                                                   "backgroundColor": "white",
                                                                                                                 }
                                                                               }
-                                                            />
+                                                            >
+                                                                              <span
+                                                                                                className="date"
+                                                                              >
+                                                                                                leaving on: 
+                                                                                                <span
+                                                                                                                  className="text"
+                                                                                                />
+                                                                              </span>
+                                                                              <span
+                                                                                                className="time"
+                                                                              >
+                                                                                                at: 
+                                                                                                <span
+                                                                                                                  className="text"
+                                                                                                >
+                                                                                                                   
+                                                                                                                   
+                                                                                                </span>
+                                                                              </span>
+                                                            </Button>
                                           </OverlayTrigger>
                         </ButtonToolbar>,
                                         "_rendering": false,
@@ -1153,16 +1721,22 @@ ShallowWrapper {
                                                 className="ride-popover-list"
                                     >
                                                 <li>
-                                                            Leaving at
+                                                            Leaving at 
+                                                            <span
+                                                                        className="info"
+                                                            />
                                                 </li>
                                                 <li>
                                                             You'd be riding in a 
+                                                            <span
+                                                                        className="info"
+                                                            />
                                                 </li>
                                                 <li>
-                                                            You'll leave at 
-                                                             on 
+                                                            You'll leave on 
                                                 </li>
                                                 <button
+                                                            className="join-ride-btn"
                                                             onClick={[Function]}
                                                 >
                                                             I want in
@@ -1178,13 +1752,34 @@ ShallowWrapper {
                         block={false}
                         bsClass="btn"
                         bsStyle="default"
+                        className="ride-btn"
                         disabled={false}
                         style={
                                     Object {
                                                 "backgroundColor": "white",
                                               }
                         }
-            />
+            >
+                        <span
+                                    className="date"
+                        >
+                                    leaving on: 
+                                    <span
+                                                className="text"
+                                    />
+                        </span>
+                        <span
+                                    className="time"
+                        >
+                                    at: 
+                                    <span
+                                                className="text"
+                                    >
+                                                 
+                                                 
+                                    </span>
+                        </span>
+            </Button>
 </OverlayTrigger>,
           <OverlayTrigger
             container={
@@ -1265,16 +1860,22 @@ ShallowWrapper {
                                                                                                                   className="ride-popover-list"
                                                                                                 >
                                                                                                                   <li>
-                                                                                                                                    Leaving at
+                                                                                                                                    Leaving at 
+                                                                                                                                    <span
+                                                                                                                                                      className="info"
+                                                                                                                                    />
                                                                                                                   </li>
                                                                                                                   <li>
                                                                                                                                     You'd be riding in a 
+                                                                                                                                    <span
+                                                                                                                                                      className="info"
+                                                                                                                                    />
                                                                                                                   </li>
                                                                                                                   <li>
-                                                                                                                                    You'll leave at 
-                                                                                                                                     on 
+                                                                                                                                    You'll leave on 
                                                                                                                   </li>
                                                                                                                   <button
+                                                                                                                                    className="join-ride-btn"
                                                                                                                                     onClick={[Function]}
                                                                                                                   >
                                                                                                                                     I want in
@@ -1290,13 +1891,34 @@ ShallowWrapper {
                                                                               block={false}
                                                                               bsClass="btn"
                                                                               bsStyle="default"
+                                                                              className="ride-btn"
                                                                               disabled={false}
                                                                               style={
                                                                                                 Object {
                                                                                                                   "backgroundColor": "white",
                                                                                                                 }
                                                                               }
-                                                            />
+                                                            >
+                                                                              <span
+                                                                                                className="date"
+                                                                              >
+                                                                                                leaving on: 
+                                                                                                <span
+                                                                                                                  className="text"
+                                                                                                />
+                                                                              </span>
+                                                                              <span
+                                                                                                className="time"
+                                                                              >
+                                                                                                at: 
+                                                                                                <span
+                                                                                                                  className="text"
+                                                                                                >
+                                                                                                                   
+                                                                                                                   
+                                                                                                </span>
+                                                                              </span>
+                                                            </Button>
                                           </OverlayTrigger>
                                           <OverlayTrigger
                                                             container={[Circular]}
@@ -1315,16 +1937,22 @@ ShallowWrapper {
                                                                                                                   className="ride-popover-list"
                                                                                                 >
                                                                                                                   <li>
-                                                                                                                                    Leaving at
+                                                                                                                                    Leaving at 
+                                                                                                                                    <span
+                                                                                                                                                      className="info"
+                                                                                                                                    />
                                                                                                                   </li>
                                                                                                                   <li>
                                                                                                                                     You'd be riding in a 
+                                                                                                                                    <span
+                                                                                                                                                      className="info"
+                                                                                                                                    />
                                                                                                                   </li>
                                                                                                                   <li>
-                                                                                                                                    You'll leave at 
-                                                                                                                                     on 
+                                                                                                                                    You'll leave on 
                                                                                                                   </li>
                                                                                                                   <button
+                                                                                                                                    className="join-ride-btn"
                                                                                                                                     onClick={[Function]}
                                                                                                                   >
                                                                                                                                     I want in
@@ -1340,13 +1968,34 @@ ShallowWrapper {
                                                                               block={false}
                                                                               bsClass="btn"
                                                                               bsStyle="default"
+                                                                              className="ride-btn"
                                                                               disabled={false}
                                                                               style={
                                                                                                 Object {
                                                                                                                   "backgroundColor": "white",
                                                                                                                 }
                                                                               }
-                                                            />
+                                                            >
+                                                                              <span
+                                                                                                className="date"
+                                                                              >
+                                                                                                leaving on: 
+                                                                                                <span
+                                                                                                                  className="text"
+                                                                                                />
+                                                                              </span>
+                                                                              <span
+                                                                                                className="time"
+                                                                              >
+                                                                                                at: 
+                                                                                                <span
+                                                                                                                  className="text"
+                                                                                                >
+                                                                                                                   
+                                                                                                                   
+                                                                                                </span>
+                                                                              </span>
+                                                            </Button>
                                           </OverlayTrigger>
                         </ButtonToolbar>,
                                         "_rendering": false,
@@ -1370,16 +2019,22 @@ ShallowWrapper {
                                                 className="ride-popover-list"
                                     >
                                                 <li>
-                                                            Leaving at
+                                                            Leaving at 
+                                                            <span
+                                                                        className="info"
+                                                            />
                                                 </li>
                                                 <li>
                                                             You'd be riding in a 
+                                                            <span
+                                                                        className="info"
+                                                            />
                                                 </li>
                                                 <li>
-                                                            You'll leave at 
-                                                             on 
+                                                            You'll leave on 
                                                 </li>
                                                 <button
+                                                            className="join-ride-btn"
                                                             onClick={[Function]}
                                                 >
                                                             I want in
@@ -1395,13 +2050,34 @@ ShallowWrapper {
                         block={false}
                         bsClass="btn"
                         bsStyle="default"
+                        className="ride-btn"
                         disabled={false}
                         style={
                                     Object {
                                                 "backgroundColor": "white",
                                               }
                         }
-            />
+            >
+                        <span
+                                    className="date"
+                        >
+                                    leaving on: 
+                                    <span
+                                                className="text"
+                                    />
+                        </span>
+                        <span
+                                    className="time"
+                        >
+                                    at: 
+                                    <span
+                                                className="text"
+                                    >
+                                                 
+                                                 
+                                    </span>
+                        </span>
+            </Button>
 </OverlayTrigger>,
         ],
         "id": "popover-container",
@@ -1418,13 +2094,34 @@ ShallowWrapper {
               block={false}
               bsClass="btn"
               bsStyle="default"
+              className="ride-btn"
               disabled={false}
               style={
                             Object {
                                           "backgroundColor": "white",
                                         }
               }
-/>,
+>
+              <span
+                            className="date"
+              >
+                            leaving on: 
+                            <span
+                                          className="text"
+                            />
+              </span>
+              <span
+                            className="time"
+              >
+                            at: 
+                            <span
+                                          className="text"
+                            >
+                                           
+                                           
+                            </span>
+              </span>
+</Button>,
             "container": RidePopoverComponent {
               "context": Object {},
               "findExistingRide": [Function],
@@ -1502,16 +2199,22 @@ ShallowWrapper {
                                                                                                     className="ride-popover-list"
                                                                                 >
                                                                                                     <li>
-                                                                                                                        Leaving at
+                                                                                                                        Leaving at 
+                                                                                                                        <span
+                                                                                                                                            className="info"
+                                                                                                                        />
                                                                                                     </li>
                                                                                                     <li>
                                                                                                                         You'd be riding in a 
+                                                                                                                        <span
+                                                                                                                                            className="info"
+                                                                                                                        />
                                                                                                     </li>
                                                                                                     <li>
-                                                                                                                        You'll leave at 
-                                                                                                                         on 
+                                                                                                                        You'll leave on 
                                                                                                     </li>
                                                                                                     <button
+                                                                                                                        className="join-ride-btn"
                                                                                                                         onClick={[Function]}
                                                                                                     >
                                                                                                                         I want in
@@ -1527,13 +2230,34 @@ ShallowWrapper {
                                                             block={false}
                                                             bsClass="btn"
                                                             bsStyle="default"
+                                                            className="ride-btn"
                                                             disabled={false}
                                                             style={
                                                                                 Object {
                                                                                                     "backgroundColor": "white",
                                                                                                   }
                                                             }
-                                        />
+                                        >
+                                                            <span
+                                                                                className="date"
+                                                            >
+                                                                                leaving on: 
+                                                                                <span
+                                                                                                    className="text"
+                                                                                />
+                                                            </span>
+                                                            <span
+                                                                                className="time"
+                                                            >
+                                                                                at: 
+                                                                                <span
+                                                                                                    className="text"
+                                                                                >
+                                                                                                     
+                                                                                                     
+                                                                                </span>
+                                                            </span>
+                                        </Button>
                     </OverlayTrigger>
                     <OverlayTrigger
                                         container={[Circular]}
@@ -1552,16 +2276,22 @@ ShallowWrapper {
                                                                                                     className="ride-popover-list"
                                                                                 >
                                                                                                     <li>
-                                                                                                                        Leaving at
+                                                                                                                        Leaving at 
+                                                                                                                        <span
+                                                                                                                                            className="info"
+                                                                                                                        />
                                                                                                     </li>
                                                                                                     <li>
                                                                                                                         You'd be riding in a 
+                                                                                                                        <span
+                                                                                                                                            className="info"
+                                                                                                                        />
                                                                                                     </li>
                                                                                                     <li>
-                                                                                                                        You'll leave at 
-                                                                                                                         on 
+                                                                                                                        You'll leave on 
                                                                                                     </li>
                                                                                                     <button
+                                                                                                                        className="join-ride-btn"
                                                                                                                         onClick={[Function]}
                                                                                                     >
                                                                                                                         I want in
@@ -1577,13 +2307,34 @@ ShallowWrapper {
                                                             block={false}
                                                             bsClass="btn"
                                                             bsStyle="default"
+                                                            className="ride-btn"
                                                             disabled={false}
                                                             style={
                                                                                 Object {
                                                                                                     "backgroundColor": "white",
                                                                                                   }
                                                             }
-                                        />
+                                        >
+                                                            <span
+                                                                                className="date"
+                                                            >
+                                                                                leaving on: 
+                                                                                <span
+                                                                                                    className="text"
+                                                                                />
+                                                            </span>
+                                                            <span
+                                                                                className="time"
+                                                            >
+                                                                                at: 
+                                                                                <span
+                                                                                                    className="text"
+                                                                                >
+                                                                                                     
+                                                                                                     
+                                                                                </span>
+                                                            </span>
+                                        </Button>
                     </OverlayTrigger>
 </ButtonToolbar>,
                   "_rendering": false,
@@ -1605,16 +2356,22 @@ ShallowWrapper {
                             className="ride-popover-list"
               >
                             <li>
-                                          Leaving at
+                                          Leaving at 
+                                          <span
+                                                        className="info"
+                                          />
                             </li>
                             <li>
                                           You'd be riding in a 
+                                          <span
+                                                        className="info"
+                                          />
                             </li>
                             <li>
-                                          You'll leave at 
-                                           on 
+                                          You'll leave on 
                             </li>
                             <button
+                                          className="join-ride-btn"
                                           onClick={[Function]}
                             >
                                           I want in
@@ -1634,14 +2391,109 @@ ShallowWrapper {
               "block": false,
               "bsClass": "btn",
               "bsStyle": "default",
-              "children": undefined,
+              "children": Array [
+                <span
+                  className="date"
+>
+                  leaving on: 
+                  <span
+                                    className="text"
+                  />
+</span>,
+                <span
+                  className="time"
+>
+                  at: 
+                  <span
+                                    className="text"
+                  >
+                                     
+                                     
+                  </span>
+</span>,
+              ],
+              "className": "ride-btn",
               "disabled": false,
               "style": Object {
                 "backgroundColor": "white",
               },
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "leaving on: ",
+                    <span
+                      className="text"
+/>,
+                  ],
+                  "className": "date",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "leaving on: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                      "className": "text",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "span",
+                  },
+                ],
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "at: ",
+                    <span
+                      className="text"
+>
+                       
+                       
+</span>,
+                  ],
+                  "className": "time",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "at: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        undefined,
+                        " ",
+                      ],
+                      "className": "text",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      undefined,
+                      " ",
+                    ],
+                    "type": "span",
+                  },
+                ],
+                "type": "span",
+              },
+            ],
             "type": [Function],
           },
           "type": [Function],
@@ -1656,13 +2508,34 @@ ShallowWrapper {
               block={false}
               bsClass="btn"
               bsStyle="default"
+              className="ride-btn"
               disabled={false}
               style={
                             Object {
                                           "backgroundColor": "white",
                                         }
               }
-/>,
+>
+              <span
+                            className="date"
+              >
+                            leaving on: 
+                            <span
+                                          className="text"
+                            />
+              </span>
+              <span
+                            className="time"
+              >
+                            at: 
+                            <span
+                                          className="text"
+                            >
+                                           
+                                           
+                            </span>
+              </span>
+</Button>,
             "container": RidePopoverComponent {
               "context": Object {},
               "findExistingRide": [Function],
@@ -1740,16 +2613,22 @@ ShallowWrapper {
                                                                                                     className="ride-popover-list"
                                                                                 >
                                                                                                     <li>
-                                                                                                                        Leaving at
+                                                                                                                        Leaving at 
+                                                                                                                        <span
+                                                                                                                                            className="info"
+                                                                                                                        />
                                                                                                     </li>
                                                                                                     <li>
                                                                                                                         You'd be riding in a 
+                                                                                                                        <span
+                                                                                                                                            className="info"
+                                                                                                                        />
                                                                                                     </li>
                                                                                                     <li>
-                                                                                                                        You'll leave at 
-                                                                                                                         on 
+                                                                                                                        You'll leave on 
                                                                                                     </li>
                                                                                                     <button
+                                                                                                                        className="join-ride-btn"
                                                                                                                         onClick={[Function]}
                                                                                                     >
                                                                                                                         I want in
@@ -1765,13 +2644,34 @@ ShallowWrapper {
                                                             block={false}
                                                             bsClass="btn"
                                                             bsStyle="default"
+                                                            className="ride-btn"
                                                             disabled={false}
                                                             style={
                                                                                 Object {
                                                                                                     "backgroundColor": "white",
                                                                                                   }
                                                             }
-                                        />
+                                        >
+                                                            <span
+                                                                                className="date"
+                                                            >
+                                                                                leaving on: 
+                                                                                <span
+                                                                                                    className="text"
+                                                                                />
+                                                            </span>
+                                                            <span
+                                                                                className="time"
+                                                            >
+                                                                                at: 
+                                                                                <span
+                                                                                                    className="text"
+                                                                                >
+                                                                                                     
+                                                                                                     
+                                                                                </span>
+                                                            </span>
+                                        </Button>
                     </OverlayTrigger>
                     <OverlayTrigger
                                         container={[Circular]}
@@ -1790,16 +2690,22 @@ ShallowWrapper {
                                                                                                     className="ride-popover-list"
                                                                                 >
                                                                                                     <li>
-                                                                                                                        Leaving at
+                                                                                                                        Leaving at 
+                                                                                                                        <span
+                                                                                                                                            className="info"
+                                                                                                                        />
                                                                                                     </li>
                                                                                                     <li>
                                                                                                                         You'd be riding in a 
+                                                                                                                        <span
+                                                                                                                                            className="info"
+                                                                                                                        />
                                                                                                     </li>
                                                                                                     <li>
-                                                                                                                        You'll leave at 
-                                                                                                                         on 
+                                                                                                                        You'll leave on 
                                                                                                     </li>
                                                                                                     <button
+                                                                                                                        className="join-ride-btn"
                                                                                                                         onClick={[Function]}
                                                                                                     >
                                                                                                                         I want in
@@ -1815,13 +2721,34 @@ ShallowWrapper {
                                                             block={false}
                                                             bsClass="btn"
                                                             bsStyle="default"
+                                                            className="ride-btn"
                                                             disabled={false}
                                                             style={
                                                                                 Object {
                                                                                                     "backgroundColor": "white",
                                                                                                   }
                                                             }
-                                        />
+                                        >
+                                                            <span
+                                                                                className="date"
+                                                            >
+                                                                                leaving on: 
+                                                                                <span
+                                                                                                    className="text"
+                                                                                />
+                                                            </span>
+                                                            <span
+                                                                                className="time"
+                                                            >
+                                                                                at: 
+                                                                                <span
+                                                                                                    className="text"
+                                                                                >
+                                                                                                     
+                                                                                                     
+                                                                                </span>
+                                                            </span>
+                                        </Button>
                     </OverlayTrigger>
 </ButtonToolbar>,
                   "_rendering": false,
@@ -1843,16 +2770,22 @@ ShallowWrapper {
                             className="ride-popover-list"
               >
                             <li>
-                                          Leaving at
+                                          Leaving at 
+                                          <span
+                                                        className="info"
+                                          />
                             </li>
                             <li>
                                           You'd be riding in a 
+                                          <span
+                                                        className="info"
+                                          />
                             </li>
                             <li>
-                                          You'll leave at 
-                                           on 
+                                          You'll leave on 
                             </li>
                             <button
+                                          className="join-ride-btn"
                                           onClick={[Function]}
                             >
                                           I want in
@@ -1872,14 +2805,109 @@ ShallowWrapper {
               "block": false,
               "bsClass": "btn",
               "bsStyle": "default",
-              "children": undefined,
+              "children": Array [
+                <span
+                  className="date"
+>
+                  leaving on: 
+                  <span
+                                    className="text"
+                  />
+</span>,
+                <span
+                  className="time"
+>
+                  at: 
+                  <span
+                                    className="text"
+                  >
+                                     
+                                     
+                  </span>
+</span>,
+              ],
+              "className": "ride-btn",
               "disabled": false,
               "style": Object {
                 "backgroundColor": "white",
               },
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "leaving on: ",
+                    <span
+                      className="text"
+/>,
+                  ],
+                  "className": "date",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "leaving on: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                      "className": "text",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "span",
+                  },
+                ],
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "at: ",
+                    <span
+                      className="text"
+>
+                       
+                       
+</span>,
+                  ],
+                  "className": "time",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "at: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        " ",
+                        undefined,
+                        " ",
+                      ],
+                      "className": "text",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      " ",
+                      undefined,
+                      " ",
+                    ],
+                    "type": "span",
+                  },
+                ],
+                "type": "span",
+              },
+            ],
             "type": [Function],
           },
           "type": [Function],
