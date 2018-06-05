@@ -31,6 +31,25 @@ describe('App', () => {
     })
   })
 
+  describe('toggleShowUserRides', () => {
+    it('should toggle the state of showUserRides when called', () => {
+      let expected = true;
+      wrapper.instance().toggleShowUserRides();
+      let actual = wrapper.state('showUserRides');
+
+      expect(actual).toEqual(expected);
+    });
+  });
+
+  describe('errorElement', () => {
+    it('should return an element with a div that has class error-container', () => {
+      let actual = wrapper.instance().errorElement();
+      let expected = 'error-container';
+
+      expect(actual.props.className).toEqual(expected);
+    })
+  })
+
   describe('mapStateToProps', () => {
     let mockState;
     let mappedProps;

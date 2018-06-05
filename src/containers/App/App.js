@@ -31,25 +31,23 @@ export class App extends Component {
     if (!this.props.user.id) {
       this.props.setError('You must be logged in to see your rides');
       return;
-    };
+    }
     this.setState({
       showUserRides: !this.state.showUserRides
     });
   };
 
-  errorElement = () => {
-    return (
-      <div className="error-container">
-        <h1>Whoops!</h1>
-        <strong>{this.props.error}</strong>
-        <button 
-          onClick={this.props.removeError}
-          className="error-close-btn">
-          ok!
-        </button>
-      </div>
-    );
-  }
+  errorElement = () => (
+    <div className="error-container">
+      <h1>Whoops!</h1>
+      <strong>{this.props.error}</strong>
+      <button 
+        onClick={this.props.removeError}
+        className="error-close-btn">
+        ok!
+      </button>
+    </div>
+  );
 
   render() {
     return (

@@ -102,8 +102,6 @@ describe('RidesContainer', () => {
 
       expect(cleaner.geocodeCleaner).toHaveBeenCalledWith(expected);
     });
-
-    it('should throw an error if ')
   });
 
   describe('formatAddress', () => {
@@ -161,27 +159,34 @@ describe('RidesContainer', () => {
       expect(actual).toEqual(expected);
     })
 
-    it.skip('should not toggle state if no user exists', () => {
+    it('should not toggle state if no user exists', () => {
       let wrapper = shallow(<RidesContainer 
         user={{}}
         rides={mockRides}
         setLocation={mockSetLocation}
         destination={mockDestination}
-        setRides={mockSetRides}/>)
+        setRides={mockSetRides}
+        setError={jest.fn()}/>);
       wrapper.instance().handleShowOffer();
       let expected = false;
-      let actual = wrapper.state('showOffer')
+      let actual = wrapper.state('showOffer');
 
-      expect(actual).toEqual(expected)
+      expect(actual).toEqual(expected);
     })
 
-    it.skip('should call setError with correct params if no user exists', () => {
+    it('should call setError with correct params if no user exists', () => {
+      let mockSetError = jest.fn();
       let wrapper = shallow(<RidesContainer 
-        />)
+        user={''}
+        rides={mockRides}
+        setLocation={mockSetLocation}
+        destination={mockDestination}
+        setRides={mockSetRides}
+        setError={mockSetError}/>);
       wrapper.instance().handleShowOffer();
       let expected = 'Please login before you do that';
       
-      expect(mockSetError).toHaveBeenCalledWith(expected)
+      expect(mockSetError).toHaveBeenCalledWith(expected);
     })
   })
 
