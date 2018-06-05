@@ -184,7 +184,8 @@ const fetchRidesFromUser = async (rideId) => {
 const reverseGeoCode = async (lat, lng) => {
   const url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=${geoKey}`;
   const response = await fetch(url);
-  const address = await response.json();
+  const geoData = await response.json();
+  return geoData;
 }
 
 export {

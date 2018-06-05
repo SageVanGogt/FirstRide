@@ -579,5 +579,13 @@ describe('reverseGeoCode', () => {
     await API.reverseGeoCode(mockLat, mockLng);
 
     expect(window.fetch).toHaveBeenCalledWith(expected);
-  })
+  });
+
+  it('should return the expected object', async () => {
+    let expected = MOCK.mockReverseGeoInfo;
+
+    let actual = await API.reverseGeoCode(mockLat, mockLng);
+
+    expect(actual).toEqual(expected);
+  });
 });
