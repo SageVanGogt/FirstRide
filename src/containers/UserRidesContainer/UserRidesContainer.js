@@ -62,7 +62,7 @@ export class UserRidesContainer extends Component {
         <button 
           className="user-rides-return-btn"
           onClick={this.props.toggleShowUserRides}>
-          exit
+          X
         </button>
       </div>
     );
