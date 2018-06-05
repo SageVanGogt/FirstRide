@@ -16,7 +16,6 @@
 
 .signin-input {
   height: 40px;
-  margin-top: 20px;
   border: none;
   padding: 4px;  
   background-color: rgba(221, 165, 52, 0.6); 
@@ -35,4 +34,9 @@
   color: white;
   border: none;
   border-radius: 20px;
+}
+
+.signin-form label {
+  margin-top: 20px;
+  margin-bottom: 0;
 }

@@ -38,6 +38,7 @@ export class SigninContainer extends Component {
           action="submit" 
           onSubmit={this.handleSubmit}
           className="signin-form">
+          <label name="email">email:</label>          
           <input 
             className="signin-input"
             type="text" 
@@ -45,6 +46,7 @@ export class SigninContainer extends Component {
             onChange={this.handleChange}
             placeholder="email"
           />
+          <label name="password">password:</label>          
           <input 
             className="signin-input"
             type="password" 

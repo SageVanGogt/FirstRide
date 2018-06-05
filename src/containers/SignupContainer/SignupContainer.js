@@ -13,7 +13,7 @@ export class SignupContainer extends Component {
       email: '',
       password: ''
     };
-  };
+  }
 
   handleChange = (event) => {
     const { name, value } = event.target;
@@ -28,7 +28,7 @@ export class SignupContainer extends Component {
     const user = {
       id: response.id,
       user_name: this.state.user_name
-    }
+    };
     await this.props.setUser(user);
   };
 
@@ -39,6 +39,7 @@ export class SignupContainer extends Component {
           action="submit" 
           onSubmit={this.handleSubmit}
           className="signup-form">
+          <label name="user_name">user name:</label>
           <input 
             className="signup-input"
             type="text" 
@@ -46,6 +47,7 @@ export class SignupContainer extends Component {
             onChange={this.handleChange}
             placeholder="name"
           />
+          <label name="email">email:</label>
           <input 
             className="signup-input"
             type="text" 
@@ -53,6 +55,7 @@ export class SignupContainer extends Component {
             onChange={this.handleChange}
             placeholder="email"
           />
+          <label name="password">password:</label>
           <input 
             className="signup-input"
             type="password" 
