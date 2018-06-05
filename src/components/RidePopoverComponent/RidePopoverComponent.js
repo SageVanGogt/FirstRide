@@ -42,25 +42,26 @@ export class RidePopoverComponent extends Component {
           trigger="click"
           placement="right"
           overlay={
-          <Popover id="popovers" title="All your ride info">
-            <strong>{ride.seats_remaining} seats left!</strong>
-            <ul className="ride-popover-list">
-              <li>Leaving at{ride.time}</li>
-              <li>You'd be riding in a {ride.car_type}</li>
-              <li>You'll leave at {ride.time} on {ride.date}</li>
-              {
-                this.findExistingRide(ride.id) ?
-                this.unsignupForRideElement(ride.id) :
-                this.signupForRideElement(ride.id)
-              }
-            </ul>
-          </Popover>}
+            <Popover id="popovers" title="All your ride info">
+              <strong>{ride.seats_remaining} seats left!</strong>
+              <ul className="ride-popover-list">
+                <li>Leaving at{ride.time}</li>
+                <li>You'd be riding in a {ride.car_type}</li>
+                <li>You'll leave at {ride.time} on {ride.date}</li>
+                {
+                  this.findExistingRide(ride.id) ?
+                    this.unsignupForRideElement(ride.id) :
+                    this.signupForRideElement(ride.id)
+                }
+              </ul>
+            </Popover>
+          }
         >
           <Button
             style={{
               backgroundColor: rideMarker.isShowing ? '#CDCBC4' : 'white'
             }}>
-            {ride.time}
+            leaving on: {ride.date} at: {ride.time}
           </Button>
         </OverlayTrigger>
       )})

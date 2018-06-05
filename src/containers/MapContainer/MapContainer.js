@@ -48,7 +48,7 @@ export class MapContainer extends Component {
       </div>
     );
   }
-};
+}
 
 export const mapStateToProps = (state) => ({
   pickupLocations: state.pickupLocations,

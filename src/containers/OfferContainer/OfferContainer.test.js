@@ -227,5 +227,18 @@ describe('OfferContainer', () => {
 
       expect(mockDispatch).toHaveBeenCalledWith(expected);
     });
+
+    it('should call dispatch with the correct params if setError', () => {
+      let mockDispatch = jest.fn();
+      let mappedProps = mapDispatchToProps(mockDispatch);
+      let expected = {
+        type: "ADD_ERROR",
+        error: 'nono'
+      }
+      
+      mappedProps.setError('nono');
+
+      expect(mockDispatch).toHaveBeenCalledWith(expected);
+    });
   });
 });

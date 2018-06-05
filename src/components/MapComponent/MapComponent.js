@@ -6,28 +6,24 @@ import { InfoBox } from "react-google-maps/lib/components/addons/InfoBox";
 import './MapComponent.css';
 
 export const MapComponent = withScriptjs(withGoogleMap((
-  { position, markerCoords, toggleShowing, rides, ...props}
+  { position, markerCoords, toggleShowing, ...props }
 ) => {
-  const markers = markerCoords.map(location => {
+  const markers = markerCoords.map((location, index) => {
     let { lat, lng } = location;
-    let rideInfo = rides.find(ride => ride.id === location.ride_id);
     lat = parseFloat(lat);
     lng = parseFloat(lng);
     return (
       <Marker
+        key={`mapmarker-${index}`}
         onClick={() => toggleShowing(location)}
         position={{lat: lat, lng: lng}}>
-       {
-        location.isShowing === true && <InfoBox
-          options={{ closeBoxURL: ``, enableEventPropagation: true }}>
+        {
+          location.isShowing === true && 
+          <InfoBox
+            options={{ closeBoxURL: ``, enableEventPropagation: true }}>
             <div className="info-box">
               <div className="info-text-box">
                 <h2>{location.address}</h2>
-                {/* <h1>{rideInfo.seats_remaining} seats remaining</h1>
-                <h2>
-                  Departing at {rideInfo.time}  
-                  on {rideInfo.date}
-                </h2> */}
               </div>
             </div>
           </InfoBox>
@@ -36,12 +32,6 @@ export const MapComponent = withScriptjs(withGoogleMap((
     );
   });
   return (
-    // !position.id ?
-    // <div className='map-loading'>
-    //   {props.loadingElement}
-    //   <h3>{props.loadingElement}</h3>
-    // </div>
-    // :
     <GoogleMap
       defaultZoom={16}
       center={position}>
