@@ -191,7 +191,7 @@ export const mapDispatchToProps = (dispatch) => ({
 RidesContainer.propTypes = {
   setRides: PropTypes.func,
   setLocation: PropTypes.func,
-  ridessAccounted: PropTypes.func,
+  setRidesAccounted: PropTypes.func,
   setError: PropTypes.func,
   setPickups: PropTypes.func,
   destination: PropTypes.object,
