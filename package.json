@@ -19,7 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "./node_modules/eslint/bin/eslint.js ./src/containers/ ./src/components/ ./src/apiCalls/apiCalls.js --ignore-pattern *.test.js"    
   },
   "devDependencies": {
     "enzyme": "^3.3.0",

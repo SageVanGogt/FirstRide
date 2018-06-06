@@ -53,7 +53,9 @@ export class UserRidesContainer extends Component {
             <h4 className="car-info">Car Type: {ride.car_type}</h4>
           </div>
           <div>
-            <h5 className="seating-info">Seats Remaining: {ride.seats_remaining}</h5>
+            <h5 className="seating-info">
+            Seats Remaining: {ride.seats_remaining}
+            </h5>
           </div>
         </article>
       </li>
