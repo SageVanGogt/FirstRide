@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route, Redirect, Switch, withRouter } from 'react-router-dom';
+import { Route, Switch, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import DestinationsContainer from './../DestinationsContainer/DestinationsContainer';
+import DestinationsContainer from 
+  './../DestinationsContainer/DestinationsContainer';
 import RidesContainer from './../RidesContainer/RidesContainer';
-import SigninContainer from './../SigninContainer/SigninContainer';
 import ProfileContainer from './../ProfileContainer/ProfileContainer';
 import NavContainer from './../NavContainer/NavContainer';
 import LoginComponent from './../../components/LoginComponent/LoginComponent';
 import * as actions from './../../actions/error';
-import UserRidesContainer from './../../containers/UserRidesContainer/UserRidesContainer';
+import UserRidesContainer from 
+  './../../containers/UserRidesContainer/UserRidesContainer';
 export class App extends Component {
   constructor() {
     super(),
@@ -18,7 +19,7 @@ export class App extends Component {
     this.state = {
       showLogin: false,
       showUserRides: false
-    }
+    };
   }
 
   toggleLogin = () => {
@@ -106,7 +107,8 @@ App.propTypes = {
   removeError: PropTypes.func,
   destination: PropTypes.object,
   rides: PropTypes.array,
-  user: PropTypes.object
+  user: PropTypes.object,
+  error: PropTypes.string
 };
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App))
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

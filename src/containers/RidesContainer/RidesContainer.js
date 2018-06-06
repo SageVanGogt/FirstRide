@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Route, Redirect, NavLink } from 'react-router-dom';
 import MapContainer from './../MapContainer/MapContainer';
 import * as API from './../../apiCalls/apiCalls';
 import { addRides } from './../../actions/rides';
 import { addCurrentLocation } from './../../actions/currentLocation';
-import { addRidesAccounted, removeRideAccounted } from './../../actions/rideAccounted';
+import { addRidesAccounted } from './../../actions/rideAccounted';
 import { addError } from './../../actions/error';
 import { addPickups } from './../../actions/pickups';
 import * as cleaner from './../../cleaners/cleaners';
 import OfferContainer from './../OfferContainer/OfferContainer';
-import RidePopoverComponent from './../../components/RidePopoverComponent/RidePopoverComponent';
+import RidePopoverComponent from 
+  './../../components/RidePopoverComponent/RidePopoverComponent';
 import './RidesContainer.css';
 export class RidesContainer extends Component {
   constructor(props) {
@@ -26,7 +26,7 @@ export class RidesContainer extends Component {
   }
 
   componentDidUpdate = (prevProps) => {
-    const { destination, rides } = this.props
+    const { destination } = this.props;
     if (prevProps.destination !== destination) {
       this.loadRides();
       this.loadPickups();
@@ -48,7 +48,8 @@ export class RidesContainer extends Component {
   };
 
   cleanAndSetRides = (rides, ridesAccountedFor) => {
-    const cleanUpdatedRides = cleaner.seatsRemainingUpdate(rides, ridesAccountedFor);
+    const cleanUpdatedRides = 
+      cleaner.seatsRemainingUpdate(rides, ridesAccountedFor);
     this.props.setRides(cleanUpdatedRides);
   }
 
@@ -126,7 +127,11 @@ export class RidesContainer extends Component {
   render() {
     return (
       <div className="ride-page">
-        <button className="offer-btn" onClick={this.handleShowOffer}>Offer a Ride</button>
+        <button 
+          className="offer-btn" 
+          onClick={this.handleShowOffer}>
+          Offer a Ride
+        </button>
         <section className="rides-container">
           <article
             className="form-article">
@@ -186,8 +191,10 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => ({
   setRides: (rides) => dispatch(addRides(rides)),
-  setLocation: (location) => dispatch(addCurrentLocation(location)),
-  setRidesAccounted: (ridesAccounted) => dispatch(addRidesAccounted(ridesAccounted)),
+  setLocation: (location) => 
+    dispatch(addCurrentLocation(location)),
+  setRidesAccounted: (ridesAccounted) => 
+    dispatch(addRidesAccounted(ridesAccounted)),
   setError: (error) => dispatch(addError(error)),
   setPickups: (pickups) => dispatch(addPickups(pickups))
 });

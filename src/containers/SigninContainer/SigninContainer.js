@@ -27,7 +27,7 @@ export class SigninContainer extends Component {
     const user = {
       id: response.user[0].id,
       user_name: response.user[0].user_name
-    }
+    };
     this.props.signinUser(user);
   }
 

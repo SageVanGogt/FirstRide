@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { ButtonToolbar, Popover, Overlay, OverlayTrigger, Button } from 'react-bootstrap';
+import { 
+  ButtonToolbar, 
+  Popover, 
+  OverlayTrigger, 
+  Button } from 'react-bootstrap';
 import './RidePopoverComponent.css';
 import { connect } from 'react-redux';
 
@@ -13,7 +17,7 @@ export class RidePopoverComponent extends Component {
     <button 
       className="join-ride-btn"
       onClick={() => 
-      this.props.submitRideSignup(rideId)}>
+        this.props.submitRideSignup(rideId)}>
       I want in
     </button>
   )
@@ -22,7 +26,7 @@ export class RidePopoverComponent extends Component {
     <button 
       className="join-ride-btn"
       onClick={() => 
-      this.props.handleRemovePassengerRide(rideId)}>
+        this.props.handleRemovePassengerRide(rideId)}>
       remove me
     </button>
   )
@@ -30,7 +34,7 @@ export class RidePopoverComponent extends Component {
   findExistingRide = (rideId) => {
     const { user } = this.props;
     const rideExists = this.props.ridesAccounted.find(ride => {
-      return ride.ride_id === rideId & ride.passenger_id === user.id
+      return ride.ride_id === rideId & ride.passenger_id === user.id;
     });
     return rideExists;
   }
@@ -74,7 +78,8 @@ export class RidePopoverComponent extends Component {
             </span> 
           </Button>
         </OverlayTrigger>
-      )})
+      );
+    });
     return (
       <ButtonToolbar id="popover-container">
         {allPopovers}
@@ -93,6 +98,7 @@ RidePopoverComponent.propTypes = {
   pickupLocations: PropTypes.array,
   user: PropTypes.object,
   ridesAccounted: PropTypes.array,
+  rides: PropTypes.array,
   handleRemovePassengerRide: PropTypes.func,
   submitRideSignup: PropTypes.func
 };

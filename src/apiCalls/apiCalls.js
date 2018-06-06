@@ -67,7 +67,7 @@ const fetchGeocode = async (address) => {
     const response = await fetch(url);
     const locationData = await response.json();
     if (!locationData) {
-      return new Error('')
+      return new Error('error')
     }
     return locationData;
   } catch (error) {
