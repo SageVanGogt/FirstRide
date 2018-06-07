@@ -22,7 +22,7 @@ export class OfferContainer extends Component {
       city: '',
       state: ''
     };
-  };
+  }
 
   handleChange = (event) => {
     const { name, value } = event.target;
@@ -198,4 +198,4 @@ OfferContainer.propTypes = {
   user: PropTypes.object
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(OfferContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(OfferContainer);

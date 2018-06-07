@@ -78,8 +78,8 @@ export class UserRidesContainer extends Component {
         </button>
       </div>
     );
-  };
-};
+  }
+}
 
 export const mapStateToProps = (state) => ({
   user: state.user,

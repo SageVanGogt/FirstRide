@@ -44,7 +44,7 @@ export class NavContainer extends Component {
             onClick={this.props.toggleShowUserRides}>
             My Rides
           </button>
-          <NavLink className="nav-link" to="/profile">Me</NavLink>
+          {/* <NavLink className="nav-link" to="/profile">Me</NavLink> */}
           { 
             this.props.user.id ? 
               <button 
