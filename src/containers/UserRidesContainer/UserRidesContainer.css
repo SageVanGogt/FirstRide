@@ -51,16 +51,51 @@
   color: #FAA10E;  
 }
 
-.time-info {
-  margin-right: 10px;
-  border-right: 1px solid black;
+.seating-info, .car-info, .destination-info, .time-info  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  width: 80px;
+  font-size: 1.5rem;
 }
 
-.seating-info, .car-info, .destination-info, .time-info  {
-  margin: 0 10px;
-  width: 100px;
+.seating-info {
+  font-size: 1.5rem;
 }
 
 .destination {
   display: block;
+}
+
+.img-container {
+  width: 80px;
+  margin-right: 10px;
+  border-right: 2px solid black;
+}
+
+.driver-img {
+  margin-right: 10px;
+}
+
+.car-img {
+  width: 40px;
+}
+
+.pin-img {
+  width: 40px;
+}
+
+.seat-img {
+  width: 40px;
+}
+
+.calendar-img {
+  width: 40px;
+}
+
+.ride-info div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

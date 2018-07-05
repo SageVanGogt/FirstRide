@@ -7,6 +7,7 @@ import {
   Button } from 'react-bootstrap';
 import './RidePopoverComponent.css';
 import { connect } from 'react-redux';
+import userIcon from './../../assets/user.svg';
 
 export class RidePopoverComponent extends Component {
   constructor(props, context) {
@@ -40,7 +41,8 @@ export class RidePopoverComponent extends Component {
   }
   
   render() {
-    const { rides, pickupLocations } = this.props;
+    const { rides, pickupLocations, user } = this.props;
+    // const nonUserRides = rides.filter(ride => ride.driver_id !== user.id);
     const allPopovers = rides.map((ride, index) => {
       const rideMarker = pickupLocations.find(pickup => pickup.ride_id === ride.id);
       return (
@@ -69,7 +71,11 @@ export class RidePopoverComponent extends Component {
             style={{
               backgroundColor: rideMarker.isShowing ? '#CDCBC4' : 'white'
             }}
-            className="ride-btn">
+            // className={ride.driver_id === this.props.user.id ? "my-ride-btn" : "ride-btn"}
+          >
+            <span className="user-img">
+              <img src={userIcon} alt="user"/>
+            </span>
             <span className="date">
             leaving on: <span className="text">{ride.date}</span>
             </span>

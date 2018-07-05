@@ -4,6 +4,12 @@ import PropTypes from 'prop-types';
 import * as API from './../../apiCalls/apiCalls';
 import * as actions from './../../actions/userRides';
 import './UserRidesContainer.css';
+import userIcon from './../../assets/user.svg';
+import car from './../../assets/car.svg';
+import seat from './../../assets/car-seat-with-seatbelt.svg';
+import pin from './../../assets/placeholder.svg';
+import calendar from './../../assets/calendar.svg';
+
 
 export class UserRidesContainer extends Component {
   constructor(props) {
@@ -35,11 +41,27 @@ export class UserRidesContainer extends Component {
     this.props.userRides.map((ride, index) => (
       <li className="ride-item" key={index}>
         <article className="ride-info">
+          <span className="img-container">
+            <img 
+              src={userIcon} 
+              alt="driver"
+              className="driver-img"/>
+          </span>
           <div>
-            <h3 className="time-info">{ride.date} - {ride.time}</h3>
+            <h3 className="time-info">
+              <img 
+                src={calendar} 
+                alt="cal"
+                className="calendar-img"/>
+              {ride.date} {ride.time}
+            </h3>
           </div>
           <div>
-            <h4 className="destination-info">Going To:  
+            <h4 className="destination-info">
+              <img 
+                src={pin} 
+                alt="driver"
+                className="pin-img"/>  
               <span className="destination">
                 {
                   ride.location_id === 1 ? 
@@ -50,11 +72,21 @@ export class UserRidesContainer extends Component {
             </h4>
           </div>
           <div>
-            <h4 className="car-info">Car Type: {ride.car_type}</h4>
+            <h4 className="car-info">
+              <img 
+                src={car} 
+                alt="driver"
+                className="car-img"/>
+              {ride.car_type}
+            </h4>
           </div>
           <div>
             <h5 className="seating-info">
-            Seats Remaining: {ride.seats_remaining}
+              <img 
+                src={seat} 
+                alt="driver"
+                className="seat-img"/>
+              {ride.seats_remaining}
             </h5>
           </div>
         </article>
@@ -78,8 +110,8 @@ export class UserRidesContainer extends Component {
         </button>
       </div>
     );
-  };
-};
+  }
+}
 
 export const mapStateToProps = (state) => ({
   user: state.user,

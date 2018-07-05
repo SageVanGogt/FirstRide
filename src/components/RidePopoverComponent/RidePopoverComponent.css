@@ -1,5 +1,5 @@
 #popovers {
-  margin-top: 310px;
+  margin-top: 320px;
 }
 
 #popover-container {
@@ -13,6 +13,10 @@
 
 .ride-btn {
   display: block;
+}
+
+.my-ride-btn {
+  border: 2px solid #FAA10E;
 }
 
 .date {
@@ -44,4 +48,9 @@
 .join-ride-btn:hover {
   background-color: #FAA10E;
   color: white;
+}
+
+.user-img {
+  float: left;
+  width: 20px;
 }

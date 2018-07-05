@@ -1,5 +1,5 @@
 .ride-list {
-  margin-top: 135px;
+  margin-top: 145px;
   width: 300px;
 }
 
@@ -8,9 +8,9 @@
 }
 
 .rides-legend {
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;
   font-weight: 800;
-  margin: 10px 0 5px 0;
+  margin: 10px 0 5px 10px;
 }
 
 .ride-page {
@@ -30,20 +30,20 @@
   bottom: 0;
   width: 300px;
   font-size: 1.8rem;
-  font-family: 'Roboto', sans-serif; 
-  background-color: #2E4163; 
+  font-family: 'Roboto', sans-serif;
+  background-color: #2E4163;
   text-decoration: none;
   height: 60px;
   color: white;
   border: none;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .offer-btn:hover {
   background-color: #253450;
 }
 
-.current-location-form { 
+.current-location-form {
   display: flex;
   flex-wrap: wrap;
   width: 300px;
@@ -52,6 +52,7 @@
 }
 
 .current-location-form input {
+  padding-left: 10px;
   border: none;
   outline: none;
 }
@@ -62,12 +63,12 @@
 }
 
 .street-input {
- width: 300px;
+  width: 300px;
 }
 
 .city-input {
   width: 200px;
-} 
+}
 
 .state-input {
   width: 100px;
@@ -82,7 +83,7 @@
   width: 100%;
   background-color: #2E4163;
   color: white;
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;
 }
 
 .address-sbmt-btn:hover {
@@ -90,7 +91,7 @@
 }
 
 .address-form-legend {
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;
   font-weight: 800;
-  margin: 10px 0 5px 0;
+  margin: 15px 0 5px 10px;
 }
