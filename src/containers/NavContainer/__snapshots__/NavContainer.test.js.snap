@@ -60,14 +60,6 @@ ShallowWrapper {
           >
                     My Rides
           </button>
-          <NavLink
-                    activeClassName="active"
-                    ariaCurrent="true"
-                    className="nav-link"
-                    to="/profile"
-          >
-                    Me
-          </NavLink>
           <button
                     className="signout-btn"
                     onClick={[Function]}
@@ -113,14 +105,6 @@ ShallowWrapper {
 >
               My Rides
 </button>,
-            <NavLink
-              activeClassName="active"
-              ariaCurrent="true"
-              className="nav-link"
-              to="/profile"
->
-              Me
-</NavLink>,
             <button
               className="signout-btn"
               onClick={[Function]}
@@ -160,21 +144,6 @@ ShallowWrapper {
             "ref": null,
             "rendered": "My Rides",
             "type": "button",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "activeClassName": "active",
-              "ariaCurrent": "true",
-              "children": "Me",
-              "className": "nav-link",
-              "to": "/profile",
-            },
-            "ref": null,
-            "rendered": "Me",
-            "type": [Function],
           },
           Object {
             "instance": null,
@@ -225,14 +194,6 @@ ShallowWrapper {
             >
                         My Rides
             </button>
-            <NavLink
-                        activeClassName="active"
-                        ariaCurrent="true"
-                        className="nav-link"
-                        to="/profile"
-            >
-                        Me
-            </NavLink>
             <button
                         className="signout-btn"
                         onClick={[Function]}
@@ -278,14 +239,6 @@ ShallowWrapper {
 >
                 My Rides
 </button>,
-              <NavLink
-                activeClassName="active"
-                ariaCurrent="true"
-                className="nav-link"
-                to="/profile"
->
-                Me
-</NavLink>,
               <button
                 className="signout-btn"
                 onClick={[Function]}
@@ -325,21 +278,6 @@ ShallowWrapper {
               "ref": null,
               "rendered": "My Rides",
               "type": "button",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "activeClassName": "active",
-                "ariaCurrent": "true",
-                "children": "Me",
-                "className": "nav-link",
-                "to": "/profile",
-              },
-              "ref": null,
-              "rendered": "Me",
-              "type": [Function],
             },
             Object {
               "instance": null,

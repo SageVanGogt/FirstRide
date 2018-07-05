@@ -42,18 +42,36 @@ ShallowWrapper {
                               <article
                                         className="ride-info"
                               >
+                                        <span
+                                                  className="img-container"
+                                        >
+                                                  <img
+                                                            alt="driver"
+                                                            className="driver-img"
+                                                            src="user.svg"
+                                                  />
+                                        </span>
                                         <div>
                                                   <h3
                                                             className="time-info"
                                                   >
-                                                             - 
+                                                            <img
+                                                                      alt="cal"
+                                                                      className="calendar-img"
+                                                                      src="calendar.svg"
+                                                            />
+                                                             
                                                   </h3>
                                         </div>
                                         <div>
                                                   <h4
                                                             className="destination-info"
                                                   >
-                                                            Going To:
+                                                            <img
+                                                                      alt="driver"
+                                                                      className="pin-img"
+                                                                      src="placeholder.svg"
+                                                            />
                                                             <span
                                                                       className="destination"
                                                             >
@@ -65,14 +83,22 @@ ShallowWrapper {
                                                   <h4
                                                             className="car-info"
                                                   >
-                                                            Car Type: 
+                                                            <img
+                                                                      alt="driver"
+                                                                      className="car-img"
+                                                                      src="car.svg"
+                                                            />
                                                   </h4>
                                         </div>
                                         <div>
                                                   <h5
                                                             className="seating-info"
                                                   >
-                                                            Seats Remaining: 
+                                                            <img
+                                                                      alt="driver"
+                                                                      className="seat-img"
+                                                                      src="car-seat-with-seatbelt.svg"
+                                                            />
                                                   </h5>
                                         </div>
                               </article>
@@ -83,18 +109,36 @@ ShallowWrapper {
                               <article
                                         className="ride-info"
                               >
+                                        <span
+                                                  className="img-container"
+                                        >
+                                                  <img
+                                                            alt="driver"
+                                                            className="driver-img"
+                                                            src="user.svg"
+                                                  />
+                                        </span>
                                         <div>
                                                   <h3
                                                             className="time-info"
                                                   >
-                                                             - 
+                                                            <img
+                                                                      alt="cal"
+                                                                      className="calendar-img"
+                                                                      src="calendar.svg"
+                                                            />
+                                                             
                                                   </h3>
                                         </div>
                                         <div>
                                                   <h4
                                                             className="destination-info"
                                                   >
-                                                            Going To:
+                                                            <img
+                                                                      alt="driver"
+                                                                      className="pin-img"
+                                                                      src="placeholder.svg"
+                                                            />
                                                             <span
                                                                       className="destination"
                                                             >
@@ -106,14 +150,22 @@ ShallowWrapper {
                                                   <h4
                                                             className="car-info"
                                                   >
-                                                            Car Type: 
+                                                            <img
+                                                                      alt="driver"
+                                                                      className="car-img"
+                                                                      src="car.svg"
+                                                            />
                                                   </h4>
                                         </div>
                                         <div>
                                                   <h5
                                                             className="seating-info"
                                                   >
-                                                            Seats Remaining: 
+                                                            <img
+                                                                      alt="driver"
+                                                                      className="seat-img"
+                                                                      src="car-seat-with-seatbelt.svg"
+                                                            />
                                                   </h5>
                                         </div>
                               </article>
@@ -147,18 +199,36 @@ ShallowWrapper {
                             <article
                                           className="ride-info"
                             >
+                                          <span
+                                                        className="img-container"
+                                          >
+                                                        <img
+                                                                      alt="driver"
+                                                                      className="driver-img"
+                                                                      src="user.svg"
+                                                        />
+                                          </span>
                                           <div>
                                                         <h3
                                                                       className="time-info"
                                                         >
-                                                                       - 
+                                                                      <img
+                                                                                    alt="cal"
+                                                                                    className="calendar-img"
+                                                                                    src="calendar.svg"
+                                                                      />
+                                                                       
                                                         </h3>
                                           </div>
                                           <div>
                                                         <h4
                                                                       className="destination-info"
                                                         >
-                                                                      Going To:
+                                                                      <img
+                                                                                    alt="driver"
+                                                                                    className="pin-img"
+                                                                                    src="placeholder.svg"
+                                                                      />
                                                                       <span
                                                                                     className="destination"
                                                                       >
@@ -170,14 +240,22 @@ ShallowWrapper {
                                                         <h4
                                                                       className="car-info"
                                                         >
-                                                                      Car Type: 
+                                                                      <img
+                                                                                    alt="driver"
+                                                                                    className="car-img"
+                                                                                    src="car.svg"
+                                                                      />
                                                         </h4>
                                           </div>
                                           <div>
                                                         <h5
                                                                       className="seating-info"
                                                         >
-                                                                      Seats Remaining: 
+                                                                      <img
+                                                                                    alt="driver"
+                                                                                    className="seat-img"
+                                                                                    src="car-seat-with-seatbelt.svg"
+                                                                      />
                                                         </h5>
                                           </div>
                             </article>
@@ -188,18 +266,36 @@ ShallowWrapper {
                             <article
                                           className="ride-info"
                             >
+                                          <span
+                                                        className="img-container"
+                                          >
+                                                        <img
+                                                                      alt="driver"
+                                                                      className="driver-img"
+                                                                      src="user.svg"
+                                                        />
+                                          </span>
                                           <div>
                                                         <h3
                                                                       className="time-info"
                                                         >
-                                                                       - 
+                                                                      <img
+                                                                                    alt="cal"
+                                                                                    className="calendar-img"
+                                                                                    src="calendar.svg"
+                                                                      />
+                                                                       
                                                         </h3>
                                           </div>
                                           <div>
                                                         <h4
                                                                       className="destination-info"
                                                         >
-                                                                      Going To:
+                                                                      <img
+                                                                                    alt="driver"
+                                                                                    className="pin-img"
+                                                                                    src="placeholder.svg"
+                                                                      />
                                                                       <span
                                                                                     className="destination"
                                                                       >
@@ -211,14 +307,22 @@ ShallowWrapper {
                                                         <h4
                                                                       className="car-info"
                                                         >
-                                                                      Car Type: 
+                                                                      <img
+                                                                                    alt="driver"
+                                                                                    className="car-img"
+                                                                                    src="car.svg"
+                                                                      />
                                                         </h4>
                                           </div>
                                           <div>
                                                         <h5
                                                                       className="seating-info"
                                                         >
-                                                                      Seats Remaining: 
+                                                                      <img
+                                                                                    alt="driver"
+                                                                                    className="seat-img"
+                                                                                    src="car-seat-with-seatbelt.svg"
+                                                                      />
                                                         </h5>
                                           </div>
                             </article>
@@ -251,18 +355,36 @@ ShallowWrapper {
                   <article
                                     className="ride-info"
                   >
+                                    <span
+                                                      className="img-container"
+                                    >
+                                                      <img
+                                                                        alt="driver"
+                                                                        className="driver-img"
+                                                                        src="user.svg"
+                                                      />
+                                    </span>
                                     <div>
                                                       <h3
                                                                         className="time-info"
                                                       >
-                                                                         - 
+                                                                        <img
+                                                                                          alt="cal"
+                                                                                          className="calendar-img"
+                                                                                          src="calendar.svg"
+                                                                        />
+                                                                         
                                                       </h3>
                                     </div>
                                     <div>
                                                       <h4
                                                                         className="destination-info"
                                                       >
-                                                                        Going To:
+                                                                        <img
+                                                                                          alt="driver"
+                                                                                          className="pin-img"
+                                                                                          src="placeholder.svg"
+                                                                        />
                                                                         <span
                                                                                           className="destination"
                                                                         >
@@ -274,14 +396,22 @@ ShallowWrapper {
                                                       <h4
                                                                         className="car-info"
                                                       >
-                                                                        Car Type: 
+                                                                        <img
+                                                                                          alt="driver"
+                                                                                          className="car-img"
+                                                                                          src="car.svg"
+                                                                        />
                                                       </h4>
                                     </div>
                                     <div>
                                                       <h5
                                                                         className="seating-info"
                                                       >
-                                                                        Seats Remaining: 
+                                                                        <img
+                                                                                          alt="driver"
+                                                                                          className="seat-img"
+                                                                                          src="car-seat-with-seatbelt.svg"
+                                                                        />
                                                       </h5>
                                     </div>
                   </article>
@@ -292,18 +422,36 @@ ShallowWrapper {
                   <article
                                     className="ride-info"
                   >
+                                    <span
+                                                      className="img-container"
+                                    >
+                                                      <img
+                                                                        alt="driver"
+                                                                        className="driver-img"
+                                                                        src="user.svg"
+                                                      />
+                                    </span>
                                     <div>
                                                       <h3
                                                                         className="time-info"
                                                       >
-                                                                         - 
+                                                                        <img
+                                                                                          alt="cal"
+                                                                                          className="calendar-img"
+                                                                                          src="calendar.svg"
+                                                                        />
+                                                                         
                                                       </h3>
                                     </div>
                                     <div>
                                                       <h4
                                                                         className="destination-info"
                                                       >
-                                                                        Going To:
+                                                                        <img
+                                                                                          alt="driver"
+                                                                                          className="pin-img"
+                                                                                          src="placeholder.svg"
+                                                                        />
                                                                         <span
                                                                                           className="destination"
                                                                         >
@@ -315,14 +463,22 @@ ShallowWrapper {
                                                       <h4
                                                                         className="car-info"
                                                       >
-                                                                        Car Type: 
+                                                                        <img
+                                                                                          alt="driver"
+                                                                                          className="car-img"
+                                                                                          src="car.svg"
+                                                                        />
                                                       </h4>
                                     </div>
                                     <div>
                                                       <h5
                                                                         className="seating-info"
                                                       >
-                                                                        Seats Remaining: 
+                                                                        <img
+                                                                                          alt="driver"
+                                                                                          className="seat-img"
+                                                                                          src="car-seat-with-seatbelt.svg"
+                                                                        />
                                                       </h5>
                                     </div>
                   </article>
@@ -339,18 +495,36 @@ ShallowWrapper {
                   "children": <article
                     className="ride-info"
 >
+                    <span
+                                        className="img-container"
+                    >
+                                        <img
+                                                            alt="driver"
+                                                            className="driver-img"
+                                                            src="user.svg"
+                                        />
+                    </span>
                     <div>
                                         <h3
                                                             className="time-info"
                                         >
-                                                             - 
+                                                            <img
+                                                                                alt="cal"
+                                                                                className="calendar-img"
+                                                                                src="calendar.svg"
+                                                            />
+                                                             
                                         </h3>
                     </div>
                     <div>
                                         <h4
                                                             className="destination-info"
                                         >
-                                                            Going To:
+                                                            <img
+                                                                                alt="driver"
+                                                                                className="pin-img"
+                                                                                src="placeholder.svg"
+                                                            />
                                                             <span
                                                                                 className="destination"
                                                             >
@@ -362,14 +536,22 @@ ShallowWrapper {
                                         <h4
                                                             className="car-info"
                                         >
-                                                            Car Type: 
+                                                            <img
+                                                                                alt="driver"
+                                                                                className="car-img"
+                                                                                src="car.svg"
+                                                            />
                                         </h4>
                     </div>
                     <div>
                                         <h5
                                                             className="seating-info"
                                         >
-                                                            Seats Remaining: 
+                                                            <img
+                                                                                alt="driver"
+                                                                                className="seat-img"
+                                                                                src="car-seat-with-seatbelt.svg"
+                                                            />
                                         </h5>
                     </div>
 </article>,
@@ -382,18 +564,36 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
+                      <span
+                        className="img-container"
+>
+                        <img
+                                                alt="driver"
+                                                className="driver-img"
+                                                src="user.svg"
+                        />
+</span>,
                       <div>
                         <h3
                                                 className="time-info"
                         >
-                                                 - 
+                                                <img
+                                                                        alt="cal"
+                                                                        className="calendar-img"
+                                                                        src="calendar.svg"
+                                                />
+                                                 
                         </h3>
 </div>,
                       <div>
                         <h4
                                                 className="destination-info"
                         >
-                                                Going To:
+                                                <img
+                                                                        alt="driver"
+                                                                        className="pin-img"
+                                                                        src="placeholder.svg"
+                                                />
                                                 <span
                                                                         className="destination"
                                                 >
@@ -405,14 +605,22 @@ ShallowWrapper {
                         <h4
                                                 className="car-info"
                         >
-                                                Car Type: 
+                                                <img
+                                                                        alt="driver"
+                                                                        className="car-img"
+                                                                        src="car.svg"
+                                                />
                         </h4>
 </div>,
                       <div>
                         <h5
                                                 className="seating-info"
                         >
-                                                Seats Remaining: 
+                                                <img
+                                                                        alt="driver"
+                                                                        className="seat-img"
+                                                                        src="car-seat-with-seatbelt.svg"
+                                                />
                         </h5>
 </div>,
                     ],
@@ -425,10 +633,43 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
+                        "children": <img
+                          alt="driver"
+                          className="driver-img"
+                          src="user.svg"
+/>,
+                        "className": "img-container",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "driver",
+                          "className": "driver-img",
+                          "src": "user.svg",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
                         "children": <h3
                           className="time-info"
 >
-                           - 
+                          <img
+                                                    alt="cal"
+                                                    className="calendar-img"
+                                                    src="calendar.svg"
+                          />
+                           
 </h3>,
                       },
                       "ref": null,
@@ -438,16 +679,34 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": Array [
+                            <img
+                              alt="cal"
+                              className="calendar-img"
+                              src="calendar.svg"
+/>,
                             undefined,
-                            " - ",
+                            " ",
                             undefined,
                           ],
                           "className": "time-info",
                         },
                         "ref": null,
                         "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "alt": "cal",
+                              "className": "calendar-img",
+                              "src": "calendar.svg",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "img",
+                          },
                           undefined,
-                          " - ",
+                          " ",
                           undefined,
                         ],
                         "type": "h3",
@@ -462,7 +721,11 @@ ShallowWrapper {
                         "children": <h4
                           className="destination-info"
 >
-                          Going To:
+                          <img
+                                                    alt="driver"
+                                                    className="pin-img"
+                                                    src="placeholder.svg"
+                          />
                           <span
                                                     className="destination"
                           >
@@ -477,7 +740,11 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": Array [
-                            "Going To:",
+                            <img
+                              alt="driver"
+                              className="pin-img"
+                              src="placeholder.svg"
+/>,
                             <span
                               className="destination"
 >
@@ -488,7 +755,19 @@ ShallowWrapper {
                         },
                         "ref": null,
                         "rendered": Array [
-                          "Going To:",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "alt": "driver",
+                              "className": "pin-img",
+                              "src": "placeholder.svg",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "img",
+                          },
                           Object {
                             "instance": null,
                             "key": undefined,
@@ -514,7 +793,11 @@ ShallowWrapper {
                         "children": <h4
                           className="car-info"
 >
-                          Car Type: 
+                          <img
+                                                    alt="driver"
+                                                    className="car-img"
+                                                    src="car.svg"
+                          />
 </h4>,
                       },
                       "ref": null,
@@ -524,14 +807,30 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": Array [
-                            "Car Type: ",
+                            <img
+                              alt="driver"
+                              className="car-img"
+                              src="car.svg"
+/>,
                             undefined,
                           ],
                           "className": "car-info",
                         },
                         "ref": null,
                         "rendered": Array [
-                          "Car Type: ",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "alt": "driver",
+                              "className": "car-img",
+                              "src": "car.svg",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "img",
+                          },
                           undefined,
                         ],
                         "type": "h4",
@@ -546,7 +845,11 @@ ShallowWrapper {
                         "children": <h5
                           className="seating-info"
 >
-                          Seats Remaining: 
+                          <img
+                                                    alt="driver"
+                                                    className="seat-img"
+                                                    src="car-seat-with-seatbelt.svg"
+                          />
 </h5>,
                       },
                       "ref": null,
@@ -556,14 +859,30 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": Array [
-                            "Seats Remaining: ",
+                            <img
+                              alt="driver"
+                              className="seat-img"
+                              src="car-seat-with-seatbelt.svg"
+/>,
                             undefined,
                           ],
                           "className": "seating-info",
                         },
                         "ref": null,
                         "rendered": Array [
-                          "Seats Remaining: ",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "alt": "driver",
+                              "className": "seat-img",
+                              "src": "car-seat-with-seatbelt.svg",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "img",
+                          },
                           undefined,
                         ],
                         "type": "h5",
@@ -583,18 +902,36 @@ ShallowWrapper {
                   "children": <article
                     className="ride-info"
 >
+                    <span
+                                        className="img-container"
+                    >
+                                        <img
+                                                            alt="driver"
+                                                            className="driver-img"
+                                                            src="user.svg"
+                                        />
+                    </span>
                     <div>
                                         <h3
                                                             className="time-info"
                                         >
-                                                             - 
+                                                            <img
+                                                                                alt="cal"
+                                                                                className="calendar-img"
+                                                                                src="calendar.svg"
+                                                            />
+                                                             
                                         </h3>
                     </div>
                     <div>
                                         <h4
                                                             className="destination-info"
                                         >
-                                                            Going To:
+                                                            <img
+                                                                                alt="driver"
+                                                                                className="pin-img"
+                                                                                src="placeholder.svg"
+                                                            />
                                                             <span
                                                                                 className="destination"
                                                             >
@@ -606,14 +943,22 @@ ShallowWrapper {
                                         <h4
                                                             className="car-info"
                                         >
-                                                            Car Type: 
+                                                            <img
+                                                                                alt="driver"
+                                                                                className="car-img"
+                                                                                src="car.svg"
+                                                            />
                                         </h4>
                     </div>
                     <div>
                                         <h5
                                                             className="seating-info"
                                         >
-                                                            Seats Remaining: 
+                                                            <img
+                                                                                alt="driver"
+                                                                                className="seat-img"
+                                                                                src="car-seat-with-seatbelt.svg"
+                                                            />
                                         </h5>
                     </div>
 </article>,
@@ -626,18 +971,36 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
+                      <span
+                        className="img-container"
+>
+                        <img
+                                                alt="driver"
+                                                className="driver-img"
+                                                src="user.svg"
+                        />
+</span>,
                       <div>
                         <h3
                                                 className="time-info"
                         >
-                                                 - 
+                                                <img
+                                                                        alt="cal"
+                                                                        className="calendar-img"
+                                                                        src="calendar.svg"
+                                                />
+                                                 
                         </h3>
 </div>,
                       <div>
                         <h4
                                                 className="destination-info"
                         >
-                                                Going To:
+                                                <img
+                                                                        alt="driver"
+                                                                        className="pin-img"
+                                                                        src="placeholder.svg"
+                                                />
                                                 <span
                                                                         className="destination"
                                                 >
@@ -649,14 +1012,22 @@ ShallowWrapper {
                         <h4
                                                 className="car-info"
                         >
-                                                Car Type: 
+                                                <img
+                                                                        alt="driver"
+                                                                        className="car-img"
+                                                                        src="car.svg"
+                                                />
                         </h4>
 </div>,
                       <div>
                         <h5
                                                 className="seating-info"
                         >
-                                                Seats Remaining: 
+                                                <img
+                                                                        alt="driver"
+                                                                        className="seat-img"
+                                                                        src="car-seat-with-seatbelt.svg"
+                                                />
                         </h5>
 </div>,
                     ],
@@ -669,10 +1040,43 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
+                        "children": <img
+                          alt="driver"
+                          className="driver-img"
+                          src="user.svg"
+/>,
+                        "className": "img-container",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "driver",
+                          "className": "driver-img",
+                          "src": "user.svg",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
                         "children": <h3
                           className="time-info"
 >
-                           - 
+                          <img
+                                                    alt="cal"
+                                                    className="calendar-img"
+                                                    src="calendar.svg"
+                          />
+                           
 </h3>,
                       },
                       "ref": null,
@@ -682,16 +1086,34 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": Array [
+                            <img
+                              alt="cal"
+                              className="calendar-img"
+                              src="calendar.svg"
+/>,
                             undefined,
-                            " - ",
+                            " ",
                             undefined,
                           ],
                           "className": "time-info",
                         },
                         "ref": null,
                         "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "alt": "cal",
+                              "className": "calendar-img",
+                              "src": "calendar.svg",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "img",
+                          },
                           undefined,
-                          " - ",
+                          " ",
                           undefined,
                         ],
                         "type": "h3",
@@ -706,7 +1128,11 @@ ShallowWrapper {
                         "children": <h4
                           className="destination-info"
 >
-                          Going To:
+                          <img
+                                                    alt="driver"
+                                                    className="pin-img"
+                                                    src="placeholder.svg"
+                          />
                           <span
                                                     className="destination"
                           >
@@ -721,7 +1147,11 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": Array [
-                            "Going To:",
+                            <img
+                              alt="driver"
+                              className="pin-img"
+                              src="placeholder.svg"
+/>,
                             <span
                               className="destination"
 >
@@ -732,7 +1162,19 @@ ShallowWrapper {
                         },
                         "ref": null,
                         "rendered": Array [
-                          "Going To:",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "alt": "driver",
+                              "className": "pin-img",
+                              "src": "placeholder.svg",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "img",
+                          },
                           Object {
                             "instance": null,
                             "key": undefined,
@@ -758,7 +1200,11 @@ ShallowWrapper {
                         "children": <h4
                           className="car-info"
 >
-                          Car Type: 
+                          <img
+                                                    alt="driver"
+                                                    className="car-img"
+                                                    src="car.svg"
+                          />
 </h4>,
                       },
                       "ref": null,
@@ -768,14 +1214,30 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": Array [
-                            "Car Type: ",
+                            <img
+                              alt="driver"
+                              className="car-img"
+                              src="car.svg"
+/>,
                             undefined,
                           ],
                           "className": "car-info",
                         },
                         "ref": null,
                         "rendered": Array [
-                          "Car Type: ",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "alt": "driver",
+                              "className": "car-img",
+                              "src": "car.svg",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "img",
+                          },
                           undefined,
                         ],
                         "type": "h4",
@@ -790,7 +1252,11 @@ ShallowWrapper {
                         "children": <h5
                           className="seating-info"
 >
-                          Seats Remaining: 
+                          <img
+                                                    alt="driver"
+                                                    className="seat-img"
+                                                    src="car-seat-with-seatbelt.svg"
+                          />
 </h5>,
                       },
                       "ref": null,
@@ -800,14 +1266,30 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": Array [
-                            "Seats Remaining: ",
+                            <img
+                              alt="driver"
+                              className="seat-img"
+                              src="car-seat-with-seatbelt.svg"
+/>,
                             undefined,
                           ],
                           "className": "seating-info",
                         },
                         "ref": null,
                         "rendered": Array [
-                          "Seats Remaining: ",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "alt": "driver",
+                              "className": "seat-img",
+                              "src": "car-seat-with-seatbelt.svg",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "img",
+                          },
                           undefined,
                         ],
                         "type": "h5",
@@ -859,18 +1341,36 @@ ShallowWrapper {
                                     <article
                                                 className="ride-info"
                                     >
+                                                <span
+                                                            className="img-container"
+                                                >
+                                                            <img
+                                                                        alt="driver"
+                                                                        className="driver-img"
+                                                                        src="user.svg"
+                                                            />
+                                                </span>
                                                 <div>
                                                             <h3
                                                                         className="time-info"
                                                             >
-                                                                         - 
+                                                                        <img
+                                                                                    alt="cal"
+                                                                                    className="calendar-img"
+                                                                                    src="calendar.svg"
+                                                                        />
+                                                                         
                                                             </h3>
                                                 </div>
                                                 <div>
                                                             <h4
                                                                         className="destination-info"
                                                             >
-                                                                        Going To:
+                                                                        <img
+                                                                                    alt="driver"
+                                                                                    className="pin-img"
+                                                                                    src="placeholder.svg"
+                                                                        />
                                                                         <span
                                                                                     className="destination"
                                                                         >
@@ -882,14 +1382,22 @@ ShallowWrapper {
                                                             <h4
                                                                         className="car-info"
                                                             >
-                                                                        Car Type: 
+                                                                        <img
+                                                                                    alt="driver"
+                                                                                    className="car-img"
+                                                                                    src="car.svg"
+                                                                        />
                                                             </h4>
                                                 </div>
                                                 <div>
                                                             <h5
                                                                         className="seating-info"
                                                             >
-                                                                        Seats Remaining: 
+                                                                        <img
+                                                                                    alt="driver"
+                                                                                    className="seat-img"
+                                                                                    src="car-seat-with-seatbelt.svg"
+                                                                        />
                                                             </h5>
                                                 </div>
                                     </article>
@@ -900,18 +1408,36 @@ ShallowWrapper {
                                     <article
                                                 className="ride-info"
                                     >
+                                                <span
+                                                            className="img-container"
+                                                >
+                                                            <img
+                                                                        alt="driver"
+                                                                        className="driver-img"
+                                                                        src="user.svg"
+                                                            />
+                                                </span>
                                                 <div>
                                                             <h3
                                                                         className="time-info"
                                                             >
-                                                                         - 
+                                                                        <img
+                                                                                    alt="cal"
+                                                                                    className="calendar-img"
+                                                                                    src="calendar.svg"
+                                                                        />
+                                                                         
                                                             </h3>
                                                 </div>
                                                 <div>
                                                             <h4
                                                                         className="destination-info"
                                                             >
-                                                                        Going To:
+                                                                        <img
+                                                                                    alt="driver"
+                                                                                    className="pin-img"
+                                                                                    src="placeholder.svg"
+                                                                        />
                                                                         <span
                                                                                     className="destination"
                                                                         >
@@ -923,14 +1449,22 @@ ShallowWrapper {
                                                             <h4
                                                                         className="car-info"
                                                             >
-                                                                        Car Type: 
+                                                                        <img
+                                                                                    alt="driver"
+                                                                                    className="car-img"
+                                                                                    src="car.svg"
+                                                                        />
                                                             </h4>
                                                 </div>
                                                 <div>
                                                             <h5
                                                                         className="seating-info"
                                                             >
-                                                                        Seats Remaining: 
+                                                                        <img
+                                                                                    alt="driver"
+                                                                                    className="seat-img"
+                                                                                    src="car-seat-with-seatbelt.svg"
+                                                                        />
                                                             </h5>
                                                 </div>
                                     </article>
@@ -964,18 +1498,36 @@ ShallowWrapper {
                                 <article
                                                 className="ride-info"
                                 >
+                                                <span
+                                                                className="img-container"
+                                                >
+                                                                <img
+                                                                                alt="driver"
+                                                                                className="driver-img"
+                                                                                src="user.svg"
+                                                                />
+                                                </span>
                                                 <div>
                                                                 <h3
                                                                                 className="time-info"
                                                                 >
-                                                                                 - 
+                                                                                <img
+                                                                                                alt="cal"
+                                                                                                className="calendar-img"
+                                                                                                src="calendar.svg"
+                                                                                />
+                                                                                 
                                                                 </h3>
                                                 </div>
                                                 <div>
                                                                 <h4
                                                                                 className="destination-info"
                                                                 >
-                                                                                Going To:
+                                                                                <img
+                                                                                                alt="driver"
+                                                                                                className="pin-img"
+                                                                                                src="placeholder.svg"
+                                                                                />
                                                                                 <span
                                                                                                 className="destination"
                                                                                 >
@@ -987,14 +1539,22 @@ ShallowWrapper {
                                                                 <h4
                                                                                 className="car-info"
                                                                 >
-                                                                                Car Type: 
+                                                                                <img
+                                                                                                alt="driver"
+                                                                                                className="car-img"
+                                                                                                src="car.svg"
+                                                                                />
                                                                 </h4>
                                                 </div>
                                                 <div>
                                                                 <h5
                                                                                 className="seating-info"
                                                                 >
-                                                                                Seats Remaining: 
+                                                                                <img
+                                                                                                alt="driver"
+                                                                                                className="seat-img"
+                                                                                                src="car-seat-with-seatbelt.svg"
+                                                                                />
                                                                 </h5>
                                                 </div>
                                 </article>
@@ -1005,18 +1565,36 @@ ShallowWrapper {
                                 <article
                                                 className="ride-info"
                                 >
+                                                <span
+                                                                className="img-container"
+                                                >
+                                                                <img
+                                                                                alt="driver"
+                                                                                className="driver-img"
+                                                                                src="user.svg"
+                                                                />
+                                                </span>
                                                 <div>
                                                                 <h3
                                                                                 className="time-info"
                                                                 >
-                                                                                 - 
+                                                                                <img
+                                                                                                alt="cal"
+                                                                                                className="calendar-img"
+                                                                                                src="calendar.svg"
+                                                                                />
+                                                                                 
                                                                 </h3>
                                                 </div>
                                                 <div>
                                                                 <h4
                                                                                 className="destination-info"
                                                                 >
-                                                                                Going To:
+                                                                                <img
+                                                                                                alt="driver"
+                                                                                                className="pin-img"
+                                                                                                src="placeholder.svg"
+                                                                                />
                                                                                 <span
                                                                                                 className="destination"
                                                                                 >
@@ -1028,14 +1606,22 @@ ShallowWrapper {
                                                                 <h4
                                                                                 className="car-info"
                                                                 >
-                                                                                Car Type: 
+                                                                                <img
+                                                                                                alt="driver"
+                                                                                                className="car-img"
+                                                                                                src="car.svg"
+                                                                                />
                                                                 </h4>
                                                 </div>
                                                 <div>
                                                                 <h5
                                                                                 className="seating-info"
                                                                 >
-                                                                                Seats Remaining: 
+                                                                                <img
+                                                                                                alt="driver"
+                                                                                                className="seat-img"
+                                                                                                src="car-seat-with-seatbelt.svg"
+                                                                                />
                                                                 </h5>
                                                 </div>
                                 </article>
@@ -1068,18 +1654,36 @@ ShallowWrapper {
                     <article
                                         className="ride-info"
                     >
+                                        <span
+                                                            className="img-container"
+                                        >
+                                                            <img
+                                                                                alt="driver"
+                                                                                className="driver-img"
+                                                                                src="user.svg"
+                                                            />
+                                        </span>
                                         <div>
                                                             <h3
                                                                                 className="time-info"
                                                             >
-                                                                                 - 
+                                                                                <img
+                                                                                                    alt="cal"
+                                                                                                    className="calendar-img"
+                                                                                                    src="calendar.svg"
+                                                                                />
+                                                                                 
                                                             </h3>
                                         </div>
                                         <div>
                                                             <h4
                                                                                 className="destination-info"
                                                             >
-                                                                                Going To:
+                                                                                <img
+                                                                                                    alt="driver"
+                                                                                                    className="pin-img"
+                                                                                                    src="placeholder.svg"
+                                                                                />
                                                                                 <span
                                                                                                     className="destination"
                                                                                 >
@@ -1091,14 +1695,22 @@ ShallowWrapper {
                                                             <h4
                                                                                 className="car-info"
                                                             >
-                                                                                Car Type: 
+                                                                                <img
+                                                                                                    alt="driver"
+                                                                                                    className="car-img"
+                                                                                                    src="car.svg"
+                                                                                />
                                                             </h4>
                                         </div>
                                         <div>
                                                             <h5
                                                                                 className="seating-info"
                                                             >
-                                                                                Seats Remaining: 
+                                                                                <img
+                                                                                                    alt="driver"
+                                                                                                    className="seat-img"
+                                                                                                    src="car-seat-with-seatbelt.svg"
+                                                                                />
                                                             </h5>
                                         </div>
                     </article>
@@ -1109,18 +1721,36 @@ ShallowWrapper {
                     <article
                                         className="ride-info"
                     >
+                                        <span
+                                                            className="img-container"
+                                        >
+                                                            <img
+                                                                                alt="driver"
+                                                                                className="driver-img"
+                                                                                src="user.svg"
+                                                            />
+                                        </span>
                                         <div>
                                                             <h3
                                                                                 className="time-info"
                                                             >
-                                                                                 - 
+                                                                                <img
+                                                                                                    alt="cal"
+                                                                                                    className="calendar-img"
+                                                                                                    src="calendar.svg"
+                                                                                />
+                                                                                 
                                                             </h3>
                                         </div>
                                         <div>
                                                             <h4
                                                                                 className="destination-info"
                                                             >
-                                                                                Going To:
+                                                                                <img
+                                                                                                    alt="driver"
+                                                                                                    className="pin-img"
+                                                                                                    src="placeholder.svg"
+                                                                                />
                                                                                 <span
                                                                                                     className="destination"
                                                                                 >
@@ -1132,14 +1762,22 @@ ShallowWrapper {
                                                             <h4
                                                                                 className="car-info"
                                                             >
-                                                                                Car Type: 
+                                                                                <img
+                                                                                                    alt="driver"
+                                                                                                    className="car-img"
+                                                                                                    src="car.svg"
+                                                                                />
                                                             </h4>
                                         </div>
                                         <div>
                                                             <h5
                                                                                 className="seating-info"
                                                             >
-                                                                                Seats Remaining: 
+                                                                                <img
+                                                                                                    alt="driver"
+                                                                                                    className="seat-img"
+                                                                                                    src="car-seat-with-seatbelt.svg"
+                                                                                />
                                                             </h5>
                                         </div>
                     </article>
@@ -1156,18 +1794,36 @@ ShallowWrapper {
                     "children": <article
                       className="ride-info"
 >
+                      <span
+                                            className="img-container"
+                      >
+                                            <img
+                                                                  alt="driver"
+                                                                  className="driver-img"
+                                                                  src="user.svg"
+                                            />
+                      </span>
                       <div>
                                             <h3
                                                                   className="time-info"
                                             >
-                                                                   - 
+                                                                  <img
+                                                                                        alt="cal"
+                                                                                        className="calendar-img"
+                                                                                        src="calendar.svg"
+                                                                  />
+                                                                   
                                             </h3>
                       </div>
                       <div>
                                             <h4
                                                                   className="destination-info"
                                             >
-                                                                  Going To:
+                                                                  <img
+                                                                                        alt="driver"
+                                                                                        className="pin-img"
+                                                                                        src="placeholder.svg"
+                                                                  />
                                                                   <span
                                                                                         className="destination"
                                                                   >
@@ -1179,14 +1835,22 @@ ShallowWrapper {
                                             <h4
                                                                   className="car-info"
                                             >
-                                                                  Car Type: 
+                                                                  <img
+                                                                                        alt="driver"
+                                                                                        className="car-img"
+                                                                                        src="car.svg"
+                                                                  />
                                             </h4>
                       </div>
                       <div>
                                             <h5
                                                                   className="seating-info"
                                             >
-                                                                  Seats Remaining: 
+                                                                  <img
+                                                                                        alt="driver"
+                                                                                        className="seat-img"
+                                                                                        src="car-seat-with-seatbelt.svg"
+                                                                  />
                                             </h5>
                       </div>
 </article>,
@@ -1199,18 +1863,36 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": Array [
+                        <span
+                          className="img-container"
+>
+                          <img
+                                                    alt="driver"
+                                                    className="driver-img"
+                                                    src="user.svg"
+                          />
+</span>,
                         <div>
                           <h3
                                                     className="time-info"
                           >
-                                                     - 
+                                                    <img
+                                                                              alt="cal"
+                                                                              className="calendar-img"
+                                                                              src="calendar.svg"
+                                                    />
+                                                     
                           </h3>
 </div>,
                         <div>
                           <h4
                                                     className="destination-info"
                           >
-                                                    Going To:
+                                                    <img
+                                                                              alt="driver"
+                                                                              className="pin-img"
+                                                                              src="placeholder.svg"
+                                                    />
                                                     <span
                                                                               className="destination"
                                                     >
@@ -1222,14 +1904,22 @@ ShallowWrapper {
                           <h4
                                                     className="car-info"
                           >
-                                                    Car Type: 
+                                                    <img
+                                                                              alt="driver"
+                                                                              className="car-img"
+                                                                              src="car.svg"
+                                                    />
                           </h4>
 </div>,
                         <div>
                           <h5
                                                     className="seating-info"
                           >
-                                                    Seats Remaining: 
+                                                    <img
+                                                                              alt="driver"
+                                                                              className="seat-img"
+                                                                              src="car-seat-with-seatbelt.svg"
+                                                    />
                           </h5>
 </div>,
                       ],
@@ -1242,10 +1932,43 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
+                          "children": <img
+                            alt="driver"
+                            className="driver-img"
+                            src="user.svg"
+/>,
+                          "className": "img-container",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "alt": "driver",
+                            "className": "driver-img",
+                            "src": "user.svg",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "img",
+                        },
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
                           "children": <h3
                             className="time-info"
 >
-                             - 
+                            <img
+                                                        alt="cal"
+                                                        className="calendar-img"
+                                                        src="calendar.svg"
+                            />
+                             
 </h3>,
                         },
                         "ref": null,
@@ -1255,16 +1978,34 @@ ShallowWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": Array [
+                              <img
+                                alt="cal"
+                                className="calendar-img"
+                                src="calendar.svg"
+/>,
                               undefined,
-                              " - ",
+                              " ",
                               undefined,
                             ],
                             "className": "time-info",
                           },
                           "ref": null,
                           "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "alt": "cal",
+                                "className": "calendar-img",
+                                "src": "calendar.svg",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "img",
+                            },
                             undefined,
-                            " - ",
+                            " ",
                             undefined,
                           ],
                           "type": "h3",
@@ -1279,7 +2020,11 @@ ShallowWrapper {
                           "children": <h4
                             className="destination-info"
 >
-                            Going To:
+                            <img
+                                                        alt="driver"
+                                                        className="pin-img"
+                                                        src="placeholder.svg"
+                            />
                             <span
                                                         className="destination"
                             >
@@ -1294,7 +2039,11 @@ ShallowWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": Array [
-                              "Going To:",
+                              <img
+                                alt="driver"
+                                className="pin-img"
+                                src="placeholder.svg"
+/>,
                               <span
                                 className="destination"
 >
@@ -1305,7 +2054,19 @@ ShallowWrapper {
                           },
                           "ref": null,
                           "rendered": Array [
-                            "Going To:",
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "alt": "driver",
+                                "className": "pin-img",
+                                "src": "placeholder.svg",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "img",
+                            },
                             Object {
                               "instance": null,
                               "key": undefined,
@@ -1331,7 +2092,11 @@ ShallowWrapper {
                           "children": <h4
                             className="car-info"
 >
-                            Car Type: 
+                            <img
+                                                        alt="driver"
+                                                        className="car-img"
+                                                        src="car.svg"
+                            />
 </h4>,
                         },
                         "ref": null,
@@ -1341,14 +2106,30 @@ ShallowWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": Array [
-                              "Car Type: ",
+                              <img
+                                alt="driver"
+                                className="car-img"
+                                src="car.svg"
+/>,
                               undefined,
                             ],
                             "className": "car-info",
                           },
                           "ref": null,
                           "rendered": Array [
-                            "Car Type: ",
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "alt": "driver",
+                                "className": "car-img",
+                                "src": "car.svg",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "img",
+                            },
                             undefined,
                           ],
                           "type": "h4",
@@ -1363,7 +2144,11 @@ ShallowWrapper {
                           "children": <h5
                             className="seating-info"
 >
-                            Seats Remaining: 
+                            <img
+                                                        alt="driver"
+                                                        className="seat-img"
+                                                        src="car-seat-with-seatbelt.svg"
+                            />
 </h5>,
                         },
                         "ref": null,
@@ -1373,14 +2158,30 @@ ShallowWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": Array [
-                              "Seats Remaining: ",
+                              <img
+                                alt="driver"
+                                className="seat-img"
+                                src="car-seat-with-seatbelt.svg"
+/>,
                               undefined,
                             ],
                             "className": "seating-info",
                           },
                           "ref": null,
                           "rendered": Array [
-                            "Seats Remaining: ",
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "alt": "driver",
+                                "className": "seat-img",
+                                "src": "car-seat-with-seatbelt.svg",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "img",
+                            },
                             undefined,
                           ],
                           "type": "h5",
@@ -1400,18 +2201,36 @@ ShallowWrapper {
                     "children": <article
                       className="ride-info"
 >
+                      <span
+                                            className="img-container"
+                      >
+                                            <img
+                                                                  alt="driver"
+                                                                  className="driver-img"
+                                                                  src="user.svg"
+                                            />
+                      </span>
                       <div>
                                             <h3
                                                                   className="time-info"
                                             >
-                                                                   - 
+                                                                  <img
+                                                                                        alt="cal"
+                                                                                        className="calendar-img"
+                                                                                        src="calendar.svg"
+                                                                  />
+                                                                   
                                             </h3>
                       </div>
                       <div>
                                             <h4
                                                                   className="destination-info"
                                             >
-                                                                  Going To:
+                                                                  <img
+                                                                                        alt="driver"
+                                                                                        className="pin-img"
+                                                                                        src="placeholder.svg"
+                                                                  />
                                                                   <span
                                                                                         className="destination"
                                                                   >
@@ -1423,14 +2242,22 @@ ShallowWrapper {
                                             <h4
                                                                   className="car-info"
                                             >
-                                                                  Car Type: 
+                                                                  <img
+                                                                                        alt="driver"
+                                                                                        className="car-img"
+                                                                                        src="car.svg"
+                                                                  />
                                             </h4>
                       </div>
                       <div>
                                             <h5
                                                                   className="seating-info"
                                             >
-                                                                  Seats Remaining: 
+                                                                  <img
+                                                                                        alt="driver"
+                                                                                        className="seat-img"
+                                                                                        src="car-seat-with-seatbelt.svg"
+                                                                  />
                                             </h5>
                       </div>
 </article>,
@@ -1443,18 +2270,36 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": Array [
+                        <span
+                          className="img-container"
+>
+                          <img
+                                                    alt="driver"
+                                                    className="driver-img"
+                                                    src="user.svg"
+                          />
+</span>,
                         <div>
                           <h3
                                                     className="time-info"
                           >
-                                                     - 
+                                                    <img
+                                                                              alt="cal"
+                                                                              className="calendar-img"
+                                                                              src="calendar.svg"
+                                                    />
+                                                     
                           </h3>
 </div>,
                         <div>
                           <h4
                                                     className="destination-info"
                           >
-                                                    Going To:
+                                                    <img
+                                                                              alt="driver"
+                                                                              className="pin-img"
+                                                                              src="placeholder.svg"
+                                                    />
                                                     <span
                                                                               className="destination"
                                                     >
@@ -1466,14 +2311,22 @@ ShallowWrapper {
                           <h4
                                                     className="car-info"
                           >
-                                                    Car Type: 
+                                                    <img
+                                                                              alt="driver"
+                                                                              className="car-img"
+                                                                              src="car.svg"
+                                                    />
                           </h4>
 </div>,
                         <div>
                           <h5
                                                     className="seating-info"
                           >
-                                                    Seats Remaining: 
+                                                    <img
+                                                                              alt="driver"
+                                                                              className="seat-img"
+                                                                              src="car-seat-with-seatbelt.svg"
+                                                    />
                           </h5>
 </div>,
                       ],
@@ -1486,10 +2339,43 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
+                          "children": <img
+                            alt="driver"
+                            className="driver-img"
+                            src="user.svg"
+/>,
+                          "className": "img-container",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "alt": "driver",
+                            "className": "driver-img",
+                            "src": "user.svg",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "img",
+                        },
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
                           "children": <h3
                             className="time-info"
 >
-                             - 
+                            <img
+                                                        alt="cal"
+                                                        className="calendar-img"
+                                                        src="calendar.svg"
+                            />
+                             
 </h3>,
                         },
                         "ref": null,
@@ -1499,16 +2385,34 @@ ShallowWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": Array [
+                              <img
+                                alt="cal"
+                                className="calendar-img"
+                                src="calendar.svg"
+/>,
                               undefined,
-                              " - ",
+                              " ",
                               undefined,
                             ],
                             "className": "time-info",
                           },
                           "ref": null,
                           "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "alt": "cal",
+                                "className": "calendar-img",
+                                "src": "calendar.svg",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "img",
+                            },
                             undefined,
-                            " - ",
+                            " ",
                             undefined,
                           ],
                           "type": "h3",
@@ -1523,7 +2427,11 @@ ShallowWrapper {
                           "children": <h4
                             className="destination-info"
 >
-                            Going To:
+                            <img
+                                                        alt="driver"
+                                                        className="pin-img"
+                                                        src="placeholder.svg"
+                            />
                             <span
                                                         className="destination"
                             >
@@ -1538,7 +2446,11 @@ ShallowWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": Array [
-                              "Going To:",
+                              <img
+                                alt="driver"
+                                className="pin-img"
+                                src="placeholder.svg"
+/>,
                               <span
                                 className="destination"
 >
@@ -1549,7 +2461,19 @@ ShallowWrapper {
                           },
                           "ref": null,
                           "rendered": Array [
-                            "Going To:",
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "alt": "driver",
+                                "className": "pin-img",
+                                "src": "placeholder.svg",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "img",
+                            },
                             Object {
                               "instance": null,
                               "key": undefined,
@@ -1575,7 +2499,11 @@ ShallowWrapper {
                           "children": <h4
                             className="car-info"
 >
-                            Car Type: 
+                            <img
+                                                        alt="driver"
+                                                        className="car-img"
+                                                        src="car.svg"
+                            />
 </h4>,
                         },
                         "ref": null,
@@ -1585,14 +2513,30 @@ ShallowWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": Array [
-                              "Car Type: ",
+                              <img
+                                alt="driver"
+                                className="car-img"
+                                src="car.svg"
+/>,
                               undefined,
                             ],
                             "className": "car-info",
                           },
                           "ref": null,
                           "rendered": Array [
-                            "Car Type: ",
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "alt": "driver",
+                                "className": "car-img",
+                                "src": "car.svg",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "img",
+                            },
                             undefined,
                           ],
                           "type": "h4",
@@ -1607,7 +2551,11 @@ ShallowWrapper {
                           "children": <h5
                             className="seating-info"
 >
-                            Seats Remaining: 
+                            <img
+                                                        alt="driver"
+                                                        className="seat-img"
+                                                        src="car-seat-with-seatbelt.svg"
+                            />
 </h5>,
                         },
                         "ref": null,
@@ -1617,14 +2565,30 @@ ShallowWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": Array [
-                              "Seats Remaining: ",
+                              <img
+                                alt="driver"
+                                className="seat-img"
+                                src="car-seat-with-seatbelt.svg"
+/>,
                               undefined,
                             ],
                             "className": "seating-info",
                           },
                           "ref": null,
                           "rendered": Array [
-                            "Seats Remaining: ",
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "alt": "driver",
+                                "className": "seat-img",
+                                "src": "car-seat-with-seatbelt.svg",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "img",
+                            },
                             undefined,
                           ],
                           "type": "h5",

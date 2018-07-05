@@ -153,7 +153,6 @@ ShallowWrapper {
                                                                     block={false}
                                                                     bsClass="btn"
                                                                     bsStyle="default"
-                                                                    className="ride-btn"
                                                                     disabled={false}
                                                                     style={
                                                                                     Object {
@@ -161,6 +160,14 @@ ShallowWrapper {
                                                                                                   }
                                                                     }
                                                     >
+                                                                    <span
+                                                                                    className="user-img"
+                                                                    >
+                                                                                    <img
+                                                                                                    alt="user"
+                                                                                                    src="user.svg"
+                                                                                    />
+                                                                    </span>
                                                                     <span
                                                                                     className="date"
                                                                     >
@@ -230,7 +237,6 @@ ShallowWrapper {
                                                                     block={false}
                                                                     bsClass="btn"
                                                                     bsStyle="default"
-                                                                    className="ride-btn"
                                                                     disabled={false}
                                                                     style={
                                                                                     Object {
@@ -238,6 +244,14 @@ ShallowWrapper {
                                                                                                   }
                                                                     }
                                                     >
+                                                                    <span
+                                                                                    className="user-img"
+                                                                    >
+                                                                                    <img
+                                                                                                    alt="user"
+                                                                                                    src="user.svg"
+                                                                                    />
+                                                                    </span>
                                                                     <span
                                                                                     className="date"
                                                                     >
@@ -312,7 +326,6 @@ ShallowWrapper {
                     block={false}
                     bsClass="btn"
                     bsStyle="default"
-                    className="ride-btn"
                     disabled={false}
                     style={
                               Object {
@@ -320,6 +333,14 @@ ShallowWrapper {
                                       }
                     }
           >
+                    <span
+                              className="user-img"
+                    >
+                              <img
+                                        alt="user"
+                                        src="user.svg"
+                              />
+                    </span>
                     <span
                               className="date"
                     >
@@ -451,7 +472,6 @@ ShallowWrapper {
                                                                     block={false}
                                                                     bsClass="btn"
                                                                     bsStyle="default"
-                                                                    className="ride-btn"
                                                                     disabled={false}
                                                                     style={
                                                                                     Object {
@@ -459,6 +479,14 @@ ShallowWrapper {
                                                                                                   }
                                                                     }
                                                     >
+                                                                    <span
+                                                                                    className="user-img"
+                                                                    >
+                                                                                    <img
+                                                                                                    alt="user"
+                                                                                                    src="user.svg"
+                                                                                    />
+                                                                    </span>
                                                                     <span
                                                                                     className="date"
                                                                     >
@@ -528,7 +556,6 @@ ShallowWrapper {
                                                                     block={false}
                                                                     bsClass="btn"
                                                                     bsStyle="default"
-                                                                    className="ride-btn"
                                                                     disabled={false}
                                                                     style={
                                                                                     Object {
@@ -536,6 +563,14 @@ ShallowWrapper {
                                                                                                   }
                                                                     }
                                                     >
+                                                                    <span
+                                                                                    className="user-img"
+                                                                    >
+                                                                                    <img
+                                                                                                    alt="user"
+                                                                                                    src="user.svg"
+                                                                                    />
+                                                                    </span>
                                                                     <span
                                                                                     className="date"
                                                                     >
@@ -610,7 +645,6 @@ ShallowWrapper {
                     block={false}
                     bsClass="btn"
                     bsStyle="default"
-                    className="ride-btn"
                     disabled={false}
                     style={
                               Object {
@@ -618,6 +652,14 @@ ShallowWrapper {
                                       }
                     }
           >
+                    <span
+                              className="user-img"
+                    >
+                              <img
+                                        alt="user"
+                                        src="user.svg"
+                              />
+                    </span>
                     <span
                               className="date"
                     >
@@ -654,7 +696,6 @@ ShallowWrapper {
             block={false}
             bsClass="btn"
             bsStyle="default"
-            className="ride-btn"
             disabled={false}
             style={
                         Object {
@@ -662,6 +703,14 @@ ShallowWrapper {
                                   }
             }
 >
+            <span
+                        className="user-img"
+            >
+                        <img
+                                    alt="user"
+                                    src="user.svg"
+                        />
+            </span>
             <span
                         className="date"
             >
@@ -790,7 +839,6 @@ ShallowWrapper {
                                                       block={false}
                                                       bsClass="btn"
                                                       bsStyle="default"
-                                                      className="ride-btn"
                                                       disabled={false}
                                                       style={
                                                                         Object {
@@ -798,6 +846,14 @@ ShallowWrapper {
                                                                                         }
                                                       }
                                     >
+                                                      <span
+                                                                        className="user-img"
+                                                      >
+                                                                        <img
+                                                                                          alt="user"
+                                                                                          src="user.svg"
+                                                                        />
+                                                      </span>
                                                       <span
                                                                         className="date"
                                                       >
@@ -867,7 +923,6 @@ ShallowWrapper {
                                                       block={false}
                                                       bsClass="btn"
                                                       bsStyle="default"
-                                                      className="ride-btn"
                                                       disabled={false}
                                                       style={
                                                                         Object {
@@ -875,6 +930,14 @@ ShallowWrapper {
                                                                                         }
                                                       }
                                     >
+                                                      <span
+                                                                        className="user-img"
+                                                      >
+                                                                        <img
+                                                                                          alt="user"
+                                                                                          src="user.svg"
+                                                                        />
+                                                      </span>
                                                       <span
                                                                         className="date"
                                                       >
@@ -953,6 +1016,14 @@ ShallowWrapper {
             "bsStyle": "default",
             "children": Array [
               <span
+                className="user-img"
+>
+                <img
+                                alt="user"
+                                src="user.svg"
+                />
+</span>,
+              <span
                 className="date"
 >
                 leaving on: 
@@ -972,7 +1043,6 @@ ShallowWrapper {
                 </span>
 </span>,
             ],
-            "className": "ride-btn",
             "disabled": false,
             "style": Object {
               "backgroundColor": "white",
@@ -980,6 +1050,32 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="user"
+                  src="user.svg"
+/>,
+                "className": "user-img",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "user",
+                  "src": "user.svg",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "span",
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -1068,7 +1164,6 @@ ShallowWrapper {
             block={false}
             bsClass="btn"
             bsStyle="default"
-            className="ride-btn"
             disabled={false}
             style={
                         Object {
@@ -1076,6 +1171,14 @@ ShallowWrapper {
                                   }
             }
 >
+            <span
+                        className="user-img"
+            >
+                        <img
+                                    alt="user"
+                                    src="user.svg"
+                        />
+            </span>
             <span
                         className="date"
             >
@@ -1204,7 +1307,6 @@ ShallowWrapper {
                                                       block={false}
                                                       bsClass="btn"
                                                       bsStyle="default"
-                                                      className="ride-btn"
                                                       disabled={false}
                                                       style={
                                                                         Object {
@@ -1212,6 +1314,14 @@ ShallowWrapper {
                                                                                         }
                                                       }
                                     >
+                                                      <span
+                                                                        className="user-img"
+                                                      >
+                                                                        <img
+                                                                                          alt="user"
+                                                                                          src="user.svg"
+                                                                        />
+                                                      </span>
                                                       <span
                                                                         className="date"
                                                       >
@@ -1281,7 +1391,6 @@ ShallowWrapper {
                                                       block={false}
                                                       bsClass="btn"
                                                       bsStyle="default"
-                                                      className="ride-btn"
                                                       disabled={false}
                                                       style={
                                                                         Object {
@@ -1289,6 +1398,14 @@ ShallowWrapper {
                                                                                         }
                                                       }
                                     >
+                                                      <span
+                                                                        className="user-img"
+                                                      >
+                                                                        <img
+                                                                                          alt="user"
+                                                                                          src="user.svg"
+                                                                        />
+                                                      </span>
                                                       <span
                                                                         className="date"
                                                       >
@@ -1367,6 +1484,14 @@ ShallowWrapper {
             "bsStyle": "default",
             "children": Array [
               <span
+                className="user-img"
+>
+                <img
+                                alt="user"
+                                src="user.svg"
+                />
+</span>,
+              <span
                 className="date"
 >
                 leaving on: 
@@ -1386,7 +1511,6 @@ ShallowWrapper {
                 </span>
 </span>,
             ],
-            "className": "ride-btn",
             "disabled": false,
             "style": Object {
               "backgroundColor": "white",
@@ -1394,6 +1518,32 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="user"
+                  src="user.svg"
+/>,
+                "className": "user-img",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "user",
+                  "src": "user.svg",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "span",
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -1593,7 +1743,6 @@ ShallowWrapper {
                                                                               block={false}
                                                                               bsClass="btn"
                                                                               bsStyle="default"
-                                                                              className="ride-btn"
                                                                               disabled={false}
                                                                               style={
                                                                                                 Object {
@@ -1601,6 +1750,14 @@ ShallowWrapper {
                                                                                                                 }
                                                                               }
                                                             >
+                                                                              <span
+                                                                                                className="user-img"
+                                                                              >
+                                                                                                <img
+                                                                                                                  alt="user"
+                                                                                                                  src="user.svg"
+                                                                                                />
+                                                                              </span>
                                                                               <span
                                                                                                 className="date"
                                                                               >
@@ -1670,7 +1827,6 @@ ShallowWrapper {
                                                                               block={false}
                                                                               bsClass="btn"
                                                                               bsStyle="default"
-                                                                              className="ride-btn"
                                                                               disabled={false}
                                                                               style={
                                                                                                 Object {
@@ -1678,6 +1834,14 @@ ShallowWrapper {
                                                                                                                 }
                                                                               }
                                                             >
+                                                                              <span
+                                                                                                className="user-img"
+                                                                              >
+                                                                                                <img
+                                                                                                                  alt="user"
+                                                                                                                  src="user.svg"
+                                                                                                />
+                                                                              </span>
                                                                               <span
                                                                                                 className="date"
                                                                               >
@@ -1752,7 +1916,6 @@ ShallowWrapper {
                         block={false}
                         bsClass="btn"
                         bsStyle="default"
-                        className="ride-btn"
                         disabled={false}
                         style={
                                     Object {
@@ -1760,6 +1923,14 @@ ShallowWrapper {
                                               }
                         }
             >
+                        <span
+                                    className="user-img"
+                        >
+                                    <img
+                                                alt="user"
+                                                src="user.svg"
+                                    />
+                        </span>
                         <span
                                     className="date"
                         >
@@ -1891,7 +2062,6 @@ ShallowWrapper {
                                                                               block={false}
                                                                               bsClass="btn"
                                                                               bsStyle="default"
-                                                                              className="ride-btn"
                                                                               disabled={false}
                                                                               style={
                                                                                                 Object {
@@ -1899,6 +2069,14 @@ ShallowWrapper {
                                                                                                                 }
                                                                               }
                                                             >
+                                                                              <span
+                                                                                                className="user-img"
+                                                                              >
+                                                                                                <img
+                                                                                                                  alt="user"
+                                                                                                                  src="user.svg"
+                                                                                                />
+                                                                              </span>
                                                                               <span
                                                                                                 className="date"
                                                                               >
@@ -1968,7 +2146,6 @@ ShallowWrapper {
                                                                               block={false}
                                                                               bsClass="btn"
                                                                               bsStyle="default"
-                                                                              className="ride-btn"
                                                                               disabled={false}
                                                                               style={
                                                                                                 Object {
@@ -1976,6 +2153,14 @@ ShallowWrapper {
                                                                                                                 }
                                                                               }
                                                             >
+                                                                              <span
+                                                                                                className="user-img"
+                                                                              >
+                                                                                                <img
+                                                                                                                  alt="user"
+                                                                                                                  src="user.svg"
+                                                                                                />
+                                                                              </span>
                                                                               <span
                                                                                                 className="date"
                                                                               >
@@ -2050,7 +2235,6 @@ ShallowWrapper {
                         block={false}
                         bsClass="btn"
                         bsStyle="default"
-                        className="ride-btn"
                         disabled={false}
                         style={
                                     Object {
@@ -2058,6 +2242,14 @@ ShallowWrapper {
                                               }
                         }
             >
+                        <span
+                                    className="user-img"
+                        >
+                                    <img
+                                                alt="user"
+                                                src="user.svg"
+                                    />
+                        </span>
                         <span
                                     className="date"
                         >
@@ -2094,7 +2286,6 @@ ShallowWrapper {
               block={false}
               bsClass="btn"
               bsStyle="default"
-              className="ride-btn"
               disabled={false}
               style={
                             Object {
@@ -2102,6 +2293,14 @@ ShallowWrapper {
                                         }
               }
 >
+              <span
+                            className="user-img"
+              >
+                            <img
+                                          alt="user"
+                                          src="user.svg"
+                            />
+              </span>
               <span
                             className="date"
               >
@@ -2230,7 +2429,6 @@ ShallowWrapper {
                                                             block={false}
                                                             bsClass="btn"
                                                             bsStyle="default"
-                                                            className="ride-btn"
                                                             disabled={false}
                                                             style={
                                                                                 Object {
@@ -2238,6 +2436,14 @@ ShallowWrapper {
                                                                                                   }
                                                             }
                                         >
+                                                            <span
+                                                                                className="user-img"
+                                                            >
+                                                                                <img
+                                                                                                    alt="user"
+                                                                                                    src="user.svg"
+                                                                                />
+                                                            </span>
                                                             <span
                                                                                 className="date"
                                                             >
@@ -2307,7 +2513,6 @@ ShallowWrapper {
                                                             block={false}
                                                             bsClass="btn"
                                                             bsStyle="default"
-                                                            className="ride-btn"
                                                             disabled={false}
                                                             style={
                                                                                 Object {
@@ -2315,6 +2520,14 @@ ShallowWrapper {
                                                                                                   }
                                                             }
                                         >
+                                                            <span
+                                                                                className="user-img"
+                                                            >
+                                                                                <img
+                                                                                                    alt="user"
+                                                                                                    src="user.svg"
+                                                                                />
+                                                            </span>
                                                             <span
                                                                                 className="date"
                                                             >
@@ -2393,6 +2606,14 @@ ShallowWrapper {
               "bsStyle": "default",
               "children": Array [
                 <span
+                  className="user-img"
+>
+                  <img
+                                    alt="user"
+                                    src="user.svg"
+                  />
+</span>,
+                <span
                   className="date"
 >
                   leaving on: 
@@ -2412,7 +2633,6 @@ ShallowWrapper {
                   </span>
 </span>,
               ],
-              "className": "ride-btn",
               "disabled": false,
               "style": Object {
                 "backgroundColor": "white",
@@ -2420,6 +2640,32 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <img
+                    alt="user"
+                    src="user.svg"
+/>,
+                  "className": "user-img",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "user",
+                    "src": "user.svg",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": "span",
+              },
               Object {
                 "instance": null,
                 "key": undefined,
@@ -2508,7 +2754,6 @@ ShallowWrapper {
               block={false}
               bsClass="btn"
               bsStyle="default"
-              className="ride-btn"
               disabled={false}
               style={
                             Object {
@@ -2516,6 +2761,14 @@ ShallowWrapper {
                                         }
               }
 >
+              <span
+                            className="user-img"
+              >
+                            <img
+                                          alt="user"
+                                          src="user.svg"
+                            />
+              </span>
               <span
                             className="date"
               >
@@ -2644,7 +2897,6 @@ ShallowWrapper {
                                                             block={false}
                                                             bsClass="btn"
                                                             bsStyle="default"
-                                                            className="ride-btn"
                                                             disabled={false}
                                                             style={
                                                                                 Object {
@@ -2652,6 +2904,14 @@ ShallowWrapper {
                                                                                                   }
                                                             }
                                         >
+                                                            <span
+                                                                                className="user-img"
+                                                            >
+                                                                                <img
+                                                                                                    alt="user"
+                                                                                                    src="user.svg"
+                                                                                />
+                                                            </span>
                                                             <span
                                                                                 className="date"
                                                             >
@@ -2721,7 +2981,6 @@ ShallowWrapper {
                                                             block={false}
                                                             bsClass="btn"
                                                             bsStyle="default"
-                                                            className="ride-btn"
                                                             disabled={false}
                                                             style={
                                                                                 Object {
@@ -2729,6 +2988,14 @@ ShallowWrapper {
                                                                                                   }
                                                             }
                                         >
+                                                            <span
+                                                                                className="user-img"
+                                                            >
+                                                                                <img
+                                                                                                    alt="user"
+                                                                                                    src="user.svg"
+                                                                                />
+                                                            </span>
                                                             <span
                                                                                 className="date"
                                                             >
@@ -2807,6 +3074,14 @@ ShallowWrapper {
               "bsStyle": "default",
               "children": Array [
                 <span
+                  className="user-img"
+>
+                  <img
+                                    alt="user"
+                                    src="user.svg"
+                  />
+</span>,
+                <span
                   className="date"
 >
                   leaving on: 
@@ -2826,7 +3101,6 @@ ShallowWrapper {
                   </span>
 </span>,
               ],
-              "className": "ride-btn",
               "disabled": false,
               "style": Object {
                 "backgroundColor": "white",
@@ -2834,6 +3108,32 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <img
+                    alt="user"
+                    src="user.svg"
+/>,
+                  "className": "user-img",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "user",
+                    "src": "user.svg",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": "span",
+              },
               Object {
                 "instance": null,
                 "key": undefined,
