@@ -1,4 +1,4 @@
-This project require downloading a backend: https://github.com/SageVanGogt/first-ride-backend
+This project requires downloading a backend: https://github.com/SageVanGogt/first-ride-backend
 
 # FirstRide.
 
@@ -17,10 +17,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 
 ### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
 
 ```
 Clone the repositorys (git clone https://github.com/sagevangogt/firstride.git) & (git clone https://github.com/SageVanGogt/first-ride-backend).
