@@ -1,7 +1,7 @@
 import { geoKey } from './../apiKey';
 
 const signinUser = async (user) => {
-  const url = 'http://localhost:3000/api/users/';
+  const url = 'https://first-ride.herokuapp.com/api/users/';
   const init = {
     method: "POST",
     body: JSON.stringify(user),
@@ -15,7 +15,7 @@ const signinUser = async (user) => {
 }; 
 
 const signupUser = async (user) => {
-  const url = 'http://localhost:3000/api/users/new';
+  const url = 'https://first-ride.herokuapp.com/api/users/new';
   const body = {
     method: "POST",
     body: JSON.stringify(user),
@@ -29,14 +29,14 @@ const signupUser = async (user) => {
 };
 
 const fetchDestination = async (name) => {
-  const url = `http://localhost:3000/api/locations/${name}`;
+  const url = `https://first-ride.herokuapp.com/api/locations/${name}`;
   const response = await fetch(url);
   const destination = await response.json();
   return destination;
 };
 
 const fetchRides = async (destination) => {
-  const url = `http://localhost:3000/api/rides/get/${destination}`;
+  const url = `https://first-ride.herokuapp.com/api/rides/get/${destination}`;
   const body = {
     method: 'POST', 
     headers: {
@@ -49,7 +49,7 @@ const fetchRides = async (destination) => {
 };
 
 const fetchPickups = async (location) => {
-  const url = `http://localhost:3000/api/pickup/get/${location}`;
+  const url = `https://first-ride.herokuapp.com/api/pickup/get/${location}`;
   const body = {
     method: "POST", 
     headers: {
@@ -76,7 +76,7 @@ const fetchGeocode = async (address) => {
 }; 
 
 const submitNewRide = async (ride) => {
-  const url = `http://localhost:3000/api/rides/new`;
+  const url = `https://first-ride.herokuapp.com/api/rides/new`;
   const body = {
     method: 'POST',
     body: JSON.stringify(ride),
@@ -90,7 +90,7 @@ const submitNewRide = async (ride) => {
 };
 
 const submitNewPickup = async (location) => {
-  const url = `http://localhost:3000/api/pickup/new`;
+  const url = `https://first-ride.herokuapp.com/api/pickup/new`;
   const body = {
     method: 'POST',
     body: JSON.stringify(location),
@@ -104,7 +104,7 @@ const submitNewPickup = async (location) => {
 };
 
 const fetchRidesPassengers = async (locationId) => {
-  const url = `http://localhost:3000/api/rides_passengers/get/passengers/${locationId}`;
+  const url = `https://first-ride.herokuapp.com/api/rides_passengers/get/passengers/${locationId}`;
   const body = {
     method: 'POST', 
     headers: {
@@ -117,7 +117,7 @@ const fetchRidesPassengers = async (locationId) => {
 };
 
 const postRidesPassengers = async (newPassenger) => {
-  const url = `http://localhost:3000/api/rides_passengers/new`;   
+  const url = `https://first-ride.herokuapp.com/api/rides_passengers/new`;   
   const body = {
     method: "POST",
     body: JSON.stringify(newPassenger),
@@ -131,7 +131,7 @@ const postRidesPassengers = async (newPassenger) => {
 };
 
 const postNewProfile = async (profile) => {
-  const url = `http://localhost:3000/api/profiles/new`;
+  const url = `https://first-ride.herokuapp.com/api/profiles/new`;
   const body = {
     method: "POST",
     body: JSON.stringify(profile),
@@ -145,7 +145,7 @@ const postNewProfile = async (profile) => {
 };
 
 const removePassengerRide = async (rideId, passengerId, destinationId) => {
-  const url = `http://localhost:3000/api/rides/${rideId}/passengers/${passengerId}/destination/${destinationId}`; 
+  const url = `https://first-ride.herokuapp.com/api/rides/${rideId}/passengers/${passengerId}/destination/${destinationId}`; 
   const body = {
     method: "DELETE",
     headers: {
@@ -158,7 +158,7 @@ const removePassengerRide = async (rideId, passengerId, destinationId) => {
 };
 
 const fetchUserRides = async (userId) => {
-  const url = `http://localhost:3000/api/rides_passengers/get/rides/${userId}`;
+  const url = `https://first-ride.herokuapp.com/api/rides_passengers/get/rides/${userId}`;
   const body = {
     method: "POST",
     headers: {
@@ -171,7 +171,7 @@ const fetchUserRides = async (userId) => {
 };
 
 const fetchRidesFromUser = async (rideId) => {
-  const url = `http://localhost:3000/api/rides/${rideId}/get/user/`;
+  const url = `https://first-ride.herokuapp.com/api/rides/${rideId}/get/user/`;
   const body = {
     method: "POST",
     headers: {
